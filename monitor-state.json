@@ -1,3 +1,25 @@
 {
-  "status": "AGUARDANDO"
+  "checked_at": "2026-09-20T23:48:29.647176-03:00",
+  "issue": 1,
+  "ship": "Babitonga Bay",
+  "date": "2026-09-21",
+  "time": "23:13",
+  "topic": "praticagem-37cf12d6e8a24fc38a3330b3",
+  "status": "AGUARDANDO",
+  "row": [
+    "BABITONGA BAY",
+    "A21A2BC",
+    "179,99",
+    "",
+    "",
+    "",
+    "21/09/2026",
+    "08:00",
+    "ENTRADA",
+    "PRM",
+    "PRMPS1",
+    "",
+    "WILSON SONS SS",
+    "PREVISTA"
+  ]
 }
