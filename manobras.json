@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-01T08:30:08.894505-03:00",
+  "atualizado_em": "2026-10-01T08:30:53.939906-03:00",
   "fonte": "https://www.praticagem.org.br/asp/previstas.asp",
   "manobras": [
     {
@@ -8,7 +8,7 @@
       "hora": "09:30",
       "porto": "VIX",
       "berco": "VIX103",
-      "situacao": ""
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR DALMATIA",
@@ -16,7 +16,7 @@
       "hora": "10:00",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": ""
+      "situacao": "MARCADA"
     },
     {
       "navio": "VIDYUT",
@@ -24,7 +24,7 @@
       "hora": "11:00",
       "porto": "TUB",
       "berco": "TUBP02",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "ORE ZHOUSHAN",
@@ -32,7 +32,7 @@
       "hora": "11:40",
       "porto": "TUB",
       "berco": "TUBP02",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "UOT NEW YORK",
@@ -40,7 +40,7 @@
       "hora": "19:00",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "PRIME STAR",
@@ -48,7 +48,7 @@
       "hora": "20:00",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "BOW TRIUMPH",
@@ -56,7 +56,7 @@
       "hora": "23:32",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "ROBERT OLDENDORFF",
@@ -64,7 +64,7 @@
       "hora": "02:00",
       "porto": "POU",
       "berco": "POUPLW",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "NAVIOS STELLAR",
@@ -72,7 +72,7 @@
       "hora": "03:00",
       "porto": "POU",
       "berco": "POUPLW",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -80,7 +80,7 @@
       "hora": "06:06",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SEAGEMS RUBI",
@@ -88,7 +88,7 @@
       "hora": "13:00",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": ""
+      "situacao": "MARCADA"
     },
     {
       "navio": "GAVI C",
@@ -96,7 +96,7 @@
       "hora": "14:00",
       "porto": "TUB",
       "berco": "TUBTGL",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "MACAW ARROW",
@@ -104,7 +104,7 @@
       "hora": "15:00",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "PANTHER MAX",
@@ -112,7 +112,7 @@
       "hora": "18:00",
       "porto": "PRM",
       "berco": "PRMCV1",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "EMERALD DAISHAN",
@@ -120,7 +120,7 @@
       "hora": "20:00",
       "porto": "PRM",
       "berco": "PRMCV1",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "MAGNA GRAECIA",
@@ -128,7 +128,7 @@
       "hora": "23:00",
       "porto": "PRM",
       "berco": "PRMCV2",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "HONG HING",
@@ -136,7 +136,7 @@
       "hora": "00:00",
       "porto": "PRM",
       "berco": "PRMCV2",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "VENUS",
@@ -144,7 +144,7 @@
       "hora": "06:00",
       "porto": "ESA",
       "berco": "ESA003",
-      "situacao": ""
+      "situacao": "MARCADA"
     },
     {
       "navio": "COSCO SHIPPING FAN RONG",
@@ -152,7 +152,7 @@
       "hora": "07:10",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "JNS DRAGON",
@@ -160,7 +160,7 @@
       "hora": "10:00",
       "porto": "VIX",
       "berco": "VIX202 VIX203",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "STAR LAGUNA",
@@ -168,7 +168,7 @@
       "hora": "12:00",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "RB DYLAN",
@@ -176,7 +176,7 @@
       "hora": "15:00",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "CHISE BULKER",
@@ -184,7 +184,7 @@
       "hora": "16:00",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "GEORGE ISLAND",
@@ -192,7 +192,7 @@
       "hora": "02:00",
       "porto": "TUB",
       "berco": "TUBP1N",
-      "situacao": ""
+      "situacao": "PREVISTA"
     },
     {
       "navio": "ECO DIAGON ALLEY",
@@ -200,7 +200,7 @@
       "hora": "19:00",
       "porto": "TUB",
       "berco": "TUBP1S",
-      "situacao": ""
+      "situacao": "PREVISTA"
     }
   ]
 }
