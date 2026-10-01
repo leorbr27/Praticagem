@@ -2,7 +2,7 @@ name: Atualizar manobras previstas
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
   push:
     paths:
