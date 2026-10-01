@@ -77,31 +77,31 @@ def parse():
     parser.feed(fetch_source())
     rows = [row for row in parser.rows if row]
 
-    # A tabela da fonte tem os campos úteis nestas posições:
-    # Nome 0 | Tipo do navio 1 | ... | Data 6 | Hora 7 |
-    # Manobra 8 | Porto 9 | Berço 10 | ... | Situação 13.
-    result = []
     date_pattern = re.compile(r"^\\d{2}/\\d{2}/\\d{4}$")
     time_pattern = re.compile(r"^\\d{2}:\\d{2}$")
+    result = []
 
     for row in rows:
-        if len(row) < 14:
+        # Localiza a data em vez de depender de cabeçalho/colunas fixas.
+        date_index = next(
+            (i for i, value in enumerate(row) if date_pattern.match(value.strip())),
+            None,
+        )
+        if date_index is None or date_index + 4 >= len(row):
             continue
-        if not date_pattern.match(row[6].strip()):
-            continue
-        if not time_pattern.match(row[7].strip()):
+        if not time_pattern.match(row[date_index + 1].strip()):
             continue
 
         item = {
             "navio": row[0].strip(),
-            "data": row[6].strip(),
-            "hora": row[7].strip(),
-            "tipo": row[8].strip(),
-            "porto": row[9].strip(),
-            "berco": row[10].strip(),
-            "situacao": row[13].strip(),
+            "data": row[date_index].strip(),
+            "hora": row[date_index + 1].strip(),
+            "tipo": row[date_index + 2].strip(),
+            "porto": row[date_index + 3].strip(),
+            "berco": row[date_index + 4].strip(),
+            "situacao": row[-1].strip(),
         }
-        if not item["navio"] or not item["berco"]:
+        if not item["navio"] or not item["berco"] or not item["situacao"]:
             continue
         result.append(item)
 
