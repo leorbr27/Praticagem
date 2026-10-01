@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-01T15:34:29.928332-03:00",
+  "atualizado_em": "2026-10-01T16:22:24.769656-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,15 +12,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "UOT NEW YORK",
-      "data": "02/10/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "BOW TRIUMPH",
       "data": "02/10/2026",
       "hora": "02:00",
@@ -30,10 +21,10 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "PRIME STAR",
+      "navio": "UOT NEW YORK",
       "data": "02/10/2026",
-      "hora": "03:00",
-      "tipo": "ENTRADA",
+      "hora": "06:00",
+      "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
@@ -45,6 +36,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PRIME STAR",
+      "data": "02/10/2026",
+      "hora": "07:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
