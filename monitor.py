@@ -73,9 +73,21 @@ def fetch_source():
             "Referer": SOURCE_PAGE_URL,
         },
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        raw = response.read()
-        return raw.decode("utf-8", "replace")
+    last_error = None
+    for attempt in range(1, 4):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                raw = response.read()
+                text = raw.decode("utf-8", "replace")
+                if not text.strip():
+                    raise RuntimeError("A fonte retornou uma resposta vazia.")
+                return text
+        except Exception as exc:
+            last_error = exc
+            if attempt < 3:
+                import time
+                time.sleep(5 * attempt)
+    raise RuntimeError(f"Falha ao acessar a fonte após 3 tentativas: {last_error}")
 
 def parse():
     source = fetch_source()
