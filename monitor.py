@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 SOURCE_PAGE_URL = "https://www.praticagem.org.br/manobras-previstas.html"
 DATA_SOURCE_URL = "https://www.praticagem.org.br/asp/previstas.asp"
 OUTPUT_FILE = "manobras.json"
+# Monitoramento executado pelo GitHub Actions a cada 5 minutos.
 TIMEZONE = ZoneInfo("America/Sao_Paulo")
 
 MONITORED_BERCOS = {
