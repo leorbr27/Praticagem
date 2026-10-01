@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-01T09:19:44.157268-03:00",
+  "atualizado_em": "2026-10-01T09:42:17.834364-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -31,8 +31,8 @@
     },
     {
       "navio": "BOW TRIUMPH",
-      "data": "01/10/2026",
-      "hora": "23:32",
+      "data": "02/10/2026",
+      "hora": "02:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
@@ -75,12 +75,21 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GREEN SUAPE",
+      "data": "03/10/2026",
+      "hora": "08:10",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "JNS DRAGON",
       "data": "03/10/2026",
       "hora": "10:00",
       "tipo": "MANOBRA",
       "porto": "VIX",
-      "berco": "VIX202 VIX203",
+      "berco": "VIX202 VIX204",
       "situacao": "PREVISTA"
     },
     {
