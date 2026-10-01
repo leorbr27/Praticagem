@@ -65,7 +65,7 @@ function render(){
   return (!q||texto.includes(q))&&(!t||norm(r.tipo)===t)&&(!s||norm(r.situacao)===s)&&(!p||norm(r.porto)===p);
  });
  $("tabela").innerHTML=data.length?data.map(r=>'<tr class="'+statusClass(r.situacao)+'"><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="7" class="empty">Nenhuma manobra encontrada.</td></tr>';
- $("meta").textContent=data.length+" de "+rows.length+" manobra(s)";
+ $("meta").textContent=data.length+" de "+rows.length+" manobra(s) monitorada(s) · Última atualização: "+(window.ultimaAtualizacao||"—");
 }
 async function carregar(){
  $("meta").textContent="Atualizando...";
@@ -75,7 +75,7 @@ async function carregar(){
   const json=await res.json(); rows=Array.isArray(json.manobras)?json.manobras:[];
   preencherPortos(); render();
   const d=json.atualizado_em?new Date(json.atualizado_em):null;
-  $("rodape").textContent="Fonte: Praticagem Espírito Santo · Última atualização: "+(d&&!isNaN(d) ? d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}) : "—");
+  window.ultimaAtualizacao=(d&&!isNaN(d) ? d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}) : "—");\n  render();\n  $("rodape").textContent="Fonte: Praticagem Espírito Santo";
  }catch(e){
   rows=[];render();$("meta").textContent="Erro ao atualizar";$("rodape").textContent="Fonte: Praticagem Espírito Santo · Não foi possível atualizar";
  }
