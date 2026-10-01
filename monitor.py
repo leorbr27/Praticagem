@@ -75,7 +75,7 @@ def fetch_source():
     with urllib.request.urlopen(request, timeout=30) as response:
         raw = response.read()
         print("Resposta da fonte:", len(raw), "bytes")
-        print("Inicio da fonte:", raw[:1000].decode("utf-8", "replace").replace("\\n", " ")[:1000])
+        print("Inicio hex:", raw[:120].hex())
         return raw.decode("utf-8", "replace")
 
 def parse():
