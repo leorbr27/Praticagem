@@ -7,8 +7,12 @@ URL="https://www.praticagem.org.br/asp/previstas.asp";OUT="manobras.json";TZ=Zon
 class TableParser(HTMLParser):
  def __init__(self): super().__init__();self.rows=[];self.row=[];self.cell="";self.in_cell=False
  def handle_starttag(self,tag,attrs):
+  attrs=dict(attrs)
   if tag=="tr":self.row=[]
   elif tag in ("td","th"):self.cell="";self.in_cell=True
+  elif self.in_cell and tag in ("input","option","img"):
+   v=attrs.get("value") or attrs.get("title") or attrs.get("alt") or ""
+   if v:self.cell+=" "+v
  def handle_endtag(self,tag):
   if tag in ("td","th") and self.in_cell:self.row.append(" ".join(self.cell.split()));self.cell="";self.in_cell=False
   elif tag=="tr" and self.row:self.rows.append(self.row);self.row=[]
