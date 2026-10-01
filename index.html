@@ -70,7 +70,7 @@ function render(){
 async function carregar(){
  $("meta").textContent="Atualizando...";
  try{
-  const res=await fetch("manobras.json?t="+Date.now(),{cache:"no-store"});
+  const res=await fetch("https://raw.githubusercontent.com/leorbr27/Praticagem/main/manobras.json?t="+Date.now(),{cache:"no-store"});
   if(!res.ok)throw new Error();
   const json=await res.json(); rows=Array.isArray(json.manobras)?json.manobras:[];
   preencherPortos(); render();
