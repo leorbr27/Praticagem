@@ -9,7 +9,7 @@ SOURCE_URL="https://www.praticagem.org.br/asp/previstas.asp"
 PUBLIC_SOURCE_URL="https://www.praticagem.org.br/manobras-previstas.html"
 OUTPUT_FILE="manobras.json"
 TIMEZONE=ZoneInfo("America/Sao_Paulo")
-MONITORED_BERCOS={"VIX101","VIX201","VIX202","VIX203","VIX204","VIX206","VIX207","VIX905","VIX906","PRMPS1","PRMPS2","PRMPS3"}
+MONITORED_BERCOS={"VIX101","VIX201","VIX202","VIX203","VIX204","VIX206","VIX207","VIX905","VIX906","PRMPS1","PRMPS2","PRMPS3","RCH101","RCH102","RCH103","RCH501","RCH502","RCH503"}
 
 class TableParser(HTMLParser):
     def __init__(self):
