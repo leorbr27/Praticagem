@@ -21,30 +21,66 @@ th{background:#eef3f7;color:#344454;font-size:12px;text-transform:uppercase;lett
 <body>
 <main class="wrap">
 <section class="header"><h1>🚢 Manobras Previstas</h1><p class="sub">Praticagem Espírito Santo • somente berços monitorados</p></section>
-<section class="toolbar"><input id="filter" type="search" placeholder="🔎 Filtrar por navio, data, porto, berço ou situação" autocomplete="off"><button id="refresh" type="button">Atualizar</button><span class="meta" id="meta">Carregando...</span></section>
+
+<section class="toolbar">
+  <input id="filter" type="search" placeholder="🔎 Filtrar por navio ou berço" autocomplete="off">
+  <select id="tipo" aria-label="Tipo de manobra">
+    <option value="">Todos os tipos</option>
+    <option value="ENTRADA">Entrada</option>
+    <option value="SAÍDA">Saída</option>
+    <option value="MANOBRA">Manobra</option>
+  </select>
+  <select id="situacao" aria-label="Situação">
+    <option value="">Todas as situações</option>
+    <option value="PREVISTA">Prevista</option>
+    <option value="MARCADA">Marcada</option>
+    <option value="INICIADA">Iniciada</option>
+    <option value="CANCELADA">Cancelada</option>
+  </select>
+  <select id="porto" aria-label="Porto">
+    <option value="">Todos os portos</option>
+  </select>
+  <button id="refresh" type="button">Atualizar</button>
+  <span class="meta" id="meta">Carregando...</span>
+</section>
+
 <div class="error" id="error"></div>
-<section class="table-wrap"><table><thead><tr><th>Navio</th><th>Data</th><th>Hora</th><th>Porto</th><th>Berço</th><th>Situação</th></tr></thead><tbody id="body"><tr><td colspan="6" class="empty">Carregando manobras...</td></tr></tbody></table></section>
+
+<section class="table-wrap"><table><thead><tr><th>Navio</th><th>Data</th><th>Hora</th><th>Tipo</th><th>Porto</th><th>Berço</th><th>Situação</th></tr></thead><tbody id="body"><tr><td colspan="7" class="empty">Carregando manobras...</td></tr></tbody></table></section>
+
 <p class="source">Fonte: <a href="https://www.praticagem.org.br/manobras-previstas.html" target="_blank" rel="noopener">Praticagem Espírito Santo</a>. Atualização automática a cada 5 minutos.</p>
 </main>
 <script>
-const body=document.getElementById("body"),filter=document.getElementById("filter"),meta=document.getElementById("meta"),error=document.getElementById("error");let rows=[];
+const body=document.getElementById("body"),filter=document.getElementById("filter"),tipo=document.getElementById("tipo"),situacao=document.getElementById("situacao"),porto=document.getElementById("porto"),meta=document.getElementById("meta"),error=document.getElementById("error");let rows=[];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+function normalize(s){return String(s??"").trim().toLocaleUpperCase("pt-BR");}
+function populatePorts(){
+  const selected=porto.value;
+  const ports=[...new Set(rows.map(r=>String(r.porto||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+  porto.innerHTML='<option value="">Todos os portos</option>'+ports.map(p=>'<option value="'+esc(p)+'">'+esc(p)+'</option>').join("");
+  if(ports.includes(selected)) porto.value=selected;
+}
 function render(){
- const q=filter.value.trim().toLocaleLowerCase("pt-BR");
- const data=rows.filter(r=>!q||Object.values(r).join(" ").toLocaleLowerCase("pt-BR").includes(q));
- body.innerHTML=data.length?data.map(r=>"<tr><td><strong>"+esc(r.navio)+"</strong></td><td>"+esc(r.data)+"</td><td>"+esc(r.hora)+"</td><td>"+esc(r.porto)+"</td><td>"+esc(r.berco)+"</td><td class='status'>"+esc(r.situacao)+"</td></tr>").join(""):"<tr><td colspan='6' class='empty'>"+(rows.length?"Nenhuma manobra encontrada para o filtro.":"Nenhuma manobra disponível.")+"</td></tr>";
- meta.textContent=data.length+" de "+rows.length+" manobra(s)";
+  const q=filter.value.trim().toLocaleLowerCase("pt-BR"), t=normalize(tipo.value), s=normalize(situacao.value), p=normalize(porto.value);
+  const data=rows.filter(r=>{
+    const text=Object.values(r).join(" ").toLocaleLowerCase("pt-BR");
+    return (!q||text.includes(q)) && (!t||normalize(r.tipo)===t) && (!s||normalize(r.situacao)===s) && (!p||normalize(r.porto)===p);
+  });
+  body.innerHTML=data.length?data.map(r=>"<tr><td><strong>"+esc(r.navio)+"</strong></td><td>"+esc(r.data)+"</td><td>"+esc(r.hora)+"</td><td>"+esc(r.tipo)+"</td><td>"+esc(r.porto)+"</td><td>"+esc(r.berco)+"</td><td class='status'>"+esc(r.situacao)+"</td></tr>").join(""):"<tr><td colspan='7' class='empty'>"+(rows.length?"Nenhuma manobra encontrada com os filtros selecionados.":"Nenhuma manobra disponível.")+"</td></tr>";
+  meta.textContent=data.length+" de "+rows.length+" manobra(s)";
 }
 async function load(){
  error.style.display="none";meta.textContent="Atualizando...";
  try{
   const response=await fetch("manobras.json?t="+Date.now(),{cache:"no-store"});
   if(!response.ok)throw new Error("Arquivo de dados indisponível.");
-  const json=await response.json();rows=Array.isArray(json.manobras)?json.manobras:[];render();
+  const json=await response.json();rows=Array.isArray(json.manobras)?json.manobras:[];populatePorts();render();
   if(json.atualizado_em){const date=new Date(json.atualizado_em);if(!Number.isNaN(date.getTime()))meta.textContent="Atualizado "+date.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})+" • "+rows.length+" manobra(s)"}
- }catch(e){rows=[];body.innerHTML="<tr><td colspan='6' class='empty'>Não foi possível carregar as manobras.</td></tr>";error.textContent=e.message||"Erro ao carregar os dados.";error.style.display="block";meta.textContent="Erro ao atualizar"}
+ }catch(e){rows=[];body.innerHTML="<tr><td colspan='7' class='empty'>Não foi possível carregar as manobras.</td></tr>";error.textContent=e.message||"Erro ao carregar os dados.";error.style.display="block";meta.textContent="Erro ao atualizar"}
 }
-filter.addEventListener("input",render);document.getElementById("refresh").addEventListener("click",load);load();setInterval(load,300000);
+[filter,tipo,situacao,porto].forEach(el=>el.addEventListener("input",render));
+document.getElementById("refresh").addEventListener("click",load);
+load();setInterval(load,300000);
 </script>
 </body>
 </html>
