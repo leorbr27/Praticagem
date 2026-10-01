@@ -51,7 +51,8 @@ const $=id=>document.getElementById(id);
 let rows=[];
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toUpperCase();
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
-function statusClass(s){const v=norm(s);if(v==="MARCADA")return "status-marcada";if(v==="INICIADA")return "status-iniciada";if(v.includes("BARRA")&&v.includes("IMPEDIDA")||v==="IMPEDIDA")return "status-impedida";return "";}\nfunction preencherPortos(){
+function statusClass(s){const v=norm(s);if(v==="MARCADA")return "status-marcada";if(v==="INICIADA")return "status-iniciada";if(v.includes("BARRA")&&v.includes("IMPEDIDA")||v==="IMPEDIDA")return "status-impedida";return "";}
+function preencherPortos(){
  const atual=$("porto").value;
  const portos=[...new Set(rows.map(r=>r.porto).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
  $("porto").innerHTML='<option value="">Todos os portos</option>'+portos.map(p=>'<option value="'+esc(p)+'">'+esc(p)+'</option>').join("");
