@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Coleta automática das manobras previstas da Praticagem ES.
 import json,re,urllib.request
 from datetime import datetime
 from html.parser import HTMLParser
