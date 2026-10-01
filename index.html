@@ -75,7 +75,9 @@ async function carregar(){
   const json=await res.json(); rows=Array.isArray(json.manobras)?json.manobras:[];
   preencherPortos(); render();
   const d=json.atualizado_em?new Date(json.atualizado_em):null;
-  window.ultimaAtualizacao=(d&&!isNaN(d) ? d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}) : "—");\n  render();\n  $("rodape").textContent="Fonte: Praticagem Espírito Santo";
+  window.ultimaAtualizacao=(d&&!isNaN(d) ? d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}) : "—");
+  render();
+  $("rodape").textContent="Fonte: Praticagem Espírito Santo";
  }catch(e){
   rows=[];render();$("meta").textContent="Erro ao atualizar";$("rodape").textContent="Fonte: Praticagem Espírito Santo · Não foi possível atualizar";
  }
