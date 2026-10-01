@@ -29,7 +29,7 @@ footer{text-align:center;color:#74818c;font-size:11px;padding:12px 4px}
 <section class="filters">
 <input id="busca" type="search" placeholder="🔎 Navio ou berço" autocomplete="off">
 <select id="tipo"><option value="">Todos os tipos</option><option value="ENTRADA">Entrada</option><option value="SAIDA">Saída</option><option value="MANOBRA">Manobra</option></select>
-<select id="situacao"><option value="">Todas as situações</option><option value="PREVISTA">Prevista</option><option value="MARCADA">Marcada</option><option value="INICIADA">Iniciada</option><option value="CANCELADA">Cancelada</option></select>
+<select id="situacao"><option value="">Todas as situações</option><option value="PREVISTA">Prevista</option><option value="MARCADA">Marcada</option><option value="INICIADA">Iniciada</option><option value="IMPEDIDA">Barra impedida</option><option value="CANCELADA">Cancelada</option></select>
 <select id="porto"><option value="">Todos os portos</option></select>
 <button id="atualizar" type="button">Atualizar</button>
 </section>
@@ -45,7 +45,7 @@ const $=id=>document.getElementById(id);
 let rows=[];
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toUpperCase();
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
-function preencherPortos(){
+function statusClass(s){const v=norm(s);if(v==="MARCADA")return "status-marcada";if(v==="INICIADA")return "status-iniciada";if(v.includes("BARRA")&&v.includes("IMPEDIDA")||v==="IMPEDIDA")return "status-impedida";return "";}\nfunction preencherPortos(){
  const atual=$("porto").value;
  const portos=[...new Set(rows.map(r=>r.porto).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
  $("porto").innerHTML='<option value="">Todos os portos</option>'+portos.map(p=>'<option value="'+esc(p)+'">'+esc(p)+'</option>').join("");
@@ -57,7 +57,7 @@ function render(){
   const texto=norm(r.navio+" "+r.berco).toLowerCase();
   return (!q||texto.includes(q))&&(!t||norm(r.tipo)===t)&&(!s||norm(r.situacao)===s)&&(!p||norm(r.porto)===p);
  });
- $("tabela").innerHTML=data.length?data.map(r=>'<tr><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="7" class="empty">Nenhuma manobra encontrada.</td></tr>';
+ $("tabela").innerHTML=data.length?data.map(r=>'<tr class="'+statusClass(r.situacao)+'"><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="7" class="empty">Nenhuma manobra encontrada.</td></tr>';
  $("meta").textContent=data.length+" de "+rows.length+" manobra(s)";
 }
 async function carregar(){
