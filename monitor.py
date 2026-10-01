@@ -67,6 +67,9 @@ def fetch_source():
         headers={
             "User-Agent": "Mozilla/5.0 (compatible; PraticagemMonitor/2.0)",
             "Accept": "text/html,application/xhtml+xml",
+            "Accept-Encoding": "identity",
+            "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+            "Referer": SOURCE_PAGE_URL,
         },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
