@@ -34,6 +34,7 @@ def idx(header,names):
 def parse():
  req=urllib.request.Request(URL,headers={"User-Agent":"Mozilla/5.0 Praticagem ES"})
  with urllib.request.urlopen(req,timeout=30) as r:html=r.read().decode("utf-8","replace")
+ with open("debug-source.html","w",encoding="utf-8") as f:f.write(html)
  p=TableParser();p.feed(html);rows=[r for r in p.rows if r];h=header_row(rows);data=[]
  if h:
   start=rows.index(h)+1
