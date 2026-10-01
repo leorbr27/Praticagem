@@ -65,7 +65,7 @@ function render(){
   return (!q||texto.includes(q))&&(!t||norm(r.tipo)===t)&&(!s||norm(r.situacao)===s)&&(!p||norm(r.porto)===p);
  });
  $("tabela").innerHTML=data.length?data.map(r=>'<tr class="'+statusClass(r.situacao)+'"><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="7" class="empty">Nenhuma manobra encontrada.</td></tr>';
- $("meta").textContent=data.length+" de "+rows.length+" manobra(s) monitorada(s) · Última atualização: "+(window.ultimaAtualizacao||"—");
+ $("meta").innerHTML=data.length+" de "+rows.length+" manobra(s) monitorada(s)<br>Última atualização: "+(window.ultimaAtualizacao||"—");
 }
 async function carregar(){
  $("meta").textContent="Atualizando...";
