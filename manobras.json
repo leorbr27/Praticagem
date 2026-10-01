@@ -1,105 +1,18 @@
 {
-  "atualizado_em": "2026-10-01T08:58:17.658114-03:00",
+  "atualizado_em": "2026-10-01T09:14:40-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "STAR DALMATIA",
-      "data": "01/10/2026",
-      "hora": "10:00",
-      "tipo": "A31A2GO",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "UOT NEW YORK",
-      "data": "01/10/2026",
-      "hora": "19:00",
-      "tipo": "A21A2BC",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "01/10/2026",
-      "hora": "20:00",
-      "tipo": "A21A2BC",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BOW TRIUMPH",
-      "data": "01/10/2026",
-      "hora": "23:32",
-      "tipo": "A12B2TR",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LOG-IN DISCOVERY",
-      "data": "02/10/2026",
-      "hora": "06:06",
-      "tipo": "A33A2CC",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEAGEMS RUBI",
-      "data": "02/10/2026",
-      "hora": "13:00",
-      "tipo": "B22C2OX",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MACAW ARROW",
-      "data": "02/10/2026",
-      "hora": "15:00",
-      "tipo": "A31A2GO",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "COSCO SHIPPING FAN RONG",
-      "data": "03/10/2026",
-      "hora": "07:10",
-      "tipo": "A31A2GO",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "STAR LAGUNA",
-      "data": "04/10/2026",
-      "hora": "12:00",
-      "tipo": "A31A2GO",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "RB DYLAN",
-      "data": "04/10/2026",
-      "hora": "15:00",
-      "tipo": "A21A2BC",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "CHISE BULKER",
-      "data": "04/10/2026",
-      "hora": "16:00",
-      "tipo": "A31A2GO",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    }
+    {"navio":"STAR DALMATIA","data":"01/10/2026","hora":"10:00","tipo":"ENTRADA","porto":"RCH","berco":"RCH102","situacao":"MARCADA"},
+    {"navio":"UOT NEW YORK","data":"01/10/2026","hora":"19:00","tipo":"SAIDA","porto":"PRM","berco":"PRMPS3","situacao":"PREVISTA"},
+    {"navio":"PRIME STAR","data":"01/10/2026","hora":"20:00","tipo":"ENTRADA","porto":"PRM","berco":"PRMPS3","situacao":"PREVISTA"},
+    {"navio":"BOW TRIUMPH","data":"01/10/2026","hora":"23:32","tipo":"SAIDA","porto":"VIX","berco":"VIX207","situacao":"PREVISTA"},
+    {"navio":"LOG-IN DISCOVERY","data":"02/10/2026","hora":"06:06","tipo":"SAIDA","porto":"VIX","berco":"VIX204","situacao":"PREVISTA"},
+    {"navio":"SEAGEMS RUBI","data":"02/10/2026","hora":"13:00","tipo":"SAIDA","porto":"VIX","berco":"VIX906","situacao":"MARCADA"},
+    {"navio":"MACAW ARROW","data":"02/10/2026","hora":"15:00","tipo":"ENTRADA","porto":"RCH","berco":"RCH101","situacao":"PREVISTA"},
+    {"navio":"COSCO SHIPPING FAN RONG","data":"03/10/2026","hora":"07:10","tipo":"SAIDA","porto":"VIX","berco":"VIX203","situacao":"PREVISTA"},
+    {"navio":"JNS DRAGON","data":"03/10/2026","hora":"10:00","tipo":"MANOBRA","porto":"VIX","berco":"VIX202 / VIX203","situacao":"PREVISTA"},
+    {"navio":"STAR LAGUNA","data":"04/10/2026","hora":"12:00","tipo":"ENTRADA","porto":"RCH","berco":"RCH103","situacao":"PREVISTA"},
+    {"navio":"RB DYLAN","data":"04/10/2026","hora":"15:00","tipo":"SAIDA","porto":"PRM","berco":"PRMPS2","situacao":"PREVISTA"},
+    {"navio":"CHISE BULKER","data":"04/10/2026","hora":"16:00","tipo":"SAIDA","porto":"PRM","berco":"PRMPS1","situacao":"PREVISTA"}
   ]
 }
