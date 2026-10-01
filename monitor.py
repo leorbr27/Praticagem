@@ -39,6 +39,7 @@ def parse():
  if h:
   start=rows.index(h)+1
   ix={"navio":idx(h,("navio","nome","nome do navio")),"data":idx(h,("data",)),"hora":idx(h,("hora","horario","horário")),"porto":idx(h,("porto","terminal")),"berco":idx(h,("berco","ber","berço")),"situacao":idx(h,("situacao","situa","situação","status"))}
+  if ix["situacao"] is None: ix["situacao"]=13
   for row in rows[start:]:
    if len(row)<2:continue
    item={k:(row[i] if i is not None and i<len(row) else "") for k,i in ix.items()}
