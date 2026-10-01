@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Coleta as manobras previstas da Praticagem ES e mantém somente os berços monitorados."""
+import html
 import json
 import re
 import urllib.request
@@ -74,42 +75,44 @@ def fetch_source():
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         raw = response.read()
-        print("Resposta da fonte:", len(raw), "bytes")
-        print("Inicio hex:", raw[:120].hex())
         return raw.decode("utf-8", "replace")
 
 def parse():
-    parser = TableParser()
-    parser.feed(fetch_source())
-    rows = [row for row in parser.rows if row]
+    source = fetch_source()
 
+    # A fonte usa HTML/XHTML antigo. Extrair TR/TD por regex é mais tolerante
+    # que depender da estrutura do HTMLParser quando há células/BRs irregulares.
+    result = []
     date_pattern = re.compile(r"^\\d{2}/\\d{2}/\\d{4}$")
     time_pattern = re.compile(r"^\\d{2}:\\d{2}$")
-    result = []
 
-    for row in rows:
-        # Localiza a data em vez de depender de cabeçalho/colunas fixas.
+    for raw_row in re.findall(r"<tr\\b[^>]*>(.*?)</tr\\s*>", source, flags=re.I | re.S):
+        cells = []
+        for raw_cell in re.findall(r"<t[dh]\\b[^>]*>(.*?)</t[dh]\\s*>", raw_row, flags=re.I | re.S):
+            text_value = re.sub(r"<[^>]+>", " ", raw_cell)
+            text_value = html.unescape(text_value)
+            cells.append(" ".join(text_value.split()))
+
         date_index = next(
-            (i for i, value in enumerate(row) if date_pattern.match(value.strip())),
+            (i for i, value in enumerate(cells) if date_pattern.match(value)),
             None,
         )
-        if date_index is None or date_index + 4 >= len(row):
+        if date_index is None or date_index + 4 >= len(cells):
             continue
-        if not time_pattern.match(row[date_index + 1].strip()):
+        if not time_pattern.match(cells[date_index + 1]):
             continue
 
         item = {
-            "navio": row[0].strip(),
-            "data": row[date_index].strip(),
-            "hora": row[date_index + 1].strip(),
-            "tipo": row[date_index + 2].strip(),
-            "porto": row[date_index + 3].strip(),
-            "berco": row[date_index + 4].strip(),
-            "situacao": row[-1].strip(),
+            "navio": cells[0],
+            "data": cells[date_index],
+            "hora": cells[date_index + 1],
+            "tipo": cells[date_index + 2],
+            "porto": cells[date_index + 3],
+            "berco": cells[date_index + 4],
+            "situacao": cells[-1],
         }
-        if not item["navio"] or not item["berco"] or not item["situacao"]:
-            continue
-        result.append(item)
+        if item["navio"] and item["berco"] and item["situacao"]:
+            result.append(item)
 
     if not result:
         raise RuntimeError("A fonte foi acessada, mas nenhuma manobra foi encontrada.")
