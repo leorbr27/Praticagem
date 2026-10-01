@@ -73,7 +73,9 @@ def fetch_source():
         },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
-        return response.read().decode("utf-8", "replace")
+        raw = response.read()
+        print("Resposta da fonte:", len(raw), "bytes")
+        return raw.decode("utf-8", "replace")
 
 def parse():
     parser = TableParser()
