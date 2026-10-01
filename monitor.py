@@ -83,12 +83,12 @@ def parse():
     # A fonte usa HTML/XHTML antigo. Extrair TR/TD por regex é mais tolerante
     # que depender da estrutura do HTMLParser quando há células/BRs irregulares.
     result = []
-    date_pattern = re.compile(r"^\\d{2}/\\d{2}/\\d{4}$")
-    time_pattern = re.compile(r"^\\d{2}:\\d{2}$")
+    date_pattern = re.compile(r"^\d{2}/\d{2}/\d{4}$")
+    time_pattern = re.compile(r"^\d{2}:\d{2}$")
 
-    for raw_row in re.findall(r"<tr\\b[^>]*>(.*?)</tr\\s*>", source, flags=re.I | re.S):
+    for raw_row in re.findall(r"<tr\b[^>]*>(.*?)</tr\s*>", source, flags=re.I | re.S):
         cells = []
-        for raw_cell in re.findall(r"<t[dh]\\b[^>]*>(.*?)</t[dh]\\s*>", raw_row, flags=re.I | re.S):
+        for raw_cell in re.findall(r"<t[dh]\b[^>]*>(.*?)</t[dh]\s*>", raw_row, flags=re.I | re.S):
             text_value = re.sub(r"<[^>]+>", " ", raw_cell)
             text_value = html.unescape(text_value)
             cells.append(" ".join(text_value.split()))
