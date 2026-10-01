@@ -1,0 +1,206 @@
+{
+  "atualizado_em": "2026-10-01T08:28:39.396807-03:00",
+  "fonte": "https://www.praticagem.org.br/asp/previstas.asp",
+  "manobras": [
+    {
+      "navio": "",
+      "data": "01/10/2026",
+      "hora": "09:30",
+      "porto": "VIX",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "01/10/2026",
+      "hora": "10:00",
+      "porto": "RCH",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "01/10/2026",
+      "hora": "11:00",
+      "porto": "TUB",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "01/10/2026",
+      "hora": "11:40",
+      "porto": "TUB",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "01/10/2026",
+      "hora": "19:00",
+      "porto": "PRM",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "01/10/2026",
+      "hora": "20:00",
+      "porto": "PRM",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "01/10/2026",
+      "hora": "23:32",
+      "porto": "VIX",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "02:00",
+      "porto": "POU",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "03:00",
+      "porto": "POU",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "06:06",
+      "porto": "VIX",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "13:00",
+      "porto": "VIX",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "14:00",
+      "porto": "TUB",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "15:00",
+      "porto": "RCH",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "18:00",
+      "porto": "PRM",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "20:00",
+      "porto": "PRM",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "02/10/2026",
+      "hora": "23:00",
+      "porto": "PRM",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "03/10/2026",
+      "hora": "00:00",
+      "porto": "PRM",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "03/10/2026",
+      "hora": "06:00",
+      "porto": "ESA",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "03/10/2026",
+      "hora": "07:10",
+      "porto": "VIX",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "03/10/2026",
+      "hora": "10:00",
+      "porto": "VIX",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "04/10/2026",
+      "hora": "12:00",
+      "porto": "RCH",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "04/10/2026",
+      "hora": "15:00",
+      "porto": "PRM",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "04/10/2026",
+      "hora": "16:00",
+      "porto": "PRM",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "09/10/2026",
+      "hora": "02:00",
+      "porto": "TUB",
+      "berco": "",
+      "situacao": ""
+    },
+    {
+      "navio": "",
+      "data": "11/10/2026",
+      "hora": "19:00",
+      "porto": "TUB",
+      "berco": "",
+      "situacao": ""
+    }
+  ]
+}
