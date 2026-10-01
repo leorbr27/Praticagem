@@ -38,7 +38,7 @@ def parse():
  p=TableParser();p.feed(html);rows=[r for r in p.rows if r];h=header_row(rows);data=[]
  if h:
   start=rows.index(h)+1
-  ix={"navio":idx(h,("navio","nome do navio")),"data":idx(h,("data",)),"hora":idx(h,("hora","horario","horário")),"porto":idx(h,("porto","terminal")),"berco":idx(h,("berco","berço")),"situacao":idx(h,("situacao","situação","status"))}
+  ix={"navio":idx(h,("navio","nome","nome do navio")),"data":idx(h,("data",)),"hora":idx(h,("hora","horario","horário")),"porto":idx(h,("porto","terminal")),"berco":idx(h,("berco","ber","berço")),"situacao":idx(h,("situacao","situa","situação","status"))}
   for row in rows[start:]:
    if len(row)<2:continue
    item={k:(row[i] if i is not None and i<len(row) else "") for k,i in ix.items()}
