@@ -8,7 +8,8 @@
       "hora": "10:00",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "MARCADA"
+      "situacao": "MARCADA",
+      "tipo": ""
     },
     {
       "navio": "UOT NEW YORK",
@@ -16,7 +17,8 @@
       "hora": "19:00",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     },
     {
       "navio": "PRIME STAR",
@@ -24,7 +26,8 @@
       "hora": "20:00",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     },
     {
       "navio": "BOW TRIUMPH",
@@ -32,7 +35,8 @@
       "hora": "23:32",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -40,7 +44,8 @@
       "hora": "06:06",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     },
     {
       "navio": "SEAGEMS RUBI",
@@ -48,7 +53,8 @@
       "hora": "13:00",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": "MARCADA"
+      "situacao": "MARCADA",
+      "tipo": ""
     },
     {
       "navio": "MACAW ARROW",
@@ -56,7 +62,8 @@
       "hora": "15:00",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     },
     {
       "navio": "COSCO SHIPPING FAN RONG",
@@ -64,7 +71,8 @@
       "hora": "07:10",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     },
     {
       "navio": "STAR LAGUNA",
@@ -72,7 +80,8 @@
       "hora": "12:00",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     },
     {
       "navio": "RB DYLAN",
@@ -80,7 +89,8 @@
       "hora": "15:00",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     },
     {
       "navio": "CHISE BULKER",
@@ -88,7 +98,8 @@
       "hora": "16:00",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "PREVISTA",
+      "tipo": ""
     }
   ]
 }
