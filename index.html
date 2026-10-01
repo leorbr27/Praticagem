@@ -14,9 +14,14 @@ footer{width:100%;padding:14px 10px;text-align:center;font-size:12px;border-top:
 <footer id="ultima-atualizacao">Última atualização do projeto: carregando...</footer>
 <script>
 const footer=document.getElementById("ultima-atualizacao");
-const atualizadoEm="2026-10-01T12:00:49-03:00";
-const data=new Date(atualizadoEm);
+const repo="leorbr27/Praticagem";
+fetch("https://api.github.com/repos/"+repo+"/commits?per_page=1",{cache:"no-store"})
+.then(r=>r.ok?r.json():Promise.reject())
+.then(c=>{
+const data=new Date(c[0].commit.author.date);
 footer.textContent="Última atualização do projeto: "+data.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"});
+})
+.catch(()=>{footer.textContent="Última atualização do projeto: indisponível";});
 </script>
 </body>
 </html>
