@@ -83,7 +83,7 @@ async function carregar(){
  }
 }
 ["busca","tipo","situacao","porto"].forEach(id=>$(id).addEventListener("input",render));
-$("atualizar").addEventListener("click",carregar);
+$("atualizar").addEventListener("click",()=>window.location.reload());
 carregar();setInterval(carregar,300000);
 </script>
 </body>
