@@ -18,6 +18,12 @@ button{background:#0b1f33;color:#fff;border:0;font-weight:700}
 table{width:100%;border-collapse:collapse;min-width:720px}
 th,td{text-align:left;padding:11px 10px;border-bottom:1px solid #edf0f2;white-space:nowrap;font-size:14px}
 th{background:#eef3f7;color:#344454;font-size:11px;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0}
+tr.status-marcada td{background:#dcfce7}
+tr.status-iniciada td{background:#fef3c7}
+tr.status-impedida td{background:#fee2e2}
+tr.status-marcada:hover td{background:#bbf7d0}
+tr.status-iniciada:hover td{background:#fde68a}
+tr.status-impedida:hover td{background:#fecaca}
 .empty{text-align:center;padding:32px;color:#687684}
 footer{text-align:center;color:#74818c;font-size:11px;padding:12px 4px}
 @media(max-width:720px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.filters button{width:100%}}
