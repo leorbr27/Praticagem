@@ -72,56 +72,34 @@ def fetch_source():
     with urllib.request.urlopen(request, timeout=30) as response:
         return response.read().decode("utf-8", "replace")
 
-def find_data_header(rows):
-    for row in rows:
-        words = {normalize(cell) for cell in row}
-        if {"nome", "data", "hora", "manobra", "porto", "berco"}.issubset(words):
-            return row
-    return None
-
-def find_index(header, names):
-    for index, value in enumerate(header):
-        normalized = normalize(value)
-        if any(name in normalized for name in names):
-            return index
-    return None
-
 def parse():
     parser = TableParser()
     parser.feed(fetch_source())
     rows = [row for row in parser.rows if row]
-    header = find_data_header(rows)
-    if header is None:
-        raise RuntimeError("Não foi possível localizar a tabela de manobras na fonte.")
 
-    start = rows.index(header) + 1
-
-    # Estrutura atual da tabela: Nome(0), Tipo(1), ..., Data(6), Hora(7),
-    # Manobra(8), Porto(9), Berço(10), ..., Situação(13).
-    indexes = {
-        "navio": find_index(header, ("nome", "navio")),
-        "data": find_index(header, ("data",)),
-        "hora": find_index(header, ("hora", "horario")),
-        "tipo": 8,
-        "porto": 9,
-        "berco": 10,
-        "situacao": 13,
-    }
-    fallbacks = {
-        "navio": 0, "data": 6, "hora": 7,
-        "tipo": 8, "porto": 9, "berco": 10, "situacao": 13,
-    }
-    for key, fallback in fallbacks.items():
-        if indexes[key] is None:
-            indexes[key] = fallback
-
+    # A tabela da fonte tem os campos úteis nestas posições:
+    # Nome 0 | Tipo do navio 1 | ... | Data 6 | Hora 7 |
+    # Manobra 8 | Porto 9 | Berço 10 | ... | Situação 13.
     result = []
-    for row in rows[start:]:
-        if len(row) <= max(indexes.values()):
+    date_pattern = re.compile(r"^\\d{2}/\\d{2}/\\d{4}$")
+    time_pattern = re.compile(r"^\\d{2}:\\d{2}$")
+
+    for row in rows:
+        if len(row) < 14:
             continue
+        if not date_pattern.match(row[6].strip()):
+            continue
+        if not time_pattern.match(row[7].strip()):
+            continue
+
         item = {
-            key: row[indexes[key]].strip()
-            for key in ("navio", "data", "hora", "tipo", "porto", "berco", "situacao")
+            "navio": row[0].strip(),
+            "data": row[6].strip(),
+            "hora": row[7].strip(),
+            "tipo": row[8].strip(),
+            "porto": row[9].strip(),
+            "berco": row[10].strip(),
+            "situacao": row[13].strip(),
         }
         if not item["navio"] or not item["berco"]:
             continue
