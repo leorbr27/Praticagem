@@ -63,6 +63,7 @@ def parse():
         "navio":find_index(header,("navio","nome")),
         "data":find_index(header,("data",)),
         "hora":find_index(header,("hora","horario")),
+        "tipo":find_index(header,("tipo","movimento","operacao","operação","entrada","saida","saída","manobra")),
         "porto":find_index(header,("porto","terminal")),
         "berco":find_index(header,("berco","ber")),
         "situacao":find_index(header,("situacao","situa","status"))
@@ -71,6 +72,7 @@ def parse():
     result=[]
     for row in rows[start:]:
         item={key:row[index] if index is not None and index<len(row) else "" for key,index in indexes.items()}
+        if "tipo" not in item: item["tipo"]=""
         if not item["navio"] or not item["berco"]: continue
         result.append(item)
     if not result: raise RuntimeError("A fonte foi acessada, mas nenhuma manobra foi encontrada.")
@@ -81,7 +83,7 @@ def monitored_berco(berco):
     return value in MONITORED_BERCOS or value.startswith("RCH")
 
 def clean_item(item):
-    return {key:item.get(key,"").strip() for key in ("navio","data","hora","porto","berco","situacao")}
+    return {key:item.get(key,"").strip() for key in ("navio","data","hora","tipo","porto","berco","situacao")}
 
 def main():
     all_rows=parse()
