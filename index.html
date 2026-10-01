@@ -1,111 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#0b1f33">
-<title>Monitor de Manobras | Praticagem ES</title>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b1f33"><title>Manobras Previstas | Praticagem ES</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#f3f6f9;color:#17212b}.wrap{max-width:560px;margin:auto;padding:18px 16px 40px}.header{background:#0b1f33;color:#fff;border-radius:18px;padding:22px 20px;margin-bottom:15px}h1{font-size:24px;margin:0 0 6px}.sub{margin:0;color:#cbd7e2;font-size:14px}.card{background:#fff;border-radius:18px;padding:18px;margin-bottom:14px;box-shadow:0 4px 18px #0000000d}label{display:block;font-size:14px;font-weight:700;margin:0 0 7px}input{width:100%;padding:13px 12px;border:1px solid #ccd5dd;border-radius:10px;font-size:16px;margin-bottom:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}button{width:100%;border:0;border-radius:11px;padding:14px;font-size:16px;font-weight:700;cursor:pointer}.primary{background:#0b1f33;color:white}.secondary{background:#e9eef3;color:#17212b;margin-top:9px}.status{display:flex;align-items:center;gap:9px;font-weight:700}.dot{width:10px;height:10px;border-radius:50%;background:#9aa7b3}.dot.active{background:#18a558}.info{font-size:13px;color:#687684;line-height:1.5}.result{display:none}.result.show{display:block}.row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #edf0f2;font-size:14px}.row:last-child{border:0}.value{font-weight:700;text-align:right}.notice{font-size:13px;background:#fff7df;border:1px solid #f0d98a;padding:12px;border-radius:10px;line-height:1.45;margin-top:12px}.small{font-size:12px;color:#74818c;line-height:1.45}.link{display:block;text-align:center;margin-top:10px;color:#0b1f33;font-weight:700;text-decoration:none}.topic{font-family:monospace;font-size:13px;word-break:break-all;background:#f1f4f7;padding:10px;border-radius:8px}.refresh{font-size:12px;color:#74818c;margin-top:8px}
-
-.last-update{width:100%;text-align:center;font-size:10px;line-height:1.3;color:#8a8f98;margin:18px 0 10px;padding:0 12px;font-weight:400;}
-</style>
-</head>
-<body>
-<main class="wrap">
-<section class="header"><h1>🚢 Monitor de Manobras</h1><p class="sub">Acompanhe um navio na programação da Praticagem Espírito Santo.</p></section>
-
-<section class="card">
-<label for="ship">Nome do navio</label><input id="ship" placeholder="Ex.: Babitonga Bay" autocomplete="off">
-<div class="grid"><div><label for="date">Data</label><input id="date" type="date"></div><div><label for="time">Horário</label><input id="time" type="time"></div></div>
-<label for="topic">Código de notificação</label>
-<input id="topic" placeholder="Será criado automaticamente">
-<p class="small">Esse código é usado para enviar o alerta ao aplicativo ntfy no iPhone. Não compartilhe o código.</p>
-<button class="primary" id="start">Criar monitoramento</button>
-<button class="secondary" id="stop">Parar monitoramento</button>
-</section>
-
-<section class="card">
-<div class="status"><span class="dot" id="dot"></span><span id="statusText">Nenhum monitoramento ativo</span></div>
-<p class="info" id="lastCheck">O servidor consulta a programação aproximadamente uma vez por hora.</p>
-<p class="refresh" id="refresh">Última consulta: —</p>
-</section>
-
-<section class="card result" id="result">
-<div class="row"><span>Navio</span><span class="value" id="rShip">—</span></div>
-<div class="row"><span>Data</span><span class="value" id="rDate">—</span></div>
-<div class="row"><span>Horário</span><span class="value" id="rTime">—</span></div>
-<div class="row"><span>Status na Praticagem</span><span class="value" id="rStatus">Aguardando</span></div>
-<div class="row"><span>Alerta</span><span class="value" id="rAlarm">—</span></div>
-<div class="notice">Quando a Praticagem informar <strong>INICIADA</strong>, o sistema aguarda completar <strong>1 hora</strong> desde o início para enviar a notificação.</div>
-</section>
-
-<section class="card">
-<strong>📱 Notificação no iPhone</strong>
-<p class="small">Instale o aplicativo ntfy no iPhone e assine o tópico abaixo. O monitor usa o serviço ntfy para entregar a notificação.</p>
-<div class="topic" id="topicView">—</div>
-<a class="link" href="https://ntfy.sh/app" target="_blank" rel="noopener">Abrir ntfy</a>
-</section>
-
-<p class="small" style="text-align:center">Fonte dos dados: Praticagem Espírito Santo.</p>
-</main>
+*{box-sizing:border-box}body{margin:0;background:#f3f6f9;color:#17212b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.wrap{max-width:1200px;margin:auto;padding:16px}.header{background:#0b1f33;color:#fff;border-radius:18px;padding:20px;margin-bottom:14px}h1{margin:0 0 5px;font-size:24px}.sub{margin:0;color:#cbd7e2;font-size:14px}.toolbar{background:#fff;border-radius:16px;padding:12px;margin-bottom:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;box-shadow:0 3px 15px #0000000b}input,button{font:inherit}input{flex:1;min-width:220px;padding:12px;border:1px solid #ccd5dd;border-radius:10px}button{border:0;border-radius:10px;padding:12px 16px;background:#0b1f33;color:#fff;font-weight:700}.meta{font-size:12px;color:#687684;margin-left:auto}.table-wrap{background:#fff;border-radius:16px;overflow:auto;box-shadow:0 3px 15px #0000000b}table{width:100%;border-collapse:collapse;min-width:760px}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid #edf0f2;font-size:14px;white-space:nowrap}th{background:#eef3f7;color:#344454;font-size:12px;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0}tbody tr:hover{background:#f8fafc}.status{font-weight:700}.empty{text-align:center;padding:35px;color:#687684}.source{font-size:12px;color:#74818c;text-align:center;margin:14px}.error{color:#9b2c2c;background:#fff0f0;border:1px solid #f0caca;border-radius:10px;padding:12px;margin-bottom:14px;display:none}@media(max-width:600px){.wrap{padding:10px}.header{padding:18px}.toolbar{align-items:stretch}.meta{width:100%;margin-left:0}h1{font-size:21px}}
+</style></head>
+<body><main class="wrap"><section class="header"><h1>🚢 Manobras Previstas</h1><p class="sub">Programação de manobras da Praticagem Espírito Santo</p></section>
+<section class="toolbar"><input id="filter" placeholder="🔎 Filtrar por navio, porto, berço ou situação"><button id="refresh">Atualizar</button><span class="meta" id="meta">Carregando...</span></section>
+<div class="error" id="error"></div><section class="table-wrap"><table><thead><tr><th>Navio</th><th>Data</th><th>Hora</th><th>Porto</th><th>Berço</th><th>Situação</th></tr></thead><tbody id="body"><tr><td colspan="6" class="empty">Carregando manobras...</td></tr></tbody></table></section>
+<p class="source">Fonte: <a href="https://www.praticagem.org.br/manobras-previstas.html" target="_blank" rel="noopener">Praticagem Espírito Santo</a>.</p></main>
 <script>
-const $=id=>document.getElementById(id);
-const ship=$("ship"),date=$("date"),time=$("time"),topic=$("topic"),topicView=$("topicView");
-const STATE_URL="https://raw.githubusercontent.com/leorbr27/Praticagem/main/monitor-state.json";
-function makeTopic(){return "praticagem-"+crypto.randomUUID().replaceAll("-","").slice(0,24)}
-function fmt(d){return d?d.split("-").reverse().join("/"):"—"}
-function state(){return JSON.parse(localStorage.getItem("praticagemMonitor")||"null")}
-function render(s){
- if(!s)return;
- ship.value=s.ship||"";date.value=s.date||"";time.value=s.time||"";topic.value=s.topic||"";topicView.textContent=s.topic||"—";
- $("dot").classList.add("active");$("statusText").textContent="Monitoramento configurado";
- $("result").classList.add("show");$("rShip").textContent=s.ship||"—";$("rDate").textContent=fmt(s.date);$("rTime").textContent=s.time||"—";
-}
-async function refreshServerState(){
- try{
-  const r=await fetch(STATE_URL+"?t="+Date.now(),{cache:"no-store"});
-  if(!r.ok)return;
-  const s=await r.json();
-  const local=state();
-  if(local && (!s.ship || s.ship.toLowerCase()===local.ship.toLowerCase())){
-   $("rStatus").textContent=s.status||"—";
-   $("rAlarm").textContent=s.alarm_at?new Date(s.alarm_at).toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}):"Aguardando INICIADA";
-   $("refresh").textContent="Última consulta: "+(s.checked_at?new Date(s.checked_at).toLocaleString("pt-BR"):"—");
-  }
- }catch(e){}
-}
-$("start").onclick=()=>{
- if(!ship.value.trim()||!date.value||!time.value){alert("Informe o navio, a data e o horário.");return}
- if(!topic.value.trim()) topic.value=makeTopic();
- const s={ship:ship.value.trim(),date:date.value,time:time.value,topic:topic.value.trim()};
- localStorage.setItem("praticagemMonitor",JSON.stringify(s));render(s);
- const title=encodeURIComponent("MONITORAR: "+s.ship);
- const body=encodeURIComponent("Navio: "+s.ship+"\nData: "+s.date+"\nHora: "+s.time+"\nTopic: "+s.topic+"\n\nMonitor criado pelo site Praticagem.");
- window.location.href="https://github.com/leorbr27/Praticagem/issues/new?title="+title+"&body="+body;
-};
-$("stop").onclick=()=>{localStorage.removeItem("praticagemMonitor");location.reload()};
-const s=state();if(s)render(s);refreshServerState();setInterval(refreshServerState,60000);
-</script>
-<div class="last-update" aria-label="Última atualização"><span id="lastUpdate">Última atualização: carregando...</span></div>
-<script>
-(async()=>{
-  const el=document.getElementById("lastUpdate");
-  try{
-    const response=await fetch("https://api.github.com/repos/leorbr27/praticagem/commits?per_page=1");
-    if(!response.ok) throw new Error("GitHub API");
-    const commits=await response.json();
-    const iso=commits?.[0]?.commit?.committer?.date;
-    if(!iso) throw new Error("Commit não encontrado");
-    const date=new Date(iso);
-    const parts=new Intl.DateTimeFormat("pt-BR",{timeZone:"America/Sao_Paulo",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(date);
-    const get=t=>parts.find(p=>p.type===t)?.value||"";
-    el.textContent="Última atualização: "+get("day")+"/"+get("month")+"/"+get("year")+", "+get("hour")+":"+get("minute");
-  }catch(e){
-    console.error("Não foi possível obter o último commit do GitHub:",e);
-    el.textContent="Última atualização: indisponível";
-  }
-})();
-</script>
-</body>
-</html>
+const DATA_URL="manobras.json",body=document.getElementById("body"),filter=document.getElementById("filter"),meta=document.getElementById("meta"),error=document.getElementById("error");let rows=[];
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+function render(){const q=filter.value.trim().toLocaleLowerCase("pt-BR");const data=rows.filter(r=>!q||Object.values(r).join(" ").toLocaleLowerCase("pt-BR").includes(q));body.innerHTML=data.length?data.map(r=>"<tr><td><strong>"+esc(r.navio)+"</strong></td><td>"+esc(r.data)+"</td><td>"+esc(r.hora)+"</td><td>"+esc(r.porto)+"</td><td>"+esc(r.berco)+"</td><td class='status'>"+esc(r.situacao)+"</td></tr>").join(""):"<tr><td colspan='6' class='empty'>"+(rows.length?"Nenhuma manobra encontrada para o filtro.":"Nenhuma manobra disponível.")+"</td></tr>";meta.textContent=data.length+" de "+rows.length+" manobra(s)"}
+async function load(){error.style.display="none";meta.textContent="Atualizando...";try{const r=await fetch(DATA_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("Arquivo de dados indisponível.");const j=await r.json();rows=Array.isArray(j.manobras)?j.manobras:[];render();const d=j.atualizado_em?new Date(j.atualizado_em):null;meta.textContent=(d&&!isNaN(d)?"Atualizado "+d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})+" • ":"")+rows.length+" manobra(s)"}catch(e){body.innerHTML="<tr><td colspan='6' class='empty'>Não foi possível carregar as manobras.</td></tr>";error.textContent=e.message;error.style.display="block";meta.textContent="Erro ao atualizar"}}
+filter.addEventListener("input",render);document.getElementById("refresh").onclick=load;load();setInterval(load,300000);
+</script></body></html>
