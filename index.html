@@ -2,26 +2,80 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Praticagem ES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manobras Previstas | Praticagem ES</title>
 <style>
-html,body{margin:0;width:100%;height:100%;background:#fff}
-body{display:flex;align-items:flex-end;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#687684}
-footer{width:100%;padding:14px 10px;text-align:center;font-size:12px;border-top:1px solid #e5e7eb;box-sizing:border-box}
+*{box-sizing:border-box}
+body{margin:0;background:#f3f6f9;color:#17212b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.wrap{max-width:1200px;margin:auto;padding:12px}
+header{background:#0b1f33;color:#fff;border-radius:16px;padding:18px;margin-bottom:12px}
+h1{margin:0 0 4px;font-size:22px}.sub{margin:0;color:#cbd7e2;font-size:13px}
+.filters{background:#fff;border-radius:14px;padding:10px;margin-bottom:12px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr auto;gap:8px;box-shadow:0 2px 12px #0000000a}
+input,select,button{font:inherit;min-height:42px;border-radius:10px;border:1px solid #ccd5dd;padding:9px 11px}
+button{background:#0b1f33;color:#fff;border:0;font-weight:700}
+.meta{font-size:12px;color:#687684;margin:9px 2px}
+.table-wrap{background:#fff;border-radius:14px;overflow:auto;box-shadow:0 2px 12px #0000000a}
+table{width:100%;border-collapse:collapse;min-width:720px}
+th,td{text-align:left;padding:11px 10px;border-bottom:1px solid #edf0f2;white-space:nowrap;font-size:14px}
+th{background:#eef3f7;color:#344454;font-size:11px;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0}
+.empty{text-align:center;padding:32px;color:#687684}
+footer{text-align:center;color:#74818c;font-size:11px;padding:12px 4px}
+@media(max-width:720px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.filters button{width:100%}}
 </style>
 </head>
 <body>
-<footer id="ultima-atualizacao">Última atualização do projeto: carregando...</footer>
+<main class="wrap">
+<header><h1>🚢 Manobras Previstas</h1><p class="sub">Praticagem Espírito Santo · berços monitorados</p></header>
+<section class="filters">
+<input id="busca" type="search" placeholder="🔎 Navio ou berço" autocomplete="off">
+<select id="tipo"><option value="">Todos os tipos</option><option value="ENTRADA">Entrada</option><option value="SAIDA">Saída</option><option value="MANOBRA">Manobra</option></select>
+<select id="situacao"><option value="">Todas as situações</option><option value="PREVISTA">Prevista</option><option value="MARCADA">Marcada</option><option value="INICIADA">Iniciada</option><option value="CANCELADA">Cancelada</option></select>
+<select id="porto"><option value="">Todos os portos</option></select>
+<button id="atualizar" type="button">Atualizar</button>
+</section>
+<div class="meta" id="meta">Carregando...</div>
+<section class="table-wrap"><table>
+<thead><tr><th>Nome do navio</th><th>Data</th><th>Hora</th><th>Tipo</th><th>Porto</th><th>Berço</th><th>Situação</th></tr></thead>
+<tbody id="tabela"><tr><td colspan="7" class="empty">Carregando...</td></tr></tbody>
+</table></section>
+<footer id="rodape">Fonte: Praticagem Espírito Santo · Última atualização: —</footer>
+</main>
 <script>
-const footer=document.getElementById("ultima-atualizacao");
-const repo="leorbr27/Praticagem";
-fetch("https://api.github.com/repos/"+repo+"/commits?per_page=1",{cache:"no-store"})
-.then(r=>r.ok?r.json():Promise.reject())
-.then(c=>{
-const data=new Date(c[0].commit.author.date);
-footer.textContent="Última atualização do projeto: "+data.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"});
-})
-.catch(()=>{footer.textContent="Última atualização do projeto: indisponível";});
+const $=id=>document.getElementById(id);
+let rows=[];
+const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toUpperCase();
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+function preencherPortos(){
+ const atual=$("porto").value;
+ const portos=[...new Set(rows.map(r=>r.porto).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+ $("porto").innerHTML='<option value="">Todos os portos</option>'+portos.map(p=>'<option value="'+esc(p)+'">'+esc(p)+'</option>').join("");
+ if(portos.includes(atual))$("porto").value=atual;
+}
+function render(){
+ const q=norm($("busca").value).toLowerCase(),t=norm($("tipo").value),s=norm($("situacao").value),p=norm($("porto").value);
+ const data=rows.filter(r=>{
+  const texto=norm(r.navio+" "+r.berco).toLowerCase();
+  return (!q||texto.includes(q))&&(!t||norm(r.tipo)===t)&&(!s||norm(r.situacao)===s)&&(!p||norm(r.porto)===p);
+ });
+ $("tabela").innerHTML=data.length?data.map(r=>'<tr><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="7" class="empty">Nenhuma manobra encontrada.</td></tr>';
+ $("meta").textContent=data.length+" de "+rows.length+" manobra(s)";
+}
+async function carregar(){
+ $("meta").textContent="Atualizando...";
+ try{
+  const res=await fetch("manobras.json?t="+Date.now(),{cache:"no-store"});
+  if(!res.ok)throw new Error();
+  const json=await res.json(); rows=Array.isArray(json.manobras)?json.manobras:[];
+  preencherPortos(); render();
+  const d=json.atualizado_em?new Date(json.atualizado_em):null;
+  $("rodape").textContent="Fonte: Praticagem Espírito Santo · Última atualização: "+(d&&!isNaN(d) ? d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}) : "—");
+ }catch(e){
+  rows=[];render();$("meta").textContent="Erro ao atualizar";$("rodape").textContent="Fonte: Praticagem Espírito Santo · Não foi possível atualizar";
+ }
+}
+["busca","tipo","situacao","porto"].forEach(id=>$(id).addEventListener("input",render));
+$("atualizar").addEventListener("click",carregar);
+carregar();setInterval(carregar,300000);
 </script>
 </body>
 </html>
