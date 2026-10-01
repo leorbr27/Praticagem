@@ -1,205 +1,205 @@
 {
-  "atualizado_em": "2026-10-01T08:29:39.633355-03:00",
+  "atualizado_em": "2026-10-01T08:30:08.894505-03:00",
   "fonte": "https://www.praticagem.org.br/asp/previstas.asp",
   "manobras": [
     {
-      "navio": "",
+      "navio": "SKANDI BUZIOS",
       "data": "01/10/2026",
       "hora": "09:30",
       "porto": "VIX",
-      "berco": "",
+      "berco": "VIX103",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "STAR DALMATIA",
       "data": "01/10/2026",
       "hora": "10:00",
       "porto": "RCH",
-      "berco": "",
+      "berco": "RCH102",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "VIDYUT",
       "data": "01/10/2026",
       "hora": "11:00",
       "porto": "TUB",
-      "berco": "",
+      "berco": "TUBP02",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "ORE ZHOUSHAN",
       "data": "01/10/2026",
       "hora": "11:40",
       "porto": "TUB",
-      "berco": "",
+      "berco": "TUBP02",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "UOT NEW YORK",
       "data": "01/10/2026",
       "hora": "19:00",
       "porto": "PRM",
-      "berco": "",
+      "berco": "PRMPS3",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "PRIME STAR",
       "data": "01/10/2026",
       "hora": "20:00",
       "porto": "PRM",
-      "berco": "",
+      "berco": "PRMPS3",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "BOW TRIUMPH",
       "data": "01/10/2026",
       "hora": "23:32",
       "porto": "VIX",
-      "berco": "",
+      "berco": "VIX207",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "ROBERT OLDENDORFF",
       "data": "02/10/2026",
       "hora": "02:00",
       "porto": "POU",
-      "berco": "",
+      "berco": "POUPLW",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "NAVIOS STELLAR",
       "data": "02/10/2026",
       "hora": "03:00",
       "porto": "POU",
-      "berco": "",
+      "berco": "POUPLW",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "LOG-IN DISCOVERY",
       "data": "02/10/2026",
       "hora": "06:06",
       "porto": "VIX",
-      "berco": "",
+      "berco": "VIX204",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "SEAGEMS RUBI",
       "data": "02/10/2026",
       "hora": "13:00",
       "porto": "VIX",
-      "berco": "",
+      "berco": "VIX906",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "GAVI C",
       "data": "02/10/2026",
       "hora": "14:00",
       "porto": "TUB",
-      "berco": "",
+      "berco": "TUBTGL",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "MACAW ARROW",
       "data": "02/10/2026",
       "hora": "15:00",
       "porto": "RCH",
-      "berco": "",
+      "berco": "RCH101",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "PANTHER MAX",
       "data": "02/10/2026",
       "hora": "18:00",
       "porto": "PRM",
-      "berco": "",
+      "berco": "PRMCV1",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "EMERALD DAISHAN",
       "data": "02/10/2026",
       "hora": "20:00",
       "porto": "PRM",
-      "berco": "",
+      "berco": "PRMCV1",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "MAGNA GRAECIA",
       "data": "02/10/2026",
       "hora": "23:00",
       "porto": "PRM",
-      "berco": "",
+      "berco": "PRMCV2",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "HONG HING",
       "data": "03/10/2026",
       "hora": "00:00",
       "porto": "PRM",
-      "berco": "",
+      "berco": "PRMCV2",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "VENUS",
       "data": "03/10/2026",
       "hora": "06:00",
       "porto": "ESA",
-      "berco": "",
+      "berco": "ESA003",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "COSCO SHIPPING FAN RONG",
       "data": "03/10/2026",
       "hora": "07:10",
       "porto": "VIX",
-      "berco": "",
+      "berco": "VIX203",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "JNS DRAGON",
       "data": "03/10/2026",
       "hora": "10:00",
       "porto": "VIX",
-      "berco": "",
+      "berco": "VIX202 VIX203",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "STAR LAGUNA",
       "data": "04/10/2026",
       "hora": "12:00",
       "porto": "RCH",
-      "berco": "",
+      "berco": "RCH103",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "RB DYLAN",
       "data": "04/10/2026",
       "hora": "15:00",
       "porto": "PRM",
-      "berco": "",
+      "berco": "PRMPS2",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "CHISE BULKER",
       "data": "04/10/2026",
       "hora": "16:00",
       "porto": "PRM",
-      "berco": "",
+      "berco": "PRMPS1",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "GEORGE ISLAND",
       "data": "09/10/2026",
       "hora": "02:00",
       "porto": "TUB",
-      "berco": "",
+      "berco": "TUBP1N",
       "situacao": ""
     },
     {
-      "navio": "",
+      "navio": "ECO DIAGON ALLEY",
       "data": "11/10/2026",
       "hora": "19:00",
       "porto": "TUB",
-      "berco": "",
+      "berco": "TUBP1S",
       "situacao": ""
     }
   ]
