@@ -1,7 +1,16 @@
 {
-  "atualizado_em": "2026-10-01T11:43:31.632815-03:00",
+  "atualizado_em": "2026-10-01T12:25:54.394447-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
+    {
+      "navio": "VORIAS",
+      "data": "02/10/2026",
+      "hora": "00:32",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
     {
       "navio": "UOT NEW YORK",
       "data": "02/10/2026",
