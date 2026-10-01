@@ -83,7 +83,22 @@ async function carregar(){
  }
 }
 ["busca","tipo","situacao","porto"].forEach(id=>$(id).addEventListener("input",render));
-$("atualizar").addEventListener("click",()=>window.location.reload());
+$("atualizar").addEventListener("click",async()=>{
+ const botao=$("atualizar");
+ botao.disabled=true;
+ botao.textContent="Consultando...";
+ try{
+  const res=await fetch("https://www.praticagem.org.br/asp/previstas.asp?atualizar="+Date.now(),{cache:"no-store",mode:"cors"});
+  if(!res.ok)throw new Error("Fonte indisponível");
+  const texto=await res.text();
+  if(!texto.trim())throw new Error("Resposta vazia");
+  window.location.reload();
+ }catch(e){
+  alert("Não foi possível consultar diretamente a Praticagem pelo navegador. O monitor automático continuará funcionando a cada 5 minutos.");
+  botao.disabled=false;
+  botao.textContent="Atualizar";
+ }
+});
 carregar();setInterval(carregar,300000);
 </script>
 </body>
