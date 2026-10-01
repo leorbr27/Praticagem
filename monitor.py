@@ -102,14 +102,14 @@ def parse():
         "navio": find_index(header, ("nome", "navio")),
         "data": find_index(header, ("data",)),
         "hora": find_index(header, ("hora", "horario")),
-        "tipo": find_index(header, ("manobra", "movimento", "operacao")),
-        "porto": find_index(header, ("porto", "terminal")),
-        "berco": find_index(header, ("berco",)),
-        "situacao": find_index(header, ("situacao", "status")),
+        "tipo": 8,
+        "porto": 9,
+        "berco": 10,
+        "situacao": 13,
     }
     fallbacks = {
-        "navio": 0, "data": 6, "hora": 7, "tipo": 8,
-        "porto": 9, "berco": 10, "situacao": 13,
+        "navio": 0, "data": 6, "hora": 7,
+        "tipo": 8, "porto": 9, "berco": 10, "situacao": 13,
     }
     for key, fallback in fallbacks.items():
         if indexes[key] is None:
@@ -132,7 +132,8 @@ def parse():
     return result
 
 def monitored_berco(berco):
-    return berco.strip().upper() in MONITORED_BERCOS
+    tokens = re.findall(r"[A-Za-z0-9]+", berco.upper())
+    return any(token in MONITORED_BERCOS for token in tokens)
 
 def main():
     all_rows = parse()
