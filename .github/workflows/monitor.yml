@@ -1,4 +1,5 @@
 name: Atualizar manobras previstas
+# Execução automática: a cada 5 minutos
 
 on:
   schedule:
