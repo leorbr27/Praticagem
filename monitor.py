@@ -49,8 +49,13 @@ def parse():
   for row in rows:
    if len(row)>=6:data.append({"navio":row[0],"data":row[1],"hora":row[2],"porto":row[3],"berco":row[4],"situacao":row[-1]})
  return data
+def monitored_berco(berco):
+ b=berco.strip().upper()
+ allowed={"VIX101","VIX201","VIX202","VIX203","VIX204","VIX206","VIX207","VIX905","VIX906","PRMPS1","PRMPS2","PRMPS3"}
+ return b in allowed or b.startswith("RCH")
+
 def main():
- data=parse()
+ data=[x for x in parse() if monitored_berco(x.get("berco",""))]
  with open(OUT,"w",encoding="utf-8") as f:json.dump({"atualizado_em":datetime.now(TZ).isoformat(),"fonte":URL,"manobras":data},f,ensure_ascii=False,indent=2)
  print(f"{len(data)} manobras salvas")
 if __name__=="__main__":main()
