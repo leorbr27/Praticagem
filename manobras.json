@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-10-02T11:04:01.202315-03:00",
+  "atualizado_em": "2026-10-02T16:09:35.070540-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "UOT NEW YORK",
-      "data": "02/10/2026",
-      "hora": "10:45",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "NOBLE ISLAND",
-      "data": "02/10/2026",
-      "hora": "11:45",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEAGEMS RUBI",
-      "data": "02/10/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "MAERSK KATALIN",
       "data": "02/10/2026",
@@ -36,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "JNS DRAGON",
@@ -45,6 +18,15 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX202 VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "OSPREY ARROW",
+      "data": "03/10/2026",
+      "hora": "01:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
