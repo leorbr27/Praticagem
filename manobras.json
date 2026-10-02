@@ -1,23 +1,23 @@
 {
-  "atualizado_em": "2026-10-02T04:33:32.424742-03:00",
+  "atualizado_em": "2026-10-02T11:04:01.202315-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "LOG-IN DISCOVERY",
+      "navio": "UOT NEW YORK",
       "data": "02/10/2026",
-      "hora": "06:06",
+      "hora": "10:45",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "MARCADA"
     },
     {
-      "navio": "MANTA BEYOGLU",
+      "navio": "NOBLE ISLAND",
       "data": "02/10/2026",
-      "hora": "08:00",
+      "hora": "11:45",
       "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH501",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "MARCADA"
     },
     {
@@ -39,30 +39,12 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "UOT NEW YORK",
-      "data": "02/10/2026",
-      "hora": "17:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "JNS DRAGON",
       "data": "02/10/2026",
-      "hora": "17:00",
+      "hora": "20:00",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX202 VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "02/10/2026",
-      "hora": "18:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -75,9 +57,18 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SEVEN RIO",
+      "data": "03/10/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "COSCO SHIPPING FAN RONG",
       "data": "03/10/2026",
-      "hora": "07:10",
+      "hora": "14:27",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
@@ -86,28 +77,10 @@
     {
       "navio": "GREEN SUAPE",
       "data": "03/10/2026",
-      "hora": "08:10",
+      "hora": "15:27",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "RB DYLAN",
-      "data": "04/10/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "JAMAICA BAY",
-      "data": "04/10/2026",
-      "hora": "08:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -138,12 +111,30 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NOBLE ISLAND",
+      "navio": "PRIME STAR",
       "data": "04/10/2026",
       "hora": "14:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "RB DYLAN",
+      "data": "04/10/2026",
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "05/10/2026",
+      "hora": "00:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
