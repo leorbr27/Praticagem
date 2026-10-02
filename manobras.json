@@ -1,51 +1,51 @@
 {
-  "atualizado_em": "2026-10-02T16:09:35.070540-03:00",
+  "atualizado_em": "2026-10-02T19:56:49.814261-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "MAERSK KATALIN",
-      "data": "02/10/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "JNS DRAGON",
-      "data": "02/10/2026",
-      "hora": "20:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX202 VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "OSPREY ARROW",
       "data": "03/10/2026",
-      "hora": "01:00",
+      "hora": "01:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "MANTA BEYOGLU",
+      "data": "03/10/2026",
+      "hora": "09:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH501",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "MACAW ARROW",
+      "navio": "MAERSK KATALIN",
       "data": "03/10/2026",
-      "hora": "04:51",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "hora": "09:30",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX905 VIX905",
+      "situacao": "MARCADA"
     },
     {
       "navio": "SEVEN RIO",
       "data": "03/10/2026",
-      "hora": "09:00",
+      "hora": "09:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "MACAW ARROW",
+      "data": "03/10/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "COSCO SHIPPING FAN RONG",
@@ -66,6 +66,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "STAR DALMATIA",
+      "data": "04/10/2026",
+      "hora": "01:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "BOW TRIUMPH",
       "data": "04/10/2026",
       "hora": "12:00",
@@ -81,15 +90,6 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "STAR DALMATIA",
-      "data": "04/10/2026",
-      "hora": "13:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
@@ -139,8 +139,8 @@
     },
     {
       "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "07/10/2026",
-      "hora": "04:00",
+      "data": "06/10/2026",
+      "hora": "22:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
