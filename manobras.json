@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-01T22:50:19.988444-03:00",
+  "atualizado_em": "2026-10-02T04:33:32.424742-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "VORIAS",
-      "data": "02/10/2026",
-      "hora": "00:32",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "UOT NEW YORK",
-      "data": "02/10/2026",
-      "hora": "06:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "LOG-IN DISCOVERY",
       "data": "02/10/2026",
@@ -27,25 +9,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "JNS DRAGON",
-      "data": "02/10/2026",
-      "hora": "06:30",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX202 VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "02/10/2026",
-      "hora": "07:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "MANTA BEYOGLU",
@@ -75,6 +39,33 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "UOT NEW YORK",
+      "data": "02/10/2026",
+      "hora": "17:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JNS DRAGON",
+      "data": "02/10/2026",
+      "hora": "17:00",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX202 VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PRIME STAR",
+      "data": "02/10/2026",
+      "hora": "18:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "MACAW ARROW",
       "data": "03/10/2026",
       "hora": "04:51",
@@ -102,12 +93,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR LAGUNA",
+      "navio": "RB DYLAN",
       "data": "04/10/2026",
-      "hora": "12:00",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "04/10/2026",
+      "hora": "08:00",
       "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -120,6 +120,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "CHISE BULKER",
+      "data": "04/10/2026",
+      "hora": "13:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "STAR DALMATIA",
       "data": "04/10/2026",
       "hora": "13:30",
@@ -129,36 +138,9 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "RB DYLAN",
-      "data": "04/10/2026",
-      "hora": "14:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "JAMAICA BAY",
-      "data": "04/10/2026",
-      "hora": "15:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "CHISE BULKER",
-      "data": "04/10/2026",
-      "hora": "16:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "NOBLE ISLAND",
       "data": "04/10/2026",
-      "hora": "17:00",
+      "hora": "14:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -184,8 +166,8 @@
     },
     {
       "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "06/10/2026",
-      "hora": "23:00",
+      "data": "07/10/2026",
+      "hora": "04:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
