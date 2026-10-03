@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-02T22:35:41.087096-03:00",
+  "atualizado_em": "2026-10-03T04:02:51.367800-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "OSPREY ARROW",
-      "data": "03/10/2026",
-      "hora": "01:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "MANTA BEYOGLU",
       "data": "03/10/2026",
