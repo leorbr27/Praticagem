@@ -1,29 +1,11 @@
 {
-  "atualizado_em": "2026-10-03T16:21:27.303531-03:00",
+  "atualizado_em": "2026-10-03T19:12:21.591114-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "MACAW ARROW",
-      "data": "03/10/2026",
-      "hora": "16:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BOW TRIUMPH",
-      "data": "03/10/2026",
-      "hora": "18:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "JNS DRAGON",
-      "data": "03/10/2026",
-      "hora": "19:00",
+      "data": "04/10/2026",
+      "hora": "00:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
@@ -63,6 +45,15 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "04/10/2026",
+      "hora": "19:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
