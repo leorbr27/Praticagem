@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-03T13:32:57.093280-03:00",
+  "atualizado_em": "2026-10-03T16:21:27.303531-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SEVEN RIO",
-      "data": "03/10/2026",
-      "hora": "10:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "MACAW ARROW",
       "data": "03/10/2026",
@@ -21,19 +12,19 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "BOW TRIUMPH",
+      "data": "03/10/2026",
+      "hora": "18:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "JNS DRAGON",
       "data": "03/10/2026",
       "hora": "19:00",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN SUAPE",
-      "data": "03/10/2026",
-      "hora": "20:00",
-      "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
       "situacao": "PREVISTA"
@@ -57,12 +48,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "BOW TRIUMPH",
+      "navio": "GREEN SUAPE",
       "data": "04/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
+      "hora": "10:23",
+      "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX207",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
