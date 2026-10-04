@@ -1,20 +1,20 @@
 {
-  "atualizado_em": "2026-10-03T19:12:21.591114-03:00",
+  "atualizado_em": "2026-10-03T21:35:54.858135-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "JNS DRAGON",
-      "data": "04/10/2026",
-      "hora": "00:00",
+      "data": "03/10/2026",
+      "hora": "22:40",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR DALMATIA",
       "data": "04/10/2026",
-      "hora": "01:00",
+      "hora": "03:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
