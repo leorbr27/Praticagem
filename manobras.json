@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-04T13:54:14.864212-03:00",
+  "atualizado_em": "2026-10-04T16:49:32.327435-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "COSCO SHIPPING FAN RONG",
-      "data": "04/10/2026",
-      "hora": "15:27",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "LOG-IN PANTANAL",
       "data": "04/10/2026",
@@ -23,11 +14,11 @@
     {
       "navio": "STAR DALMATIA",
       "data": "04/10/2026",
-      "hora": "20:00",
+      "hora": "19:20",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "WL UGLICH",
@@ -36,6 +27,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COSCO SHIPPING FAN RONG",
+      "data": "04/10/2026",
+      "hora": "23:36",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
