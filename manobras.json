@@ -1,24 +1,24 @@
 {
-  "atualizado_em": "2026-10-04T09:24:54.148466-03:00",
+  "atualizado_em": "2026-10-04T13:54:14.864212-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "COSCO SHIPPING FAN RONG",
       "data": "04/10/2026",
-      "hora": "15:00",
+      "hora": "15:27",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
       "data": "04/10/2026",
-      "hora": "18:00",
+      "hora": "17:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR DALMATIA",
@@ -30,21 +30,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "RB DYLAN",
-      "data": "05/10/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
+      "navio": "WL UGLICH",
+      "data": "04/10/2026",
+      "hora": "22:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "JAMAICA BAY",
+      "navio": "MACAW ARROW",
       "data": "05/10/2026",
-      "hora": "08:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
+      "hora": "04:50",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -54,6 +54,24 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "RB DYLAN",
+      "data": "05/10/2026",
+      "hora": "11:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "05/10/2026",
+      "hora": "12:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
