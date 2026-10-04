@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-04T16:49:32.327435-03:00",
+  "atualizado_em": "2026-10-04T19:33:00.111934-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "04/10/2026",
-      "hora": "17:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "STAR DALMATIA",
       "data": "04/10/2026",
@@ -18,16 +9,7 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "WL UGLICH",
-      "data": "04/10/2026",
-      "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "COSCO SHIPPING FAN RONG",
@@ -50,10 +32,28 @@
     {
       "navio": "GREEN SUAPE",
       "data": "05/10/2026",
-      "hora": "10:29",
+      "hora": "05:17",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "05/10/2026",
+      "hora": "06:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WL UGLICH",
+      "data": "05/10/2026",
+      "hora": "07:30",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
       "situacao": "PREVISTA"
     },
     {
@@ -99,6 +99,15 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEVEN RIO",
+      "data": "05/10/2026",
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
       "situacao": "PREVISTA"
     },
     {
