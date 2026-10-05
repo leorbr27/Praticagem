@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-04T22:10:09.910231-03:00",
+  "atualizado_em": "2026-10-05T03:58:13.324809-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "COSCO SHIPPING FAN RONG",
-      "data": "04/10/2026",
-      "hora": "23:36",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "MACAW ARROW",
       "data": "05/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN SUAPE",
