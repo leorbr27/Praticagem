@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-04T19:33:00.111934-03:00",
+  "atualizado_em": "2026-10-04T22:10:09.910231-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "STAR DALMATIA",
-      "data": "04/10/2026",
-      "hora": "19:20",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "COSCO SHIPPING FAN RONG",
       "data": "04/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "MACAW ARROW",
@@ -36,7 +27,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "MAERSK KATALIN",
@@ -45,16 +36,16 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "WL UGLICH",
       "data": "05/10/2026",
-      "hora": "07:30",
+      "hora": "08:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "RB DYLAN",
