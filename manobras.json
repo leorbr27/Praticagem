@@ -1,65 +1,29 @@
 {
-  "atualizado_em": "2026-10-05T03:58:13.324809-03:00",
+  "atualizado_em": "2026-10-05T12:30:34.855838-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "MACAW ARROW",
-      "data": "05/10/2026",
-      "hora": "04:50",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN SUAPE",
-      "data": "05/10/2026",
-      "hora": "05:17",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MAERSK KATALIN",
-      "data": "05/10/2026",
-      "hora": "06:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "WL UGLICH",
-      "data": "05/10/2026",
-      "hora": "08:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "RB DYLAN",
       "data": "05/10/2026",
-      "hora": "11:00",
+      "hora": "14:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "JAMAICA BAY",
       "data": "05/10/2026",
-      "hora": "12:00",
+      "hora": "15:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "CHISE BULKER",
       "data": "05/10/2026",
-      "hora": "18:00",
+      "hora": "21:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -68,19 +32,10 @@
     {
       "navio": "NAVA SOCRATES",
       "data": "05/10/2026",
-      "hora": "19:00",
+      "hora": "22:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NOBLE ISLAND",
-      "data": "05/10/2026",
-      "hora": "23:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -90,6 +45,24 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NOBLE ISLAND",
+      "data": "06/10/2026",
+      "hora": "01:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "06/10/2026",
+      "hora": "06:23",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
@@ -108,6 +81,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "06/10/2026",
+      "hora": "11:08",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
