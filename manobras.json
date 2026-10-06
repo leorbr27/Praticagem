@@ -1,20 +1,11 @@
 {
-  "atualizado_em": "2026-10-06T12:40:47.919404-03:00",
+  "atualizado_em": "2026-10-06T17:33:02.177330-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "LOG-IN DISCOVERY",
-      "data": "06/10/2026",
-      "hora": "11:08",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "INICIADA"
-    },
-    {
       "navio": "CHISE BULKER",
       "data": "06/10/2026",
-      "hora": "19:00",
+      "hora": "22:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -23,7 +14,7 @@
     {
       "navio": "NAVA SOCRATES",
       "data": "06/10/2026",
-      "hora": "20:00",
+      "hora": "23:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -41,43 +32,34 @@
     {
       "navio": "COSCO SHIPPING CHANG SHENG",
       "data": "07/10/2026",
-      "hora": "03:00",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "HANDY PERTH",
+      "data": "07/10/2026",
+      "hora": "12:40",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "COOL MAGNUS",
       "data": "07/10/2026",
-      "hora": "11:40",
+      "hora": "19:21",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX101",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "DA XIANG",
-      "data": "07/10/2026",
-      "hora": "11:40",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN KAI TUO",
-      "data": "07/10/2026",
-      "hora": "12:40",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SEVEN RIO",
       "data": "07/10/2026",
-      "hora": "12:40",
+      "hora": "19:21",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX906 VIX101",
@@ -102,6 +84,24 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "DA XIANG",
+      "data": "08/10/2026",
+      "hora": "22:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN KAI TUO",
+      "data": "08/10/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "09/10/2026",
       "hora": "09:00",
@@ -111,21 +111,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "MISAGO ARROW",
-      "data": "10/10/2026",
-      "hora": "13:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "OSPREY ARROW",
       "data": "10/10/2026",
       "hora": "13:59",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MISAGO ARROW",
+      "data": "11/10/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
