@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-06T05:58:42.241718-03:00",
+  "atualizado_em": "2026-10-06T12:40:47.919404-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "06/10/2026",
-      "hora": "06:23",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "LOG-IN DISCOVERY",
       "data": "06/10/2026",
@@ -18,12 +9,12 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "CHISE BULKER",
       "data": "06/10/2026",
-      "hora": "12:00",
+      "hora": "19:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -32,7 +23,7 @@
     {
       "navio": "NAVA SOCRATES",
       "data": "06/10/2026",
-      "hora": "13:00",
+      "hora": "20:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -41,7 +32,7 @@
     {
       "navio": "VIYADA NAREE",
       "data": "06/10/2026",
-      "hora": "21:00",
+      "hora": "23:46",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
@@ -75,15 +66,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NOBLE ISLAND",
-      "data": "07/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "07/10/2026",
       "hora": "12:40",
@@ -99,6 +81,15 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX906 VIX101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NOBLE ISLAND",
+      "data": "07/10/2026",
+      "hora": "21:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
