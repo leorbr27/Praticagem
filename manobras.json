@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-07T14:57:53.338145-03:00",
+  "atualizado_em": "2026-10-07T19:33:15.091809-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "HANDY PERTH",
-      "data": "07/10/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "COOL MAGNUS",
       "data": "08/10/2026",
@@ -84,15 +75,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN KAI TUO",
-      "data": "09/10/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "LOG-IN DISCOVERY",
       "data": "09/10/2026",
       "hora": "13:32",
@@ -129,6 +111,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "COSCO SHIPPING CHANG SHENG",
+      "data": "10/10/2026",
+      "hora": "08:13",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "OSPREY ARROW",
       "data": "10/10/2026",
       "hora": "13:59",
@@ -138,21 +129,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "10/10/2026",
-      "hora": "14:20",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "COSCO SHIPPING HONOR",
       "data": "11/10/2026",
       "hora": "00:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA INVENTANA",
+      "data": "11/10/2026",
+      "hora": "01:10",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
