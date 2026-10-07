@@ -1,11 +1,20 @@
 {
-  "atualizado_em": "2026-10-06T17:33:02.177330-03:00",
+  "atualizado_em": "2026-10-06T21:01:12.422347-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "CHISE BULKER",
+      "navio": "VIYADA NAREE",
       "data": "06/10/2026",
       "hora": "22:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "CHISE BULKER",
+      "data": "07/10/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -13,20 +22,11 @@
     },
     {
       "navio": "NAVA SOCRATES",
-      "data": "06/10/2026",
-      "hora": "23:00",
+      "data": "07/10/2026",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "VIYADA NAREE",
-      "data": "06/10/2026",
-      "hora": "23:46",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
@@ -36,12 +36,12 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "HANDY PERTH",
       "data": "07/10/2026",
-      "hora": "12:40",
+      "hora": "12:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX201",
@@ -75,10 +75,28 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PRIME STAR",
+      "data": "07/10/2026",
+      "hora": "22:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "JAMAICA BAY",
       "data": "08/10/2026",
       "hora": "19:00",
       "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "08/10/2026",
+      "hora": "20:00",
+      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
