@@ -1,38 +1,20 @@
 {
-  "atualizado_em": "2026-10-07T08:44:21.578333-03:00",
+  "atualizado_em": "2026-10-07T14:57:53.338145-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "HANDY PERTH",
       "data": "07/10/2026",
-      "hora": "13:30",
+      "hora": "14:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NOBLE ISLAND",
-      "data": "07/10/2026",
-      "hora": "17:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "07/10/2026",
-      "hora": "18:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "berco": "VIX207",
+      "situacao": "INICIADA"
     },
     {
       "navio": "COOL MAGNUS",
-      "data": "07/10/2026",
-      "hora": "19:21",
+      "data": "08/10/2026",
+      "hora": "00:29",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX101",
@@ -40,17 +22,35 @@
     },
     {
       "navio": "SEVEN RIO",
-      "data": "07/10/2026",
-      "hora": "19:21",
+      "data": "08/10/2026",
+      "hora": "00:29",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX906 VIX101",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "NOBLE ISLAND",
+      "data": "08/10/2026",
+      "hora": "04:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PRIME STAR",
+      "data": "08/10/2026",
+      "hora": "05:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "JAMAICA BAY",
       "data": "08/10/2026",
-      "hora": "19:00",
+      "hora": "16:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -59,7 +59,7 @@
     {
       "navio": "BABITONGA BAY",
       "data": "08/10/2026",
-      "hora": "20:00",
+      "hora": "17:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -90,6 +90,42 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "09/10/2026",
+      "hora": "13:32",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN ENDURANCE",
+      "data": "09/10/2026",
+      "hora": "14:32",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NAVA SOCRATES",
+      "data": "10/10/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "K BEREKET",
+      "data": "10/10/2026",
+      "hora": "08:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -135,6 +171,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WL UGLICH",
+      "data": "11/10/2026",
+      "hora": "14:25",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
       "situacao": "PREVISTA"
     }
   ]
