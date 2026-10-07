@@ -1,20 +1,20 @@
 {
-  "atualizado_em": "2026-10-06T21:01:12.422347-03:00",
+  "atualizado_em": "2026-10-07T02:09:04.188019-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "VIYADA NAREE",
-      "data": "06/10/2026",
-      "hora": "22:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "MARCADA"
+      "navio": "COSCO SHIPPING CHANG SHENG",
+      "data": "07/10/2026",
+      "hora": "02:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "INICIADA"
     },
     {
       "navio": "CHISE BULKER",
       "data": "07/10/2026",
-      "hora": "01:00",
+      "hora": "06:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -23,20 +23,11 @@
     {
       "navio": "NAVA SOCRATES",
       "data": "07/10/2026",
-      "hora": "02:00",
+      "hora": "07:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
-    },
-    {
-      "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "07/10/2026",
-      "hora": "02:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
     },
     {
       "navio": "HANDY PERTH",
