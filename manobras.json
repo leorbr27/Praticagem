@@ -1,41 +1,32 @@
 {
-  "atualizado_em": "2026-10-07T02:09:04.188019-03:00",
+  "atualizado_em": "2026-10-07T08:44:21.578333-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "07/10/2026",
-      "hora": "02:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "CHISE BULKER",
-      "data": "07/10/2026",
-      "hora": "06:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NAVA SOCRATES",
-      "data": "07/10/2026",
-      "hora": "07:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "HANDY PERTH",
       "data": "07/10/2026",
-      "hora": "12:30",
+      "hora": "13:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NOBLE ISLAND",
+      "data": "07/10/2026",
+      "hora": "17:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PRIME STAR",
+      "data": "07/10/2026",
+      "hora": "18:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -54,24 +45,6 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX906 VIX101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NOBLE ISLAND",
-      "data": "07/10/2026",
-      "hora": "21:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "07/10/2026",
-      "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -126,6 +99,24 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COSCO SHIPPING CHANG SHENG",
+      "data": "10/10/2026",
+      "hora": "14:20",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COSCO SHIPPING HONOR",
+      "data": "11/10/2026",
+      "hora": "00:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
