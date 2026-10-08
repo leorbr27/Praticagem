@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-07T19:33:15.091809-03:00",
+  "atualizado_em": "2026-10-07T23:13:25.662006-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "COOL MAGNUS",
-      "data": "08/10/2026",
-      "hora": "00:29",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEVEN RIO",
-      "data": "08/10/2026",
-      "hora": "00:29",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX906 VIX101",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "NOBLE ISLAND",
       "data": "08/10/2026",
@@ -36,6 +18,24 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COOL MAGNUS",
+      "data": "08/10/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEVEN RIO",
+      "data": "08/10/2026",
+      "hora": "08:00",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX906 VIX101",
       "situacao": "PREVISTA"
     },
     {
