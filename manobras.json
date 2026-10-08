@@ -1,69 +1,24 @@
 {
-  "atualizado_em": "2026-10-08T05:56:33.058018-03:00",
+  "atualizado_em": "2026-10-08T12:58:09.521197-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "NOBLE ISLAND",
-      "data": "08/10/2026",
-      "hora": "04:10",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "08/10/2026",
-      "hora": "05:10",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "COOL MAGNUS",
-      "data": "08/10/2026",
-      "hora": "08:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX101",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "JAMAICA BAY",
       "data": "08/10/2026",
-      "hora": "10:00",
+      "hora": "12:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "WL UGLICH",
-      "data": "08/10/2026",
-      "hora": "10:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEVEN RIO",
-      "data": "08/10/2026",
-      "hora": "10:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX906 VIX101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "BABITONGA BAY",
       "data": "08/10/2026",
-      "hora": "11:00",
+      "hora": "13:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "DA XIANG",
@@ -82,6 +37,24 @@
       "porto": "VIX",
       "berco": "VIX206",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WL UGLICH",
+      "data": "09/10/2026",
+      "hora": "08:25",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX905 VIX905",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SEVEN SUN",
+      "data": "09/10/2026",
+      "hora": "08:25",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -126,6 +99,15 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PRIME STAR",
+      "data": "10/10/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
