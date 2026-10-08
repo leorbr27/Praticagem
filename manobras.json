@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-10-08T12:58:09.521197-03:00",
+  "atualizado_em": "2026-10-08T17:59:25.767875-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "JAMAICA BAY",
-      "data": "08/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BABITONGA BAY",
-      "data": "08/10/2026",
-      "hora": "13:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "DA XIANG",
-      "data": "08/10/2026",
-      "hora": "22:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN KAI TUO",
-      "data": "08/10/2026",
-      "hora": "23:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "WL UGLICH",
       "data": "09/10/2026",
@@ -55,6 +19,33 @@
       "porto": "VIX",
       "berco": "VIX906",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "SAGA INVENTANA",
+      "data": "09/10/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "DA XIANG",
+      "data": "09/10/2026",
+      "hora": "09:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN KAI TUO",
+      "data": "09/10/2026",
+      "hora": "10:30",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -75,6 +66,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "COSCO SHIPPING CHANG SHENG",
+      "data": "09/10/2026",
+      "hora": "22:22",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "NAVA SOCRATES",
       "data": "10/10/2026",
       "hora": "07:00",
@@ -90,15 +90,6 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "10/10/2026",
-      "hora": "08:13",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -138,21 +129,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA INVENTANA",
-      "data": "11/10/2026",
-      "hora": "01:10",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "MISAGO ARROW",
       "data": "11/10/2026",
       "hora": "03:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN KAI TUO",
+      "data": "11/10/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     }
   ]
