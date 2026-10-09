@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-10-09T04:08:47.800684-03:00",
+  "atualizado_em": "2026-10-09T11:19:49.894236-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "WL UGLICH",
       "data": "09/10/2026",
-      "hora": "08:25",
+      "hora": "11:00",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX905 VIX905",
@@ -14,38 +14,20 @@
     {
       "navio": "SEVEN SUN",
       "data": "09/10/2026",
-      "hora": "08:25",
+      "hora": "11:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAGA INVENTANA",
-      "data": "09/10/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "DA XIANG",
-      "data": "09/10/2026",
-      "hora": "09:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "09/10/2026",
-      "hora": "10:30",
+      "hora": "12:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -54,7 +36,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN ENDURANCE",
@@ -63,16 +45,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "09/10/2026",
-      "hora": "22:22",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "NAVA SOCRATES",
@@ -102,12 +75,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "MEDI ATLANTICO",
+      "data": "10/10/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN SUAPE",
       "data": "10/10/2026",
       "hora": "12:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COSCO SHIPPING CHANG SHENG",
+      "data": "10/10/2026",
+      "hora": "12:50",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -142,6 +133,15 @@
       "data": "11/10/2026",
       "hora": "15:00",
       "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "UAL BRAZIL",
+      "data": "11/10/2026",
+      "hora": "16:00",
+      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
