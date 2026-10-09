@@ -1,52 +1,7 @@
 {
-  "atualizado_em": "2026-10-09T12:54:21.138522-03:00",
+  "atualizado_em": "2026-10-09T16:34:20.094415-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "WL UGLICH",
-      "data": "09/10/2026",
-      "hora": "11:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEVEN SUN",
-      "data": "09/10/2026",
-      "hora": "11:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN KAI TUO",
-      "data": "09/10/2026",
-      "hora": "12:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "LOG-IN DISCOVERY",
-      "data": "09/10/2026",
-      "hora": "13:32",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "LOG-IN ENDURANCE",
-      "data": "09/10/2026",
-      "hora": "14:32",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "PRIME STAR",
       "data": "10/10/2026",
@@ -129,6 +84,24 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "COSCO SHIPPING HONOR",
+      "data": "11/10/2026",
+      "hora": "04:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA INVENTANA",
+      "data": "11/10/2026",
+      "hora": "08:55",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "BABITONGA BAY",
       "data": "11/10/2026",
       "hora": "15:00",
@@ -144,6 +117,24 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WL UGLICH",
+      "data": "13/10/2026",
+      "hora": "15:19",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MACURU ARROW",
+      "data": "15/10/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     }
   ]
