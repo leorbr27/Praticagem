@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-09T11:19:49.894236-03:00",
+  "atualizado_em": "2026-10-09T12:43:28.150043-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -27,7 +27,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -48,24 +48,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "NAVA SOCRATES",
-      "data": "10/10/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "K BEREKET",
-      "data": "10/10/2026",
-      "hora": "08:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "PRIME STAR",
       "data": "10/10/2026",
       "hora": "10:00",
@@ -84,6 +66,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "NAVA SOCRATES",
+      "data": "10/10/2026",
+      "hora": "12:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN SUAPE",
       "data": "10/10/2026",
       "hora": "12:00",
@@ -99,6 +90,15 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "K BEREKET",
+      "data": "10/10/2026",
+      "hora": "13:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
