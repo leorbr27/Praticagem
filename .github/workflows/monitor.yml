@@ -15,7 +15,8 @@ permissions:
 
 concurrency:
   group: praticagem-manobras
-  cancel-in-progress: true
+  # Nunca cancelar uma coleta em andamento; execuções concorrentes aguardam na fila.
+  cancel-in-progress: false
 
 jobs:
   scrape:
