@@ -1,7 +1,16 @@
 {
-  "atualizado_em": "2026-10-08T17:59:25.767875-03:00",
+  "atualizado_em": "2026-10-08T21:59:32.276270-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
+    {
+      "navio": "BUNUN STAR",
+      "data": "08/10/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "INICIADA"
+    },
     {
       "navio": "WL UGLICH",
       "data": "09/10/2026",
