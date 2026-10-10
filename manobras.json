@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-10T15:54:24.688312-03:00",
+  "atualizado_em": "2026-10-10T17:39:16.194621-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "10/10/2026",
-      "hora": "16:20",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "GRANDE FRANCIA",
       "data": "10/10/2026",
@@ -18,33 +9,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "PRIME STAR",
       "data": "10/10/2026",
-      "hora": "18:00",
+      "hora": "20:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "K BEREKET",
-      "data": "10/10/2026",
-      "hora": "19:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BUNUN STAR",
-      "data": "10/10/2026",
-      "hora": "20:57",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
@@ -54,6 +27,24 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX204 VIX204",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "K BEREKET",
+      "data": "10/10/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BUNUN STAR",
+      "data": "10/10/2026",
+      "hora": "21:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
       "situacao": "MARCADA"
     },
     {
