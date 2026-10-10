@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-09T21:19:24.168348-03:00",
+  "atualizado_em": "2026-10-09T23:29:46.344058-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -27,15 +27,6 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "COSCO SHIPPING CHANG SHENG",
-      "data": "10/10/2026",
-      "hora": "12:50",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -72,6 +63,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COSCO SHIPPING CHANG SHENG",
+      "data": "10/10/2026",
+      "hora": "14:30",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
