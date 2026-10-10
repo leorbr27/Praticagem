@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-10T09:25:00.219790-03:00",
+  "atualizado_em": "2026-10-10T11:47:44.297511-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "BUNUN STAR",
-      "data": "10/10/2026",
-      "hora": "13:45",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "OSPREY ARROW",
-      "data": "10/10/2026",
-      "hora": "13:59",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "LOG-IN ENDURANCE",
       "data": "10/10/2026",
@@ -27,12 +9,12 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "COSCO SHIPPING CHANG SHENG",
       "data": "10/10/2026",
-      "hora": "14:30",
+      "hora": "16:30",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
@@ -41,11 +23,11 @@
     {
       "navio": "GRANDE FRANCIA",
       "data": "10/10/2026",
-      "hora": "14:59",
+      "hora": "16:58",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "PRIME STAR",
@@ -64,6 +46,24 @@
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BUNUN STAR",
+      "data": "10/10/2026",
+      "hora": "20:57",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GRANDE FRANCIA",
+      "data": "10/10/2026",
+      "hora": "20:57",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX204 VIX204",
+      "situacao": "MARCADA"
     },
     {
       "navio": "NAVA SOCRATES",
@@ -138,6 +138,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GRANDE FRANCIA",
+      "data": "11/10/2026",
+      "hora": "09:23",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "11/10/2026",
       "hora": "09:23",
@@ -180,6 +189,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "OSPREY ARROW",
+      "data": "12/10/2026",
+      "hora": "14:53",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
