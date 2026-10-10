@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-10-10T05:48:27.503473-03:00",
+  "atualizado_em": "2026-10-10T09:25:00.219790-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "PRIME STAR",
-      "data": "10/10/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "MEDI ATLANTICO",
-      "data": "10/10/2026",
-      "hora": "11:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NAVA SOCRATES",
-      "data": "10/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "K BEREKET",
-      "data": "10/10/2026",
-      "hora": "13:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "BUNUN STAR",
       "data": "10/10/2026",
@@ -84,6 +48,33 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PRIME STAR",
+      "data": "10/10/2026",
+      "hora": "18:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MEDI ATLANTICO",
+      "data": "10/10/2026",
+      "hora": "19:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NAVA SOCRATES",
+      "data": "10/10/2026",
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "WL UGLICH",
       "data": "10/10/2026",
       "hora": "23:00",
@@ -111,12 +102,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN KAI TUO",
+      "navio": "TENCA ARROW",
       "data": "11/10/2026",
-      "hora": "03:00",
+      "hora": "00:00",
       "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -165,9 +156,18 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "BABITONGA BAY",
+      "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "11/10/2026",
-      "hora": "15:00",
+      "hora": "16:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "12/10/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -175,8 +175,8 @@
     },
     {
       "navio": "UAL BRAZIL",
-      "data": "11/10/2026",
-      "hora": "16:00",
+      "data": "12/10/2026",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
