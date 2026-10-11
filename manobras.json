@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-10T20:51:33.557677-03:00",
+  "atualizado_em": "2026-10-10T21:49:09.826117-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,7 +9,7 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX204 VIX204",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "BUNUN STAR",
