@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-11T07:07:08.517907-03:00",
+  "atualizado_em": "2026-10-11T10:18:32.546349-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -18,43 +18,25 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "11/10/2026",
+      "hora": "10:15",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN SUAPE",
       "data": "11/10/2026",
-      "hora": "09:50",
+      "hora": "10:40",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX203 VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "HANDY PERTH",
-      "data": "11/10/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "11/10/2026",
-      "hora": "10:23",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NAVA SOCRATES",
-      "data": "11/10/2026",
-      "hora": "11:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "DA XIANG",
@@ -63,34 +45,43 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "TENCA ARROW",
-      "data": "11/10/2026",
-      "hora": "12:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BABITONGA BAY",
-      "data": "11/10/2026",
-      "hora": "14:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "UAL BRAZIL",
       "data": "11/10/2026",
-      "hora": "15:00",
+      "hora": "11:15",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "NAVA SOCRATES",
+      "data": "11/10/2026",
+      "hora": "12:15",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "HANDY PERTH",
+      "data": "11/10/2026",
+      "hora": "12:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "MEDI ATLANTICO",
+      "data": "11/10/2026",
+      "hora": "13:15",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "MARCADA"
     },
     {
       "navio": "COSCO SHIPPING HONOR",
@@ -126,6 +117,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "11/10/2026",
+      "hora": "21:27",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
