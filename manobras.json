@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-10-11T03:30:55.533726-03:00",
+  "atualizado_em": "2026-10-11T07:07:08.517907-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SAGA INVENTANA",
-      "data": "11/10/2026",
-      "hora": "04:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "11/10/2026",
-      "hora": "06:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "K BEREKET",
-      "data": "11/10/2026",
-      "hora": "07:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NAVA SOCRATES",
-      "data": "11/10/2026",
-      "hora": "09:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "GRANDE FRANCIA",
       "data": "11/10/2026",
@@ -45,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
@@ -63,15 +27,6 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX203 VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "TENCA ARROW",
-      "data": "11/10/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -93,12 +48,48 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "NAVA SOCRATES",
+      "data": "11/10/2026",
+      "hora": "11:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "DA XIANG",
       "data": "11/10/2026",
       "hora": "11:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "TENCA ARROW",
+      "data": "11/10/2026",
+      "hora": "12:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "11/10/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "UAL BRAZIL",
+      "data": "11/10/2026",
+      "hora": "15:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -120,21 +111,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "BABITONGA BAY",
-      "data": "12/10/2026",
-      "hora": "01:00",
+      "navio": "PRIME STAR",
+      "data": "11/10/2026",
+      "hora": "20:00",
       "tipo": "SAIDA",
       "porto": "PRM",
-      "berco": "PRMPS2",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "UAL BRAZIL",
-      "data": "12/10/2026",
-      "hora": "02:00",
+      "navio": "K BEREKET",
+      "data": "11/10/2026",
+      "hora": "21:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
-      "berco": "PRMPS2",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
