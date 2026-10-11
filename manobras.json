@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-11T15:07:56.438192-03:00",
+  "atualizado_em": "2026-10-11T17:24:40.435075-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -41,7 +41,7 @@
     {
       "navio": "LOG-IN PANTANAL",
       "data": "11/10/2026",
-      "hora": "21:27",
+      "hora": "21:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
@@ -49,12 +49,21 @@
     },
     {
       "navio": "OSPREY ARROW",
-      "data": "12/10/2026",
-      "hora": "14:53",
-      "tipo": "SAIDA",
+      "data": "11/10/2026",
+      "hora": "21:30",
+      "tipo": "MANOBRA",
       "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
+      "berco": "VIX202 VIX201",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "11/10/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "MARCADA"
     },
     {
       "navio": "WL UGLICH",
@@ -81,6 +90,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "DA XIANG",
+      "data": "13/10/2026",
+      "hora": "15:19",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
