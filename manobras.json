@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-10-11T13:18:50.188946-03:00",
+  "atualizado_em": "2026-10-11T15:07:56.438192-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "NAVA SOCRATES",
-      "data": "11/10/2026",
-      "hora": "12:15",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "HANDY PERTH",
-      "data": "11/10/2026",
-      "hora": "12:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "MEDI ATLANTICO",
-      "data": "11/10/2026",
-      "hora": "13:15",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "VIKING BRASILIA",
-      "data": "11/10/2026",
-      "hora": "13:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "11/10/2026",
