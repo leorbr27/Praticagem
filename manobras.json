@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-11T20:50:49.963038-03:00",
+  "atualizado_em": "2026-10-11T21:45:40.528663-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "OSPREY ARROW",
@@ -18,16 +18,7 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX202 VIX201",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "11/10/2026",
-      "hora": "23:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "MAERSK KATALIN",
@@ -39,9 +30,18 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "PRIME STAR",
+      "data": "12/10/2026",
+      "hora": "01:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "K BEREKET",
       "data": "12/10/2026",
-      "hora": "00:00",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
