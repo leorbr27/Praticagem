@@ -1,20 +1,11 @@
 {
-  "atualizado_em": "2026-10-12T12:59:44.247842-03:00",
+  "atualizado_em": "2026-10-12T17:18:07.473280-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "OSPREY ARROW",
-      "data": "12/10/2026",
-      "hora": "14:53",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "UAL BRAZIL",
       "data": "12/10/2026",
-      "hora": "20:00",
+      "hora": "21:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -23,7 +14,7 @@
     {
       "navio": "CAIPIRINHA",
       "data": "12/10/2026",
-      "hora": "21:00",
+      "hora": "22:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -32,11 +23,11 @@
     {
       "navio": "MISAGO ARROW",
       "data": "12/10/2026",
-      "hora": "23:00",
+      "hora": "22:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -73,6 +64,15 @@
       "porto": "VIX",
       "berco": "VIX101",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PRODIGY",
+      "data": "13/10/2026",
+      "hora": "09:21",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR MAJESTY",
@@ -121,8 +121,8 @@
     },
     {
       "navio": "K BEREKET",
-      "data": "14/10/2026",
-      "hora": "03:00",
+      "data": "13/10/2026",
+      "hora": "16:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -130,8 +130,8 @@
     },
     {
       "navio": "ALLEGRA",
-      "data": "14/10/2026",
-      "hora": "04:00",
+      "data": "13/10/2026",
+      "hora": "17:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -139,8 +139,8 @@
     },
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
-      "data": "14/10/2026",
-      "hora": "05:00",
+      "data": "13/10/2026",
+      "hora": "19:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
