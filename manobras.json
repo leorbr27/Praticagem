@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-12T00:21:09.140996-03:00",
+  "atualizado_em": "2026-10-12T03:34:31.967989-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "MAERSK KATALIN",
-      "data": "11/10/2026",
-      "hora": "23:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "K BEREKET",
-      "data": "12/10/2026",
-      "hora": "01:15",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "COSCO SHIPPING HONOR",
       "data": "12/10/2026",
