@@ -1,15 +1,15 @@
 {
-  "atualizado_em": "2026-10-12T03:34:31.967989-03:00",
+  "atualizado_em": "2026-10-12T08:10:17.637660-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "COSCO SHIPPING HONOR",
       "data": "12/10/2026",
-      "hora": "10:00",
+      "hora": "11:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "OSPREY ARROW",
