@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-11T21:45:40.528663-03:00",
+  "atualizado_em": "2026-10-12T00:21:09.140996-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "11/10/2026",
-      "hora": "21:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "OSPREY ARROW",
-      "data": "11/10/2026",
-      "hora": "21:30",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX202 VIX201",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "MAERSK KATALIN",
       "data": "11/10/2026",
@@ -27,25 +9,16 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PRIME STAR",
-      "data": "12/10/2026",
-      "hora": "01:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "K BEREKET",
       "data": "12/10/2026",
-      "hora": "02:00",
+      "hora": "01:15",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "COSCO SHIPPING HONOR",
@@ -57,12 +30,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "OSPREY ARROW",
+      "data": "12/10/2026",
+      "hora": "14:53",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "MISAGO ARROW",
       "data": "12/10/2026",
       "hora": "21:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "13/10/2026",
+      "hora": "03:27",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
