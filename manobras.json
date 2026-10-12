@@ -1,24 +1,15 @@
 {
-  "atualizado_em": "2026-10-12T17:18:07.473280-03:00",
+  "atualizado_em": "2026-10-12T19:44:29.018406-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "UAL BRAZIL",
       "data": "12/10/2026",
-      "hora": "21:00",
+      "hora": "22:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "CAIPIRINHA",
-      "data": "12/10/2026",
-      "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "MISAGO ARROW",
@@ -30,39 +21,21 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "CAIPIRINHA",
+      "data": "12/10/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "LOG-IN PANTANAL",
       "data": "13/10/2026",
       "hora": "03:27",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "WL UGLICH",
-      "data": "13/10/2026",
-      "hora": "04:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEVEN SUN",
-      "data": "13/10/2026",
-      "hora": "04:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEVEN RIO",
-      "data": "13/10/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX101",
       "situacao": "PREVISTA"
     },
     {
@@ -91,6 +64,24 @@
       "porto": "VIX",
       "berco": "VIX204",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WL UGLICH",
+      "data": "13/10/2026",
+      "hora": "12:17",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX905 VIX905",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SEVEN SUN",
+      "data": "13/10/2026",
+      "hora": "12:17",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN SUAPE",
@@ -180,6 +171,15 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEVEN RIO",
+      "data": "15/10/2026",
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX101",
       "situacao": "PREVISTA"
     }
   ]
