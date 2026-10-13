@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-13T06:23:45.315875-03:00",
+  "atualizado_em": "2026-10-13T07:28:27.221919-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -66,21 +66,21 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "DA XIANG",
-      "data": "13/10/2026",
-      "hora": "12:19",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN SUAPE",
       "data": "13/10/2026",
       "hora": "12:19",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "DA XIANG",
+      "data": "13/10/2026",
+      "hora": "13:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
@@ -93,15 +93,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN TAICANG",
-      "data": "13/10/2026",
-      "hora": "14:19",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "LOG-IN DISCOVERY",
       "data": "13/10/2026",
       "hora": "14:19",
@@ -111,9 +102,18 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "GREEN TAICANG",
+      "data": "13/10/2026",
+      "hora": "15:19",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "13/10/2026",
-      "hora": "19:00",
+      "hora": "23:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
@@ -153,6 +153,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MISAGO ARROW",
+      "data": "16/10/2026",
+      "hora": "22:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     }
   ]
