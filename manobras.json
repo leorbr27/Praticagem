@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-10-13T14:42:12.470427-03:00",
+  "atualizado_em": "2026-10-13T18:49:03.228089-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "DA XIANG",
-      "data": "13/10/2026",
-      "hora": "13:19",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "LOG-IN DISCOVERY",
-      "data": "13/10/2026",
-      "hora": "14:19",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN TAICANG",
-      "data": "13/10/2026",
-      "hora": "15:19",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "BLUE NEPTUNE",
       "data": "13/10/2026",
@@ -40,11 +13,20 @@
     },
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
-      "data": "13/10/2026",
-      "hora": "23:00",
+      "data": "14/10/2026",
+      "hora": "06:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "14/10/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -66,6 +48,33 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "STAR MAJESTY",
+      "data": "14/10/2026",
+      "hora": "12:43",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "VORIAS",
+      "data": "14/10/2026",
+      "hora": "12:55",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEA EAGLE",
+      "data": "14/10/2026",
+      "hora": "16:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "MEDI ATLANTICO",
       "data": "15/10/2026",
       "hora": "10:00",
@@ -84,15 +93,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "MACURU ARROW",
-      "data": "15/10/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SEVEN RIO",
       "data": "15/10/2026",
       "hora": "23:00",
@@ -104,8 +104,26 @@
     {
       "navio": "MISAGO ARROW",
       "data": "16/10/2026",
-      "hora": "22:00",
+      "hora": "08:00",
       "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COSCO SHIPPING RUYI",
+      "data": "16/10/2026",
+      "hora": "15:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MACURU ARROW",
+      "data": "17/10/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
       "situacao": "PREVISTA"
