@@ -1,96 +1,15 @@
 {
-  "atualizado_em": "2026-10-13T07:28:27.221919-03:00",
+  "atualizado_em": "2026-10-13T14:03:34.615145-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "PRODIGY",
-      "data": "13/10/2026",
-      "hora": "09:21",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "K BEREKET",
-      "data": "13/10/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "STAR MAJESTY",
-      "data": "13/10/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "13/10/2026",
-      "hora": "10:21",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "NIKE",
-      "data": "13/10/2026",
-      "hora": "11:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "WL UGLICH",
-      "data": "13/10/2026",
-      "hora": "11:47",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEVEN SUN",
-      "data": "13/10/2026",
-      "hora": "12:17",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN SUAPE",
-      "data": "13/10/2026",
-      "hora": "12:19",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "DA XIANG",
       "data": "13/10/2026",
-      "hora": "13:00",
+      "hora": "13:19",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "MORNING CATHERINE",
-      "data": "13/10/2026",
-      "hora": "13:19",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -108,7 +27,16 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "BLUE NEPTUNE",
+      "data": "13/10/2026",
+      "hora": "22:32",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "MARCADA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
@@ -117,6 +45,24 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN SUAPE",
+      "data": "14/10/2026",
+      "hora": "10:55",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MORNING CATHERINE",
+      "data": "14/10/2026",
+      "hora": "11:55",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
