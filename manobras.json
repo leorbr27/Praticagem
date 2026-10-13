@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-13T00:11:14.494912-03:00",
+  "atualizado_em": "2026-10-13T06:23:45.315875-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -27,7 +27,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -36,7 +36,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "NIKE",
@@ -50,10 +50,10 @@
     {
       "navio": "WL UGLICH",
       "data": "13/10/2026",
-      "hora": "12:17",
-      "tipo": "MANOBRA",
+      "hora": "11:47",
+      "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX905 VIX905",
+      "berco": "VIX905",
       "situacao": "MARCADA"
     },
     {
@@ -108,16 +108,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "WL UGLICH",
-      "data": "13/10/2026",
-      "hora": "15:19",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
