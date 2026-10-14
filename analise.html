@@ -20,7 +20,24 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 <p class="note" id="status">Cole as mensagens do Telegram e clique em “Processar mensagens”.</p>
 <section class="panel" style="margin-bottom:12px"><h2>Informações do Telegram</h2><p class="desc">Cole abaixo as mensagens do Telegram que deseja analisar. O conteúdo fica apenas nesta página e não é salvo.</p><textarea id="telegramTexto" rows="7" placeholder="Cole aqui as mensagens do Telegram…"></textarea><p class="note">A análise usa exclusivamente as mensagens coladas aqui. Os dados são processados temporariamente nesta página e não são salvos.</p><button class="btn primary" id="processarTelegram" type="button">Processar mensagens</button></section>
 <section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Produção total</th><th>Unidade</th><th>Horas paradas</th><th>Observação</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="8" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
-<footer id="rodape">Fonte: Praticagem Espírito Santo · Análise temporária no navegador; nenhum dado é salvo nesta página.</footer></main>
+<footer id="rodape">Fonte: Praticagem Espírito Santo · Análise temporária no navegador; nenhum dado é salvo nesta página.</footer>
+<div id="ultimoCommitGitHub" style="text-align:center;color:#74818c;font-size:11px;padding:4px 4px 12px">Último commit do GitHub: consultando…</div>
+<script>
+(async function mostrarUltimoCommitGitHub(){
+ const elemento=document.getElementById("ultimoCommitGitHub");
+ try{
+  const resposta=await fetch("https://api.github.com/repos/leorbr27/Praticagem/commits/main",{cache:"no-store",headers:{Accept:"application/vnd.github+json"}});
+  if(!resposta.ok)throw new Error("HTTP "+resposta.status);
+  const commit=await resposta.json();
+  const data=commit.commit&&commit.commit.author&&commit.commit.author.date;
+  if(!data)throw new Error("Data do commit indisponível");
+  elemento.textContent="Último commit do GitHub: "+new Date(data).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false});
+ }catch(erro){
+  elemento.textContent="Último commit do GitHub: não foi possível consultar agora";
+  console.error("Falha ao consultar último commit do GitHub:",erro);
+ }
+})();
+</script></main>
 <script>
 const $=id=>document.getElementById(id);
 let telegramRows=[];
