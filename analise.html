@@ -58,7 +58,7 @@ function parseTelegram(text){
  const getShift=s=>{const m=String(s||"").match(/(?:turno|per[ií]odo)\s*[:：=-]?\s*(\d{1,2}\s*(?:h|:)??\s*\d{0,2}\s*(?:às|a|-)\s*\d{1,2}\s*(?:h|:)??\s*\d{0,2}|\d{1,2}\s*[º°]?\s*turno|manhã|manha|tarde|noite|diurno|noturno)/i);return m?clean(m[1]):""};
  const getBerth=s=>{const m=String(s||"").match(/(?:berço|berco)\s*[:#=-]?\s*([A-Z0-9./ -]{1,30})/i);return m?clean(m[1]):""};
  const getHours=s=>{let total=0,found=false;for(const m of String(s||"").matchAll(/(\d+(?:[,.]\d+)?)\s*(h|hora|horas|min|minuto|minutos)\b/ig)){found=true;const n=parseNumber(m[1]);if(n!==null)total+=/^h|hora/i.test(m[2])?n*60:n}return found?total:null};
- const getProduction=(s)=>{const vals=[];const re=/(?:produção|producao|prod\.?|quantidade)\s*[:：=]?\s*([\d.,]+)\s*(t(?:on(?:eladas?)?)?|tons?\.?|unidades?)?/ig;let m;while((m=re.exec(s))!==null){const n=parseNumber(m[1]);if(n!==null)vals.push({n,unit:m[2]||""})}return vals};
+ const getProduction=(s)=>{const vals=[];const re=/(?:produção|producao|prod\.?|quantidade|porão\s*\d*\s*[:：=-]?)\s*([\d.,]+)\s*(t(?:on(?:eladas?)?)?|tons?\.?|unidades?)?/ig;let m;while((m=re.exec(s))!==null){const n=parseNumber(m[1]);if(n!==null)vals.push({n,unit:m[2]||""})}return vals};
  let ship="",day="",dayText="",section="",planLines=[],stopLines=[];
  const flushDay=()=>{
   if(!day && !dayText.trim())return;
