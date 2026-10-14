@@ -114,6 +114,7 @@ async function carregar(){
   window.ultimaAtualizacao=(d&&!isNaN(d) ? d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}) : "—");
   render();
   $("rodape").textContent="Fonte: Praticagem Espírito Santo";
+  if(d&&!isNaN(d)&&Date.now()-d.getTime()>300000)await consultarFonte();
  }catch(e){
   rows=[];render();$("meta").textContent="Erro ao atualizar";$("rodape").textContent="Fonte: Praticagem Espírito Santo · Não foi possível atualizar";
  }
