@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-14T07:29:55.523466-03:00",
+  "atualizado_em": "2026-10-14T12:15:59.778511-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "ZHONG YUAN HAI YUN KAI TUO",
-      "data": "14/10/2026",
-      "hora": "09:10",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "GREEN SUAPE",
       "data": "14/10/2026",
@@ -19,15 +10,6 @@
       "porto": "VIX",
       "berco": "VIX206",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "MAERSK KATALIN",
-      "data": "14/10/2026",
-      "hora": "10:55",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "MORNING CATHERINE",
@@ -39,13 +21,31 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "STAR MAJESTY",
+      "data": "14/10/2026",
+      "hora": "13:30",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "14/10/2026",
+      "hora": "14:46",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "VORIAS",
       "data": "14/10/2026",
-      "hora": "12:55",
+      "hora": "15:46",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SEA EAGLE",
@@ -57,13 +57,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR MAJESTY",
+      "navio": "SEVEN RIO",
       "data": "14/10/2026",
-      "hora": "18:00",
+      "hora": "22:00",
       "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "porto": "VIX",
+      "berco": "VIX101",
+      "situacao": "MARCADA"
     },
     {
       "navio": "MEDI ATLANTICO",
@@ -77,7 +77,7 @@
     {
       "navio": "TENCA ARROW",
       "data": "15/10/2026",
-      "hora": "11:00",
+      "hora": "16:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -93,12 +93,39 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SEVEN RIO",
-      "data": "15/10/2026",
-      "hora": "23:00",
+      "navio": "CAIPIRINHA",
+      "data": "16/10/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX101",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "OCEAN RELAY",
+      "data": "16/10/2026",
+      "hora": "02:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NIKE",
+      "data": "16/10/2026",
+      "hora": "04:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ALLEGRA",
+      "data": "16/10/2026",
+      "hora": "05:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
