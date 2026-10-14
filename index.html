@@ -68,6 +68,38 @@ function render(){
  $("tabela").innerHTML=data.length?data.map(r=>'<tr class="'+statusClass(r.situacao)+'"><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="7" class="empty">Nenhuma manobra encontrada.</td></tr>';
  $("meta").innerHTML=data.length+" de "+rows.length+" manobra(s) monitorada(s)<br>Última atualização: "+(window.ultimaAtualizacao||"—");
 }
+const BERCOS_MONITORADOS=new Set(["VIX101","VIX201","VIX202","VIX203","VIX204","VIX206","VIX207","VIX905","VIX906","PRMPS1","PRMPS2","PRMPS3","RCH101","RCH102","RCH103","RCH501","RCH502","RCH503"]);
+async function consultarFonte(){
+ $("meta").textContent="Consultando diretamente o site da Praticagem...";
+ try{
+  const res=await fetch("https://www.praticagem.org.br/asp/previstas.asp",{cache:"no-store"});
+  if(!res.ok)throw new Error("O site respondeu HTTP "+res.status+".");
+  const html=await res.text();
+  const doc=new DOMParser().parseFromString(html,"text/html");
+  const dataPattern=/^\\d{2}\\/\\d{2}\\/\\d{4}$/;
+  const timePattern=/^\\d{2}:\\d{2}$/;
+  const encontrados=[];
+  doc.querySelectorAll("tr").forEach(tr=>{
+   const cells=[...tr.querySelectorAll("td,th")].map(td=>(td.textContent||"").replace(/\\s+/g," ").trim());
+   const dateIndex=cells.findIndex(v=>dataPattern.test(v));
+   if(dateIndex<0||dateIndex+4>=cells.length||!timePattern.test(cells[dateIndex+1]||""))return;
+   const item={navio:cells[0],data:cells[dateIndex],hora:cells[dateIndex+1],tipo:cells[dateIndex+2],porto:cells[dateIndex+3],berco:cells[dateIndex+4],situacao:cells[cells.length-1]};
+   const tokens=(item.berco.toUpperCase().match(/[A-Z0-9]+/g)||[]);
+   if(item.navio&&item.berco&&item.situacao&&tokens.some(token=>BERCOS_MONITORADOS.has(token)))encontrados.push(item);
+  });
+  if(!encontrados.length)throw new Error("Nenhuma manobra monitorada foi encontrada na resposta do site.");
+  rows=encontrados;
+  preencherPortos();
+  window.ultimaAtualizacao=new Date().toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})+" (consulta direta)";
+  render();
+  $("rodape").textContent="Fonte: Praticagem Espírito Santo · Dados consultados diretamente no site";
+ }catch(e){
+  render();
+  $("meta").textContent="Não foi possível consultar diretamente a fonte. O navegador pode bloquear a requisição por CORS; os dados exibidos anteriormente foram mantidos.";
+  $("rodape").textContent="Fonte: Praticagem Espírito Santo · Consulta direta indisponível";
+  console.error("Falha na consulta direta à Praticagem:",e);
+ }
+}
 async function carregar(){
  $("meta").textContent="Atualizando...";
  try{
@@ -89,7 +121,7 @@ $("atualizar").addEventListener("click",async()=>{
  botao.disabled=true;
  botao.textContent="Atualizando...";
  try{
-  await carregar();
+  await consultarFonte();
  }finally{
   botao.disabled=false;
   botao.textContent="Atualizar";
