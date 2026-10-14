@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-13T21:47:04.286301-03:00",
+  "atualizado_em": "2026-10-14T02:26:03.218587-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "BLUE NEPTUNE",
-      "data": "13/10/2026",
-      "hora": "22:32",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MAERSK KATALIN",
-      "data": "14/10/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "14/10/2026",
@@ -36,6 +18,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "14/10/2026",
+      "hora": "10:55",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -45,7 +36,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR MAJESTY",
@@ -93,6 +84,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "15/10/2026",
+      "hora": "16:14",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SEVEN RIO",
       "data": "15/10/2026",
       "hora": "23:00",
@@ -126,6 +126,15 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN TAICANG",
+      "data": "19/10/2026",
+      "hora": "09:04",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     }
   ]
