@@ -39,21 +39,21 @@ const sorted=rows.slice().sort((a,b)=>{const da=parseDate(a.data),db=parseDate(b
 $("status").textContent=rows.length+" manobra(s) no recorte · "+(atualizadoEm?"Arquivo publicado em "+new Date(atualizadoEm).toLocaleString("pt-BR"):"data de atualização indisponível")}
 async function carregar(){const b=$("atualizar");b.disabled=true;b.textContent="Atualizando…";$("status").textContent="Buscando manobras.json…";try{const res=await fetch("https://raw.githubusercontent.com/leorbr27/Praticagem/main/manobras.json?t="+Date.now(),{cache:"no-store"});if(!res.ok)throw new Error("HTTP "+res.status);const data=await res.json();if(!Array.isArray(data.manobras))throw new Error("Formato inesperado em manobras.json");todos=data.manobras;atualizadoEm=data.atualizado_em||null;const old=$("porto").value,ports=[...new Set(todos.map(r=>r.porto).filter(Boolean))].sort();$("porto").innerHTML='<option value="">Todos os portos</option>'+ports.map(p=>'<option value="'+esc(p)+'">'+esc(p)+'</option>').join("");if(ports.includes(old))$("porto").value=old;render();renderMega();$("rodape").textContent="Fonte: Praticagem Espírito Santo · manobras.json · Processamento temporário no navegador; nenhum dado é salvo."}catch(e){$("status").textContent="Falha ao carregar dados: "+e.message;console.error("Falha na análise:",e)}finally{b.disabled=false;b.textContent="Atualizar dados"}}
 
-function durationMinutes(text){const s=String(text||"").toLowerCase();let total=0,found=false;for(const m of s.matchAll(/(\\d+(?:[,.]\\d+)?)\\s*(h|hora|horas|min|minuto|minutos)\\b/g)){found=true;const n=Number(m[1].replace(",","."));total+=/^h|hora/.test(m[2])?n*60:n}return found?total:null}
+function durationMinutes(text){const s=String(text||"").toLowerCase();let total=0,found=false;for(const m of s.matchAll(/(\d+(?:[,.]\d+)?)\s*(h|hora|horas|min|minuto|minutos)\b/g)){found=true;const n=Number(m[1].replace(",","."));total+=/^h|hora/.test(m[2])?n*60:n}return found?total:null}
 function parseTelegram(text){
- const lines=String(text||"").split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean),out=[];let current=null;
+ const lines=String(text||"").split(/\r?\n/).map(x=>x.trim()).filter(Boolean),out=[];let current=null;
  const flush=()=>{if(current&&(current.navio||current.producao!==null||current.paradaMin!==null))out.push({...current});};
  for(const line of lines){
-  const ship=line.match(/(?:navio|embarca[cç][aã]o)\\s*[:=-]\\s*([^|;,]+?)(?=\\s+(?:data|produ[cç][aã]o|paralisa[cç][aã]o|parada|opera[cç][aã]o)\\s*[:=-]|[|;,]|$)/i);
+  const ship=line.match(/(?:navio|embarca[cç][aã]o)\s*[:=-]\s*([^|;,]+?)(?=\s+(?:data|produ[cç][aã]o|paralisa[cç][aã]o|parada|opera[cç][aã]o)\s*[:=-]|[|;,]|$)/i);
   if(ship){flush();current={navio:ship[1].trim(),data:"",operacao:"",producao:null,unidade:"",paradaMin:null,motivo:"",origem:"Telegram"}}
   if(!current)current={navio:"Não identificado",data:"",operacao:"",producao:null,unidade:"",paradaMin:null,motivo:"",origem:"Telegram"};
-  const date=line.match(/\\b(\\d{2}\\/\\d{2}(?:\\/\\d{2,4})?)\\b/);if(date)current.data=date[1];
-  const op=line.match(/(?:opera[cç][aã]o|evento|atividade)\\s*[:=-]\\s*([^|;,]+)/i);if(op)current.operacao=op[1].trim();
-  const prod=line.match(/(?:produ[cç][aã]o|movimentad[oa]s?|toneladas?|volume)\\s*[:=-]?\\s*([\\d.,]+)\\s*(t|ton|toneladas?|t\\/h|unidades?)?/i);
-  if(prod){const n=Number(prod[1].replace(/\\./g,"").replace(",","."));if(Number.isFinite(n)){current.producao=n;current.unidade=(prod[2]||(/tonelada|\\bton\\b|\\bt\\b/i.test(line)?"t":"não informada")).toLowerCase()}}
-  const stop=line.match(/(?:paralisa[cç][aã]o|parada|tempo parado|indispon[ií]vel)\\s*[:=-]?\\s*([^|;,]+)/i);
+  const date=line.match(/\b(\d{2}\/\d{2}(?:\/\d{2,4})?)\b/);if(date)current.data=date[1];
+  const op=line.match(/(?:opera[cç][aã]o|evento|atividade)\s*[:=-]\s*([^|;,]+)/i);if(op)current.operacao=op[1].trim();
+  const prod=line.match(/(?:produ[cç][aã]o|movimentad[oa]s?|toneladas?|volume)\s*[:=-]?\s*([\d.,]+)\s*(t|ton|toneladas?|t\/h|unidades?)?/i);
+  if(prod){const n=Number(prod[1].replace(/\./g,"").replace(",","."));if(Number.isFinite(n)){current.producao=n;current.unidade=(prod[2]||(/tonelada|\bton\b|\bt\b/i.test(line)?"t":"não informada")).toLowerCase()}}
+  const stop=line.match(/(?:paralisa[cç][aã]o|parada|tempo parado|indispon[ií]vel)\s*[:=-]?\s*([^|;,]+)/i);
   if(stop){const mins=durationMinutes(stop[1]);if(mins!==null)current.paradaMin=mins;current.motivo=stop[1].trim()}
-  const reason=line.match(/(?:motivo|causa|observa[cç][aã]o)\\s*[:=-]\\s*([^|;,]+)/i);if(reason)current.motivo=reason[1].trim();
+  const reason=line.match(/(?:motivo|causa|observa[cç][aã]o)\s*[:=-]\s*([^|;,]+)/i);if(reason)current.motivo=reason[1].trim();
   if(!ship&&!prod&&!stop&&!op&&!date&&line.length<180&&current.motivo==="")current.motivo=line;
  }
  flush();return out;
