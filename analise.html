@@ -64,7 +64,7 @@ function renderMega(){
  const fill=(id,first)=>{const old=$(id).value;$(id).innerHTML='<option value="">'+first+'</option>'+ships.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join("");if(ships.includes(old))$(id).value=old};
  fill("navioSelecionado","Todos os navios");fill("navioComparacao","Nenhum — visão geral");
  const selected=$("navioSelecionado").value,comp=$("navioComparacao").value;
- const base=telegramRows.filter(r=>(!selected||norm(r.navio)===norm(selected))&&(!comp||norm(r.navio)===norm(comp)));
+ const base=telegramRows.filter(r=>{if(selected&&comp)return norm(r.navio)===norm(selected)||norm(r.navio)===norm(comp);if(selected)return norm(r.navio)===norm(selected);if(comp)return norm(r.navio)===norm(comp);return true});
  const prod=base.filter(r=>r.producao!==null),stops=base.filter(r=>r.paradaMin!==null);
  $("prodTotal").textContent=prod.length?prod.reduce((a,r)=>a+r.producao,0).toLocaleString("pt-BR",{maximumFractionDigits:2}):"—";
  $("paradasTotal").textContent=stops.length;$("mediaParada").textContent=stops.length?fmtMinutes(stops.reduce((a,r)=>a+r.paradaMin,0)/stops.length):"—";$("telegramTotal").textContent=telegramRows.length;
