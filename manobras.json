@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-13T18:56:59.728825-03:00",
+  "atualizado_em": "2026-10-13T21:39:55.166232-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,21 +12,21 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN KAI TUO",
-      "data": "14/10/2026",
-      "hora": "06:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "MAERSK KATALIN",
       "data": "14/10/2026",
       "hora": "07:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN KAI TUO",
+      "data": "14/10/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
