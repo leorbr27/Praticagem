@@ -47,7 +47,7 @@ function parseTelegram(text){
   if(shift)r.turno=shift[1].trim();
   const op=line.match(/(?:operação|operacao|evento|atividade)\s*[:=-]\s*([^|;,]+)/i);if(op)r.operacao=op[1].trim();
   const prodRe=/(?:produção|producao|total\s+(?:do\s+)?turno|produzido|movimentados?|toneladas?|volume)\s*[:=-]?\s*([\d.,]+)\s*(t\/h|toneladas?|tons?\.?|t|unidades?)?/ig;
-  let pm;while((pm=prodRe.exec(line))!==null){const n=parseNumber(pm[1]);if(n!==null)addProduction(n,pm[2]||(/tonelad|\\bton\\b|\\bt\\b/i.test(line)?"t":""))}
+  let pm;while((pm=prodRe.exec(line))!==null){const n=parseNumber(pm[1]);if(n!==null)addProduction(n,pm[2]||(/tonelad|\bton\b|\bt\b/i.test(line)?"t":""))}
   const stop=line.match(/(?:paralisação|paralisacao|parada|tempo parado|horas?\s+paradas?|indisponível|indisponivel)\s*[:=-]?\s*([^|;,]+)/i);
   if(stop){const mins=durationMinutes(stop[1]);if(mins!==null)r.paradaMin=(r.paradaMin||0)+mins;r.motivo=stop[1].trim()}
   const reason=line.match(/(?:motivo|causa|observação|observacao)\s*[:=-]\s*([^|;,]+)/i);if(reason)r.motivo=reason[1].trim();
