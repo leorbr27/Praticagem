@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-10-14T12:25:21.187039-03:00",
+  "atualizado_em": "2026-10-14T16:25:57.657542-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GREEN SUAPE",
-      "data": "14/10/2026",
-      "hora": "10:55",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MORNING CATHERINE",
-      "data": "14/10/2026",
-      "hora": "11:55",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "STAR MAJESTY",
-      "data": "14/10/2026",
-      "hora": "13:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MAERSK KATALIN",
-      "data": "14/10/2026",
-      "hora": "14:46",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "VORIAS",
       "data": "14/10/2026",
@@ -48,15 +12,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "SEA EAGLE",
-      "data": "14/10/2026",
-      "hora": "16:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SEVEN RIO",
       "data": "14/10/2026",
       "hora": "22:00",
@@ -64,6 +19,15 @@
       "porto": "VIX",
       "berco": "VIX101",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "MORNING CATHERINE",
+      "data": "15/10/2026",
+      "hora": "04:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "MEDI ATLANTICO",
