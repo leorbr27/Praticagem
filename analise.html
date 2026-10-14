@@ -40,7 +40,8 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 </script></main>
 <script>
 const $=id=>document.getElementById(id);
-let telegramRows=[];\nconst naviosSelecionados=new Set();
+let telegramRows=[];
+const naviosSelecionados=new Set();
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toUpperCase();
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
 function durationMinutes(text){const s=String(text||"").toLowerCase();let total=0,found=false;for(const m of s.matchAll(/(\d+(?:[,.]\d+)?)\s*(h|hora|horas|min|minuto|minutos)\b/g)){found=true;const n=Number(m[1].replace(",","."));total+=/^(h|hora)/.test(m[2])?n*60:n}return found?total:null}
