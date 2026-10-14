@@ -19,7 +19,7 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 
 <p class="note" id="status">Cole as mensagens do Telegram e clique em “Processar mensagens”.</p>
 <section class="panel" style="margin-bottom:12px"><h2>Informações do Telegram</h2><p class="desc">Cole abaixo as mensagens do Telegram que deseja analisar. O conteúdo fica apenas nesta página e não é salvo.</p><textarea id="telegramTexto" rows="7" placeholder="Cole aqui as mensagens do Telegram…"></textarea><p class="note">A análise usa exclusivamente as mensagens coladas aqui. Os dados são processados temporariamente nesta página e não são salvos.</p><button class="btn primary" id="processarTelegram" type="button">Processar mensagens</button></section>
-<section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div><div class="tablewrap"><table class="mega"><thead><tr><th>Grupo</th><th>Navio</th><th>Data</th><th>Operação / evento</th><th>Produção</th><th>Unidade</th><th>Paralisação</th><th>Motivo / observação</th><th>Origem</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="9" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
+<section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Produção total</th><th>Unidade</th><th>Horas paradas</th><th>Observação</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="8" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
 <footer id="rodape">Fonte: Praticagem Espírito Santo · Análise temporária no navegador; nenhum dado é salvo nesta página.</footer></main>
 <script>
 const $=id=>document.getElementById(id);
@@ -29,22 +29,43 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 function durationMinutes(text){const s=String(text||"").toLowerCase();let total=0,found=false;for(const m of s.matchAll(/(\d+(?:[,.]\d+)?)\s*(h|hora|horas|min|minuto|minutos)\b/g)){found=true;const n=Number(m[1].replace(",","."));total+=/^(h|hora)/.test(m[2])?n*60:n}return found?total:null}
 function parseNumber(v){let s=String(v||"").trim().replace(/\s/g,"");if(!s)return null;if(s.includes(",")&&s.includes("."))s=s.replace(/\./g,"").replace(",",".");else if(s.includes(","))s=s.replace(",",".");const n=Number(s);return Number.isFinite(n)?n:null}
 function parseTelegram(text){
- const lines=String(text||"").split(/\r?\n/).map(x=>x.trim()).filter(Boolean),out=[];let current=null;
- const flush=()=>{if(current&&(current.navio||current.producao!==null||current.paradaMin!==null||current.operacao||current.motivo))out.push({...current})};
+ const lines=String(text||"").split(/\r?\n/).map(x=>x.trim()).filter(Boolean),out=[];
+ let current=null;
+ const fresh=()=>({navio:"",berco:"",data:"",turno:"",operacao:"",producao:null,unidade:"",paradaMin:null,motivo:"",origem:"Telegram"});
+ const flush=()=>{if(current&&(current.navio||current.berco||current.data||current.turno||current.producao!==null||current.paradaMin!==null||current.operacao||current.motivo)){out.push({...current});current=null}};
+ const ensure=()=>{if(!current)current=fresh();return current};
+ const addProduction=(n,unit)=>{const r=ensure();r.producao=(r.producao||0)+n;if(unit)r.unidade=unit.toLowerCase()};
  for(const line of lines){
-  const ship=line.match(/(?:navio|embarcação|embarcacao)\s*[:=-]\s*([^|;,]+?)(?=\s+(?:data|produção|producao|paralisação|paralisacao|parada|operação|operacao)\s*[:=-]|[|;,]|$)/i);
-  if(ship){flush();current={navio:ship[1].trim(),data:"",operacao:"",producao:null,unidade:"",paradaMin:null,motivo:"",origem:"Telegram"}}
-  if(!current)current={navio:"Não identificado",data:"",operacao:"",producao:null,unidade:"",paradaMin:null,motivo:"",origem:"Telegram"};
-  const date=line.match(/\b(\d{2}\/\d{2}(?:\/\d{2,4})?)\b/);if(date)current.data=date[1];
-  const op=line.match(/(?:operação|operacao|evento|atividade)\s*[:=-]\s*([^|;,]+)/i);if(op)current.operacao=op[1].trim();
-  const prod=line.match(/(?:produção|producao|movimentados?|toneladas?|volume)\s*[:=-]?\s*([\d.,]+)\s*(t|ton|toneladas?|t\/h|unidades?)?/i);
-  if(prod){const n=parseNumber(prod[1]);if(n!==null){current.producao=n;current.unidade=(prod[2]||(/tonelada|\bton\b|\bt\b/i.test(line)?"t":"não informada")).toLowerCase()}}
-  const stop=line.match(/(?:paralisação|paralisacao|parada|tempo parado|indisponível|indisponivel)\s*[:=-]?\s*([^|;,]+)/i);
-  if(stop){const mins=durationMinutes(stop[1]);if(mins!==null)current.paradaMin=mins;current.motivo=stop[1].trim()}
-  const reason=line.match(/(?:motivo|causa|observação|observacao)\s*[:=-]\s*([^|;,]+)/i);if(reason)current.motivo=reason[1].trim();
-  if(!ship&&!prod&&!stop&&!op&&!date&&line.length<240&&current.motivo==="")current.motivo=line;
+  const ship=line.match(/(?:navio|embarcação|embarcacao)\s*[:=-]\s*([^|;,]+?)(?=\s+(?:berço|berco|data|turno|período|periodo|produção|producao|paralisação|paralisacao|parada|operação|operacao)\s*[:=-]|[|;,]|$)/i);
+  if(ship && current && current.navio && norm(current.navio)!==norm(ship[1]))flush();
+  const r=ensure();
+  if(ship)r.navio=ship[1].trim();
+  const berth=line.match(/(?:berço|berco)\s*[:#=-]?\s*([^|;,\n]+?)(?=\s+(?:navio|data|turno|período|periodo|produção|producao|paralisação|paralisacao|parada)\s*[:=-]|[|;,]|$)/i);
+  if(berth)r.berco=berth[1].trim().replace(/^n[º°.]?\s*/i,"");
+  const date=line.match(/(?:data\s*[:=-]\s*)?(\b\d{1,2}[\/.-]\d{1,2}[\/.-](?:\d{2,4})\b)/i);if(date)r.data=date[1];
+  const shift=line.match(/(?:turno|per[ií]odo|jornada)\s*[:=-]?\s*(\d{1,2}\s*(?:h|:)\s*\d{0,2}\s*(?:às|a|-)\s*\d{1,2}\s*(?:h|:)\s*\d{0,2}|\d{1,2}\s*(?:º|°)?\s*turno|manhã|manha|tarde|noite|diurno|noturno|[^\n|;,]+)/i);
+  if(shift)r.turno=shift[1].trim();
+  const op=line.match(/(?:operação|operacao|evento|atividade)\s*[:=-]\s*([^|;,]+)/i);if(op)r.operacao=op[1].trim();
+  const prodRe=/(?:produção|producao|total\s+(?:do\s+)?turno|produzido|movimentados?|toneladas?|volume)\s*[:=-]?\s*([\d.,]+)\s*(t\/h|toneladas?|tons?\.?|t|unidades?)?/ig;
+  let pm;while((pm=prodRe.exec(line))!==null){const n=parseNumber(pm[1]);if(n!==null)addProduction(n,pm[2]||(/tonelad|\\bton\\b|\\bt\\b/i.test(line)?"t":""))}
+  const stop=line.match(/(?:paralisação|paralisacao|parada|tempo parado|horas?\s+paradas?|indisponível|indisponivel)\s*[:=-]?\s*([^|;,]+)/i);
+  if(stop){const mins=durationMinutes(stop[1]);if(mins!==null)r.paradaMin=(r.paradaMin||0)+mins;r.motivo=stop[1].trim()}
+  const reason=line.match(/(?:motivo|causa|observação|observacao)\s*[:=-]\s*([^|;,]+)/i);if(reason)r.motivo=reason[1].trim();
+  if(!ship&&!berth&&!date&&!shift&&!op&&!pm&&!stop&&!reason&&line.length<240&&!r.motivo)r.motivo=line;
  }
- flush();return out;
+ flush();
+ // Combina linhas do mesmo navio, berço, data e turno para apresentar o somatório do período.
+ const grouped=new Map();
+ for(const row of out){
+  const key=[norm(row.navio),norm(row.berco),norm(row.data),norm(row.turno)].join("|");
+  if(!grouped.has(key)){grouped.set(key,{...row});continue}
+  const g=grouped.get(key);
+  if(row.producao!==null)g.producao=(g.producao||0)+row.producao;
+  if(row.paradaMin!==null)g.paradaMin=(g.paradaMin||0)+row.paradaMin;
+  if(!g.unidade&&row.unidade)g.unidade=row.unidade;
+  if(row.motivo&&g.motivo!==row.motivo)g.motivo=[g.motivo,row.motivo].filter(Boolean).join("; ");
+ }
+ return [...grouped.values()];
 }
 function fmtMinutes(n){if(n===null||!Number.isFinite(n))return "—";const rounded=Math.round(n),h=Math.floor(rounded/60),m=rounded%60;return h?h+"h "+String(m).padStart(2,"0")+"min":m+" min"}
 function renderMega(){
@@ -56,12 +77,11 @@ function renderMega(){
  const prod=base.filter(r=>r.producao!==null),stops=base.filter(r=>r.paradaMin!==null);
  $("prodTotal").textContent=prod.length?prod.reduce((a,r)=>a+r.producao,0).toLocaleString("pt-BR",{maximumFractionDigits:2}):"—";
  $("paradasTotal").textContent=stops.length;
- $("mediaParada").textContent=stops.length?"Tempo médio: "+fmtMinutes(stops.reduce((a,r)=>a+r.paradaMin,0)/stops.length):"Sem duração reconhecida";
+ $("mediaParada").textContent=stops.length?"Total parado: "+fmtMinutes(stops.reduce((a,r)=>a+r.paradaMin,0)):"Sem duração reconhecida";
  $("telegramTotal").textContent=base.length;
  $("naviosTelegram").textContent=new Set(base.map(r=>norm(r.navio)).filter(Boolean)).size;
- const rows=base.slice().sort((a,b)=>norm(a.navio).localeCompare(norm(b.navio))||String(a.data).localeCompare(String(b.data)));
- let last="";
- $("megaRegistros").innerHTML=rows.length?rows.map(r=>{const g=r.navio||"Não identificado";const heading=g!==last?'<tr class="group-row"><td colspan="9">'+esc(g)+'</td></tr>':"";last=g;return heading+'<tr><td>'+esc(g)+'</td><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data||"—")+'</td><td>'+esc(r.operacao||"—")+'</td><td>'+(r.producao===null?"—":r.producao.toLocaleString("pt-BR"))+'</td><td>'+esc(r.unidade||"—")+'</td><td>'+fmtMinutes(r.paradaMin)+'</td><td>'+esc(r.motivo||"—")+'</td><td>Telegram</td></tr>'}).join(""):'<tr><td colspan="9" class="empty">Nenhum dado reconhecido. Cole as mensagens e clique em “Processar mensagens”.</td></tr>';
+ const rows=base.slice().sort((a,b)=>norm(a.navio).localeCompare(norm(b.navio))||String(a.data).localeCompare(String(b.data))||norm(a.turno).localeCompare(norm(b.turno)));
+ $("megaRegistros").innerHTML=rows.length?rows.map(r=>'<tr><td><strong>'+esc(r.navio||"Não identificado")+'</strong></td><td>'+esc(r.berco||"—")+'</td><td>'+esc(r.data||"—")+'</td><td>'+esc(r.turno||"—")+'</td><td>'+(r.producao===null?"—":r.producao.toLocaleString("pt-BR",{maximumFractionDigits:2}))+'</td><td>'+esc(r.unidade||"—")+'</td><td>'+fmtMinutes(r.paradaMin)+'</td><td>'+esc(r.motivo||r.operacao||"—")+'</td></tr>').join(""):'<tr><td colspan="8" class="empty">Nenhum dado reconhecido. Cole as mensagens e clique em “Processar mensagens”.</td></tr>';
 }
 $("processarTelegram").addEventListener("click",()=>{telegramRows=parseTelegram($("telegramTexto").value);renderMega();$("status").textContent="Análise concluída: "+telegramRows.length+" registro(s) extraído(s) exclusivamente do Telegram."});
 $("navioSelecionado").addEventListener("change",renderMega);
