@@ -76,11 +76,11 @@ async function consultarFonte(){
   if(!res.ok)throw new Error("O site respondeu HTTP "+res.status+".");
   const html=await res.text();
   const doc=new DOMParser().parseFromString(html,"text/html");
-  const dataPattern=/^\\d{2}\\/\\d{2}\\/\\d{4}$/;
-  const timePattern=/^\\d{2}:\\d{2}$/;
+  const dataPattern=/^\d{2}\/\d{2}\/\d{4}$/;
+  const timePattern=/^\d{2}:\d{2}$/;
   const encontrados=[];
   doc.querySelectorAll("tr").forEach(tr=>{
-   const cells=[...tr.querySelectorAll("td,th")].map(td=>(td.textContent||"").replace(/\\s+/g," ").trim());
+   const cells=[...tr.querySelectorAll("td,th")].map(td=>(td.textContent||"").replace(/\s+/g," ").trim());
    const dateIndex=cells.findIndex(v=>dataPattern.test(v));
    if(dateIndex<0||dateIndex+4>=cells.length||!timePattern.test(cells[dateIndex+1]||""))return;
    const item={navio:cells[0],data:cells[dateIndex],hora:cells[dateIndex+1],tipo:cells[dateIndex+2],porto:cells[dateIndex+3],berco:cells[dateIndex+4],situacao:cells[cells.length-1]};
