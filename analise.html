@@ -46,32 +46,57 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 function durationMinutes(text){const s=String(text||"").toLowerCase();let total=0,found=false;for(const m of s.matchAll(/(\d+(?:[,.]\d+)?)\s*(h|hora|horas|min|minuto|minutos)\b/g)){found=true;const n=Number(m[1].replace(",","."));total+=/^(h|hora)/.test(m[2])?n*60:n}return found?total:null}
 function parseNumber(v){let s=String(v||"").trim().replace(/\s/g,"");if(!s)return null;if(s.includes(",")&&s.includes("."))s=s.replace(/\./g,"").replace(",",".");else if(s.includes(","))s=s.replace(",",".");const n=Number(s);return Number.isFinite(n)?n:null}
 function parseTelegram(text){
- const lines=String(text||"").split(/\r?\n/).map(x=>x.trim()).filter(Boolean),out=[];
- let current=null;
- const fresh=()=>({navio:"",berco:"",data:"",turno:"",operacao:"",producao:null,unidade:"",paradaMin:null,motivo:"",origem:"Telegram"});
- const flush=()=>{if(current&&(current.navio||current.berco||current.data||current.turno||current.producao!==null||current.paradaMin!==null||current.operacao||current.motivo)){out.push({...current});current=null}};
- const ensure=()=>{if(!current)current=fresh();return current};
- const addProduction=(n,unit)=>{const r=ensure();r.producao=(r.producao||0)+n;if(unit)r.unidade=unit.toLowerCase()};
- for(const line of lines){
-  const ship=line.match(/(?:navio|embarcação|embarcacao)\s*[:=-]\s*([^|;,]+?)(?=\s+(?:berço|berco|data|turno|período|periodo|produção|producao|paralisação|paralisacao|parada|operação|operacao)\s*[:=-]|[|;,]|$)/i);
-  if(ship && current && current.navio && norm(current.navio)!==norm(ship[1]))flush();
-  const r=ensure();
-  if(ship)r.navio=ship[1].trim();
-  const berth=line.match(/(?:berço|berco)\s*[:#=-]?\s*([^|;,\n]+?)(?=\s+(?:navio|data|turno|período|periodo|produção|producao|paralisação|paralisacao|parada)\s*[:=-]|[|;,]|$)/i);
-  if(berth)r.berco=berth[1].trim().replace(/^n[º°.]?\s*/i,"");
-  const date=line.match(/(?:data\s*[:=-]\s*)?(\b\d{1,2}[\/.-]\d{1,2}[\/.-](?:\d{2,4})\b)/i);if(date)r.data=date[1];
-  const shift=line.match(/(?:turno|per[ií]odo|jornada)\s*[:=-]?\s*(\d{1,2}\s*(?:h|:)\s*\d{0,2}\s*(?:às|a|-)\s*\d{1,2}\s*(?:h|:)\s*\d{0,2}|\d{1,2}\s*(?:º|°)?\s*turno|manhã|manha|tarde|noite|diurno|noturno|[^\n|;,]+)/i);
-  if(shift)r.turno=shift[1].trim();
-  const op=line.match(/(?:operação|operacao|evento|atividade)\s*[:=-]\s*([^|;,]+)/i);if(op)r.operacao=op[1].trim();
-  const prodRe=/(?:produção|producao|total\s+(?:do\s+)?turno|produzido|movimentados?|toneladas?|volume)\s*[:=-]?\s*([\d.,]+)\s*(t\/h|toneladas?|tons?\.?|t|unidades?)?/ig;
-  let pm;while((pm=prodRe.exec(line))!==null){const n=parseNumber(pm[1]);if(n!==null)addProduction(n,pm[2]||(/tonelad|\bton\b|\bt\b/i.test(line)?"t":""))}
-  const stop=line.match(/(?:paralisação|paralisacao|parada|tempo parado|horas?\s+paradas?|indisponível|indisponivel)\s*[:=-]?\s*([^|;,]+)/i);
-  if(stop){const mins=durationMinutes(stop[1]);if(mins!==null)r.paradaMin=(r.paradaMin||0)+mins;r.motivo=stop[1].trim()}
-  const reason=line.match(/(?:motivo|causa|observação|observacao)\s*[:=-]\s*([^|;,]+)/i);if(reason)r.motivo=reason[1].trim();
-  if(!ship&&!berth&&!date&&!shift&&!op&&!pm&&!stop&&!reason&&line.length<240&&!r.motivo)r.motivo=line;
+ const source=String(text||"").replace(/\r/g,"");
+ const lines=source.split("\n");
+ const out=[];
+ const clean=s=>String(s||"").replace(/^[\s:：=—–-]+|[\s|;,]+$/g,"").trim();
+ const marker=/^\s*(?:🛳️?\s*)?Navio\b\s*[:：=-]?\s*(.*)$/i;
+ const planning=/^\s*(?:📋\s*)?Planejamento\b\s*[:：=-]?\s*(.*)$/i;
+ const stoppage=/^\s*(?:⚠️\s*)?Paralisações?\b\s*[:：=-]?\s*(.*)$/i;
+ const dayMark=/^\s*Dia\s+(\d{1,2})\b\s*[:：=-]?\s*(.*)$/i;
+ const getDate=s=>{const m=String(s||"").match(/\b(\d{1,2}[\/.-]\d{1,2}[\/.-]\d{2,4})\b/);return m?m[1]:""};
+ const getShift=s=>{const m=String(s||"").match(/(?:turno|per[ií]odo)\s*[:：=-]?\s*(\d{1,2}\s*(?:h|:)??\s*\d{0,2}\s*(?:às|a|-)\s*\d{1,2}\s*(?:h|:)??\s*\d{0,2}|\d{1,2}\s*[º°]?\s*turno|manhã|manha|tarde|noite|diurno|noturno)/i);return m?clean(m[1]):""};
+ const getBerth=s=>{const m=String(s||"").match(/(?:berço|berco)\s*[:#=-]?\s*([A-Z0-9./ -]{1,30})/i);return m?clean(m[1]):""};
+ const getHours=s=>{let total=0,found=false;for(const m of String(s||"").matchAll(/(\d+(?:[,.]\d+)?)\s*(h|hora|horas|min|minuto|minutos)\b/ig)){found=true;const n=parseNumber(m[1]);if(n!==null)total+=/^h|hora/i.test(m[2])?n*60:n}return found?total:null};
+ const getProduction=(s)=>{const vals=[];const re=/(?:produção|producao|prod\.?|quantidade)\s*[:：=]?\s*([\d.,]+)\s*(t(?:on(?:eladas?)?)?|tons?\.?|unidades?)?/ig;let m;while((m=re.exec(s))!==null){const n=parseNumber(m[1]);if(n!==null)vals.push({n,unit:m[2]||""})}return vals};
+ let ship="",day="",dayText="",section="",planLines=[],stopLines=[];
+ const flushDay=()=>{
+  if(!day && !dayText.trim())return;
+  const all=[dayText,...planLines].filter(Boolean).join("\n");
+  const row={navio:ship,berco:getBerth(all),data:getDate(all),turno:getShift(all),operacao:"",producao:null,unidade:"",paradaMin:null,motivo:"",origem:"Telegram"};
+  const dayDate=dayText.match(/\b(\d{1,2})\b/); 
+  if(!row.data && day && dayDate)row.data="Dia "+String(day).padStart(2,"0");
+  // Cada porão pode informar sua própria produção; somar somente os valores associados a porões.
+  const poraoLines=planLines.filter(x=>/(?:porão|porao|porão\s*\d|porao\s*\d)/i.test(x));
+  const candidates=poraoLines.length?poraoLines:planLines;
+  let sum=0,count=0,unit="";
+  for(const line of candidates){for(const p of getProduction(line)){sum+=p.n;count++;if(p.unit)unit=/unid/i.test(p.unit)?"unidades":/t/i.test(p.unit)?"t":p.unit.toLowerCase()}}
+  if(count){row.producao=sum;row.unidade=unit||"t"}
+  const durations=stopLines.map(getHours).filter(v=>v!==null);
+  if(durations.length)row.paradaMin=durations.reduce((a,b)=>a+b,0);
+  row.motivo=stopLines.map(clean).filter(Boolean).join("; ");
+  if(!row.motivo)row.motivo=planLines.filter(x=>/(?:paralisa|parada|impedid|aguardando|chuva|vento|manuten)/i.test(x)).map(clean).join("; ");
+  if(row.navio||row.berco||row.data||row.turno||row.producao!==null||row.paradaMin!==null)out.push(row);
+  planLines=[];stopLines=[];day="";dayText="";
+ };
+ for(const raw of lines){
+  const line=raw.trim();if(!line)continue;
+  const sm=line.match(marker);
+  if(sm){flushDay();ship=clean(sm[1]);section="navio";continue}
+  const pm=line.match(planning);
+  if(pm){section="planejamento";if(clean(pm[1]))planLines.push(clean(pm[1]));continue}
+  const xm=line.match(stoppage);
+  if(xm){section="paralisacoes";if(clean(xm[1]))stopLines.push(clean(xm[1]));continue}
+  const dm=line.match(dayMark);
+  if(dm){flushDay();day=dm[1];dayText=clean(dm[2]);section="planejamento";continue}
+  if(section==="navio"&&!ship){ship=clean(line);continue}
+  if(section==="paralisacoes"){stopLines.push(line);continue}
+  if(section==="planejamento"||day){planLines.push(line);if(!day)dayText=line;continue}
+  // Formato alternativo com campos explícitos, sem os cabeçalhos por emoji.
+  if(/(?:berço|berco|turno|per[ií]odo|produção|producao|paralisação|paralisacao|parada)/i.test(line)){section="planejamento";planLines.push(line)}
  }
- flush();
- // Combina linhas do mesmo navio, berço, data e turno para apresentar o somatório do período.
+ flushDay();
+ // Combina por navio, berço, data e turno, preservando a soma da produção dos porões.
  const grouped=new Map();
  for(const row of out){
   const key=[norm(row.navio),norm(row.berco),norm(row.data),norm(row.turno)].join("|");
