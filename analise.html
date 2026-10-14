@@ -20,7 +20,7 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 <p class="note" id="status">Cole as mensagens do Telegram e clique em “Processar mensagens”.</p>
 <section class="panel" style="margin-bottom:12px"><h2>Informações do Telegram</h2><p class="desc">Cole abaixo as mensagens do Telegram que deseja analisar. O conteúdo fica apenas nesta página e não é salvo.</p><textarea id="telegramTexto" rows="7" placeholder="Cole aqui as mensagens do Telegram…"></textarea><p class="note">A análise usa exclusivamente as mensagens coladas aqui. Os dados são processados temporariamente nesta página e não são salvos.</p><button class="btn primary" id="processarTelegram" type="button">Processar mensagens</button></section>
 <section class="panel" style="margin-bottom:12px"><h2>Seleção de navios</h2><p class="desc">Selecione um ou mais navios para filtrar os gráficos e a tabela.</p><div id="filtroNaviosTelegram" class="ship-buttons" aria-label="Filtrar por navios"></div><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div></section>
-<section class="grid" id="graficosOperacionais"><article class="panel"><h2>Produtividade por navio / turno</h2><p class="desc">Produção somada por navio e turno (t).</p><div id="graficoProdutividade"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Paralisações por navio / turno</h2><p class="desc">Tempo parado somado por navio e turno.</p><div id="graficoParalisacoes"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article></section>
+<section class="grid" id="graficosOperacionais"><article class="panel"><h2>Produtividade por navio / turno</h2><p class="desc">Produtividade média por navio (t por registro/turno).</p><div id="graficoProdutividade"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Paralisações por navio / turno</h2><p class="desc">Tempo médio de paralisação por navio.</p><div id="graficoParalisacoes"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article></section>
 <section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Terno</th><th>Produção (t)</th><th>Horas paradas</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="7" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
 <footer id="rodape">Fonte: Praticagem Espírito Santo · Análise temporária no navegador; nenhum dado é salvo nesta página.</footer>
 <div id="ultimoCommitGitHub" style="text-align:center;color:#74818c;font-size:11px;padding:4px 4px 12px">Último commit do GitHub: consultando…</div>
@@ -150,13 +150,16 @@ function renderBarChart(targetId,rows,valueKey,formatter,colorClass,emptyText){
  const grouped=new Map();
  for(const row of rows){
   if(row[valueKey]===null||!Number.isFinite(row[valueKey]))continue;
-  const key=[row.navio||"Navio não identificado",row.turno||"Turno não identificado"].join(" · ");
-  grouped.set(key,(grouped.get(key)||0)+row[valueKey]);
+  const label=row.navio||"Navio não identificado";
+  const item=grouped.get(label)||{total:0,count:0};
+  item.total+=row[valueKey];
+  item.count++;
+  grouped.set(label,item);
  }
- const entries=[...grouped.entries()].sort((a,b)=>b[1]-a[1]);
+ const entries=[...grouped.entries()].map(([label,item])=>[label,item.total/item.count]).sort((a,b)=>b[1]-a[1]);
  if(!entries.length){target.innerHTML='<div class="empty">'+emptyText+'</div>';return}
  const max=Math.max(...entries.map(e=>e[1]),0);
- target.innerHTML=entries.map(([label,value])=>'<div class="bar"><div class="bar-label" title="'+esc(label)+'">'+esc(label)+'</div><div class="track" role="img" aria-label="'+esc(label)+': '+esc(formatter(value))+'"><div class="fill '+colorClass+'" style="width:'+((max>0?value/max*100:0).toFixed(2))+'%"></div></div><div class="count">'+esc(formatter(value))+'</div></div>').join("");
+ target.innerHTML=entries.map(([label,value])=>'<div class="bar"><div class="bar-label" title="'+esc(label)+'">'+esc(label)+'</div><div class="track" role="img" aria-label="'+esc(label)+': média '+esc(formatter(value))+'"><div class="fill '+colorClass+'" style="width:'+((max>0?value/max*100:0).toFixed(2))+'%"></div></div><div class="count">'+esc(formatter(value))+'</div></div>').join("");
 }
 function renderCharts(base){
  renderBarChart("graficoProdutividade",base,"producao",v=>v.toLocaleString("pt-BR",{maximumFractionDigits:3})+" t","","Nenhuma produtividade reconhecida nas mensagens filtradas.");
