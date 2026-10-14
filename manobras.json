@@ -1,15 +1,15 @@
 {
-  "atualizado_em": "2026-10-14T02:28:10.098564-03:00",
+  "atualizado_em": "2026-10-14T07:25:05.980379-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "ZHONG YUAN HAI YUN KAI TUO",
       "data": "14/10/2026",
-      "hora": "10:00",
+      "hora": "09:10",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN SUAPE",
