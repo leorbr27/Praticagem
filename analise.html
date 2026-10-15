@@ -81,7 +81,7 @@ function parseTelegram(text){
   const shipHeader=line.match(/^\s*🛳️?\s*\*{0,2}(.+?)(?:\\?\s+VOY\b|\s*\*\s*[•·]|$)/i)
     || line.match(/^\s*(?:🛳️?\s*)?Navio\b\s*[:：=-]?\s*(.*)$/i);
   if(shipHeader && (/🛳|^\s*Navio\b/i.test(line))){
-   ship=normShip(shipHeader[1]);if(ship)foundShips.add(ship);continue;
+   ship=normShip(shipHeader[1]);if(ship){foundShips.add(ship);day="";explicitDate="";section="";currentTerno="";currentShift="";}continue;
   }
   const dm=line.match(/^\s*Dia\s+(\d{1,2})\b\s*(.*)$/i);
   if(dm){day=dm[1];explicitDate=parseDate(dm[2]);section="planejamento";currentTerno="";currentShift="";continue}
@@ -103,7 +103,7 @@ function parseTelegram(text){
    const shift=op[1]+"h"+(op[2]?op[2]:""),terno=normalizeTerno(op[3]);
    const vals=[parseNumber(op[4]),parseNumber(op[5])].filter(v=>v!==null);
    const kg=vals.length?Number(String(op[5]).replace(/[,.]/g,"")):null;
-   const date=parseDate(line)||explicitDate||dayDate(day);
+   const date=parseDate(line)||explicitDate;
    rows.push({navio:ship,berco:"",data:date,turno:shift,terno,producao:kg===null?null:kg/1000,paradaMin:null,origem:"Telegram"});
    currentTerno=terno;currentShift=shift;section="planejamento";continue;
   }
@@ -113,7 +113,7 @@ function parseTelegram(text){
   if(shiftMatch)currentShift=shiftMatch[1]+"h"+(shiftMatch[2]||"");
   if(section==="paralisacoes" || /paralisa|parada|impedid|aguardando|chuva|vento|manuten/i.test(line)){
    const minutes=durationIn(line);
-   if(minutes!==null){const interval=line.match(/\b(\d{1,2}):(\d{2})\s*[-–—]\s*(\d{1,2}):(\d{2})\b/);stoppages.push({navio:ship,data:parseDate(line)||explicitDate||dayDate(day),turno:currentShift,terno:currentTerno,paradaMin:minutes,inicioMin:interval?Number(interval[1])*60+Number(interval[2]):null,fimMin:interval?Number(interval[3])*60+Number(interval[4]):null,text:line})}
+   if(minutes!==null){const interval=line.match(/\b(\d{1,2}):(\d{2})\s*[-–—]\s*(\d{1,2}):(\d{2})\b/);stoppages.push({navio:ship,data:parseDate(line)||explicitDate,turno:currentShift,terno:currentTerno,paradaMin:minutes,inicioMin:interval?Number(interval[1])*60+Number(interval[2]):null,fimMin:interval?Number(interval[3])*60+Number(interval[4]):null,text:line})}
   }
  }
  // Uma paralisação só é atribuída quando a mensagem identifica um terno.
