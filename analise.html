@@ -257,7 +257,7 @@ function renderQualityReport(text, rows) {
  if (!nonempty.some(item => stopWord.test(item.value))) add("warning", null, "Nenhuma linha de possível paralisação foi identificada. Confira se isso era esperado.");
  const summary = document.getElementById("qualidadeResumo");
  summary.replaceChildren();
- [["Blocos com navio", blocks], ["Linhas reconhecidas", recognized], ["Registros válidos", valid.length], ["Registros ignorados", ignored + invalid.length], ["Problemas encontrados", issues.length]].forEach(([label, value]) => {
+ [["Blocos com navio", blocks], ["Linhas reconhecidas", recognized], ["Registros válidos", valid.length], ["Registros incompletos/inválidos", invalid.length], ["Linhas ignoradas", ignored], ["Problemas encontrados", issues.length]].forEach(([label, value]) => {
   const card = document.createElement("article"); card.className = "metric";
   const l = document.createElement("div"); l.className = "label"; l.textContent = label;
   const v = document.createElement("div"); v.className = "value"; v.textContent = String(value);
