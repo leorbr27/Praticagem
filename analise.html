@@ -181,7 +181,12 @@ async function lookupBerths(rows){
      if(berth){found=berth[1].replace(/\s+/g," ").toUpperCase();break}
     }
    }
-   if(found)row.berco=found;
+   // A página consultada representa a situação atual; só a associa a registros da data atual.
+   // Para datas históricas, não há evidência temporal suficiente para afirmar que o berço era o mesmo.
+   const dateMatch=String(row.data||"").match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{2,4})$/);
+   const now=new Date();
+   const sameDay=dateMatch&&Number(dateMatch[1])===now.getDate()&&Number(dateMatch[2])===now.getMonth()+1&&Number(dateMatch[3].length===2?"20"+dateMatch[3]:dateMatch[3])===now.getFullYear();
+   if(found&&sameDay)row.berco=found;
   }
  }catch(error){console.warn("Não foi possível consultar os berços na página de navios atracados (pode haver bloqueio CORS):",error)}
 }
