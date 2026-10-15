@@ -1,32 +1,14 @@
 {
-  "atualizado_em": "2026-10-15T02:30:42.226572-03:00",
+  "atualizado_em": "2026-10-15T06:48:30.192805-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "MORNING CATHERINE",
+      "navio": "MISAGO ARROW",
       "data": "15/10/2026",
-      "hora": "01:30",
+      "hora": "08:15",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "GRAND VEGA",
-      "data": "15/10/2026",
-      "hora": "02:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEVEN RIO",
-      "data": "15/10/2026",
-      "hora": "05:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX101",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "MARCADA"
     },
     {
@@ -54,15 +36,6 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "MISAGO ARROW",
-      "data": "15/10/2026",
-      "hora": "19:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
