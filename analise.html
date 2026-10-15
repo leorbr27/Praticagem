@@ -319,7 +319,7 @@ function renderTemporalEvolution(base){
   const k=norm(g.navio),mean=means.get(k),avg=mean&&mean.count?mean.sum/mean.count:null;
   const diff=g.temProducao&&avg!==null?g.producao-avg:null;
   const prev=previous.get(k);
-  const delta=g.temProducao&&prev&&prev.temProducao&&prev.dataKey!==null&&parseDateKey(g.data)!==null?g.producao-prev.producao:null;
+  const currentDateKey=parseDateKey(g.data),currentTurnKey=turnKey(g.turno); const orderedAfter=prev&&prev.dataKey!==null&&currentDateKey!==null&&prev.turnoKey!==null&&currentTurnKey!==null&&(currentDateKey>prev.dataKey||(currentDateKey===prev.dataKey&&currentTurnKey>prev.turnoKey)); const delta=g.temProducao&&prev&&prev.temProducao&&orderedAfter?g.producao-prev.producao:null;
   const dateKey=parseDateKey(g.data),timeKey=turnKey(g.turno);
   previous.set(k,{producao:g.producao,temProducao:g.temProducao,dataKey:dateKey,turnoKey:timeKey});
   if(g.temProducao)prodEntries.push({navio:g.navio,data:g.data,turno:g.turno,valor:g.producao});
