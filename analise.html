@@ -89,7 +89,7 @@ function parseTelegram(text){
    const balanceMatch=line.match(/^\s*Porão\s*([0-9IlL]+)\s*\|.*?\bSaldo\s*:\s*(-?[\d.,]+)/i);
    if(balanceMatch&&ship){
     const hold=normalizeTerno(balanceMatch[1]).replace(/^#/,"");
-    const value=parseNumber(balanceMatch[2]);
+    const rawBalance=balanceMatch[2].trim();const value=Number(rawBalance.includes(",")?rawBalance.replace(/\./g,"").replace(",","."):rawBalance.replace(/\./g,""));
     if(value!==null){
      if(!balancesByShip.has(norm(ship)))balancesByShip.set(norm(ship),{navio:ship,holds:new Map()});
      balancesByShip.get(norm(ship)).holds.set(hold,value);
