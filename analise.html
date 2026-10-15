@@ -24,6 +24,8 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 <section class="panel" style="margin-bottom:12px"><h2>Seleção de navios</h2><p class="desc">Selecione um ou mais navios para filtrar os gráficos e a tabela.</p><div id="filtroNaviosTelegram" class="ship-buttons" aria-label="Filtrar por navios"></div><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div></section>
 <section class="grid" id="graficosOperacionais"><article class="panel"><h2>Produtividade por navio / turno</h2><p class="desc">Produtividade média por navio (t por registro/turno).</p><div id="graficoProdutividade"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Paralisações por navio / turno</h2><p class="desc">Tempo médio de paralisação por navio.</p><div id="graficoParalisacoes"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Saldo total por navio</h2><p class="desc">Saldo total identificado em cada navio.</p><div id="graficoSaldoNavios"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article></section>
 <section class="panel" id="comparacaoNavios" style="margin-bottom:12px"><h2>Comparação entre navios</h2><p class="desc">Comparação calculada com registros válidos do período e dos navios atualmente filtrados. A produtividade segue a métrica já usada nos gráficos: toneladas por registro/turno.</p><label style="display:flex;flex-direction:column;gap:5px;max-width:360px;font-size:12px;color:#657585">Ordenar por<select id="ordenarComparacao"><option value="producaoTotal">Produção total (t)</option><option value="mediaProducao">Média por turno (t/turno)</option><option value="paradaTotal">Total de paralisações (HH:MM)</option><option value="produtividade">Produtividade média (t/registro-turno)</option></select></label><div id="graficoComparacaoNavios" style="margin-top:12px"><div class="empty">Processe mensagens para comparar os navios.</div></div><div class="tablewrap" style="margin-top:12px"><table><thead><tr><th>Navio</th><th>Produção total (t)</th><th>Média/turno (t)</th><th>Maior turno (t)</th><th>Menor turno (t)</th><th>Paralisações totais (HH:MM)</th><th>Média paralisações/turno (HH:MM)</th><th>Registros válidos</th><th>Produtividade média (t/registro-turno)</th></tr></thead><tbody id="tabelaComparacaoNavios"><tr><td colspan="9" class="empty">Processe mensagens para comparar os navios.</td></tr></tbody></table></div></section>
+
+<section class="panel" id="evolucaoTemporal" style="margin-bottom:12px"><h2>Evolução por data e turno</h2><p class="desc">Sequência cronológica por navio, com produção, paralisações, comparação com a média do próprio navio e variação entre turnos consecutivos. Respeita os filtros de navios selecionados acima.</p><div id="avisosEvolucaoTemporal" class="note" aria-live="polite">Processe mensagens para analisar a evolução temporal.</div><div class="tablewrap"><table><thead><tr><th>Navio</th><th>Data</th><th>Turno</th><th>Produção (t)</th><th>Paralisações (HH:MM)</th><th>Diferença da média do navio</th><th>Variação vs. turno anterior</th></tr></thead><tbody id="tabelaEvolucaoTemporal"><tr><td colspan="7" class="empty">Processe mensagens para gerar a evolução temporal.</td></tr></tbody></table></div><div id="resumoEvolucaoTemporal" style="margin-top:12px"></div></section>
 <section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Terno</th><th>Produção (t)</th><th>Paradas do porão (HH:MM)</th><th>Saldo por porão</th><th>Saldo total do navio</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="9" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
 <footer id="rodape">Fonte: Praticagem Espírito Santo · Análise temporária no navegador; nenhum dado é salvo nesta página.</footer>
 <div id="ultimoCommitGitHub" style="text-align:center;color:#74818c;font-size:11px;padding:4px 4px 12px">Último commit do GitHub: consultando…</div>
@@ -270,6 +272,75 @@ function renderQualityReport(text, rows) {
  });
  target.append(list);
 }
+
+function renderTemporalEvolution(base){
+ const target=$("tabelaEvolucaoTemporal"), notice=$("avisosEvolucaoTemporal"), summary=$("resumoEvolucaoTemporal");
+ const valid=base.filter(r=>r.navio&&r.data&&r.turno&&(Number.isFinite(r.producao)&&r.producao!==null||Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null||Number.isFinite(r.paradaMin)&&r.paradaMin!==null));
+ const parseDateKey=value=>{
+  const m=String(value||"").match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{2,4})$/);
+  if(!m)return null;
+  let year=Number(m[3]);if(year<100)year+=year<50?2000:1900;
+  const d=new Date(year,Number(m[2])-1,Number(m[1]));
+  return Number.isNaN(d.getTime())?null:d.getTime();
+ };
+ const turnKey=value=>{
+  const m=String(value||"").match(/(\d{1,2})\s*h(?:\s*(\d{2}))?/i);
+  return m?Number(m[1])*60+Number(m[2]||0):null;
+ };
+ const groups=new Map();
+ for(const r of valid){
+  const key=[norm(r.navio),String(r.data).trim(),norm(r.turno)].join("|");
+  if(!groups.has(key))groups.set(key,{navio:r.navio,data:String(r.data).trim(),turno:r.turno,producao:0,temProducao:false,paradaMin:null,rows:[]});
+  const g=groups.get(key);g.rows.push(r);
+  if(Number.isFinite(r.producao)&&r.producao!==null){g.producao+=r.producao;g.temProducao=true}
+  if(Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null)g.paradaMin=Math.max(g.paradaMin??0,r.navioParadaMin);
+  else if(Number.isFinite(r.paradaMin)&&r.paradaMin!==null)g.paradaMin=(g.paradaMin??0)+r.paradaMin;
+ }
+ const turns=[...groups.values()];
+ const allDatesKnown=turns.every(g=>parseDateKey(g.data)!==null);
+ const allTurnsKnown=turns.every(g=>turnKey(g.turno)!==null);
+ turns.sort((a,b)=>{
+  const shipCmp=norm(a.navio).localeCompare(norm(b.navio),"pt-BR");
+  if(shipCmp)return shipCmp;
+  const da=parseDateKey(a.data),db=parseDateKey(b.data);
+  if(da!==null&&db!==null&&da!==db)return da-db;
+  if(da!==null&&db===null)return -1;if(da===null&&db!==null)return 1;
+  const ta=turnKey(a.turno),tb=turnKey(b.turno);
+  if(ta!==null&&tb!==null&&ta!==tb)return ta-tb;
+  if(ta!==null&&tb===null)return -1;if(ta===null&&tb!==null)return 1;
+  return a.data.localeCompare(b.data,"pt-BR")||a.turno.localeCompare(b.turno,"pt-BR");
+ });
+ const means=new Map();
+ for(const g of turns){if(g.temProducao){const k=norm(g.navio),v=means.get(k)||{sum:0,count:0};v.sum+=g.producao;v.count++;means.set(k,v)}}
+ const previous=new Map(), prodEntries=[], stopEntries=[];
+ const fmtT=v=>v===null||!Number.isFinite(v)?"—":v.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:1})+" t";
+ const fmtDelta=v=>v===null||!Number.isFinite(v)?"—":(v>0?"+":"")+v.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:1})+" t";
+ target.innerHTML=turns.length?turns.map(g=>{
+  const k=norm(g.navio),mean=means.get(k),avg=mean&&mean.count?mean.sum/mean.count:null;
+  const diff=g.temProducao&&avg!==null?g.producao-avg:null;
+  const prev=previous.get(k);
+  const delta=g.temProducao&&prev&&prev.temProducao&&prev.dataKey!==null&&parseDateKey(g.data)!==null?g.producao-prev.producao:null;
+  const dateKey=parseDateKey(g.data),timeKey=turnKey(g.turno);
+  previous.set(k,{producao:g.producao,temProducao:g.temProducao,dataKey:dateKey,turnoKey:timeKey});
+  if(g.temProducao)prodEntries.push({navio:g.navio,data:g.data,turno:g.turno,valor:g.producao});
+  if(g.paradaMin!==null)stopEntries.push({navio:g.navio,data:g.data,turno:g.turno,valor:g.paradaMin});
+  const stoppage=g.paradaMin===null?"—":fmtHHMM(g.paradaMin);
+  const avgText=diff===null?"—":fmtDelta(diff)+" da média ("+fmtT(avg)+")";
+  const variation=delta===null?"—":fmtDelta(delta);
+  return '<tr><td><strong>'+esc(g.navio)+'</strong></td><td>'+esc(g.data||"—")+'</td><td>'+esc(g.turno||"—")+'</td><td>'+(g.temProducao?fmtT(g.producao):"—")+'</td><td>'+stoppage+'</td><td>'+avgText+'</td><td>'+variation+'</td></tr>';
+ }).join(""):'<tr><td colspan="7" class="empty">Nenhum registro válido para evolução temporal nos filtros atuais.</td></tr>';
+ const bestProd=prodEntries.length?prodEntries.reduce((a,b)=>b.valor>a.valor?b:a):null;
+ const worstProd=prodEntries.length?prodEntries.reduce((a,b)=>b.valor<a.valor?b:a):null;
+ const bestStop=stopEntries.length?stopEntries.reduce((a,b)=>b.valor<a.valor?b:a):null;
+ const worstStop=stopEntries.length?stopEntries.reduce((a,b)=>b.valor>a.valor?b:a):null;
+ const item=(label,g,value)=>'<div class="metric"><div class="label">'+label+'</div><div class="value" style="font-size:18px">'+(g?esc(g.navio+' · '+g.data+' · '+g.turno):"—")+'</div><div class="detail">'+(g?esc(value):"Sem dados válidos suficientes")+'</div></div>';
+ summary.innerHTML='<div class="metrics">'+item("Melhor turno de produção",bestProd,bestProd?fmtT(bestProd.valor):"")+
+ item("Pior turno de produção",worstProd,worstProd?fmtT(worstProd.valor):"")+
+ item("Menor paralisação",bestStop,bestStop?fmtHHMM(bestStop.valor):"")+
+ item("Maior paralisação",worstStop,worstStop?fmtHHMM(worstStop.valor):"")+'</div>';
+ const unknown=turns.filter(g=>parseDateKey(g.data)===null||turnKey(g.turno)===null).length;
+ notice.textContent=(allDatesKnown&&allTurnsKnown?"Datas e turnos reconhecidos e ordenados cronologicamente. ":"Atenção: "+unknown+" registro(s) têm data ou turno sem formato cronológico reconhecido; a ordem desses itens não pode ser garantida. ")+turns.length+" combinação(ões) navio/data/turno nos filtros atuais. Variações são calculadas somente entre registros consecutivos do mesmo navio quando a data e o turno permitem confirmar a sequência.";
+}
 function renderShipComparison(base){
  const valid=base.filter(r=>r.navio&&r.data&&r.turno&&(Number.isFinite(r.producao)&&r.producao!==null||Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null||Number.isFinite(r.paradaMin)&&r.paradaMin!==null));
  const shifts=new Map();
@@ -369,6 +440,7 @@ function renderMega(){
  const rows=base.slice().sort((a,b)=>norm(a.navio).localeCompare(norm(b.navio))||String(a.data).localeCompare(String(b.data))||norm(a.turno).localeCompare(norm(b.turno)));
  renderCharts(base);
  renderShipComparison(base);
+ renderTemporalEvolution(base);
  $("megaRegistros").innerHTML=rows.length?rows.map(r=>'<tr><td><strong>'+esc(r.navio||"Não identificado")+'</strong></td><td>'+esc(r.berco||"—")+'</td><td>'+esc(r.data||"—")+'</td><td>'+esc(r.turno||"—")+'</td><td>'+esc(r.terno||"—")+'</td><td>'+(r.producao===null?"—":r.producao.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:0}))+'</td><td>'+fmtHHMM(r.paradaMin)+'</td><td>'+(r.saldosPorPorão&&r.saldosPorPorão.length?r.saldosPorPorão.map(([porao,saldo])=>'Porão '+esc(porao)+': '+Math.round(saldo).toLocaleString("pt-BR",{maximumFractionDigits:0})).join('<br>'):'—')+'</td><td>'+(r.saldoTotalNavio===null||r.saldoTotalNavio===undefined?'—':Math.round(r.saldoTotalNavio).toLocaleString("pt-BR",{maximumFractionDigits:0}))+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">Nenhum dado reconhecido. Cole as mensagens e clique em “Processar mensagens”.</td></tr>';
 }
 $("processarTelegram").addEventListener("click",async()=>{const texto=$("telegramTexto").value;telegramRows=parseTelegram(texto);renderQualityReport(texto,telegramRows);$("status").textContent="Processando mensagens e consultando os berços…";await lookupBerths(telegramRows);renderMega();$("status").textContent="Análise concluída: "+telegramRows.length+" registro(s) extraído(s). Consulte os avisos de qualidade. Berços consultados na página de navios atracados quando disponível."});
