@@ -19,6 +19,7 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 
 <p class="note" id="status">Cole as mensagens do Telegram e clique em “Processar mensagens”.</p>
 <section class="panel" style="margin-bottom:12px"><h2>Informações do Telegram</h2><p class="desc">Cole abaixo as mensagens do Telegram que deseja analisar. O conteúdo fica apenas nesta página e não é salvo.</p><textarea id="telegramTexto" rows="7" placeholder="Cole aqui as mensagens do Telegram…"></textarea><p class="note">A análise usa exclusivamente as mensagens coladas aqui. Os dados são processados temporariamente nesta página e não são salvos.</p><button class="btn primary" id="processarTelegram" type="button">Processar mensagens</button></section>
+<section class="panel" id="filtroPeriodo" style="margin-bottom:12px"><h2>Período da análise</h2><p class="desc">O período é calculado somente com as datas reconhecidas nas mensagens importadas. Dias sem registros não são presumidos.</p><div class="filters" style="grid-template-columns:1fr 1fr 1fr 1fr"><label>Modo<select id="modoPeriodo"><option value="todos">Todos os registros importados</option><option value="intervalo">Intervalo de datas</option><option value="semana">Semana de 7 dias</option></select></label><label>Data inicial<input id="dataInicio" type="date" disabled></label><label>Data final<input id="dataFim" type="date" disabled></label><div style="align-self:end"><div class="label">Datas encontradas</div><strong id="intervaloEncontrado">Aguardando importação</strong></div></div><p class="note" id="resumoPeriodo">Cole mensagens para identificar o intervalo real.</p></section>
 <section class="panel" id="qualidadeDados" style="margin-bottom:12px" aria-live="polite"><h2>Qualidade dos dados extraídos</h2><p class="desc">Avisos gerados após o processamento. Registros suspeitos não são excluídos automaticamente.</p><div id="qualidadeResumo" class="metrics" style="margin-bottom:10px"></div><div id="qualidadeAvisos" class="empty">Processe mensagens para verificar a qualidade da extração.</div></section>
 <section class="panel" id="resumoGeralPeriodo" style="margin-bottom:12px"><h2>Resumo geral do período</h2><p class="desc">Indicadores calculados exclusivamente a partir dos registros válidos processados nesta análise, sem aplicar os filtros visuais de navios.</p><div id="resumoGeralMetricas" class="metrics" style="margin-bottom:0"><div class="empty">Processe mensagens para calcular o resumo.</div></div></section>
 <section class="panel" style="margin-bottom:12px"><h2>Seleção de navios</h2><p class="desc">Selecione um ou mais navios para filtrar os gráficos e a tabela.</p><div id="filtroNaviosTelegram" class="ship-buttons" aria-label="Filtrar por navios"></div><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div></section>
@@ -62,7 +63,8 @@ function normalizeTerno(value){
 }
 function parseTelegram(text){
  const lines=String(text||"").replace(/\r/g,"").split("\n");
- const rows=[], stoppages=[], foundShips=new Set(), balancesByShip=new Map();
+ const rows=[], stoppages=[], foundShips=new Set(), balancesByShip=new Map(), seenLines=new Set();
+ const duplicateLines=new Set();
  let ship="",day="",explicitDate="",section="",currentTerno="",currentShift="";
  const clean=s=>String(s||"").replace(/\*/g,"").replace(/^[\s:：=—–-]+|[\s|;,]+$/g,"").trim();
  const parseDate=s=>{const m=String(s||"").match(/\b(\d{1,2}[\/.-]\d{1,2}[\/.-]\d{2,4})\b/);return m?m[1]:""};
@@ -77,6 +79,9 @@ function parseTelegram(text){
  };
  for(const raw of lines){
   const line=raw.trim();if(!line)continue;
+  const exactKey=line.replace(/\s+/g," ").trim();
+  if(seenLines.has(exactKey)){duplicateLines.add(exactKey);continue}
+  seenLines.add(exactKey);
   const shipHeader=line.match(/^\s*🛳️?\s*\*{0,2}(.+?)(?:\\?\s+VOY\b|\s*\*\s*[•·]|$)/i)
     || line.match(/^\s*(?:🛳️?\s*)?Navio\b\s*[:：=-]?\s*(.*)$/i);
   if(shipHeader && (/🛳|^\s*Navio\b/i.test(line))){
@@ -157,6 +162,7 @@ function parseTelegram(text){
   const key=[norm(row.navio),row.data,norm(row.turno)].join("|");
   row.navioParadaMin=vesselMinutes.has(key)?vesselMinutes.get(key):null;
  }
+ result.duplicateLines=[...duplicateLines];
  return result;
 }
 async function lookupBerths(rows){
@@ -216,6 +222,7 @@ function renderCharts(base){
 function renderQualityReport(text, rows) {
  const lines = String(text || "").replace(/\r/g, "").split("\n");
  const issues = [];
+ (rows.duplicateLines || []).forEach(line => issues.push({level:"warning",line:null,message:"Linha repetida no texto colado e ignorada para evitar contagem em dobro: "+line.slice(0,180)}));
  const add = (level, line, message) => issues.push({level, line, message});
  const nonempty = lines.map((value, index) => ({value:value.trim(), line:index+1})).filter(item => item.value);
  const shipHeader = /🛳|^\s*Navio\b/i;
@@ -431,9 +438,9 @@ function renderBerthComparison(base){
  draw("graficoProducaoPorBerco","producaoTotal",v=>fmtT(v)+" t","","Nenhuma produção válida associada a berços.");
  draw("graficoParalisacoesPorBerco","paradaTotal",v=>fmtHHMM(v),"red","Nenhuma paralisação válida associada a berços.");
 }
-function renderGeneralSummary(){
+function renderGeneralSummary(sourceRows=telegramRows){
  const target=$("resumoGeralMetricas");
- const valid=telegramRows.filter(r=>r.navio&&r.data&&r.turno&&(Number.isFinite(r.producao)&&r.producao!==null||Number.isFinite(r.paradaMin)&&r.paradaMin!==null||Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null));
+ const valid=sourceRows.filter(r=>r.navio&&r.data&&r.turno&&(Number.isFinite(r.producao)&&r.producao!==null||Number.isFinite(r.paradaMin)&&r.paradaMin!==null||Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null));
  const turnGroups=new Map();
  for(const r of valid){
   const key=[norm(r.navio),String(r.data).trim(),norm(r.turno)].join("|");
@@ -450,7 +457,7 @@ function renderGeneralSummary(){
  const totalStops=stopTurns.reduce((s,g)=>s+g.paradaMin,0);
  const ships=new Set(turns.map(g=>norm(g.navio)).filter(Boolean));
  const periods=new Set(turns.map(g=>g.data+"|"+norm(g.turno)));
- const incomplete=telegramRows.filter(r=>!r.navio||!r.data||!r.turno||(r.producao===null&&r.paradaMin===null&&r.navioParadaMin===null));
+ const incomplete=sourceRows.filter(r=>!r.navio||!r.data||!r.turno||(r.producao===null&&r.paradaMin===null&&r.navioParadaMin===null));
  const metrics=[
   ["Navios distintos",ships.size,"Navios presentes nos registros válidos"],
   ["Registros navio/data/turno",turns.length,"Chave única por navio, data e turno"],
@@ -521,8 +528,27 @@ function renderProductionStoppage(base){
  chart.innerHTML=svg;
  warnings.textContent=notes.join(" ");
 }
+function dateISO(value){
+ const s=String(value||"").trim();let m=s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(m)return m[1]+"-"+m[2].padStart(2,"0")+"-"+m[3].padStart(2,"0");
+ m=s.match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{2,4})$/);if(!m)return "";let y=Number(m[3]);if(m[3].length===2)y+=2000;const d=Number(m[1]),mo=Number(m[2]);if(mo<1||mo>12||d<1||d>31)return "";const dt=new Date(Date.UTC(y,mo-1,d));if(dt.getUTCFullYear()!==y||dt.getUTCMonth()!==mo-1||dt.getUTCDate()!==d)return "";return y+"-"+String(mo).padStart(2,"0")+"-"+String(d).padStart(2,"0");
+}
+function updatePeriodControls(){
+ const dated=telegramRows.map(r=>dateISO(r.data)).filter(Boolean).sort();const mode=$("modoPeriodo").value;const start=$("dataInicio"),end=$("dataFim");start.disabled=end.disabled=mode!=="intervalo";const min=dated[0]||"",max=dated[dated.length-1]||"";
+ $("intervaloEncontrado").textContent=min?(min===max?min:min+" a "+max):"Nenhuma data interpretável";
+ if(!min){$("resumoPeriodo").textContent="Não há datas completas interpretáveis; registros sem data não entram em filtros por período.";return}
+ if(mode==="todos")$("resumoPeriodo").textContent=dated.length+" ocorrência(s) de data reconhecida(s); intervalo real "+min+" a "+max+". Os dias sem registros não são presumidos.";
+ else if(mode==="semana")$("resumoPeriodo").textContent="Semana móvel de 7 dias terminando em "+(end.value||max)+". A análise inclui apenas datas importadas dentro desse intervalo.";
+ else $("resumoPeriodo").textContent="Escolha as datas inicial e final para filtrar os registros importados.";
+}
+function periodRows(rows){
+ const mode=$("modoPeriodo").value;if(mode==="todos")return rows;const dated=rows.map(r=>dateISO(r.data)).filter(Boolean).sort();if(!dated.length)return [];
+ let from=$("dataInicio").value,to=$("dataFim").value;
+ if(mode==="semana"){to=to||dated[dated.length-1];const d=new Date(to+"T00:00:00Z");d.setUTCDate(d.getUTCDate()-6);from=d.toISOString().slice(0,10);}
+ if(mode==="intervalo"&&(!from||!to))return [];
+ if(from&&to&&from>to){const temp=from;from=to;to=temp;}
+ return rows.filter(r=>{const d=dateISO(r.data);return d&&d>=from&&d<=to});
+}
 function renderMega(){
- renderGeneralSummary();
  const ships=[...new Map([...telegramShips,...telegramRows.map(r=>r.navio)].filter(Boolean).map(n=>[norm(n),n])).values()].sort((a,b)=>a.localeCompare(b,"pt-BR"));
  const buttons=$("filtroNaviosTelegram");
  buttons.innerHTML=ships.map(n=>{const hasData=telegramRows.some(r=>norm(r.navio)===norm(n)&&(r.producao!==null||r.paradaMin!==null||r.navioParadaMin!==null||r.data||r.turno||r.terno||r.berco));return '<button type="button" class="ship-filter-btn'+(hasData?' has-data':'')+(naviosSelecionados.has(norm(n))?' active':'')+'" aria-pressed="'+naviosSelecionados.has(norm(n))+'" data-navio="'+esc(n)+'">'+esc(n)+'</button>'}).join("")+(naviosSelecionados.size?'<button type="button" class="ship-filter-btn ship-filter-clear" id="limparFiltroNavios">Limpar seleção</button>':'');
@@ -531,7 +557,9 @@ function renderMega(){
  const fill=(id,first)=>{const old=$(id).value;$(id).innerHTML='<option value="">'+first+'</option>'+ships.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join("");if(ships.includes(old))$(id).value=old};
  fill("navioSelecionado","Todos os navios");fill("navioComparacao","Nenhum — visão geral");
  const selected=$("navioSelecionado").value,comp=$("navioComparacao").value;
- const base=telegramRows.filter(r=>{if(naviosSelecionados.size)return naviosSelecionados.has(norm(r.navio));if(selected&&comp)return norm(r.navio)===norm(selected)||norm(r.navio)===norm(comp);if(selected)return norm(r.navio)===norm(selected);if(comp)return norm(r.navio)===norm(comp);return true});
+ const periodBase=periodRows(telegramRows);
+ const base=periodBase.filter(r=>{if(naviosSelecionados.size)return naviosSelecionados.has(norm(r.navio));if(selected&&comp)return norm(r.navio)===norm(selected)||norm(r.navio)===norm(comp);if(selected)return norm(r.navio)===norm(selected);if(comp)return norm(r.navio)===norm(comp);return true});
+ renderGeneralSummary(base);
  const prod=base.filter(r=>r.producao!==null),stops=base.filter(r=>r.navioParadaMin!==null);
  const saldosPorNavio=new Map();
  for(const row of base){
@@ -557,7 +585,9 @@ function renderMega(){
  renderProductionStoppage(base);
  $("megaRegistros").innerHTML=rows.length?rows.map(r=>'<tr><td><strong>'+esc(r.navio||"Não identificado")+'</strong></td><td>'+esc(r.berco||"—")+'</td><td>'+esc(r.data||"—")+'</td><td>'+esc(r.turno||"—")+'</td><td>'+esc(r.terno||"—")+'</td><td>'+(r.producao===null?"—":r.producao.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:0}))+'</td><td>'+fmtHHMM(r.paradaMin)+'</td><td>'+(r.saldosPorPorão&&r.saldosPorPorão.length?r.saldosPorPorão.map(([porao,saldo])=>'Porão '+esc(porao)+': '+Math.round(saldo).toLocaleString("pt-BR",{maximumFractionDigits:0})).join('<br>'):'—')+'</td><td>'+(r.saldoTotalNavio===null||r.saldoTotalNavio===undefined?'—':Math.round(r.saldoTotalNavio).toLocaleString("pt-BR",{maximumFractionDigits:0}))+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">Nenhum dado reconhecido. Cole as mensagens e clique em “Processar mensagens”.</td></tr>';
 }
-$("processarTelegram").addEventListener("click",async()=>{const texto=$("telegramTexto").value;telegramRows=parseTelegram(texto);renderQualityReport(texto,telegramRows);$("status").textContent="Processando mensagens e consultando os berços…";await lookupBerths(telegramRows);renderMega();$("status").textContent="Análise concluída: "+telegramRows.length+" registro(s) extraído(s). Consulte os avisos de qualidade. Berços consultados na página de navios atracados quando disponível."});
+$("processarTelegram").addEventListener("click",async()=>{const texto=$("telegramTexto").value;telegramRows=parseTelegram(texto);naviosSelecionados.clear();$("modoPeriodo").value="todos";$("dataInicio").value="";$("dataFim").value="";updatePeriodControls();renderQualityReport(texto,telegramRows);$("status").textContent="Processando mensagens e consultando os berços…";await lookupBerths(telegramRows);updatePeriodControls();renderMega();$("status").textContent="Análise concluída: "+telegramRows.length+" registro(s) extraído(s). Consulte os avisos de qualidade. Berços consultados na página de navios atracados quando disponível."});
+$("modoPeriodo").addEventListener("change",()=>{updatePeriodControls();renderMega()});$("dataInicio").addEventListener("change",()=>{updatePeriodControls();renderMega()});$("dataFim").addEventListener("change",()=>{updatePeriodControls();renderMega()});
+window.addEventListener("pagehide",()=>{$("telegramTexto").value="";telegramRows=[];telegramShips=[];naviosSelecionados.clear();});
 $("navioSelecionado").addEventListener("change",renderMega);
 $("navioComparacao").addEventListener("change",renderMega);
 $("ordenarComparacao").addEventListener("change",()=>{const selected=$("navioSelecionado").value,comp=$("navioComparacao").value;const base=telegramRows.filter(r=>{if(naviosSelecionados.size)return naviosSelecionados.has(norm(r.navio));if(selected&&comp)return norm(r.navio)===norm(selected)||norm(r.navio)===norm(comp);if(selected)return norm(r.navio)===norm(selected);if(comp)return norm(r.navio)===norm(comp);return true});renderShipComparison(base)});
