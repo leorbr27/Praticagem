@@ -55,7 +55,7 @@ function normalizeTerno(value){
 }
 function parseTelegram(text){
  const lines=String(text||"").replace(/\r/g,"").split("\n");
- const rows=[], stoppages=[];
+ const rows=[], stoppages=[], foundShips=new Set();
  let ship="",day="",explicitDate="",section="",currentTerno="",currentShift="";
  const clean=s=>String(s||"").replace(/\*/g,"").replace(/^[\s:：=—–-]+|[\s|;,]+$/g,"").trim();
  const parseDate=s=>{const m=String(s||"").match(/\b(\d{1,2}[\/.-]\d{1,2}[\/.-]\d{2,4})\b/);return m?m[1]:""};
@@ -80,7 +80,7 @@ function parseTelegram(text){
   const shipHeader=line.match(/^\s*🛳️?\s*\*{0,2}(.+?)(?:\\?\s+VOY\b|\s*\*\s*[•·]|$)/i)
     || line.match(/^\s*(?:🛳️?\s*)?Navio\b\s*[:：=-]?\s*(.*)$/i);
   if(shipHeader && (/🛳|^\s*Navio\b/i.test(line))){
-   ship=normShip(shipHeader[1]);continue;
+   ship=normShip(shipHeader[1]);if(ship)foundShips.add(ship);continue;
   }
   const dm=line.match(/^\s*Dia\s+(\d{1,2})\b\s*(.*)$/i);
   if(dm){day=dm[1];explicitDate=parseDate(dm[2]);section="planejamento";currentTerno="";currentShift="";continue}
@@ -120,6 +120,8 @@ function parseTelegram(text){
   if(row.paradaMin!==null)g.paradaMin=(g.paradaMin||0)+row.paradaMin;
  }
  const result=[...grouped.values()];
+  telegramShips=[...foundShips];
+  for(const name of telegramShips){if(!result.some(r=>norm(r.navio)===norm(name)))result.push({navio:name,berco:"",data:"",turno:"",terno:"",producao:null,paradaMin:null,origem:"Telegram"});}
  // Une intervalos do mesmo navio/data/turno para não contar paralisações simultâneas duas vezes.
  const byVessel=new Map();
  for(const stop of stoppages){
