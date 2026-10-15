@@ -19,6 +19,7 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 
 <p class="note" id="status">Cole as mensagens do Telegram e clique em “Processar mensagens”.</p>
 <section class="panel" style="margin-bottom:12px"><h2>Informações do Telegram</h2><p class="desc">Cole abaixo as mensagens do Telegram que deseja analisar. O conteúdo fica apenas nesta página e não é salvo.</p><textarea id="telegramTexto" rows="7" placeholder="Cole aqui as mensagens do Telegram…"></textarea><p class="note">A análise usa exclusivamente as mensagens coladas aqui. Os dados são processados temporariamente nesta página e não são salvos.</p><button class="btn primary" id="processarTelegram" type="button">Processar mensagens</button></section>
+<section class="panel" id="qualidadeDados" style="margin-bottom:12px" aria-live="polite"><h2>Qualidade dos dados extraídos</h2><p class="desc">Avisos gerados após o processamento. Registros suspeitos não são excluídos automaticamente.</p><div id="qualidadeResumo" class="metrics" style="margin-bottom:10px"></div><div id="qualidadeAvisos" class="empty">Processe mensagens para verificar a qualidade da extração.</div></section>
 <section class="panel" style="margin-bottom:12px"><h2>Seleção de navios</h2><p class="desc">Selecione um ou mais navios para filtrar os gráficos e a tabela.</p><div id="filtroNaviosTelegram" class="ship-buttons" aria-label="Filtrar por navios"></div><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div></section>
 <section class="grid" id="graficosOperacionais"><article class="panel"><h2>Produtividade por navio / turno</h2><p class="desc">Produtividade média por navio (t por registro/turno).</p><div id="graficoProdutividade"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Paralisações por navio / turno</h2><p class="desc">Tempo médio de paralisação por navio.</p><div id="graficoParalisacoes"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Saldo total por navio</h2><p class="desc">Saldo total identificado em cada navio.</p><div id="graficoSaldoNavios"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article></section>
 <section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Terno</th><th>Produção (t)</th><th>Paradas do porão (HH:MM)</th><th>Saldo por porão</th><th>Saldo total do navio</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="9" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
@@ -208,6 +209,68 @@ function renderCharts(base){
  const vesselRows=[...new Map(base.filter(r=>r.navioParadaMin!==null).map(r=>[[norm(r.navio),r.data,norm(r.turno)].join("|"),{...r,paradaMin:r.navioParadaMin}])).values()];
  renderBarChart("graficoParalisacoes",vesselRows,"paradaMin",v=>fmtHHMM(v),"red","Nenhuma paralisação com duração reconhecida nas mensagens filtradas.");
 }
+function renderQualityReport(text, rows) {
+ const lines = String(text || "").replace(/\r/g, "").split("\n");
+ const issues = [];
+ const add = (level, line, message) => issues.push({level, line, message});
+ const nonempty = lines.map((value, index) => ({value:value.trim(), line:index+1})).filter(item => item.value);
+ const shipHeader = /🛳|^\s*Navio\b/i;
+ const opShape = /\b\d{1,2}\s*h(?:\s*\d{2})?\s*[-–—]\s*#?\s*[0-9IlL]{1,2}\s*\|/i;
+ const opValid = /(?:^|\|\s*)\d{1,2}\s*h(?:\s*\d{2})?\s*[-–—]\s*#?\s*[0-9IlL]{1,2}\s*\|\s*[\d.,]+\s*\|\s*[\d.,]+/i;
+ const stopWord = /paralisa|parada|impedid|aguardando|chuva|vento|manuten/i;
+ const durationShape = /\(\d{2,}:[0-5]\d\)|\b\d{1,3}:[0-5]\d\b|\b\d+(?:[,.]\d+)?\s*(?:h|hora|horas|min|minuto|minutos)\b/i;
+ const blocks = nonempty.filter(item => shipHeader.test(item.value)).length;
+ let ignored = 0;
+ for (const item of nonempty) {
+  if (opShape.test(item.value) && !opValid.test(item.value)) { ignored++; add("error", item.line, "Linha operacional não pôde ser interpretada. Confira turno, terno e valores numéricos."); }
+  if (stopWord.test(item.value) && !durationShape.test(item.value)) { ignored++; add("warning", item.line, "Possível paralisação sem duração reconhecível. Confira a duração ou os horários."); }
+  if ((opShape.test(item.value) || /Saldo\s*:/i.test(item.value)) && /(?:^|[|:=\s])-\s*\d/.test(item.value)) add("warning", item.line, "Valor negativo encontrado. Confirme se é esperado neste campo.");
+ }
+ const valid = rows.filter(r => r.navio && r.data && r.turno && (r.producao !== null || r.paradaMin !== null));
+ const invalid = rows.filter(r => !valid.includes(r));
+ invalid.forEach(r => {
+  const missing = [];
+  if (!r.navio) missing.push("navio");
+  if (!r.data) missing.push("data");
+  if (!r.turno) missing.push("turno/período");
+  if (r.producao === null && r.paradaMin === null) missing.push("produção ou duração de paralisação");
+  add("error", null, "Registro " + (r.navio || "sem navio") + " / " + (r.data || "sem data") + " / " + (r.turno || "sem turno") + ": faltam " + missing.join(", ") + ".");
+ });
+ const groups = new Map();
+ for (const r of rows) {
+  if (!r.navio || !r.data || !r.turno) continue;
+  const key = [norm(r.navio), r.data, norm(r.turno)].join("|");
+  if (!groups.has(key)) groups.set(key, []);
+  groups.get(key).push(r);
+ }
+ for (const group of groups.values()) if (group.length > 1) {
+  const r = group[0];
+  add("warning", null, "Possível duplicidade em " + r.navio + " / " + r.data + " / " + r.turno + ": " + group.length + " registros. Pode ser legítimo haver vários ternos; nenhum registro foi excluído.");
+ }
+ if (nonempty.length && !blocks) add("error", null, "Nenhum cabeçalho de navio foi reconhecido.");
+ if (nonempty.length && !rows.length) add("error", null, "Nenhum registro foi criado a partir do texto colado.");
+ if (rows.length && rows.every(r => r.producao === null)) add("warning", null, "Nenhuma produção foi reconhecida nos registros.");
+ if (!nonempty.some(item => stopWord.test(item.value))) add("warning", null, "Nenhuma linha de possível paralisação foi identificada. Confira se isso era esperado.");
+ const summary = document.getElementById("qualidadeResumo");
+ summary.replaceChildren();
+ [["Blocos com navio", blocks], ["Registros válidos", valid.length], ["Registros ignorados", ignored + invalid.length], ["Problemas encontrados", issues.length]].forEach(([label, value]) => {
+  const card = document.createElement("article"); card.className = "metric";
+  const l = document.createElement("div"); l.className = "label"; l.textContent = label;
+  const v = document.createElement("div"); v.className = "value"; v.textContent = String(value);
+  card.append(l, v); summary.append(card);
+ });
+ const target = document.getElementById("qualidadeAvisos"); target.replaceChildren();
+ if (!issues.length) { target.className = "empty"; target.textContent = "Nenhum problema identificado nas verificações realizadas."; return; }
+ target.className = "";
+ const list = document.createElement("div"); list.style.display = "grid"; list.style.gap = "8px";
+ issues.sort((a, b) => (a.level === "error" ? 0 : 1) - (b.level === "error" ? 0 : 1)).forEach(issue => {
+  const item = document.createElement("div");
+  item.style.cssText = "border:1px solid " + (issue.level === "error" ? "#fecaca" : "#fde68a") + ";background:" + (issue.level === "error" ? "#fff7f7" : "#fffbeb") + ";border-radius:10px;padding:10px;font-size:13px;color:#24394c";
+  const strong = document.createElement("strong"); strong.textContent = (issue.level === "error" ? "Erro — " : "Aviso — ") + (issue.line ? "linha " + issue.line + " — " : "");
+  item.append(strong, document.createTextNode(issue.message)); list.append(item);
+ });
+ target.append(list);
+}
 function renderMega(){
  const ships=[...new Map([...telegramShips,...telegramRows.map(r=>r.navio)].filter(Boolean).map(n=>[norm(n),n])).values()].sort((a,b)=>a.localeCompare(b,"pt-BR"));
  const buttons=$("filtroNaviosTelegram");
@@ -239,7 +302,7 @@ function renderMega(){
  renderCharts(base);
  $("megaRegistros").innerHTML=rows.length?rows.map(r=>'<tr><td><strong>'+esc(r.navio||"Não identificado")+'</strong></td><td>'+esc(r.berco||"—")+'</td><td>'+esc(r.data||"—")+'</td><td>'+esc(r.turno||"—")+'</td><td>'+esc(r.terno||"—")+'</td><td>'+(r.producao===null?"—":r.producao.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:0}))+'</td><td>'+fmtHHMM(r.paradaMin)+'</td><td>'+(r.saldosPorPorão&&r.saldosPorPorão.length?r.saldosPorPorão.map(([porao,saldo])=>'Porão '+esc(porao)+': '+Math.round(saldo).toLocaleString("pt-BR",{maximumFractionDigits:0})).join('<br>'):'—')+'</td><td>'+(r.saldoTotalNavio===null||r.saldoTotalNavio===undefined?'—':Math.round(r.saldoTotalNavio).toLocaleString("pt-BR",{maximumFractionDigits:0}))+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">Nenhum dado reconhecido. Cole as mensagens e clique em “Processar mensagens”.</td></tr>';
 }
-$("processarTelegram").addEventListener("click",async()=>{telegramRows=parseTelegram($("telegramTexto").value);$("status").textContent="Processando mensagens e consultando os berços…";await lookupBerths(telegramRows);renderMega();$("status").textContent="Análise concluída: "+telegramRows.length+" registro(s) extraído(s). Berços consultados na página de navios atracados quando disponível."});
+$("processarTelegram").addEventListener("click",async()=>{const texto=$("telegramTexto").value;telegramRows=parseTelegram(texto);renderQualityReport(texto,telegramRows);$("status").textContent="Processando mensagens e consultando os berços…";await lookupBerths(telegramRows);renderMega();$("status").textContent="Análise concluída: "+telegramRows.length+" registro(s) extraído(s). Consulte os avisos de qualidade. Berços consultados na página de navios atracados quando disponível."});
 $("navioSelecionado").addEventListener("change",renderMega);
 $("navioComparacao").addEventListener("change",renderMega);
 </script></body></html>
