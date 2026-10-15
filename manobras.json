@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-14T19:37:18.736598-03:00",
+  "atualizado_em": "2026-10-14T21:38:55.468805-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "ISLAND ENFORCER",
-      "data": "14/10/2026",
-      "hora": "17:45",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "MORNING CATHERINE",
       "data": "15/10/2026",
@@ -123,15 +114,6 @@
       "navio": "COSCO SHIPPING RUYI",
       "data": "16/10/2026",
       "hora": "15:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA FALCON",
-      "data": "17/10/2026",
-      "hora": "21:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
