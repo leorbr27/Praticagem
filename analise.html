@@ -21,7 +21,7 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 <section class="panel" style="margin-bottom:12px"><h2>Informações do Telegram</h2><p class="desc">Cole abaixo as mensagens do Telegram que deseja analisar. O conteúdo fica apenas nesta página e não é salvo.</p><textarea id="telegramTexto" rows="7" placeholder="Cole aqui as mensagens do Telegram…"></textarea><p class="note">A análise usa exclusivamente as mensagens coladas aqui. Os dados são processados temporariamente nesta página e não são salvos.</p><button class="btn primary" id="processarTelegram" type="button">Processar mensagens</button></section>
 <section class="panel" style="margin-bottom:12px"><h2>Seleção de navios</h2><p class="desc">Selecione um ou mais navios para filtrar os gráficos e a tabela.</p><div id="filtroNaviosTelegram" class="ship-buttons" aria-label="Filtrar por navios"></div><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div></section>
 <section class="grid" id="graficosOperacionais"><article class="panel"><h2>Produtividade por navio / turno</h2><p class="desc">Produtividade média por navio (t por registro/turno).</p><div id="graficoProdutividade"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Paralisações por navio / turno</h2><p class="desc">Tempo médio de paralisação por navio.</p><div id="graficoParalisacoes"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article></section>
-<section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Terno</th><th>Produção (t)</th><th>Horas paradas</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="7" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
+<section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Terno</th><th>Produção (t)</th><th>Paradas do porão (HH:MM)</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="7" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
 <footer id="rodape">Fonte: Praticagem Espírito Santo · Análise temporária no navegador; nenhum dado é salvo nesta página.</footer>
 <div id="ultimoCommitGitHub" style="text-align:center;color:#74818c;font-size:11px;padding:4px 4px 12px">Último commit do GitHub: consultando…</div>
 <script>
@@ -100,7 +100,7 @@ function parseTelegram(text){
   if(shiftMatch)currentShift=shiftMatch[1]+"h"+(shiftMatch[2]||"");
   if(section==="paralisacoes" || /paralisa|parada|impedid|aguardando|chuva|vento|manuten/i.test(line)){
    const minutes=durationIn(line);
-   if(minutes!==null)stoppages.push({navio:ship,data:parseDate(line)||explicitDate||dayDate(day),turno:currentShift,terno:currentTerno,paradaMin:minutes,text:line});
+   if(minutes!==null){const interval=line.match(/\b(\d{1,2}):(\d{2})\s*[-–—]\s*(\d{1,2}):(\d{2})\b/);stoppages.push({navio:ship,data:parseDate(line)||explicitDate||dayDate(day),turno:currentShift,terno:currentTerno,paradaMin:minutes,inicioMin:interval?Number(interval[1])*60+Number(interval[2]):null,fimMin:interval?Number(interval[3])*60+Number(interval[4]):null,text:line})}
   }
  }
  // Uma paralisação só é atribuída quando a mensagem identifica um terno.
@@ -118,7 +118,31 @@ function parseTelegram(text){
   if(row.producao!==null)g.producao=(g.producao||0)+row.producao;
   if(row.paradaMin!==null)g.paradaMin=(g.paradaMin||0)+row.paradaMin;
  }
- return [...grouped.values()];
+ const result=[...grouped.values()];
+ // Une intervalos do mesmo navio/data/turno para não contar paralisações simultâneas duas vezes.
+ const byVessel=new Map();
+ for(const stop of stoppages){
+  const key=[norm(stop.navio),stop.data,norm(stop.turno)].join("|");
+  if(!byVessel.has(key))byVessel.set(key,[]);
+  if(stop.inicioMin!==null&&stop.fimMin!==null&&stop.fimMin>=stop.inicioMin)byVessel.get(key).push([stop.inicioMin,stop.fimMin]);
+ }
+ const vesselMinutes=new Map();
+ for(const [key,intervals] of byVessel){
+  intervals.sort((a,b)=>a[0]-b[0]);
+  let total=0,start=null,end=null;
+  for(const interval of intervals){
+   if(start===null){[start,end]=interval;continue}
+   if(interval[0]<=end)end=Math.max(end,interval[1]);
+   else{total+=end-start;[start,end]=interval}
+  }
+  if(start!==null)total+=end-start;
+  vesselMinutes.set(key,total);
+ }
+ for(const row of result){
+  const key=[norm(row.navio),row.data,norm(row.turno)].join("|");
+  row.navioParadaMin=vesselMinutes.has(key)?vesselMinutes.get(key):null;
+ }
+ return result;
 }
 async function lookupBerths(rows){
  const ships=[...new Set(rows.map(r=>r.navio).filter(Boolean))];
@@ -166,7 +190,8 @@ function renderBarChart(targetId,rows,valueKey,formatter,colorClass,emptyText){
 }
 function renderCharts(base){
  renderBarChart("graficoProdutividade",base,"producao",v=>v.toLocaleString("pt-BR",{maximumFractionDigits:3})+" t","","Nenhuma produtividade reconhecida nas mensagens filtradas.");
- renderBarChart("graficoParalisacoes",base,"paradaMin",v=>fmtMinutes(v),"red","Nenhuma paralisação com duração reconhecida nas mensagens filtradas.");
+ const vesselRows=[...new Map(base.filter(r=>r.navioParadaMin!==null).map(r=>[[norm(r.navio),r.data,norm(r.turno)].join("|"),{...r,paradaMin:r.navioParadaMin}])).values()];
+ renderBarChart("graficoParalisacoes",vesselRows,"paradaMin",v=>fmtHHMM(v),"red","Nenhuma paralisação com duração reconhecida nas mensagens filtradas.");
 }
 function renderMega(){
  const ships=[...new Set(telegramRows.map(r=>r.navio).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
@@ -178,10 +203,11 @@ function renderMega(){
  fill("navioSelecionado","Todos os navios");fill("navioComparacao","Nenhum — visão geral");
  const selected=$("navioSelecionado").value,comp=$("navioComparacao").value;
  const base=telegramRows.filter(r=>{if(naviosSelecionados.size)return naviosSelecionados.has(norm(r.navio));if(selected&&comp)return norm(r.navio)===norm(selected)||norm(r.navio)===norm(comp);if(selected)return norm(r.navio)===norm(selected);if(comp)return norm(r.navio)===norm(comp);return true});
- const prod=base.filter(r=>r.producao!==null),stops=base.filter(r=>r.paradaMin!==null);
+ const prod=base.filter(r=>r.producao!==null),stops=base.filter(r=>r.navioParadaMin!==null);
  $("prodTotal").textContent=prod.length?prod.reduce((a,r)=>a+r.producao,0).toLocaleString("pt-BR",{maximumFractionDigits:2}):"—";
- $("paradasTotal").textContent=stops.length;
- $("mediaParada").textContent=stops.length?"Total parado: "+fmtMinutes(stops.reduce((a,r)=>a+r.paradaMin,0)):"Sem duração reconhecida";
+ const vesselTotals=[...new Map(stops.map(r=>[[norm(r.navio),r.data,norm(r.turno)].join("|"),r.navioParadaMin])).values()];
+ $("paradasTotal").textContent=vesselTotals.length;
+ $("mediaParada").textContent=vesselTotals.length?"Tempo do navio sem duplicar intervalos simultâneos: "+fmtHHMM(vesselTotals.reduce((a,n)=>a+n,0)):"Sem duração reconhecida";
  $("telegramTotal").textContent=base.length;
  $("naviosTelegram").textContent=new Set(base.map(r=>norm(r.navio)).filter(Boolean)).size;
  const rows=base.slice().sort((a,b)=>norm(a.navio).localeCompare(norm(b.navio))||String(a.data).localeCompare(String(b.data))||norm(a.turno).localeCompare(norm(b.turno)));
