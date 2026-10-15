@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-15T18:34:34.313333-03:00",
+  "atualizado_em": "2026-10-15T19:13:39.444351-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -45,6 +45,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEA EAGLE",
+      "data": "16/10/2026",
+      "hora": "10:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
