@@ -27,6 +27,7 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 
 <section class="panel" id="evolucaoTemporal" style="margin-bottom:12px"><h2>Evolução por data e turno</h2><p class="desc">Sequência cronológica por navio, com produção, paralisações, comparação com a média do próprio navio e variação entre turnos consecutivos. Respeita os filtros de navios selecionados acima.</p><div id="avisosEvolucaoTemporal" class="note" aria-live="polite">Processe mensagens para analisar a evolução temporal.</div><div class="tablewrap"><table><thead><tr><th>Navio</th><th>Data</th><th>Turno</th><th>Produção (t)</th><th>Paralisações (HH:MM)</th><th>Diferença da média do navio</th><th>Variação vs. turno anterior</th></tr></thead><tbody id="tabelaEvolucaoTemporal"><tr><td colspan="7" class="empty">Processe mensagens para gerar a evolução temporal.</td></tr></tbody></table></div><div id="resumoEvolucaoTemporal" style="margin-top:12px"></div></section>
 <section class="panel" id="comparacaoBercos" style="margin-bottom:12px"><h2>Comparação por berço</h2><p class="desc">Indicadores calculados a partir dos registros válidos e dos berços associados aos navios. Berços ausentes ou não confirmados são contabilizados como “Não identificado”.</p><div id="graficoNaviosPorBerco"><div class="empty">Processe mensagens para comparar os berços.</div></div><div id="graficoProducaoPorBerco"><div class="empty">Processe mensagens para comparar os berços.</div></div><div id="graficoParalisacoesPorBerco"><div class="empty">Processe mensagens para comparar os berços.</div></div><div class="tablewrap" style="margin-top:12px"><table><thead><tr><th>Berço</th><th>Navios distintos</th><th>Registros/turnos válidos</th><th>Produção total (t)</th><th>Média/turno (t)</th><th>Paralisações totais (HH:MM)</th><th>Média paralisações/turno (HH:MM)</th></tr></thead><tbody id="tabelaComparacaoBercos"><tr><td colspan="7" class="empty">Processe mensagens para comparar os berços.</td></tr></tbody></table></div></section>
+<section class="panel" id="relacaoProducaoParalisacoes" style="margin-bottom:12px"><h2>Relação entre produção e paralisações</h2><p class="desc">Cada ponto representa um registro agregado por navio/data/turno. O eixo horizontal mostra produção (t) e o vertical mostra paralisações (HH:MM). A associação estatística, quando disponível, não demonstra causa e efeito.</p><div id="relacaoResumo" class="note" aria-live="polite">Processe mensagens para comparar produção e paralisações.</div><div id="relacaoGrafico" style="width:100%;overflow-x:auto"><div class="empty">A visualização aparecerá quando houver dados suficientes.</div></div><div id="relacaoAvisos" class="note" aria-live="polite"></div></section>
 <section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Terno</th><th>Produção (t)</th><th>Paradas do porão (HH:MM)</th><th>Saldo por porão</th><th>Saldo total do navio</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="9" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
 <footer id="rodape">Fonte: Praticagem Espírito Santo · Análise temporária no navegador; nenhum dado é salvo nesta página.</footer>
 <div id="ultimoCommitGitHub" style="text-align:center;color:#74818c;font-size:11px;padding:4px 4px 12px">Último commit do GitHub: consultando…</div>
@@ -457,6 +458,64 @@ function renderGeneralSummary(){
  ];
  target.innerHTML=metrics.map(([label,value,detail])=>'<article class="metric"><div class="label">'+esc(label)+'</div><div class="value">'+esc(value)+'</div><div class="detail">'+esc(detail)+'</div></article>').join("");
 }
+function renderProductionStoppage(base){
+ const summary=$("relacaoResumo"), chart=$("relacaoGrafico"), warnings=$("relacaoAvisos");
+ const groups=new Map();
+ for(const r of base){
+  if(!r.navio||!r.data||!r.turno)continue;
+  const key=[norm(r.navio),String(r.data).trim(),norm(r.turno)].join("|");
+  if(!groups.has(key))groups.set(key,{navio:r.navio,data:String(r.data).trim(),turno:r.turno,producao:0,hasProduction:false,paradaMin:null,hasShipStop:false,hasStop:false});
+  const g=groups.get(key);
+  if(Number.isFinite(r.producao)&&r.producao!==null){g.producao+=r.producao;g.hasProduction=true}
+  if(Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null){g.paradaMin=Math.max(g.paradaMin??0,r.navioParadaMin);g.hasShipStop=true;g.hasStop=true}
+  else if(Number.isFinite(r.paradaMin)&&r.paradaMin!==null){g.paradaMin=(g.paradaMin??0)+r.paradaMin;g.hasStop=true}
+ }
+ const turns=[...groups.values()];
+ const missingProduction=turns.filter(g=>!g.hasProduction).length;
+ const missingStops=turns.filter(g=>!g.hasStop).length;
+ const pairs=turns.filter(g=>g.hasProduction&&g.hasStop&&Number.isFinite(g.producao)&&Number.isFinite(g.paradaMin)).map(g=>({...g,x:g.producao,y:g.paradaMin}));
+ const fmtT=v=>v.toLocaleString("pt-BR",{maximumFractionDigits:1})+" t";
+ const fmtHHMM=v=>{if(!Number.isFinite(v))return "—";const n=Math.max(0,Math.round(v));return String(Math.floor(n/60)).padStart(2,"0")+":"+String(n%60).padStart(2,"0")};
+ summary.textContent=pairs.length+" registro(s) válido(s) com produção e paralisações disponíveis, de "+turns.length+" registro(s) navio/data/turno nos filtros atuais.";
+ const notes=[];
+ if(missingProduction)notes.push(missingProduction+" registro(s) sem produção foram excluídos da comparação.");
+ if(missingStops)notes.push(missingStops+" registro(s) sem duração de paralisações reconhecida foram excluídos da comparação.");
+ if(pairs.length<8){
+  chart.innerHTML='<div class="empty">Não é possível apresentar a associação estatística: são necessários pelo menos 8 registros completos; a amostra atual tem '+pairs.length+'.</div>';
+  notes.push("Amostra pequena: estatísticas de associação não foram calculadas.");
+  warnings.textContent=notes.join(" ");
+  return;
+ }
+ const meanX=pairs.reduce((s,p)=>s+p.x,0)/pairs.length,meanY=pairs.reduce((s,p)=>s+p.y,0)/pairs.length;
+ const varX=pairs.reduce((s,p)=>s+(p.x-meanX)**2,0),varY=pairs.reduce((s,p)=>s+(p.y-meanY)**2,0);
+ if(varX===0||varY===0){
+  chart.innerHTML='<div class="empty">Não é possível calcular associação: produção ou paralisações não variam entre os registros válidos.</div>';
+  notes.push("Qualidade insuficiente para estatística: uma das variáveis não apresenta variação.");
+  warnings.textContent=notes.join(" ");
+  return;
+ }
+ const pearson=pairs.reduce((s,p)=>s+(p.x-meanX)*(p.y-meanY),0)/Math.sqrt(varX*varY);
+ const quantile=(values,q)=>{const a=values.slice().sort((x,y)=>x-y),pos=(a.length-1)*q,lo=Math.floor(pos),hi=Math.ceil(pos);return a[lo]+(a[hi]-a[lo])*(pos-lo)};
+ const outlierCount=(values)=>{const q1=quantile(values,.25),q3=quantile(values,.75),iqr=q3-q1;return values.filter(v=>v<q1-1.5*iqr||v>q3+1.5*iqr).length};
+ const outliersX=outlierCount(pairs.map(p=>p.x)),outliersY=outlierCount(pairs.map(p=>p.y));
+ if(outliersX||outliersY)notes.push("Possíveis valores extremos identificados pelo critério do intervalo interquartil: "+outliersX+" em produção e "+outliersY+" em paralisações. Eles podem influenciar a associação.");
+ const strength=Math.abs(pearson)<.2?"muito fraca ou inexistente":Math.abs(pearson)<.4?"fraca":Math.abs(pearson)<.6?"moderada":Math.abs(pearson)<.8?"forte":"muito forte";
+ const direction=pearson>.0?"positiva":pearson<0?"negativa":"nula";
+ summary.textContent=pairs.length+" registro(s) válido(s) usados. Correlação de Pearson: r = "+pearson.toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2})+" ("+strength+", "+direction+").";
+ notes.push("Interpretação: Pearson resume a associação linear entre produção e duração das paralisações; não prova causalidade. Outros fatores operacionais podem influenciar ambos.");
+ const width=760,height=360,left=76,right=24,top=22,bottom=66,plotW=width-left-right,plotH=height-top-bottom;
+ const minX=Math.min(...pairs.map(p=>p.x)),maxX=Math.max(...pairs.map(p=>p.x)),minY=Math.min(...pairs.map(p=>p.y)),maxY=Math.max(...pairs.map(p=>p.y));
+ const pad=(min,max)=>min===max?Math.max(1,Math.abs(min)*.05):((max-min)*.08);
+ const x0=Math.max(0,minX-pad(minX,maxX)),x1=maxX+pad(minX,maxX),y0=Math.max(0,minY-pad(minY,maxY)),y1=maxY+pad(minY,maxY);
+ const sx=v=>left+(v-x0)/(x1-x0||1)*plotW,sy=v=>top+plotH-(v-y0)/(y1-y0||1)*plotH;
+ let svg='<svg viewBox="0 0 '+width+' '+height+'" role="img" aria-label="Gráfico de dispersão de produção em toneladas por paralisações em horas e minutos" style="display:block;width:100%;max-width:900px;height:auto;font:12px Arial,sans-serif">';
+ for(let i=0;i<=4;i++){const xv=x0+(x1-x0)*i/4,yv=y0+(y1-y0)*i/4,px=sx(xv),py=sy(yv);svg+='<line x1="'+left+'" y1="'+py+'" x2="'+(width-right)+'" y2="'+py+'" stroke="#e5eaf0"/><text x="'+(left-10)+'" y="'+(py+4)+'" text-anchor="end" fill="#526273">'+fmtHHMM(yv)+'</text><line x1="'+px+'" y1="'+top+'" x2="'+px+'" y2="'+(top+plotH)+'" stroke="#f0f3f6"/><text x="'+px+'" y="'+(top+plotH+20)+'" text-anchor="middle" fill="#526273">'+Math.round(xv).toLocaleString("pt-BR")+'</text>'}
+ svg+='<line x1="'+left+'" y1="'+(top+plotH)+'" x2="'+(width-right)+'" y2="'+(top+plotH)+'" stroke="#8190a0"/><line x1="'+left+'" y1="'+top+'" x2="'+left+'" y2="'+(top+plotH)+'" stroke="#8190a0"/><text x="'+(left+plotW/2)+'" y="'+(height-14)+'" text-anchor="middle" fill="#344454">Produção (t)</text><text transform="translate(18 '+(top+plotH/2)+') rotate(-90)" text-anchor="middle" fill="#344454">Paralisações (HH:MM)</text>';
+ for(const p of pairs){svg+='<circle cx="'+sx(p.x).toFixed(2)+'" cy="'+sy(p.y).toFixed(2)+'" r="5" fill="#2563eb" fill-opacity=".78" stroke="#fff" stroke-width="1"><title>'+esc(p.navio+' · '+p.data+' · '+p.turno+' | Produção: '+fmtT(p.x)+' | Paralisações: '+fmtHHMM(p.y))+'</title></circle>'}
+ svg+='</svg>';
+ chart.innerHTML=svg;
+ warnings.textContent=notes.join(" ");
+}
 function renderMega(){
  renderGeneralSummary();
  const ships=[...new Map([...telegramShips,...telegramRows.map(r=>r.navio)].filter(Boolean).map(n=>[norm(n),n])).values()].sort((a,b)=>a.localeCompare(b,"pt-BR"));
@@ -490,6 +549,7 @@ function renderMega(){
  renderShipComparison(base);
  renderBerthComparison(base);
  renderTemporalEvolution(base);
+ renderProductionStoppage(base);
  $("megaRegistros").innerHTML=rows.length?rows.map(r=>'<tr><td><strong>'+esc(r.navio||"Não identificado")+'</strong></td><td>'+esc(r.berco||"—")+'</td><td>'+esc(r.data||"—")+'</td><td>'+esc(r.turno||"—")+'</td><td>'+esc(r.terno||"—")+'</td><td>'+(r.producao===null?"—":r.producao.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:0}))+'</td><td>'+fmtHHMM(r.paradaMin)+'</td><td>'+(r.saldosPorPorão&&r.saldosPorPorão.length?r.saldosPorPorão.map(([porao,saldo])=>'Porão '+esc(porao)+': '+Math.round(saldo).toLocaleString("pt-BR",{maximumFractionDigits:0})).join('<br>'):'—')+'</td><td>'+(r.saldoTotalNavio===null||r.saldoTotalNavio===undefined?'—':Math.round(r.saldoTotalNavio).toLocaleString("pt-BR",{maximumFractionDigits:0}))+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">Nenhum dado reconhecido. Cole as mensagens e clique em “Processar mensagens”.</td></tr>';
 }
 $("processarTelegram").addEventListener("click",async()=>{const texto=$("telegramTexto").value;telegramRows=parseTelegram(texto);renderQualityReport(texto,telegramRows);$("status").textContent="Processando mensagens e consultando os berços…";await lookupBerths(telegramRows);renderMega();$("status").textContent="Análise concluída: "+telegramRows.length+" registro(s) extraído(s). Consulte os avisos de qualidade. Berços consultados na página de navios atracados quando disponível."});
