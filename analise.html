@@ -43,6 +43,7 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 <script>
 const $=id=>document.getElementById(id);
 let telegramRows=[];
+let telegramShips=[];
 const naviosSelecionados=new Set();
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toUpperCase();
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
@@ -65,7 +66,7 @@ function parseTelegram(text){
   if(dayNum>now.getDate()){month--;if(month<1){month=12;year--}}
   return String(dayNum).padStart(2,"0")+"/"+String(month).padStart(2,"0")+"/"+year;
  };
- const normShip=s=>clean(String(s||"").replace(/^🛳️?\s*/,"").split(/\\?\s*VOY\b/i)[0].replace(/[\\*]/g,"").trim());
+ const normShip=s=>clean(String(s||"").replace(/^🛳️?\s*/,"").replace(/^Navio\b\s*[:：=-]?\s*/i,"").split(/\\?\s*VOY\b/i)[0].split(/\s*[•·]\s*/)[0].replace(/[\\*]/g,"").trim());
  const durationIn=s=>{
   const parenthesized=String(s||"").match(/\((\d{2,}):([0-5]\d)\)/);
   if(parenthesized)return Number(parenthesized[1])*60+Number(parenthesized[2]);
@@ -194,7 +195,7 @@ function renderCharts(base){
  renderBarChart("graficoParalisacoes",vesselRows,"paradaMin",v=>fmtHHMM(v),"red","Nenhuma paralisação com duração reconhecida nas mensagens filtradas.");
 }
 function renderMega(){
- const ships=[...new Set(telegramRows.map(r=>r.navio).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+ const ships=[...new Map([...telegramShips,...telegramRows.map(r=>r.navio)].filter(Boolean).map(n=>[norm(n),n])).values()].sort((a,b)=>a.localeCompare(b,"pt-BR"));
  const buttons=$("filtroNaviosTelegram");
  buttons.innerHTML=ships.map(n=>'<button type="button" class="ship-filter-btn'+(naviosSelecionados.has(norm(n))?' active':'')+'" aria-pressed="'+naviosSelecionados.has(norm(n))+'" data-navio="'+esc(n)+'">'+esc(n)+'</button>').join("")+(naviosSelecionados.size?'<button type="button" class="ship-filter-btn ship-filter-clear" id="limparFiltroNavios">Limpar seleção</button>':'');
  buttons.querySelectorAll("[data-navio]").forEach(btn=>btn.addEventListener("click",()=>{const key=norm(btn.dataset.navio);if(naviosSelecionados.has(key))naviosSelecionados.delete(key);else naviosSelecionados.add(key);renderMega()}));
