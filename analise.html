@@ -60,13 +60,6 @@ function parseTelegram(text){
  let ship="",day="",explicitDate="",section="",currentTerno="",currentShift="";
  const clean=s=>String(s||"").replace(/\*/g,"").replace(/^[\s:：=—–-]+|[\s|;,]+$/g,"").trim();
  const parseDate=s=>{const m=String(s||"").match(/\b(\d{1,2}[\/.-]\d{1,2}[\/.-]\d{2,4})\b/);return m?m[1]:""};
- const dayDate=d=>{
-  if(!d)return "";
-  const now=new Date(),dayNum=Number(d);
-  let month=now.getMonth()+1,year=now.getFullYear();
-  if(dayNum>now.getDate()){month--;if(month<1){month=12;year--}}
-  return String(dayNum).padStart(2,"0")+"/"+String(month).padStart(2,"0")+"/"+year;
- };
  const normShip=s=>clean(String(s||"").replace(/^🛳️?\s*/,"").replace(/^Navio\b\s*[:：=-]?\s*/i,"").split(/\\?\s*VOY\b/i)[0].split(/\s*[•·]\s*/)[0].replace(/[\\*]/g,"").trim());
  const durationIn=s=>{
   const parenthesized=String(s||"").match(/\((\d{2,}):([0-5]\d)\)/);
