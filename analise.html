@@ -88,7 +88,7 @@ function parseTelegram(text){
    ship=normShip(shipHeader[1]);if(ship){foundShips.add(ship);day="";explicitDate="";section="";currentTerno="";currentShift="";}continue;
   }
   const dm=line.match(/^\s*Dia\s+(\d{1,2})\b\s*(.*)$/i);
-  if(dm){day=dm[1];explicitDate=parseDate(dm[2]);section="planejamento";currentTerno="";currentShift="";continue}
+  if(dm){day=dm[1];explicitDate=parseDate(line)||parseDate(dm[2]);section="planejamento";currentTerno="";currentShift="";continue}
   if(/^\s*(?:📋\s*)?Planejamento\b/i.test(line)){section="planejamento";continue}
   if(section==="planejamento"){
    const balanceMatch=line.match(/^\s*Porão\s*([0-9IlL]+)\s*\|.*?\bSaldo\s*:\s*(-?[\d.,]+)/i);
@@ -543,7 +543,7 @@ function updatePeriodControls(){
 function periodRows(rows){
  const mode=$("modoPeriodo").value;if(mode==="todos")return rows;const dated=rows.map(r=>dateISO(r.data)).filter(Boolean).sort();if(!dated.length)return [];
  let from=$("dataInicio").value,to=$("dataFim").value;
- if(mode==="semana"){to=to||dated[dated.length-1];const d=new Date(to+"T00:00:00Z");d.setUTCDate(d.getUTCDate()-6);from=d.toISOString().slice(0,10);}
+ if(mode==="semana"){to=dated[dated.length-1];const d=new Date(to+"T00:00:00Z");d.setUTCDate(d.getUTCDate()-6);from=d.toISOString().slice(0,10);}
  if(mode==="intervalo"&&(!from||!to))return [];
  if(from&&to&&from>to){const temp=from;from=to;to=temp;}
  return rows.filter(r=>{const d=dateISO(r.data);return d&&d>=from&&d<=to});
