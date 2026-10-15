@@ -220,10 +220,13 @@ function renderQualityReport(text, rows) {
  const stopWord = /paralisa|parada|impedid|aguardando|chuva|vento|manuten/i;
  const durationShape = /\(\d{2,}:[0-5]\d\)|\b\d{1,3}:[0-5]\d\b|\b\d+(?:[,.]\d+)?\s*(?:h|hora|horas|min|minuto|minutos)\b/i;
  const blocks = nonempty.filter(item => shipHeader.test(item.value)).length;
- let ignored = 0;
+ let ignored = 0, recognized = 0;
+ let activeShip = false;
  for (const item of nonempty) {
-  if (opShape.test(item.value) && !opValid.test(item.value)) { ignored++; add("error", item.line, "Linha operacional não pôde ser interpretada. Confira turno, terno e valores numéricos."); }
-  if (stopWord.test(item.value) && !durationShape.test(item.value)) { ignored++; add("warning", item.line, "Possível paralisação sem duração reconhecível. Confira a duração ou os horários."); }
+  if (shipHeader.test(item.value)) activeShip = true;
+  if (opShape.test(item.value) && !activeShip) add("error", item.line, "Linha operacional encontrada antes de um cabeçalho de navio; a identificação do navio não pode ser confirmada.");
+  if (opShape.test(item.value)) { if (!opValid.test(item.value)) { ignored++; add("error", item.line, "Linha operacional não pôde ser interpretada. Confira turno, terno e valores numéricos."); } else recognized++; }
+  if (stopWord.test(item.value)) { if (!durationShape.test(item.value)) { ignored++; add("warning", item.line, "Possível paralisação sem duração reconhecível. Confira a duração ou os horários."); } else recognized++; }
   if ((opShape.test(item.value) || /Saldo\s*:/i.test(item.value)) && /(?:^|[|:=\s])-\s*\d/.test(item.value)) add("warning", item.line, "Valor negativo encontrado. Confirme se é esperado neste campo.");
  }
  const valid = rows.filter(r => r.navio && r.data && r.turno && (r.producao !== null || r.paradaMin !== null));
@@ -250,10 +253,11 @@ function renderQualityReport(text, rows) {
  if (nonempty.length && !blocks) add("error", null, "Nenhum cabeçalho de navio foi reconhecido.");
  if (nonempty.length && !rows.length) add("error", null, "Nenhum registro foi criado a partir do texto colado.");
  if (rows.length && rows.every(r => r.producao === null)) add("warning", null, "Nenhuma produção foi reconhecida nos registros.");
+ rows.filter(r => r.producao === null && r.paradaMin !== null).forEach(r => add("warning", null, "Registro " + (r.navio || "sem navio") + " / " + (r.data || "sem data") + " / " + (r.turno || "sem turno") + ": há duração de paralisação, mas nenhuma produção associada foi reconhecida."));
  if (!nonempty.some(item => stopWord.test(item.value))) add("warning", null, "Nenhuma linha de possível paralisação foi identificada. Confira se isso era esperado.");
  const summary = document.getElementById("qualidadeResumo");
  summary.replaceChildren();
- [["Blocos com navio", blocks], ["Registros válidos", valid.length], ["Registros ignorados", ignored + invalid.length], ["Problemas encontrados", issues.length]].forEach(([label, value]) => {
+ [["Blocos com navio", blocks], ["Linhas reconhecidas", recognized], ["Registros válidos", valid.length], ["Registros ignorados", ignored + invalid.length], ["Problemas encontrados", issues.length]].forEach(([label, value]) => {
   const card = document.createElement("article"); card.className = "metric";
   const l = document.createElement("div"); l.className = "label"; l.textContent = label;
   const v = document.createElement("div"); v.className = "value"; v.textContent = String(value);
