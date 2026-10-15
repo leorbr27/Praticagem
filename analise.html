@@ -79,8 +79,8 @@ function parseTelegram(text){
  };
  for(const raw of lines){
   const line=raw.trim();if(!line)continue;
-  const exactKey=line.replace(/\s+/g," ").trim();
-  if(seenLines.has(exactKey)){duplicateLines.add(exactKey);continue}
+  const exactKey=[norm(ship),day,section,line.replace(/\s+/g," ").trim()].join("|");
+  if(seenLines.has(exactKey)){duplicateLines.add(line);continue}
   seenLines.add(exactKey);
   const shipHeader=line.match(/^\s*🛳️?\s*\*{0,2}(.+?)(?:\\?\s+VOY\b|\s*\*\s*[•·]|$)/i)
     || line.match(/^\s*(?:🛳️?\s*)?Navio\b\s*[:：=-]?\s*(.*)$/i);
@@ -537,7 +537,7 @@ function updatePeriodControls(){
  $("intervaloEncontrado").textContent=min?(min===max?min:min+" a "+max):"Nenhuma data interpretável";
  if(!min){$("resumoPeriodo").textContent="Não há datas completas interpretáveis; registros sem data não entram em filtros por período.";return}
  if(mode==="todos")$("resumoPeriodo").textContent=dated.length+" ocorrência(s) de data reconhecida(s); intervalo real "+min+" a "+max+". Os dias sem registros não são presumidos.";
- else if(mode==="semana")$("resumoPeriodo").textContent="Semana móvel de 7 dias terminando em "+(end.value||max)+". A análise inclui apenas datas importadas dentro desse intervalo.";
+ else if(mode==="semana")$("resumoPeriodo").textContent="Semana móvel de 7 dias terminando na data mais recente encontrada ("+max+"). A análise inclui apenas datas importadas dentro desse intervalo.";
  else $("resumoPeriodo").textContent="Escolha as datas inicial e final para filtrar os registros importados.";
 }
 function periodRows(rows){
