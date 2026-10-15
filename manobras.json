@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-15T19:13:39.444351-03:00",
+  "atualizado_em": "2026-10-15T20:47:38.377448-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "BC SERENITY",
-      "data": "15/10/2026",
-      "hora": "17:14",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "MEDI ATLANTICO",
       "data": "15/10/2026",
@@ -45,15 +36,6 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEA EAGLE",
-      "data": "16/10/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
