@@ -23,6 +23,7 @@ header{background:linear-gradient(135deg,#0b1f33,#174564);color:white;border-rad
 <section class="panel" id="resumoGeralPeriodo" style="margin-bottom:12px"><h2>Resumo geral do período</h2><p class="desc">Indicadores calculados exclusivamente a partir dos registros válidos processados nesta análise, sem aplicar os filtros visuais de navios.</p><div id="resumoGeralMetricas" class="metrics" style="margin-bottom:0"><div class="empty">Processe mensagens para calcular o resumo.</div></div></section>
 <section class="panel" style="margin-bottom:12px"><h2>Seleção de navios</h2><p class="desc">Selecione um ou mais navios para filtrar os gráficos e a tabela.</p><div id="filtroNaviosTelegram" class="ship-buttons" aria-label="Filtrar por navios"></div><div class="compare"><label>Navio para análise<select id="navioSelecionado"><option value="">Todos os navios</option></select></label><label>Comparar com<select id="navioComparacao"><option value="">Nenhum — visão geral</option></select></label></div></section>
 <section class="grid" id="graficosOperacionais"><article class="panel"><h2>Produtividade por navio / turno</h2><p class="desc">Produtividade média por navio (t por registro/turno).</p><div id="graficoProdutividade"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Paralisações por navio / turno</h2><p class="desc">Tempo médio de paralisação por navio.</p><div id="graficoParalisacoes"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article><article class="panel"><h2>Saldo total por navio</h2><p class="desc">Saldo total identificado em cada navio.</p><div id="graficoSaldoNavios"><div class="empty">Processe mensagens para gerar o gráfico.</div></div></article></section>
+<section class="panel" id="comparacaoNavios" style="margin-bottom:12px"><h2>Comparação entre navios</h2><p class="desc">Comparação calculada com registros válidos do período e dos navios atualmente filtrados. A produtividade segue a métrica já usada nos gráficos: toneladas por registro/turno.</p><label style="display:flex;flex-direction:column;gap:5px;max-width:360px;font-size:12px;color:#657585">Ordenar por<select id="ordenarComparacao"><option value="producaoTotal">Produção total (t)</option><option value="mediaProducao">Média por turno (t/turno)</option><option value="paradaTotal">Total de paralisações (HH:MM)</option><option value="produtividade">Produtividade média (t/registro-turno)</option></select></label><div id="graficoComparacaoNavios" style="margin-top:12px"><div class="empty">Processe mensagens para comparar os navios.</div></div><div class="tablewrap" style="margin-top:12px"><table><thead><tr><th>Navio</th><th>Produção total (t)</th><th>Média/turno (t)</th><th>Maior turno (t)</th><th>Menor turno (t)</th><th>Paralisações totais (HH:MM)</th><th>Média paralisações/turno (HH:MM)</th><th>Registros válidos</th><th>Produtividade média (t/registro-turno)</th></tr></thead><tbody id="tabelaComparacaoNavios"><tr><td colspan="9" class="empty">Processe mensagens para comparar os navios.</td></tr></tbody></table></div></section>
 <section class="panel" style="margin-bottom:12px"><h2>Mega tabela operacional</h2><p class="desc">Tabela preenchida exclusivamente com os dados extraídos do texto do Telegram.</p><div class="tablewrap"><table class="mega"><thead><tr><th>Navio</th><th>Berço</th><th>Data</th><th>Turno / período</th><th>Terno</th><th>Produção (t)</th><th>Paradas do porão (HH:MM)</th><th>Saldo por porão</th><th>Saldo total do navio</th></tr></thead><tbody id="megaRegistros"><tr><td colspan="9" class="empty">Cole mensagens do Telegram e clique em “Processar mensagens”.</td></tr></tbody></table></div></section><section class="metrics"><article class="metric"><div class="label">Registros analisados</div><div class="value" id="telegramTotal">0</div><div class="detail">Mensagens reconhecidas</div></article><article class="metric"><div class="label">Navios identificados</div><div class="value" id="naviosTelegram">0</div><div class="detail">Nomes encontrados no Telegram</div></article><article class="metric"><div class="label">Produção identificada</div><div class="value" id="prodTotal">—</div><div class="detail">Soma dos valores reconhecidos</div></article><article class="metric"><div class="label">Paralisações / tempo médio</div><div class="value" id="paradasTotal">0</div><div class="detail" id="mediaParada">Sem duração reconhecida</div></article></section>
 <footer id="rodape">Fonte: Praticagem Espírito Santo · Análise temporária no navegador; nenhum dado é salvo nesta página.</footer>
 <div id="ultimoCommitGitHub" style="text-align:center;color:#74818c;font-size:11px;padding:4px 4px 12px">Último commit do GitHub: consultando…</div>
@@ -269,6 +270,42 @@ function renderQualityReport(text, rows) {
  });
  target.append(list);
 }
+function renderShipComparison(base){
+ const valid=base.filter(r=>r.navio&&r.data&&r.turno&&(Number.isFinite(r.producao)&&r.producao!==null||Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null||Number.isFinite(r.paradaMin)&&r.paradaMin!==null));
+ const shifts=new Map();
+ for(const r of valid){
+  const key=[norm(r.navio),String(r.data).trim(),norm(r.turno)].join("|");
+  if(!shifts.has(key))shifts.set(key,{navio:r.navio,data:String(r.data).trim(),turno:r.turno,producao:0,temProducao:false,paradaMin:null,rows:[]});
+  const g=shifts.get(key);g.rows.push(r);
+  if(Number.isFinite(r.producao)&&r.producao!==null){g.producao+=r.producao;g.temProducao=true}
+  if(Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null)g.paradaMin=Math.max(g.paradaMin??0,r.navioParadaMin);
+  else if(Number.isFinite(r.paradaMin)&&r.paradaMin!==null)g.paradaMin=(g.paradaMin??0)+r.paradaMin;
+ }
+ const ships=new Map();
+ for(const g of shifts.values()){
+  const key=norm(g.navio);
+  if(!ships.has(key))ships.set(key,{navio:g.navio,production:[],stops:[],records:0});
+  const s=ships.get(key);s.records++;
+  if(g.temProducao)s.production.push(g.producao);
+  if(Number.isFinite(g.paradaMin)&&g.paradaMin!==null)s.stops.push(g.paradaMin);
+ }
+ const entries=[...ships.values()].map(s=>{
+  const total=s.production.reduce((a,v)=>a+v,0),n=s.production.length,stopTotal=s.stops.reduce((a,v)=>a+v,0);
+  return {...s,producaoTotal:n?total:null,mediaProducao:n?total/n:null,maiorProducao:n?Math.max(...s.production):null,menorProducao:n>=2?Math.min(...s.production):null,paradaTotal:s.stops.length?stopTotal:null,mediaParada:s.stops.length?stopTotal/s.stops.length:null,produtividade:n?total/n:null,producaoCount:n,stopCount:s.stops.length};
+ });
+ const sortKey=$("ordenarComparacao").value;
+ entries.sort((a,b)=>{const av=a[sortKey],bv=b[sortKey];if(av===null&&bv===null)return a.navio.localeCompare(b.navio,"pt-BR");if(av===null)return 1;if(bv===null)return -1;return bv-av});
+ const fmtT=n=>n===null||!Number.isFinite(n)?"—":n.toLocaleString("pt-BR",{maximumFractionDigits:1});
+ const target=$("tabelaComparacaoNavios");
+ target.innerHTML=entries.length?entries.map(s=>'<tr><td><strong>'+esc(s.navio)+'</strong></td><td>'+fmtT(s.producaoTotal)+'</td><td>'+fmtT(s.mediaProducao)+'</td><td>'+fmtT(s.maiorProducao)+'</td><td>'+fmtT(s.menorProducao)+'</td><td>'+fmtHHMM(s.paradaTotal)+'</td><td>'+fmtHHMM(s.mediaParada)+'</td><td>'+s.records+'</td><td>'+(s.produtividade===null?"—":fmtT(s.produtividade))+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">Nenhum registro válido disponível para comparação com os filtros atuais.</td></tr>';
+ const chart=$("graficoComparacaoNavios");
+ const chartMetric=sortKey==="mediaProducao"?"mediaProducao":sortKey==="paradaTotal"?"paradaTotal":sortKey==="produtividade"?"produtividade":"producaoTotal";
+ const label=sortKey==="mediaProducao"?"Média por turno (t)":sortKey==="paradaTotal"?"Total de paralisações (HH:MM)":sortKey==="produtividade"?"Produtividade média (t/registro-turno)":"Produção total (t)";
+ const chartEntries=entries.filter(s=>s[chartMetric]!==null&&Number.isFinite(s[chartMetric]));
+ if(!chartEntries.length){chart.innerHTML='<div class="empty">Não há dados suficientes para comparar esta métrica.</div>';return}
+ const max=Math.max(...chartEntries.map(s=>s[chartMetric]),0);
+ chart.innerHTML='<p class="desc">'+label+' · cada barra inclui a amostra de registros válidos</p>'+chartEntries.map(s=>{const v=s[chartMetric];const width=sortKey==="paradaTotal"?(max>0?v/max*100:0):(max>0?v/max*100:0);const shown=sortKey==="paradaTotal"?fmtHHMM(v):fmtT(v)+(sortKey==="mediaProducao"||sortKey==="producaoTotal"||sortKey==="produtividade"?" t":"");return '<div class="bar"><div class="bar-label" title="'+esc(s.navio)+'">'+esc(s.navio)+' <span class="muted">('+s.records+' reg.)</span></div><div class="track"><div class="fill" style="width:'+width.toFixed(2)+'%"></div></div><div class="count">'+shown+'</div></div>'}).join("");
+}
 function renderGeneralSummary(){
  const target=$("resumoGeralMetricas");
  const valid=telegramRows.filter(r=>r.navio&&r.data&&r.turno&&(Number.isFinite(r.producao)&&r.producao!==null||Number.isFinite(r.paradaMin)&&r.paradaMin!==null||Number.isFinite(r.navioParadaMin)&&r.navioParadaMin!==null));
@@ -331,9 +368,11 @@ function renderMega(){
  $("naviosTelegram").textContent=new Set(base.map(r=>norm(r.navio)).filter(Boolean)).size;
  const rows=base.slice().sort((a,b)=>norm(a.navio).localeCompare(norm(b.navio))||String(a.data).localeCompare(String(b.data))||norm(a.turno).localeCompare(norm(b.turno)));
  renderCharts(base);
+ renderShipComparison(base);
  $("megaRegistros").innerHTML=rows.length?rows.map(r=>'<tr><td><strong>'+esc(r.navio||"Não identificado")+'</strong></td><td>'+esc(r.berco||"—")+'</td><td>'+esc(r.data||"—")+'</td><td>'+esc(r.turno||"—")+'</td><td>'+esc(r.terno||"—")+'</td><td>'+(r.producao===null?"—":r.producao.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:0}))+'</td><td>'+fmtHHMM(r.paradaMin)+'</td><td>'+(r.saldosPorPorão&&r.saldosPorPorão.length?r.saldosPorPorão.map(([porao,saldo])=>'Porão '+esc(porao)+': '+Math.round(saldo).toLocaleString("pt-BR",{maximumFractionDigits:0})).join('<br>'):'—')+'</td><td>'+(r.saldoTotalNavio===null||r.saldoTotalNavio===undefined?'—':Math.round(r.saldoTotalNavio).toLocaleString("pt-BR",{maximumFractionDigits:0}))+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">Nenhum dado reconhecido. Cole as mensagens e clique em “Processar mensagens”.</td></tr>';
 }
 $("processarTelegram").addEventListener("click",async()=>{const texto=$("telegramTexto").value;telegramRows=parseTelegram(texto);renderQualityReport(texto,telegramRows);$("status").textContent="Processando mensagens e consultando os berços…";await lookupBerths(telegramRows);renderMega();$("status").textContent="Análise concluída: "+telegramRows.length+" registro(s) extraído(s). Consulte os avisos de qualidade. Berços consultados na página de navios atracados quando disponível."});
 $("navioSelecionado").addEventListener("change",renderMega);
 $("navioComparacao").addEventListener("change",renderMega);
+$("ordenarComparacao").addEventListener("change",()=>{const selected=$("navioSelecionado").value,comp=$("navioComparacao").value;const base=telegramRows.filter(r=>{if(naviosSelecionados.size)return naviosSelecionados.has(norm(r.navio));if(selected&&comp)return norm(r.navio)===norm(selected)||norm(r.navio)===norm(comp);if(selected)return norm(r.navio)===norm(selected);if(comp)return norm(r.navio)===norm(comp);return true});renderShipComparison(base)});
 </script></body></html>
