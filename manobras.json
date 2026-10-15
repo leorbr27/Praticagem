@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-15T07:15:46.530486-03:00",
+  "atualizado_em": "2026-10-15T11:26:28.537030-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "MISAGO ARROW",
-      "data": "15/10/2026",
-      "hora": "08:15",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MEDI ATLANTICO",
-      "data": "15/10/2026",
-      "hora": "16:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "LOG-IN DISCOVERY",
       "data": "15/10/2026",
@@ -27,39 +9,30 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "MEDI ATLANTICO",
+      "data": "15/10/2026",
+      "hora": "17:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "TENCA ARROW",
+      "navio": "STAR MAJESTY",
       "data": "15/10/2026",
-      "hora": "17:00",
+      "hora": "18:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "CAIPIRINHA",
-      "data": "16/10/2026",
-      "hora": "01:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "OCEAN RELAY",
-      "data": "16/10/2026",
-      "hora": "02:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "NIKE",
       "data": "16/10/2026",
-      "hora": "04:00",
+      "hora": "02:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -68,7 +41,7 @@
     {
       "navio": "ALLEGRA",
       "data": "16/10/2026",
-      "hora": "05:00",
+      "hora": "03:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -81,6 +54,24 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "CAIPIRINHA",
+      "data": "16/10/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "OCEAN RELAY",
+      "data": "16/10/2026",
+      "hora": "15:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
