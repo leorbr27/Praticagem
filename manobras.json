@@ -1,48 +1,39 @@
 {
-  "atualizado_em": "2026-10-14T21:52:34.371929-03:00",
+  "atualizado_em": "2026-10-15T02:07:46.493838-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "MORNING CATHERINE",
       "data": "15/10/2026",
-      "hora": "03:31",
+      "hora": "01:30",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "GRAND VEGA",
       "data": "15/10/2026",
-      "hora": "04:31",
+      "hora": "02:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "MEDI ATLANTICO",
-      "data": "15/10/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SEVEN RIO",
       "data": "15/10/2026",
-      "hora": "10:00",
+      "hora": "05:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
-      "navio": "TENCA ARROW",
+      "navio": "MEDI ATLANTICO",
       "data": "15/10/2026",
       "hora": "16:00",
-      "tipo": "ENTRADA",
+      "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
@@ -54,6 +45,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "TENCA ARROW",
+      "data": "15/10/2026",
+      "hora": "17:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
