@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-15T12:07:19.786038-03:00",
+  "atualizado_em": "2026-10-15T15:26:26.532372-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,18 +12,27 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "BC SERENITY",
+      "data": "15/10/2026",
+      "hora": "17:14",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "MEDI ATLANTICO",
       "data": "15/10/2026",
-      "hora": "17:00",
+      "hora": "23:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR MAJESTY",
-      "data": "15/10/2026",
-      "hora": "18:00",
+      "navio": "ALLEGRA",
+      "data": "16/10/2026",
+      "hora": "00:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -39,7 +48,7 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ALLEGRA",
+      "navio": "STAR MAJESTY",
       "data": "16/10/2026",
       "hora": "03:00",
       "tipo": "ENTRADA",
@@ -84,6 +93,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SKANDI RECIFE",
+      "data": "17/10/2026",
+      "hora": "04:10",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "MACURU ARROW",
       "data": "18/10/2026",
       "hora": "14:00",
@@ -93,12 +111,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SKANDI VITORIA",
+      "data": "19/10/2026",
+      "hora": "07:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN TAICANG",
       "data": "19/10/2026",
       "hora": "09:04",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "AMAZONAS",
+      "data": "22/10/2026",
+      "hora": "08:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "AMAZONAS",
+      "data": "26/10/2026",
+      "hora": "08:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
       "situacao": "PREVISTA"
     }
   ]
