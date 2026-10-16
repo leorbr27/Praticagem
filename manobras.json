@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-16T01:53:36.088898-03:00",
+  "atualizado_em": "2026-10-16T03:21:15.307135-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "MEDI ATLANTICO",
-      "data": "16/10/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "ALLEGRA",
       "data": "16/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "NIKE",
