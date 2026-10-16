@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-16T08:36:17.151198-03:00",
+  "atualizado_em": "2026-10-16T11:11:09.782922-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "NIKE",
-      "data": "16/10/2026",
-      "hora": "09:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "STAR MAJESTY",
       "data": "16/10/2026",
@@ -18,39 +9,48 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "INICIADA"
+    },
+    {
+      "navio": "GRAND VEGA",
+      "data": "16/10/2026",
+      "hora": "12:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "MARCADA"
     },
     {
       "navio": "CAIPIRINHA",
       "data": "16/10/2026",
-      "hora": "12:00",
+      "hora": "14:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SEA EAGLE",
+      "data": "16/10/2026",
+      "hora": "14:30",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "OCEAN RELAY",
       "data": "16/10/2026",
-      "hora": "13:00",
+      "hora": "15:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GRAND VEGA",
-      "data": "16/10/2026",
-      "hora": "15:26",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "COSCO SHIPPING RUYI",
       "data": "16/10/2026",
-      "hora": "19:00",
+      "hora": "20:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
