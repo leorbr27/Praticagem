@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-16T03:21:15.307135-03:00",
+  "atualizado_em": "2026-10-16T06:29:58.556226-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "ALLEGRA",
-      "data": "16/10/2026",
-      "hora": "03:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "NIKE",
       "data": "16/10/2026",
@@ -30,6 +21,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "CAIPIRINHA",
+      "data": "16/10/2026",
+      "hora": "12:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SKANDI NITEROI",
       "data": "16/10/2026",
       "hora": "12:00",
@@ -39,18 +39,9 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "CAIPIRINHA",
-      "data": "16/10/2026",
-      "hora": "14:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "OCEAN RELAY",
       "data": "16/10/2026",
-      "hora": "15:00",
+      "hora": "13:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
