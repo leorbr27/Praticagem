@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-10-16T15:54:54.898787-03:00",
+  "atualizado_em": "2026-10-16T18:02:31.490891-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "CAIPIRINHA",
-      "data": "16/10/2026",
-      "hora": "14:30",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEA EAGLE",
-      "data": "16/10/2026",
-      "hora": "14:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "OCEAN RELAY",
-      "data": "16/10/2026",
-      "hora": "15:30",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "COSCO SHIPPING RUYI",
       "data": "16/10/2026",
@@ -39,21 +12,30 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "SKANDI NITEROI",
-      "data": "16/10/2026",
-      "hora": "23:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SKANDI RECIFE",
       "data": "17/10/2026",
       "hora": "06:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI NITEROI",
+      "data": "17/10/2026",
+      "hora": "15:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "VORIAS",
+      "data": "17/10/2026",
+      "hora": "17:44",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
