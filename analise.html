@@ -277,14 +277,28 @@ function renderQualityReport(text, rows) {
  const target = document.getElementById("qualidadeAvisos"); target.replaceChildren();
  if (!issues.length) { target.className = "empty"; target.textContent = "Nenhum problema identificado nas verificações realizadas."; return; }
  target.className = "";
- const list = document.createElement("div"); list.style.display = "grid"; list.style.gap = "8px";
+ const details = document.createElement("details");
+ details.style.cssText = "border:1px solid #dbe3ea;border-radius:10px;overflow:hidden";
+ const summaryLine = document.createElement("summary");
+ summaryLine.style.cssText = "cursor:pointer;list-style:none;padding:10px 12px;font-size:13px;font-weight:700;color:#24394c;background:#f8fafc;display:flex;align-items:center;gap:8px";
+ const toggle = document.createElement("span");
+ toggle.textContent = "+";
+ toggle.setAttribute("aria-hidden", "true");
+ toggle.style.cssText = "display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border:1px solid #cbd5e1;border-radius:5px;background:white;font-size:15px;line-height:1";
+ const summaryText = document.createElement("span");
+ summaryText.textContent = issues.length + " problema(s) encontrado(s) — clique em + para ver os detalhes";
+ summaryLine.append(toggle, summaryText);
+ details.append(summaryLine);
+ const list = document.createElement("div"); list.style.cssText = "display:grid;gap:8px;padding:10px";
  issues.sort((a, b) => (a.level === "error" ? 0 : 1) - (b.level === "error" ? 0 : 1)).forEach(issue => {
   const item = document.createElement("div");
   item.style.cssText = "border:1px solid " + (issue.level === "error" ? "#fecaca" : "#fde68a") + ";background:" + (issue.level === "error" ? "#fff7f7" : "#fffbeb") + ";border-radius:10px;padding:10px;font-size:13px;color:#24394c";
   const strong = document.createElement("strong"); strong.textContent = (issue.level === "error" ? "Erro — " : "Aviso — ") + (issue.line ? "linha " + issue.line + " — " : "");
   item.append(strong, document.createTextNode(issue.message)); list.append(item);
  });
- target.append(list);
+ details.append(list);
+ details.addEventListener("toggle", () => { toggle.textContent = details.open ? "−" : "+"; summaryText.textContent = issues.length + " problema(s) encontrado(s) — " + (details.open ? "clique em − para recolher" : "clique em + para ver os detalhes"); });
+ target.append(details);
 }
 
 function renderTemporalEvolution(base){
