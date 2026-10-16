@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-16T11:11:09.782922-03:00",
+  "atualizado_em": "2026-10-16T12:29:45.530252-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "STAR MAJESTY",
-      "data": "16/10/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "GRAND VEGA",
       "data": "16/10/2026",
@@ -18,16 +9,16 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "CAIPIRINHA",
       "data": "16/10/2026",
-      "hora": "14:00",
+      "hora": "14:30",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SEA EAGLE",
@@ -41,7 +32,7 @@
     {
       "navio": "OCEAN RELAY",
       "data": "16/10/2026",
-      "hora": "15:00",
+      "hora": "16:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
