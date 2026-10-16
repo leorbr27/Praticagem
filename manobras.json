@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-16T12:29:45.530252-03:00",
+  "atualizado_em": "2026-10-16T15:05:22.899297-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GRAND VEGA",
-      "data": "16/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "CAIPIRINHA",
       "data": "16/10/2026",
@@ -27,16 +18,16 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "OCEAN RELAY",
       "data": "16/10/2026",
-      "hora": "16:00",
+      "hora": "15:30",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "COSCO SHIPPING RUYI",
@@ -45,7 +36,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SKANDI NITEROI",
