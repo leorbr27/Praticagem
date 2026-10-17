@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-16T22:30:04.704559-03:00",
+  "atualizado_em": "2026-10-16T23:03:02.237371-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -32,10 +32,10 @@
     {
       "navio": "MACURU ARROW",
       "data": "18/10/2026",
-      "hora": "10:00",
+      "hora": "04:40",
       "tipo": "ENTRADA",
       "porto": "RCH",
-      "berco": "RCH101",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
@@ -45,6 +45,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA FALCON",
+      "data": "18/10/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -63,6 +72,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COSCO SHIPPING RUYI",
+      "data": "20/10/2026",
+      "hora": "11:51",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
