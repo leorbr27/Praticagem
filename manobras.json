@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-10-17T18:29:27.668896-03:00",
+  "atualizado_em": "2026-10-17T20:18:48.004879-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "STAR MAJESTY",
-      "data": "17/10/2026",
-      "hora": "19:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "ALLEGRA",
-      "data": "17/10/2026",
-      "hora": "20:00",
-      "tipo": "MANOBRA",
-      "porto": "PRM",
-      "berco": "PRMPS1 PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "TENCA ARROW",
-      "data": "17/10/2026",
-      "hora": "21:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "VORIAS",
       "data": "18/10/2026",
@@ -36,6 +9,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MACURU ARROW",
+      "data": "18/10/2026",
+      "hora": "04:40",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
