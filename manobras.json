@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-16T20:55:55.697172-03:00",
+  "atualizado_em": "2026-10-16T22:30:04.704559-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "COSCO SHIPPING RUYI",
-      "data": "16/10/2026",
-      "hora": "20:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "SKANDI RECIFE",
       "data": "17/10/2026",
