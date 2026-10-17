@@ -1,29 +1,11 @@
 {
-  "atualizado_em": "2026-10-17T08:12:28.533933-03:00",
+  "atualizado_em": "2026-10-17T10:55:41.707532-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "BLUE NEPTUNE",
-      "data": "17/10/2026",
-      "hora": "06:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SKANDI RECIFE",
-      "data": "17/10/2026",
-      "hora": "06:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "SKANDI NITEROI",
       "data": "17/10/2026",
-      "hora": "15:30",
+      "hora": "22:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
@@ -31,8 +13,8 @@
     },
     {
       "navio": "VORIAS",
-      "data": "17/10/2026",
-      "hora": "17:44",
+      "data": "18/10/2026",
+      "hora": "01:29",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
