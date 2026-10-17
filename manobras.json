@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-17T16:05:21.243769-03:00",
+  "atualizado_em": "2026-10-17T16:17:37.263657-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -63,6 +63,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "OCEAN RELAY",
+      "data": "18/10/2026",
+      "hora": "16:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
