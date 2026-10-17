@@ -213,7 +213,16 @@ $("atualizar").addEventListener("click",async()=>{
   botao.textContent="Atualizar";
  }
 });
-carregar();setInterval(carregar,300000);
+async function restaurarInscricaoPush(){
+ try{
+  if(!("serviceWorker" in navigator))return;
+  const registration=await navigator.serviceWorker.getRegistration("./");
+  if(!registration)return;
+  currentPushSubscription=await registration.pushManager.getSubscription();
+  if(currentPushSubscription)await syncPushSubscription();
+ }catch(error){console.error("Não foi possível restaurar a inscrição push:",error);}
+}
+carregar();setInterval(carregar,300000);restaurarInscricaoPush();
 </script>
 </body>
 </html>
