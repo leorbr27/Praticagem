@@ -172,6 +172,7 @@ $("tabela").addEventListener("change", e=>{
  const ship=e.target.dataset.navio;
  if(e.target.checked) monitoredShips.add(ship); else monitoredShips.delete(ship);
  saveMonitors();
+ if(currentPushSubscription)syncPushSubscription().catch(e=>console.error("Falha ao sincronizar monitoramento push:",e));
 });
 $("ativarNotificacoes").addEventListener("click", async ()=>{
  const button=$("ativarNotificacoes");
