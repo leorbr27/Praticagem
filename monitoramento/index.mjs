@@ -66,7 +66,7 @@ export default {
     const url = new URL(request.url);
     const origin = request.headers.get("origin");
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: { "Access-Control-Allow-Origin": ALLOWED_ORIGIN, "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Access-Control-Allow-Headers": "Content-Type", "Access-Control-Max-Age": "86400" } });
-    if (origin && origin !== ALLOWED_ORIGIN) return json({ error: "Origin not allowed" }, 403);
+    if (url.pathname.endsWith("/cron")) { if (origin) return json({ error: "Origin not allowed" }, 403); } else if (origin !== ALLOWED_ORIGIN) return json({ error: "Origin not allowed" }, 403);
     try {
       if (request.method === "GET" && url.pathname.endsWith("/vapid-public-key")) {
         if (!process.env.VAPID_PUBLIC_KEY) return json({ error: "Push service not configured" }, 503);
@@ -76,7 +76,6 @@ export default {
         const body = await request.json();
         if (!body.subscription?.endpoint || !Array.isArray(body.monitoredShips)) return json({ error: "Invalid subscription" }, 400);
         const ships = [...new Set(body.monitoredShips.map(norm).filter(Boolean))];
-        if (!ships.length) return json({ error: "Select at least one ship before enabling push" }, 400);
         await pool.query(
           "INSERT INTO push_subscriptions(endpoint,subscription,monitored_ships,updated_at) VALUES($1,$2::jsonb,$3,NOW()) ON CONFLICT(endpoint) DO UPDATE SET subscription=EXCLUDED.subscription,monitored_ships=EXCLUDED.monitored_ships,updated_at=NOW(),last_error=NULL",
           [body.subscription.endpoint, JSON.stringify(body.subscription), ships]
