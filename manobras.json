@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-10-17T16:17:37.263657-03:00",
+  "atualizado_em": "2026-10-17T18:25:41.240242-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "STAR MAJESTY",
       "data": "17/10/2026",
-      "hora": "18:00",
+      "hora": "19:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -14,7 +14,7 @@
     {
       "navio": "ALLEGRA",
       "data": "17/10/2026",
-      "hora": "19:00",
+      "hora": "20:00",
       "tipo": "MANOBRA",
       "porto": "PRM",
       "berco": "PRMPS1 PRMPS3",
@@ -23,29 +23,11 @@
     {
       "navio": "TENCA ARROW",
       "data": "17/10/2026",
-      "hora": "20:00",
+      "hora": "21:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "MACURU ARROW",
-      "data": "17/10/2026",
-      "hora": "21:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SKANDI NITEROI",
-      "data": "17/10/2026",
-      "hora": "22:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "VORIAS",
@@ -54,6 +36,24 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ML SWALLOW",
+      "data": "18/10/2026",
+      "hora": "08:06",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI NITEROI",
+      "data": "18/10/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
       "situacao": "PREVISTA"
     },
     {
@@ -66,10 +66,28 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "LOG-IN PANTANAL",
+      "data": "18/10/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "OCEAN RELAY",
       "data": "18/10/2026",
-      "hora": "16:00",
+      "hora": "18:00",
       "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "18/10/2026",
+      "hora": "19:00",
+      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
@@ -95,8 +113,17 @@
     {
       "navio": "GREEN TAICANG",
       "data": "19/10/2026",
-      "hora": "09:04",
+      "hora": "16:59",
       "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN ITAJAI",
+      "data": "20/10/2026",
+      "hora": "09:59",
+      "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
       "situacao": "PREVISTA"
