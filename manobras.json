@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-17T22:15:14.795814-03:00",
+  "atualizado_em": "2026-10-18T02:49:45.875131-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "ALLEGRA",
-      "data": "17/10/2026",
-      "hora": "23:10",
-      "tipo": "MANOBRA",
-      "porto": "PRM",
-      "berco": "PRMPS1 PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "TENCA ARROW",
-      "data": "18/10/2026",
-      "hora": "00:30",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "MACURU ARROW",
       "data": "18/10/2026",
@@ -27,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SEA EAGLE",
@@ -148,8 +130,8 @@
     },
     {
       "navio": "COSCO SHIPPING RUYI",
-      "data": "20/10/2026",
-      "hora": "11:51",
+      "data": "21/10/2026",
+      "hora": "11:21",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
