@@ -2,7 +2,7 @@
   "name": "Praticagem — Monitoramento de Navios",
   "short_name": "Praticagem",
   "description": "Monitoramento de situações de navios e notificações push.",
-  "start_url": "./index2.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f3f6f9",
