@@ -1,24 +1,24 @@
 {
-  "atualizado_em": "2026-10-18T16:36:32.808045-03:00",
+  "atualizado_em": "2026-10-18T18:19:49.455971-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "ML SWALLOW",
+      "navio": "OCEAN RELAY",
       "data": "18/10/2026",
-      "hora": "16:06",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "INICIADA"
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
     },
     {
-      "navio": "MACURU ARROW",
-      "data": "18/10/2026",
-      "hora": "17:20",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
+      "navio": "JAMAICA BAY",
+      "data": "19/10/2026",
+      "hora": "00:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SEA EAGLE",
@@ -48,30 +48,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "OCEAN RELAY",
-      "data": "19/10/2026",
-      "hora": "08:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SKANDI NITEROI",
       "data": "19/10/2026",
       "hora": "08:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "JAMAICA BAY",
-      "data": "19/10/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
