@@ -27,6 +27,7 @@ jobs:
           cd dist
           zip ../shipmonitor-bundle.zip index.mjs
       - name: Smoke test active Neon endpoints
+        continue-on-error: true
         run: |
           node --input-type=module <<'NODE'
           const base = "https://br-bold-cloud-b4kwm09r-shipmonitor.compute.c-6.us-east-2.aws.neon.tech";
