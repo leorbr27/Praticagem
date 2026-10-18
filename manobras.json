@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-18T11:27:15.621568-03:00",
+  "atualizado_em": "2026-10-18T13:52:17.185131-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -30,22 +30,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "OCEAN RELAY",
+      "navio": "MACURU ARROW",
       "data": "18/10/2026",
-      "hora": "18:00",
+      "hora": "17:20",
       "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "JAMAICA BAY",
-      "data": "18/10/2026",
-      "hora": "19:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAGA FALCON",
@@ -66,12 +57,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "OCEAN RELAY",
+      "data": "19/10/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SKANDI NITEROI",
       "data": "19/10/2026",
       "hora": "08:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "19/10/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -93,6 +102,15 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "LOG-IN PANTANAL",
+      "data": "20/10/2026",
+      "hora": "04:53",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN TAICANG",
       "data": "20/10/2026",
       "hora": "08:59",
@@ -112,11 +130,56 @@
     },
     {
       "navio": "COSCO SHIPPING RUYI",
-      "data": "21/10/2026",
-      "hora": "11:21",
+      "data": "20/10/2026",
+      "hora": "10:47",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "20/10/2026",
+      "hora": "10:59",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ALLEGRA",
+      "data": "21/10/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR NAVARRA",
+      "data": "21/10/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "TENCA ARROW",
+      "data": "21/10/2026",
+      "hora": "20:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "IZUMO HERMES",
+      "data": "21/10/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
