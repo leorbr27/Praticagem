@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-18T13:52:17.185131-03:00",
+  "atualizado_em": "2026-10-18T14:30:08.240554-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "ML SWALLOW",
