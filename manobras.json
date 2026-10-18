@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-18T14:30:08.240554-03:00",
+  "atualizado_em": "2026-10-18T16:01:07.483870-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "18/10/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "ML SWALLOW",
       "data": "18/10/2026",
@@ -18,16 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEA EAGLE",
-      "data": "18/10/2026",
-      "hora": "17:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "MACURU ARROW",
@@ -37,6 +19,15 @@
       "porto": "RCH",
       "berco": "RCH101",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "SEA EAGLE",
+      "data": "19/10/2026",
+      "hora": "02:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA FALCON",
