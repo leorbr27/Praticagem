@@ -26,6 +26,20 @@ jobs:
           npx --yes esbuild index.mjs --bundle --platform=node --format=esm --packages=bundle --outfile=dist/index.mjs
           cd dist
           zip ../shipmonitor-bundle.zip index.mjs
+      - name: Smoke test active Neon endpoints
+        run: |
+          node --input-type=module <<'NODE'
+          const base = "https://br-bold-cloud-b4kwm09r-shipmonitor.compute.c-6.us-east-2.aws.neon.tech";
+          for (const path of ["/health", "/vapid-public-key"]) {
+            const response = await fetch(base + path, {
+              headers: { Origin: "https://leorbr27.github.io" },
+              signal: AbortSignal.timeout(15000)
+            });
+            const body = await response.text();
+            console.log(path + " => HTTP " + response.status + " " + body.slice(0, 500));
+            if (!response.ok) process.exitCode = 1;
+          }
+          NODE
       - name: Commit generated bundle for Neon deployment
         run: |
           git config user.name "github-actions[bot]"
