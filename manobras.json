@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-10-18T07:56:55.052810-03:00",
+  "atualizado_em": "2026-10-18T10:39:54.299426-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "VORIAS",
-      "data": "18/10/2026",
-      "hora": "08:05",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SKANDI NITEROI",
-      "data": "18/10/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEA EAGLE",
-      "data": "18/10/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "LOG-IN PANTANAL",
       "data": "18/10/2026",
@@ -36,6 +9,24 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "ML SWALLOW",
+      "data": "18/10/2026",
+      "hora": "16:06",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SEA EAGLE",
+      "data": "18/10/2026",
+      "hora": "17:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
@@ -57,15 +48,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "BC SERENITY",
-      "data": "19/10/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAGA FALCON",
       "data": "19/10/2026",
       "hora": "03:00",
@@ -77,34 +59,43 @@
     {
       "navio": "GRANDIS",
       "data": "19/10/2026",
-      "hora": "05:00",
+      "hora": "04:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SKANDI NITEROI",
+      "data": "19/10/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BC SERENITY",
+      "data": "19/10/2026",
+      "hora": "09:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SKANDI VITORIA",
       "data": "19/10/2026",
-      "hora": "07:00",
+      "hora": "12:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ML SWALLOW",
-      "data": "19/10/2026",
-      "hora": "12:04",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN TAICANG",
-      "data": "19/10/2026",
-      "hora": "16:59",
+      "data": "20/10/2026",
+      "hora": "08:59",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
