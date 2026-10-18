@@ -1,24 +1,24 @@
 {
-  "atualizado_em": "2026-10-18T18:52:54.943818-03:00",
+  "atualizado_em": "2026-10-18T20:20:44.348866-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "OCEAN RELAY",
       "data": "18/10/2026",
-      "hora": "23:00",
+      "hora": "21:20",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "JAMAICA BAY",
-      "data": "19/10/2026",
-      "hora": "00:00",
+      "data": "18/10/2026",
+      "hora": "22:20",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SEA EAGLE",
@@ -36,7 +36,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GRANDIS",
@@ -45,7 +45,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SKANDI NITEROI",
@@ -59,7 +59,7 @@
     {
       "navio": "BC SERENITY",
       "data": "19/10/2026",
-      "hora": "09:00",
+      "hora": "11:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
