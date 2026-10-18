@@ -22,9 +22,17 @@ input[type="checkbox"]{min-height:16px;width:16px;height:16px;padding:0;border-r
 button{background:#0b1f33;color:#fff;border:0;font-weight:700}
 .meta{font-size:12px;color:#687684;margin:9px 2px}
 .table-wrap{background:#fff;border-radius:14px;overflow:auto;box-shadow:0 2px 12px #0000000a}
-table{width:100%;border-collapse:collapse;min-width:720px}
-th,td{text-align:left;padding:11px 10px;border-bottom:1px solid #edf0f2;white-space:nowrap;font-size:14px}
+table{width:100%;border-collapse:collapse;min-width:680px;table-layout:fixed}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid #edf0f2;white-space:nowrap;font-size:13px}
 th{background:#eef3f7;color:#344454;font-size:11px;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0}
+th:nth-child(1),td:nth-child(1){width:48px;padding-left:4px;padding-right:4px;text-align:center}
+th:nth-child(2),td:nth-child(2){width:140px}
+th:nth-child(3),td:nth-child(3){width:78px}
+th:nth-child(4),td:nth-child(4){width:58px}
+th:nth-child(5),td:nth-child(5){width:78px}
+th:nth-child(6),td:nth-child(6){width:80px}
+th:nth-child(7),td:nth-child(7){width:70px}
+th:nth-child(8),td:nth-child(8){width:90px}
 tr.status-marcada td{background:#dcfce7}
 tr.status-iniciada td{background:#fef3c7}
 tr.status-impedida td{background:#fee2e2}
@@ -33,7 +41,8 @@ tr.status-iniciada:hover td{background:#fde68a}
 tr.status-impedida:hover td{background:#fecaca}
 .empty{text-align:center;padding:32px;color:#687684}
 footer{text-align:center;color:#74818c;font-size:11px;padding:12px 4px}
-@media(max-width:720px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.filters button{width:100%}}\n@media(max-width:520px){header .header-actions{float:none;display:flex;flex-direction:column;width:100%;margin-top:12px}.header-actions .analysis-link{width:100%}}
+@media(max-width:720px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.filters button{width:100%}}
+@media(max-width:520px){header .header-actions{float:none;display:flex;flex-direction:column;width:100%;margin-top:12px}.header-actions .analysis-link{width:100%}}
 </style>
 </head>
 <body>
