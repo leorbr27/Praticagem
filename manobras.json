@@ -1,15 +1,24 @@
 {
-  "atualizado_em": "2026-10-17T20:19:45.495982-03:00",
+  "atualizado_em": "2026-10-17T22:09:08.666088-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "VORIAS",
+      "navio": "ALLEGRA",
+      "data": "17/10/2026",
+      "hora": "23:10",
+      "tipo": "MANOBRA",
+      "porto": "PRM",
+      "berco": "PRMPS1 PRMPS3",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "TENCA ARROW",
       "data": "18/10/2026",
-      "hora": "01:29",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "hora": "00:30",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "MARCADA"
     },
     {
       "navio": "MACURU ARROW",
@@ -21,10 +30,19 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ML SWALLOW",
+      "navio": "SEA EAGLE",
       "data": "18/10/2026",
-      "hora": "08:06",
-      "tipo": "ENTRADA",
+      "hora": "06:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "VORIAS",
+      "data": "18/10/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
       "situacao": "PREVISTA"
@@ -36,15 +54,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BC SERENITY",
-      "data": "18/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
@@ -75,9 +84,27 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "BC SERENITY",
+      "data": "19/10/2026",
+      "hora": "02:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA FALCON",
-      "data": "18/10/2026",
-      "hora": "21:00",
+      "data": "19/10/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GRANDIS",
+      "data": "19/10/2026",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -90,6 +117,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ML SWALLOW",
+      "data": "19/10/2026",
+      "hora": "12:04",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
