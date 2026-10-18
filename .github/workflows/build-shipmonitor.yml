@@ -31,7 +31,7 @@ jobs:
         continue-on-error: true
         run: |
           node --input-type=module <<'NODE'
-          console.log("Testing currently active Neon deployment after CommonJS build");
+          console.log("Testing Neon deployment after VAPID configuration");
           const base = "https://br-bold-cloud-b4kwm09r-shipmonitor.compute.c-6.us-east-2.aws.neon.tech";
           for (const path of ["/health", "/vapid-public-key"]) {
             const response = await fetch(base + path, {
