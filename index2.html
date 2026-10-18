@@ -76,10 +76,37 @@ const PUSH_API="https://br-bold-cloud-b4kwm09r-shipmonitor.compute.c-6.us-east-2
 let currentPushSubscription=null;
 async function syncPushSubscription(){
  if(!currentPushSubscription)return;
- const response=await fetch(PUSH_API+"/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({subscription:currentPushSubscription.toJSON(),monitoredShips:[...monitoredShips]})});
- if(!response.ok)throw new Error("Não foi possível atualizar os navios monitorados no serviço push.");
+ await pushFetch("/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({subscription:currentPushSubscription.toJSON(),monitoredShips:[...monitoredShips]})});
 }
-function base64UrlToBytes(value){const padding="=".repeat((4-value.length%4)%4);const raw=atob(value.replace(/-/g,"+").replace(/_/g,"/")+padding);return Uint8Array.from(raw,c=>c.charCodeAt(0));}
+function base64UrlToBytes(value){
+ if(typeof value!=="string"||!value.trim())throw new Error("A chave pública VAPID não foi recebida do serviço.");
+ const normalized=value.trim().replace(/-/g,"+").replace(/_/g,"/");
+ const padding="=".repeat((4-normalized.length%4)%4);
+ let raw;
+ try{raw=atob(normalized+padding);}catch(cause){throw new Error("A chave pública VAPID não está em Base64 URL-safe válido: "+(cause?.message||cause));}
+ const bytes=Uint8Array.from(raw,c=>c.charCodeAt(0));
+ if(bytes.length!==65)throw new Error("A chave pública VAPID tem tamanho inválido ("+bytes.length+" bytes; esperado 65).");
+ return bytes;
+}
+async function pushFetch(path,options={}){
+ const url=PUSH_API+path;
+ let response;
+ try{response=await fetch(url,{cache:"no-store",...options});}
+ catch(cause){
+  const detail=cause?.message||String(cause);
+  console.error("[Push] Falha de rede/CORS ao acessar",url,{name:cause?.name,message:detail,online:navigator.onLine});
+  throw new Error("Falha de comunicação com o serviço de notificações ("+path+"). "+detail+". Verifique a conexão e o acesso CORS ao serviço Neon.");
+ }
+ const text=await response.text();
+ let data={};
+ try{data=text?JSON.parse(text):{};}catch{data={detail:text.slice(0,300)};}
+ if(!response.ok){
+  const detail=data.detail||data.error||data.message||("HTTP "+response.status);
+  console.error("[Push] Backend respondeu com erro", {url,status:response.status,body:data});
+  throw new Error("Serviço de notificações ("+path+"): HTTP "+response.status+" — "+detail);
+ }
+ return data;
+}
 let rows=[];
 const monitoredShips = new Set(JSON.parse(localStorage.getItem("praticagem_navios_monitorados_v1") || "[]"));
 let previousSituations = null;
@@ -180,19 +207,36 @@ $("ativarNotificacoes").addEventListener("click", async ()=>{
  if(monitoredShips.size===0){alert("Marque pelo menos um navio na coluna Monitorar antes de ativar as notificações.");return;}
  button.disabled=true;button.textContent="Ativando...";
  try{
+  console.info("[Push] Início da ativação", {origin:location.origin,path:location.pathname,standalone:window.navigator.standalone===true||matchMedia("(display-mode: standalone)").matches});
   const permission=await Notification.requestPermission();
-  if(permission!=="granted")throw new Error("Permissão de notificações não concedida.");
-  const registration=await navigator.serviceWorker.register("./service-worker.js");
+  if(permission!=="granted")throw new Error("Permissão de notificações não concedida (status: "+permission+").");
+  const swUrl=new URL("/Praticagem/service-worker.js",location.origin).href;
+  const swScope=new URL("/Praticagem/",location.origin).href;
+  let registration;
+  try{
+   registration=await navigator.serviceWorker.register(swUrl,{scope:swScope,updateViaCache:"none"});
+   await navigator.serviceWorker.ready;
+   if(!registration.scope.startsWith(swScope))throw new Error("Escopo inesperado do Service Worker: "+registration.scope);
+   console.info("[Push] Service Worker registrado", {script:swUrl,scope:registration.scope,state:registration.active?.state||"aguardando"});
+  }catch(cause){
+   console.error("[Push] Falha ao registrar/aguardar service-worker.js", {script:swUrl,scope:swScope,name:cause?.name,message:cause?.message});
+   throw new Error("Falha no Service Worker em "+swUrl+" (escopo "+swScope+"): "+(cause?.message||String(cause)));
+  }
   let subscription=await registration.pushManager.getSubscription();
   if(!subscription){
-   const keyResponse=await fetch(PUSH_API+"/vapid-public-key",{cache:"no-store"});
-   if(!keyResponse.ok)throw new Error("O serviço de notificações ainda não está pronto. Tente novamente em alguns minutos.");
-   const keyData=await keyResponse.json();
-   subscription=await registration.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:base64UrlToBytes(keyData.publicKey)});
+   const keyData=await pushFetch("/vapid-public-key");
+   if(!keyData.publicKey)throw new Error("O backend respondeu sem a chave pública VAPID.");
+   const applicationServerKey=base64UrlToBytes(keyData.publicKey);
+   console.info("[Push] Chave VAPID recebida e validada", {bytes:applicationServerKey.length});
+   try{
+    subscription=await registration.pushManager.subscribe({userVisibleOnly:true,applicationServerKey});
+   }catch(cause){
+    console.error("[Push] pushManager.subscribe falhou", {name:cause?.name,message:cause?.message,permission:Notification.permission,scope:registration.scope});
+    throw new Error("O iPhone não conseguiu criar a inscrição push: "+(cause?.message||String(cause))+". Confirme que o app foi aberto pela Tela de Início e que o iOS/Safari suporta Web Push.");
+   }
   }
-  const response=await fetch(PUSH_API+"/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({subscription:subscription.toJSON(),monitoredShips:[...monitoredShips]})});
-  const data=await response.json().catch(()=>({}));
-  if(!response.ok)throw new Error(data.error||"Não foi possível registrar este iPhone.");
+  const data=await pushFetch("/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({subscription:subscription.toJSON(),monitoredShips:[...monitoredShips]})});
+  console.info("[Push] Inscrição salva no backend", {monitoredShips:data.monitoredShips,endpointHost:new URL(subscription.endpoint).host});
   currentPushSubscription=subscription;
   button.textContent="Push ativado neste iPhone";
   alert("Notificações push ativadas para "+monitoredShips.size+" navio(s). O serviço verificará as situações a cada 5 minutos.");
@@ -216,7 +260,7 @@ $("atualizar").addEventListener("click",async()=>{
 async function restaurarInscricaoPush(){
  try{
   if(!("serviceWorker" in navigator))return;
-  const registration=await navigator.serviceWorker.getRegistration("./");
+  const registration=await navigator.serviceWorker.getRegistration(new URL("/Praticagem/",location.origin).href);
   if(!registration)return;
   currentPushSubscription=await registration.pushManager.getSubscription();
   if(currentPushSubscription)await syncPushSubscription();
