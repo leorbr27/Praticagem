@@ -42,6 +42,23 @@ jobs:
             console.log(path + " => HTTP " + response.status + " " + body.slice(0, 500));
             if (!response.ok) process.exitCode = 1;
           }
+          const endpoint = "https://example.invalid/praticagem-smoke-test";
+          const headers = { Origin: "https://leorbr27.github.io", "Content-Type": "application/json" };
+          const subscribed = await fetch(base + "/subscribe", {
+            method: "POST", headers,
+            body: JSON.stringify({ subscription: { endpoint, keys: { p256dh: "test", auth: "test" } }, monitoredShips: ["SMOKE_TEST"] }),
+            signal: AbortSignal.timeout(15000)
+          });
+          console.log("/subscribe => HTTP " + subscribed.status + " " + (await subscribed.text()).slice(0, 500));
+          if (!subscribed.ok) process.exitCode = 1;
+          if (subscribed.ok) {
+            const removed = await fetch(base + "/unsubscribe", {
+              method: "POST", headers, body: JSON.stringify({ endpoint }),
+              signal: AbortSignal.timeout(15000)
+            });
+            console.log("/unsubscribe => HTTP " + removed.status + " " + (await removed.text()).slice(0, 500));
+            if (!removed.ok) process.exitCode = 1;
+          }
           NODE
       - name: Commit generated bundle for Neon deployment
         run: |
