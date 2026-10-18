@@ -1,0 +1,34 @@
+name: Build shipmonitor bundle
+on:
+  push:
+    paths:
+      - 'monitoramento/index.mjs'
+      - 'monitoramento/package.json'
+      - '.github/workflows/build-shipmonitor.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install backend dependencies
+        working-directory: monitoramento
+        run: npm install --omit=dev
+      - name: Bundle runtime dependencies
+        working-directory: monitoramento
+        run: |
+          npx --yes esbuild index.mjs --bundle --platform=node --format=esm --packages=bundle --outfile=dist/index.mjs
+          cd dist
+          zip ../shipmonitor-bundle.zip index.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shipmonitor-bundle
+          path: monitoramento/shipmonitor-bundle.zip
+          if-no-files-found: error
+          retention-days: 1
