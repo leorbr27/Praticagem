@@ -28,7 +28,6 @@ jobs:
           cd dist
           zip ../shipmonitor-bundle.zip index.js
       - name: Smoke test active Neon endpoints
-        continue-on-error: true
         run: |
           node --input-type=module <<'NODE'
           console.log("Testing Neon deployment after VAPID configuration");
