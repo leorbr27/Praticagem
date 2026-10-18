@@ -29,6 +29,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: shipmonitor-bundle
-          path: shipmonitor-bundle.zip
+          path: monitoramento/shipmonitor-bundle.zip
           if-no-files-found: error
           retention-days: 1
