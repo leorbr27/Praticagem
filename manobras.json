@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-19T00:09:20.203306-03:00",
+  "atualizado_em": "2026-10-19T03:19:01.161543-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "JAMAICA BAY",
-      "data": "18/10/2026",
-      "hora": "22:20",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "SAGA FALCON",
       "data": "19/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "GRANDIS",
