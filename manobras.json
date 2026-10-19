@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-18T20:53:06.727213-03:00",
+  "atualizado_em": "2026-10-18T22:22:02.815867-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "OCEAN RELAY",
-      "data": "18/10/2026",
-      "hora": "21:20",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "JAMAICA BAY",
       "data": "18/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "SEA EAGLE",
