@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-18T22:22:02.815867-03:00",
+  "atualizado_em": "2026-10-19T00:09:20.203306-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -10,15 +10,6 @@
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "INICIADA"
-    },
-    {
-      "navio": "SEA EAGLE",
-      "data": "19/10/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA FALCON",
@@ -45,6 +36,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEA EAGLE",
+      "data": "19/10/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
