@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-19T18:05:10.556323-03:00",
+  "atualizado_em": "2026-10-19T19:57:26.034201-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -27,7 +27,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN ITAJAI",
@@ -36,7 +36,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "COSCO SHIPPING RUYI",
