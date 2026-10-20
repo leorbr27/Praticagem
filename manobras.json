@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-20T06:58:40.638937-03:00",
+  "atualizado_em": "2026-10-20T08:34:15.252604-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "BC SERENITY",
-      "data": "20/10/2026",
-      "hora": "06:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "GREEN TAICANG",
       "data": "20/10/2026",
