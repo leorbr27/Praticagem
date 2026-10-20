@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-19T22:26:28.206858-03:00",
+  "atualizado_em": "2026-10-20T02:01:44.201906-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -14,16 +14,16 @@
     {
       "navio": "LOG-IN PANTANAL",
       "data": "20/10/2026",
-      "hora": "05:00",
+      "hora": "02:30",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "BC SERENITY",
       "data": "20/10/2026",
-      "hora": "07:00",
+      "hora": "05:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
@@ -63,7 +63,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAGA FALCON",
@@ -135,6 +135,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GRANDIS",
+      "data": "22/10/2026",
+      "hora": "20:30",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
