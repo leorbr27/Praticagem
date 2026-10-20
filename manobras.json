@@ -1,24 +1,24 @@
 {
-  "atualizado_em": "2026-10-20T16:38:44.483564-03:00",
+  "atualizado_em": "2026-10-20T19:16:02.504284-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "COSCO SHIPPING RUYI",
       "data": "20/10/2026",
-      "hora": "22:00",
+      "hora": "22:20",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAGA FALCON",
       "data": "20/10/2026",
-      "hora": "23:00",
+      "hora": "23:20",
       "tipo": "MANOBRA",
       "porto": "RCH",
       "berco": "RCH102 RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "BLUE NEPTUNE",
@@ -27,7 +27,7 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX905 VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SKANDI RECIFE",
@@ -48,15 +48,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ALLEGRA",
-      "data": "21/10/2026",
-      "hora": "15:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAGA PROVIDANA",
       "data": "21/10/2026",
       "hora": "15:00",
@@ -66,28 +57,19 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR NAVARRA",
+      "navio": "TENCA ARROW",
       "data": "21/10/2026",
-      "hora": "16:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "IZUMO HERMES",
-      "data": "22/10/2026",
-      "hora": "01:00",
-      "tipo": "ENTRADA",
+      "hora": "20:00",
+      "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "TENCA ARROW",
-      "data": "22/10/2026",
-      "hora": "01:00",
-      "tipo": "SAIDA",
+      "navio": "IZUMO HERMES",
+      "data": "21/10/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
@@ -120,6 +102,24 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "ALLEGRA",
+      "data": "22/10/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR NAVARRA",
+      "data": "22/10/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SKANDI NITEROI",
       "data": "22/10/2026",
       "hora": "13:00",
@@ -135,6 +135,15 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI BUZIOS",
+      "data": "23/10/2026",
+      "hora": "04:05",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
       "situacao": "PREVISTA"
     },
     {
