@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-20T11:56:25.677767-03:00",
+  "atualizado_em": "2026-10-20T12:48:52.226494-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GREEN ITAJAI",
-      "data": "20/10/2026",
-      "hora": "09:59",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "LOG-IN DISCOVERY",
       "data": "20/10/2026",
