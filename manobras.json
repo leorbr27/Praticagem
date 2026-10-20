@@ -1,7 +1,16 @@
 {
-  "atualizado_em": "2026-10-19T21:17:48.963341-03:00",
+  "atualizado_em": "2026-10-19T22:26:28.206858-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
+    {
+      "navio": "SKANDI VITORIA",
+      "data": "19/10/2026",
+      "hora": "23:59",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX103 VIX103",
+      "situacao": "MARCADA"
+    },
     {
       "navio": "LOG-IN PANTANAL",
       "data": "20/10/2026",
@@ -72,15 +81,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SKANDI VITORIA",
-      "data": "20/10/2026",
-      "hora": "23:59",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX103 VIX103",
       "situacao": "PREVISTA"
     },
     {
