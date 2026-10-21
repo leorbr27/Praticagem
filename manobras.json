@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-20T19:37:23.787291-03:00",
+  "atualizado_em": "2026-10-20T21:41:01.299655-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -39,9 +39,18 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "BLUE NEPTUNE",
+      "data": "21/10/2026",
+      "hora": "07:09",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX905 VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAPURA ESMERALDA",
       "data": "21/10/2026",
-      "hora": "05:00",
+      "hora": "07:09",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
