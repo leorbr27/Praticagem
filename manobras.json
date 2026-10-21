@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-21T16:21:46.126994-03:00",
+  "atualizado_em": "2026-10-21T16:32:26.471792-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SAGA PROVIDANA",
-      "data": "21/10/2026",
-      "hora": "15:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "TENCA ARROW",
       "data": "22/10/2026",
