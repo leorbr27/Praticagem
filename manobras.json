@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-10-20T21:52:18.585630-03:00",
+  "atualizado_em": "2026-10-21T02:21:18.649475-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "COSCO SHIPPING RUYI",
-      "data": "20/10/2026",
-      "hora": "22:20",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAGA FALCON",
-      "data": "20/10/2026",
-      "hora": "23:20",
-      "tipo": "MANOBRA",
-      "porto": "RCH",
-      "berco": "RCH102 RCH103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BLUE NEPTUNE",
-      "data": "20/10/2026",
-      "hora": "23:59",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SKANDI RECIFE",
-      "data": "20/10/2026",
-      "hora": "23:59",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "BLUE NEPTUNE",
       "data": "21/10/2026",
@@ -45,7 +9,7 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX905 VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAPURA ESMERALDA",
@@ -54,7 +18,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAGA PROVIDANA",
