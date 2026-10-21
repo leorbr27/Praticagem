@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-21T02:23:26.388946-03:00",
+  "atualizado_em": "2026-10-21T07:19:24.120742-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -32,7 +32,7 @@
     {
       "navio": "TENCA ARROW",
       "data": "21/10/2026",
-      "hora": "20:00",
+      "hora": "18:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -41,7 +41,7 @@
     {
       "navio": "IZUMO HERMES",
       "data": "21/10/2026",
-      "hora": "21:00",
+      "hora": "19:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -75,24 +75,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ALLEGRA",
-      "data": "22/10/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "STAR NAVARRA",
-      "data": "22/10/2026",
-      "hora": "11:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SKANDI NITEROI",
       "data": "22/10/2026",
       "hora": "13:00",
@@ -108,6 +90,24 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ALLEGRA",
+      "data": "22/10/2026",
+      "hora": "22:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR NAVARRA",
+      "data": "22/10/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
