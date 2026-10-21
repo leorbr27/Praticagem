@@ -1,23 +1,14 @@
 {
-  "atualizado_em": "2026-10-21T07:24:05.884351-03:00",
+  "atualizado_em": "2026-10-21T12:20:21.931518-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "BLUE NEPTUNE",
+      "navio": "SKANDI NITEROI",
       "data": "21/10/2026",
-      "hora": "07:09",
-      "tipo": "MANOBRA",
+      "hora": "14:30",
+      "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAPURA ESMERALDA",
-      "data": "21/10/2026",
-      "hora": "07:09",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX906",
+      "berco": "VIX102",
       "situacao": "MARCADA"
     },
     {
@@ -27,12 +18,12 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "TENCA ARROW",
-      "data": "21/10/2026",
-      "hora": "18:00",
+      "data": "22/10/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -40,8 +31,8 @@
     },
     {
       "navio": "IZUMO HERMES",
-      "data": "21/10/2026",
-      "hora": "19:00",
+      "data": "22/10/2026",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -70,15 +61,6 @@
       "data": "22/10/2026",
       "hora": "07:00",
       "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SKANDI NITEROI",
-      "data": "22/10/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
       "situacao": "PREVISTA"
