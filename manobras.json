@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-21T12:29:32.102609-03:00",
+  "atualizado_em": "2026-10-21T16:21:46.126994-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SKANDI NITEROI",
-      "data": "21/10/2026",
-      "hora": "14:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "SAGA PROVIDANA",
       "data": "21/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "TENCA ARROW",
@@ -99,6 +90,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "23/10/2026",
+      "hora": "12:34",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
