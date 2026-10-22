@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-22T02:57:04.592783-03:00",
+  "atualizado_em": "2026-10-22T07:20:24.940280-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SAGA PROVIDANA",
-      "data": "22/10/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "AMAZONAS",
       "data": "22/10/2026",
@@ -66,21 +57,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GRANDIS",
-      "data": "22/10/2026",
-      "hora": "20:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "ALLEGRA",
       "data": "22/10/2026",
       "hora": "22:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA PROVIDANA",
+      "data": "22/10/2026",
+      "hora": "22:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
@@ -99,6 +90,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GRANDIS",
+      "data": "23/10/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
