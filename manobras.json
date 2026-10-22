@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-22T13:01:17.610222-03:00",
+  "atualizado_em": "2026-10-22T16:16:51.355140-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "JAMAICA BAY",
-      "data": "22/10/2026",
-      "hora": "14:20",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "OLYMPIA.GR",
       "data": "22/10/2026",
@@ -19,24 +10,6 @@
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "SKANDI VITORIA",
-      "data": "22/10/2026",
-      "hora": "17:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ALLEGRA",
-      "data": "22/10/2026",
-      "hora": "22:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA PROVIDANA",
@@ -48,21 +21,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR NAVARRA",
-      "data": "22/10/2026",
-      "hora": "23:00",
-      "tipo": "ENTRADA",
+      "navio": "ALLEGRA",
+      "data": "23/10/2026",
+      "hora": "04:00",
+      "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SKANDI BUZIOS",
+      "navio": "STAR NAVARRA",
       "data": "23/10/2026",
-      "hora": "04:05",
+      "hora": "05:00",
       "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX906",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -84,6 +57,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SKANDI BUZIOS",
+      "data": "23/10/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "SAGA FALCON",
       "data": "24/10/2026",
       "hora": "12:50",
@@ -99,6 +81,24 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI VITORIA",
+      "data": "25/10/2026",
+      "hora": "07:00",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX103 VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PRODIGY",
+      "data": "25/10/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
