@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-10-21T19:41:57.744437-03:00",
+  "atualizado_em": "2026-10-21T21:46:40.461890-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "SAGA PROVIDANA",
       "data": "22/10/2026",
-      "hora": "03:40",
+      "hora": "07:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
