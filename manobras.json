@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-22T07:20:24.940280-03:00",
+  "atualizado_em": "2026-10-22T08:37:12.133444-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "AMAZONAS",
-      "data": "22/10/2026",
-      "hora": "07:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "TENCA ARROW",
       "data": "22/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "IZUMO HERMES",
@@ -27,12 +18,12 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "JAMAICA BAY",
       "data": "22/10/2026",
-      "hora": "12:00",
+      "hora": "14:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -41,7 +32,7 @@
     {
       "navio": "OLYMPIA.GR",
       "data": "22/10/2026",
-      "hora": "13:00",
+      "hora": "15:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
