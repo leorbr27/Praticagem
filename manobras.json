@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-22T08:37:12.133444-03:00",
+  "atualizado_em": "2026-10-22T12:21:50.700074-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "IZUMO HERMES",
@@ -23,20 +23,20 @@
     {
       "navio": "JAMAICA BAY",
       "data": "22/10/2026",
-      "hora": "14:00",
+      "hora": "14:20",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "OLYMPIA.GR",
       "data": "22/10/2026",
-      "hora": "15:00",
+      "hora": "15:20",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SKANDI VITORIA",
