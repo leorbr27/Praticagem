@@ -1,15 +1,15 @@
 {
-  "atualizado_em": "2026-10-23T16:04:15.283018-03:00",
+  "atualizado_em": "2026-10-23T17:17:08.318930-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "SAGA PROVIDANA",
+      "navio": "ZHONG YUAN HAI YUN JIN QU",
       "data": "23/10/2026",
-      "hora": "15:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "INICIADA"
+      "hora": "19:27",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "MARCADA"
     },
     {
       "navio": "JORGE AMADO",
@@ -19,6 +19,15 @@
       "porto": "RCH",
       "berco": "RCH501",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "GREEN ITAJAI",
+      "data": "24/10/2026",
+      "hora": "00:34",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX203 VIX206",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "IZUMO HERMES",
@@ -36,15 +45,6 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GRANDIS",
-      "data": "24/10/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -66,12 +66,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA FALCON",
+      "navio": "GRANDIS",
       "data": "24/10/2026",
-      "hora": "12:50",
+      "hora": "12:00",
       "tipo": "SAIDA",
       "porto": "RCH",
-      "berco": "RCH103",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -84,21 +84,48 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SAGA FALCON",
+      "data": "24/10/2026",
+      "hora": "13:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "BLUE NEPTUNE",
       "data": "24/10/2026",
       "hora": "13:06",
-      "tipo": "MANOBRA",
+      "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX905 VIX905",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI BUZIOS",
+      "data": "24/10/2026",
+      "hora": "19:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
       "situacao": "PREVISTA"
     },
     {
       "navio": "SAPURA ESMERALDA",
       "data": "24/10/2026",
-      "hora": "13:06",
+      "hora": "20:02",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "24/10/2026",
+      "hora": "21:02",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
       "situacao": "PREVISTA"
     },
     {
@@ -138,15 +165,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA NAVIGATOR",
-      "data": "26/10/2026",
-      "hora": "00:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "AMAZONAS",
       "data": "26/10/2026",
       "hora": "09:30",
@@ -158,10 +176,28 @@
     {
       "navio": "SAGA OSAKANA",
       "data": "27/10/2026",
-      "hora": "00:00",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN JIN QU",
+      "data": "27/10/2026",
+      "hora": "04:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA NAVIGATOR",
+      "data": "27/10/2026",
+      "hora": "15:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     }
   ]
