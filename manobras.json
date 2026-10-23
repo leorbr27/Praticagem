@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-10-23T07:14:26.178333-03:00",
+  "atualizado_em": "2026-10-23T08:59:08.492874-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "MUROVDAG",
-      "data": "23/10/2026",
-      "hora": "06:15",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "BLUE NEPTUNE",
-      "data": "23/10/2026",
-      "hora": "10:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAPURA ESMERALDA",
-      "data": "23/10/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "LOG-IN DISCOVERY",
       "data": "23/10/2026",
@@ -59,19 +32,10 @@
     {
       "navio": "JORGE AMADO",
       "data": "23/10/2026",
-      "hora": "17:01",
+      "hora": "17:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH501",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GRANDIS",
-      "data": "23/10/2026",
-      "hora": "20:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -111,12 +75,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GRANDIS",
+      "data": "24/10/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA FALCON",
       "data": "24/10/2026",
       "hora": "12:50",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BLUE NEPTUNE",
+      "data": "24/10/2026",
+      "hora": "13:06",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX905 VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAPURA ESMERALDA",
+      "data": "24/10/2026",
+      "hora": "13:06",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
       "situacao": "PREVISTA"
     },
     {
