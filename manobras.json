@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-23T17:17:08.318930-03:00",
+  "atualizado_em": "2026-10-23T18:59:37.039371-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -27,12 +27,12 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX203 VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "IZUMO HERMES",
       "data": "24/10/2026",
-      "hora": "04:00",
+      "hora": "08:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -41,7 +41,7 @@
     {
       "navio": "NIMERTIS",
       "data": "24/10/2026",
-      "hora": "05:00",
+      "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -57,30 +57,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ALLEGRA",
-      "data": "24/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GRANDIS",
       "data": "24/10/2026",
       "hora": "12:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "HANZE GENDT",
-      "data": "24/10/2026",
-      "hora": "13:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -99,6 +81,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "ALLEGRA",
+      "data": "24/10/2026",
+      "hora": "19:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -111,13 +102,22 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "HANZE GENDT",
+      "data": "24/10/2026",
+      "hora": "20:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAPURA ESMERALDA",
       "data": "24/10/2026",
       "hora": "20:02",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "MAERSK KATALIN",
@@ -160,6 +160,15 @@
       "data": "25/10/2026",
       "hora": "22:00",
       "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NEMEA",
+      "data": "25/10/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
