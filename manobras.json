@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-22T20:14:46.055500-03:00",
+  "atualizado_em": "2026-10-22T21:43:55.606600-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -19,6 +19,15 @@
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MUROVDAG",
+      "data": "23/10/2026",
+      "hora": "06:15",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "MARCADA"
     },
     {
       "navio": "BLUE NEPTUNE",
