@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-23T13:56:57.569443-03:00",
+  "atualizado_em": "2026-10-23T16:04:15.283018-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SKANDI BUZIOS",
-      "data": "23/10/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "SAGA PROVIDANA",
       "data": "23/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "JORGE AMADO",
