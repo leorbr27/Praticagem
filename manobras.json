@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-23T18:59:37.039371-03:00",
+  "atualizado_em": "2026-10-23T20:14:14.141413-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "JORGE AMADO",
