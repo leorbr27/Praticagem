@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-10-24T14:41:37.368771-03:00",
+  "atualizado_em": "2026-10-24T15:57:25.887918-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SKANDI BUZIOS",
-      "data": "24/10/2026",
-      "hora": "14:10",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "IZUMO HERMES",
-      "data": "24/10/2026",
-      "hora": "15:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAGA FALCON",
-      "data": "24/10/2026",
-      "hora": "15:10",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "NIMERTIS",
       "data": "24/10/2026",
@@ -67,17 +40,17 @@
     },
     {
       "navio": "SAPURA ESMERALDA",
-      "data": "24/10/2026",
-      "hora": "20:02",
+      "data": "25/10/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX906",
       "situacao": "MARCADA"
     },
     {
-      "navio": "MAERSK KATALIN",
-      "data": "24/10/2026",
-      "hora": "21:02",
+      "navio": "VORIAS",
+      "data": "25/10/2026",
+      "hora": "08:31",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
