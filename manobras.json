@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-24T08:30:45.997006-03:00",
+  "atualizado_em": "2026-10-24T10:15:47.948381-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -14,17 +14,8 @@
     {
       "navio": "IZUMO HERMES",
       "data": "24/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NIMERTIS",
-      "data": "24/10/2026",
       "hora": "13:00",
-      "tipo": "ENTRADA",
+      "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
@@ -41,10 +32,19 @@
     {
       "navio": "JORGE AMADO",
       "data": "24/10/2026",
-      "hora": "14:00",
+      "hora": "13:30",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH501",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "NIMERTIS",
+      "data": "24/10/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -57,15 +57,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "ALLEGRA",
-      "data": "24/10/2026",
-      "hora": "15:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAGA FALCON",
       "data": "24/10/2026",
       "hora": "15:10",
@@ -75,9 +66,18 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "ALLEGRA",
+      "data": "24/10/2026",
+      "hora": "19:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "HANZE GENDT",
       "data": "24/10/2026",
-      "hora": "16:00",
+      "hora": "20:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -148,8 +148,8 @@
     },
     {
       "navio": "OLYMPIA.GR",
-      "data": "25/10/2026",
-      "hora": "22:00",
+      "data": "26/10/2026",
+      "hora": "04:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -157,8 +157,8 @@
     },
     {
       "navio": "NEMEA",
-      "data": "25/10/2026",
-      "hora": "23:00",
+      "data": "26/10/2026",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
