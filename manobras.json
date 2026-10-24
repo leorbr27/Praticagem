@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-24T10:15:47.948381-03:00",
+  "atualizado_em": "2026-10-24T11:49:59.749937-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,16 +9,7 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "IZUMO HERMES",
-      "data": "24/10/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "BLUE NEPTUNE",
@@ -39,15 +30,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "NIMERTIS",
-      "data": "24/10/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SKANDI BUZIOS",
       "data": "24/10/2026",
       "hora": "14:10",
@@ -57,12 +39,30 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "IZUMO HERMES",
+      "data": "24/10/2026",
+      "hora": "15:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA FALCON",
       "data": "24/10/2026",
       "hora": "15:10",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "NIMERTIS",
+      "data": "24/10/2026",
+      "hora": "16:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -111,39 +111,39 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "LOG-IN PANTANAL",
-      "data": "25/10/2026",
-      "hora": "01:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SKANDI VITORIA",
-      "data": "25/10/2026",
-      "hora": "07:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX103 VIX102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ML SWALLOW",
-      "data": "25/10/2026",
-      "hora": "08:31",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "PRODIGY",
       "data": "25/10/2026",
       "hora": "10:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI VITORIA",
+      "data": "25/10/2026",
+      "hora": "13:00",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX103 VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "25/10/2026",
+      "hora": "17:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ML SWALLOW",
+      "data": "25/10/2026",
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
