@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-23T22:40:54.238872-03:00",
+  "atualizado_em": "2026-10-24T01:42:04.414960-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "JORGE AMADO",
-      "data": "23/10/2026",
-      "hora": "21:30",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH501",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "GREEN ITAJAI",
       "data": "24/10/2026",
@@ -19,24 +10,6 @@
       "porto": "VIX",
       "berco": "VIX203 VIX206",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "IZUMO HERMES",
-      "data": "24/10/2026",
-      "hora": "08:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NIMERTIS",
-      "data": "24/10/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "MUROVDAG",
@@ -48,12 +21,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "IZUMO HERMES",
+      "data": "24/10/2026",
+      "hora": "12:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GRANDIS",
       "data": "24/10/2026",
       "hora": "12:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NIMERTIS",
+      "data": "24/10/2026",
+      "hora": "13:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -75,6 +66,15 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "JORGE AMADO",
+      "data": "24/10/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH501",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SKANDI BUZIOS",
       "data": "24/10/2026",
       "hora": "14:10",
@@ -86,7 +86,7 @@
     {
       "navio": "ALLEGRA",
       "data": "24/10/2026",
-      "hora": "19:00",
+      "hora": "15:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -95,7 +95,7 @@
     {
       "navio": "HANZE GENDT",
       "data": "24/10/2026",
-      "hora": "20:00",
+      "hora": "16:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -171,6 +171,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN JIN QU",
+      "data": "26/10/2026",
+      "hora": "09:08",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
