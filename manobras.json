@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-24T01:42:04.414960-03:00",
+  "atualizado_em": "2026-10-24T03:30:01.040743-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GREEN ITAJAI",
-      "data": "24/10/2026",
-      "hora": "00:34",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX203 VIX206",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "MUROVDAG",
       "data": "24/10/2026",
