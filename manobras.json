@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-23T21:17:23.589072-03:00",
+  "atualizado_em": "2026-10-23T22:40:54.238872-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -117,6 +117,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "25/10/2026",
+      "hora": "01:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
