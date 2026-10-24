@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-24T11:49:59.749937-03:00",
+  "atualizado_em": "2026-10-24T13:35:56.711865-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GRANDIS",
-      "data": "24/10/2026",
-      "hora": "11:15",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "BLUE NEPTUNE",
       "data": "24/10/2026",
@@ -18,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "JORGE AMADO",
@@ -27,7 +18,7 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH501",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "SKANDI BUZIOS",
@@ -45,7 +36,7 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAGA FALCON",
@@ -59,11 +50,11 @@
     {
       "navio": "NIMERTIS",
       "data": "24/10/2026",
-      "hora": "16:00",
+      "hora": "16:30",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "ALLEGRA",
