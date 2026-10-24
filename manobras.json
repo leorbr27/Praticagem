@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-24T13:35:56.711865-03:00",
+  "atualizado_em": "2026-10-24T14:41:37.368771-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "BLUE NEPTUNE",
-      "data": "24/10/2026",
-      "hora": "13:06",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "JORGE AMADO",
-      "data": "24/10/2026",
-      "hora": "13:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH501",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "SKANDI BUZIOS",
       "data": "24/10/2026",
@@ -27,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "IZUMO HERMES",
@@ -45,7 +27,7 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "NIMERTIS",
