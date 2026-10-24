@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-23T20:14:14.141413-03:00",
+  "atualizado_em": "2026-10-23T21:17:23.589072-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "ZHONG YUAN HAI YUN JIN QU",
-      "data": "23/10/2026",
-      "hora": "19:27",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "JORGE AMADO",
       "data": "23/10/2026",
@@ -84,21 +75,21 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "SKANDI BUZIOS",
+      "data": "24/10/2026",
+      "hora": "14:10",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "ALLEGRA",
       "data": "24/10/2026",
       "hora": "19:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SKANDI BUZIOS",
-      "data": "24/10/2026",
-      "hora": "19:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX102",
       "situacao": "PREVISTA"
     },
     {
