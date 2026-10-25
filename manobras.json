@@ -1,24 +1,15 @@
 {
-  "atualizado_em": "2026-10-24T22:19:16.895138-03:00",
+  "atualizado_em": "2026-10-25T01:57:34.213764-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "ALLEGRA",
-      "data": "24/10/2026",
-      "hora": "23:35",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "HANZE GENDT",
       "data": "25/10/2026",
-      "hora": "00:35",
-      "tipo": "ENTRADA",
+      "hora": "01:00",
+      "tipo": "MANOBRA",
       "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
+      "berco": "PRM.LG PRMPS3",
+      "situacao": "INICIADA"
     },
     {
       "navio": "PRODIGY",
