@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-25T16:55:33.819080-03:00",
+  "atualizado_em": "2026-10-25T17:46:42.177098-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -59,7 +59,7 @@
     {
       "navio": "AMAZONAS",
       "data": "26/10/2026",
-      "hora": "09:30",
+      "hora": "10:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
@@ -68,7 +68,7 @@
     {
       "navio": "VORIAS",
       "data": "26/10/2026",
-      "hora": "10:30",
+      "hora": "11:30",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX905 VIX905",
@@ -77,7 +77,7 @@
     {
       "navio": "SAPURA JADE",
       "data": "26/10/2026",
-      "hora": "10:30",
+      "hora": "11:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
@@ -86,7 +86,7 @@
     {
       "navio": "LARGO ENDEAVOR",
       "data": "26/10/2026",
-      "hora": "11:00",
+      "hora": "12:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
