@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-10-25T11:59:51.098876-03:00",
+  "atualizado_em": "2026-10-25T14:33:51.331182-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "VORIAS",
-      "data": "25/10/2026",
-      "hora": "10:40",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "NOVA",
-      "data": "25/10/2026",
-      "hora": "11:10",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "TORRENS",
-      "data": "25/10/2026",
-      "hora": "12:10",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "TORRENS",
-      "data": "25/10/2026",
-      "hora": "13:10",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX202 VIX202",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "LOG-IN PANTANAL",
       "data": "25/10/2026",
@@ -45,25 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SKANDI VITORIA",
-      "data": "25/10/2026",
-      "hora": "19:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX103 VIX102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ML SWALLOW",
-      "data": "25/10/2026",
-      "hora": "23:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN JIN QU",
@@ -72,15 +18,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LARGO ENDEAVOR",
-      "data": "26/10/2026",
-      "hora": "03:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -102,6 +39,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SKANDI VITORIA",
+      "data": "26/10/2026",
+      "hora": "07:00",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX103 VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "NIMERTIS",
       "data": "26/10/2026",
       "hora": "08:00",
@@ -120,13 +66,22 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "ML SWALLOW",
+      "data": "26/10/2026",
+      "hora": "09:08",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "AMAZONAS",
       "data": "26/10/2026",
       "hora": "09:30",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAPURA JADE",
@@ -136,6 +91,15 @@
       "porto": "VIX",
       "berco": "VIX906",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "LARGO ENDEAVOR",
+      "data": "26/10/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA OSAKANA",
