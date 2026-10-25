@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-25T03:14:27.193714-03:00",
+  "atualizado_em": "2026-10-25T06:43:23.508143-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "PRODIGY",
-      "data": "25/10/2026",
-      "hora": "08:31",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "SAPURA ESMERALDA",
       "data": "25/10/2026",
@@ -57,12 +48,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PRODIGY",
+      "data": "25/10/2026",
+      "hora": "13:38",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "LOG-IN PANTANAL",
       "data": "25/10/2026",
       "hora": "14:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "OLYMPIA.GR",
+      "data": "25/10/2026",
+      "hora": "16:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NEMEA",
+      "data": "25/10/2026",
+      "hora": "17:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -84,21 +102,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "OLYMPIA.GR",
+      "navio": "NIMERTIS",
       "data": "26/10/2026",
-      "hora": "04:00",
+      "hora": "08:00",
       "tipo": "SAIDA",
       "porto": "PRM",
-      "berco": "PRMPS2",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NEMEA",
+      "navio": "BABITONGA BAY",
       "data": "26/10/2026",
-      "hora": "05:00",
+      "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
-      "berco": "PRMPS2",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
