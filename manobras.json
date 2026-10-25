@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-25T10:57:13.117114-03:00",
+  "atualizado_em": "2026-10-25T11:59:51.098876-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -18,7 +18,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX201",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "TORRENS",
@@ -72,6 +72,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LARGO ENDEAVOR",
+      "data": "26/10/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
