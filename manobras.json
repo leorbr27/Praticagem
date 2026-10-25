@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-25T19:22:46.647677-03:00",
+  "atualizado_em": "2026-10-25T19:49:25.641837-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -30,6 +30,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "TORRENS",
+      "data": "26/10/2026",
+      "hora": "01:57",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SKANDI VITORIA",
       "data": "26/10/2026",
       "hora": "07:00",
@@ -39,21 +48,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "TORRENS",
+      "navio": "GRANDE AMBURGO",
       "data": "26/10/2026",
       "hora": "09:08",
-      "tipo": "SAIDA",
+      "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ML SWALLOW",
-      "data": "26/10/2026",
-      "hora": "09:08",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
@@ -84,9 +84,18 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "ML SWALLOW",
+      "data": "26/10/2026",
+      "hora": "14:12",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "LARGO ENDEAVOR",
       "data": "26/10/2026",
-      "hora": "12:00",
+      "hora": "15:12",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
