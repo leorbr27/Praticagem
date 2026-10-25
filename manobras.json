@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-25T06:43:23.508143-03:00",
+  "atualizado_em": "2026-10-25T08:28:16.945603-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,9 +12,18 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "PRODIGY",
+      "data": "25/10/2026",
+      "hora": "09:31",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "VORIAS",
       "data": "25/10/2026",
-      "hora": "10:00",
+      "hora": "10:40",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
@@ -23,7 +32,7 @@
     {
       "navio": "NOVA",
       "data": "25/10/2026",
-      "hora": "10:31",
+      "hora": "11:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX201",
@@ -48,22 +57,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "PRODIGY",
-      "data": "25/10/2026",
-      "hora": "13:38",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "LOG-IN PANTANAL",
       "data": "25/10/2026",
       "hora": "14:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "OLYMPIA.GR",
@@ -120,15 +120,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN JIN QU",
-      "data": "26/10/2026",
-      "hora": "09:08",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "AMAZONAS",
       "data": "26/10/2026",
       "hora": "09:30",
@@ -145,6 +136,15 @@
       "porto": "VIX",
       "berco": "VIX906",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN JIN QU",
+      "data": "26/10/2026",
+      "hora": "14:12",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA OSAKANA",
