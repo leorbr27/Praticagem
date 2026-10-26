@@ -1,7 +1,16 @@
 {
-  "atualizado_em": "2026-10-25T21:45:20.402974-03:00",
+  "atualizado_em": "2026-10-26T02:13:53.574596-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
+    {
+      "navio": "NEMEA",
+      "data": "26/10/2026",
+      "hora": "01:15",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "INICIADA"
+    },
     {
       "navio": "TORRENS",
       "data": "26/10/2026",
@@ -9,25 +18,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "OLYMPIA.GR",
-      "data": "26/10/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NEMEA",
-      "data": "26/10/2026",
-      "hora": "03:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "GRANDE AMBURGO",
