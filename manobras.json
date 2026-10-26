@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-25T21:31:54.293977-03:00",
+  "atualizado_em": "2026-10-25T21:45:20.402974-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "ZHONG YUAN HAI YUN JIN QU",
-      "data": "25/10/2026",
-      "hora": "20:40",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "TORRENS",
       "data": "26/10/2026",
