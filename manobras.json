@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-26T08:13:35.841046-03:00",
+  "atualizado_em": "2026-10-26T08:16:32.633033-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -48,30 +48,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NIMERTIS",
-      "data": "26/10/2026",
-      "hora": "14:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "ML SWALLOW",
       "data": "26/10/2026",
       "hora": "14:12",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BABITONGA BAY",
-      "data": "26/10/2026",
-      "hora": "15:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -90,6 +72,24 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NIMERTIS",
+      "data": "26/10/2026",
+      "hora": "21:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "26/10/2026",
+      "hora": "22:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -117,6 +117,15 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NEMEA",
+      "data": "28/10/2026",
+      "hora": "15:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
