@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-27T07:58:03.232852-03:00",
+  "atualizado_em": "2026-10-27T09:02:17.407496-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -21,15 +21,6 @@
       "situacao": "BARRA IMP."
     },
     {
-      "navio": "BABITONGA BAY",
-      "data": "27/10/2026",
-      "hora": "07:30",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "INICIADA"
-    },
-    {
       "navio": "LOG-IN DISCOVERY",
       "data": "27/10/2026",
       "hora": "09:51",
@@ -48,15 +39,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "GREEN ITAJAI",
-      "data": "27/10/2026",
-      "hora": "10:51",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN ITAPOA",
       "data": "27/10/2026",
       "hora": "13:44",
@@ -64,6 +46,15 @@
       "porto": "VIX",
       "berco": "VIX203",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "GREEN ITAJAI",
+      "data": "27/10/2026",
+      "hora": "13:44",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA OSAKANA",
