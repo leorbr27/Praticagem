@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-27T13:09:38.514203-03:00",
+  "atualizado_em": "2026-10-27T14:55:32.794872-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -27,12 +27,12 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "SAGA OSAKANA",
       "data": "27/10/2026",
-      "hora": "18:00",
+      "hora": "21:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
