@@ -1,7 +1,25 @@
 {
-  "atualizado_em": "2026-10-27T14:55:32.794872-03:00",
+  "atualizado_em": "2026-10-27T17:39:21.330723-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
+    {
+      "navio": "ZHONG YUAN HAI YUN JIN QU",
+      "data": "01/11/2026",
+      "hora": "07:30",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR MINERVA",
+      "data": "01/11/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
     {
       "navio": "ZHONG YUAN HAI YUN JIN QU",
       "data": "27/10/2026",
@@ -9,7 +27,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "BARRA IMP."
+      "situacao": "INICIADA"
     },
     {
       "navio": "SAGA NAVIGATOR",
@@ -21,30 +39,21 @@
       "situacao": "BARRA IMP."
     },
     {
-      "navio": "GREEN ITAPOA",
-      "data": "27/10/2026",
-      "hora": "13:44",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "INICIADA"
-    },
-    {
       "navio": "SAGA OSAKANA",
       "data": "27/10/2026",
       "hora": "21:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
-      "navio": "VORIAS",
-      "data": "27/10/2026",
-      "hora": "22:01",
+      "navio": "SAPURA JADE",
+      "data": "28/10/2026",
+      "hora": "09:27",
       "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX905",
+      "berco": "VIX906",
       "situacao": "PREVISTA"
     },
     {
@@ -52,6 +61,15 @@
       "data": "28/10/2026",
       "hora": "10:27",
       "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "28/10/2026",
+      "hora": "11:27",
+      "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
       "situacao": "PREVISTA"
@@ -66,9 +84,45 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "VORIAS",
+      "data": "28/10/2026",
+      "hora": "13:10",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "28/10/2026",
+      "hora": "14:10",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "CORAL ISLAND",
+      "data": "28/10/2026",
+      "hora": "15:21",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GULLWING",
+      "data": "28/10/2026",
+      "hora": "17:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "NEMEA",
       "data": "29/10/2026",
-      "hora": "10:00",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -77,34 +131,61 @@
     {
       "navio": "ORCUN C",
       "data": "29/10/2026",
-      "hora": "11:00",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAPURA JADE",
+      "navio": "SAGA NAVIGATOR",
       "data": "29/10/2026",
-      "hora": "12:00",
+      "hora": "12:43",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "POPLAR ARROW",
+      "data": "29/10/2026",
+      "hora": "13:43",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA OSAKANA",
+      "data": "30/10/2026",
+      "hora": "09:36",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
       "navio": "BABITONGA BAY",
-      "data": "30/10/2026",
-      "hora": "10:00",
+      "data": "31/10/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "CENTURY QUEEN",
+      "data": "31/10/2026",
+      "hora": "02:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "HANZE GENDT",
-      "data": "30/10/2026",
-      "hora": "22:00",
+      "data": "31/10/2026",
+      "hora": "07:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -112,8 +193,8 @@
     },
     {
       "navio": "STAR NAVARRA",
-      "data": "30/10/2026",
-      "hora": "23:00",
+      "data": "31/10/2026",
+      "hora": "08:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
