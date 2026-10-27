@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-26T18:47:08.248723-03:00",
+  "atualizado_em": "2026-10-26T21:48:41.737739-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,25 +9,7 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX103 VIX102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "ML SWALLOW",
-      "data": "26/10/2026",
-      "hora": "21:17",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LARGO ENDEAVOR",
-      "data": "26/10/2026",
-      "hora": "22:17",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "NIMERTIS",
@@ -45,24 +27,24 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GRANDE AMBURGO",
       "data": "27/10/2026",
-      "hora": "02:20",
+      "hora": "02:40",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "LOG-IN PANTANAL",
+      "navio": "ML SWALLOW",
       "data": "27/10/2026",
       "hora": "02:40",
       "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX203",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -81,12 +63,21 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "LARGO ENDEAVOR",
+      "data": "27/10/2026",
+      "hora": "03:40",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA OSAKANA",
       "data": "27/10/2026",
-      "hora": "05:00",
+      "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
@@ -99,6 +90,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "27/10/2026",
+      "hora": "10:51",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
