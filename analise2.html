@@ -55,8 +55,14 @@ function parse(text){
  const shipRe=/🛳️?\s*\*([^*]+)\*\s*•\s*([^•]+)\s*•\s*Saldo:\s*([\d.,]+)\s*•\s*([^\n]*)/i;
  for(let i=0;i<lines.length;i++){
   const raw=lines[i],line=raw.trim();if(!line)continue;
-  const sm=line.match(shipRe);
-  if(sm){currentShip={navio:sm[1].replace(/\s+/g,' ').trim(),identificacao:'',tipoCarga:sm[2].trim(),saldoTexto:sm[3].trim(),saldo:num(sm[3]),percentual:(sm[4]||'').trim()||'Não informado',producao:[],planejamento:[],paralisacoes:[],equipamentos:[]};ships.push(currentShip);shipCount++;section='';day=null;continue;}
+  let headerLine=line;
+  let wrappedHeader=false;
+  if(/🛳️?\s*\*[^*]+$/.test(line)&&lines[i+1]&&/\*\s*•\s*/.test(lines[i+1])){headerLine=line+' '+lines[i+1].trim();wrappedHeader=true;}
+  const sm=headerLine.match(shipRe);
+  if(sm){let shipLabel=sm[1].replace(/\s+/g,' ').trim();let shipName=shipLabel;let identification='';
+   const paren=shipLabel.match(/^(.+?)\s*\((.+)\)$/);if(paren){shipName=paren[1].trim();identification=paren[2].trim();}
+   else {const voy=shipLabel.match(/^(.+?)\s+(VOY\s+.+)$/i);if(voy){shipName=voy[1].trim();identification=voy[2].trim();}}
+   currentShip={navio:shipName,identificacao:identification,tipoCarga:sm[2].trim(),saldoTexto:sm[3].trim(),saldo:num(sm[3]),percentual:(sm[4]||'').trim()||'Não informado',producao:[],planejamento:[],paralisacoes:[],equipamentos:[]};ships.push(currentShip);shipCount++;section='';day=null;if(wrappedHeader)i++;continue;}
   if(/^Dia\s+\d+/i.test(line)){day=(line.match(/Dia\s+(\d+)/i)||[])[1]||null;section='production';continue}
   if(/📋\s*Planejamento/i.test(line)){section='planning';continue}
   if(/Paralisações relevantes/i.test(line)){section='stoppages';continue}
