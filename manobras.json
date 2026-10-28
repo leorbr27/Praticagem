@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-27T20:58:40.068331-03:00",
+  "atualizado_em": "2026-10-27T22:07:58.697318-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -19,15 +19,6 @@
       "porto": "RCH",
       "berco": "RCH103",
       "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA OSAKANA",
-      "data": "27/10/2026",
-      "hora": "21:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "INICIADA"
     },
     {
       "navio": "SAPURA JADE",
