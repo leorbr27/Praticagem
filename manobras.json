@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-28T03:50:57.602332-03:00",
+  "atualizado_em": "2026-10-28T07:03:39.303068-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -18,15 +18,6 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAPURA JADE",
-      "data": "28/10/2026",
-      "hora": "09:27",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
       "situacao": "PREVISTA"
     },
     {
@@ -66,9 +57,18 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SAPURA JADE",
+      "data": "28/10/2026",
+      "hora": "13:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "MAERSK KATALIN",
       "data": "28/10/2026",
-      "hora": "14:10",
+      "hora": "14:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
