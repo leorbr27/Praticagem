@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-28T07:03:39.303068-03:00",
+  "atualizado_em": "2026-10-28T10:40:23.420139-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -39,42 +39,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "LARGO ENDEAVOR",
-      "data": "28/10/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "VORIAS",
-      "data": "28/10/2026",
-      "hora": "13:10",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAPURA JADE",
-      "data": "28/10/2026",
-      "hora": "13:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "MAERSK KATALIN",
-      "data": "28/10/2026",
-      "hora": "14:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "CORAL ISLAND",
       "data": "28/10/2026",
       "hora": "15:21",
@@ -84,12 +48,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "LARGO ENDEAVOR",
+      "data": "28/10/2026",
+      "hora": "22:47",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "VORIAS",
+      "data": "28/10/2026",
+      "hora": "22:47",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GULLWING",
       "data": "28/10/2026",
-      "hora": "17:00",
+      "hora": "23:47",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "28/10/2026",
+      "hora": "23:47",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
       "situacao": "PREVISTA"
     },
     {
@@ -129,12 +120,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SAPURA JADE",
+      "data": "29/10/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA OSAKANA",
       "data": "30/10/2026",
       "hora": "09:36",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "30/10/2026",
+      "hora": "16:42",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
