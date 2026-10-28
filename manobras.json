@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-28T13:33:34.392948-03:00",
+  "atualizado_em": "2026-10-28T16:07:35.941515-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -21,31 +21,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
-      "data": "28/10/2026",
-      "hora": "11:27",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "INICIADA"
-    },
-    {
       "navio": "VORIAS",
       "data": "28/10/2026",
       "hora": "15:21",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "LARGO ENDEAVOR",
-      "data": "28/10/2026",
-      "hora": "22:47",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "MAERSK KATALIN",
@@ -57,21 +39,30 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "GULLWING",
-      "data": "28/10/2026",
-      "hora": "23:47",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "CORAL ISLAND",
       "data": "29/10/2026",
       "hora": "04:17",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LARGO ENDEAVOR",
+      "data": "29/10/2026",
+      "hora": "04:17",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GULLWING",
+      "data": "29/10/2026",
+      "hora": "05:17",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
