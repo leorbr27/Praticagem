@@ -150,7 +150,7 @@ function render(){
  $("tabela").innerHTML=data.length?data.map(r=>'<tr class="'+statusClass(r.situacao)+'"><td><input class="monitor-navio" type="checkbox" data-navio="'+esc(norm(r.navio))+'" aria-label="Monitorar '+esc(r.navio)+'" '+(monitoredShips.has(norm(r.navio))?'checked':'')+'></td><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="8" class="empty">Nenhuma manobra encontrada.</td></tr>';
  $("meta").innerHTML=data.length+" de "+rows.length+" manobra(s) monitorada(s)<br>Última atualização: "+(window.ultimaAtualizacao||"—");
 }
-const BERCOS_MONITORADOS=new Set(["VIX101","VIX102","VIX103","VIX201","VIX202","VIX203","VIX204","VIX206","VIX207","VIX905","VIX906","PRMPS1","PRMPS2","PRMPS3","RCH101","RCH102","RCH103","RCH501","RCH502","RCH503"]);
+const BERCOS_MONITORADOS=new Set(["VIX101","VIX102","VIX103","VIX201","VIX202","VIX203","VIX204","VIX206","VIX207","VIX904","VIX905","VIX906","PRMPS1","PRMPS2","PRMPS3","RCH101","RCH102","RCH103","RCH501","RCH502","RCH503","RCH504"]);
 async function consultarFonte(){
  $("meta").textContent="Consultando diretamente o site da Praticagem...";
  try{
