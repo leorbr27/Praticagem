@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1f33">
+<title>Análise 2 | Praticagem ES</title>
+<style>
+:root{--navy:#0b1f33;--blue:#174564;--bg:#dbe4ed;--ink:#17212b;--muted:#657585;--line:#dce3e9;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.45}.wrap{max-width:1280px;margin:auto;padding:12px}
+header{background:linear-gradient(135deg,var(--navy),var(--blue));color:white;border-radius:16px;padding:20px;margin-bottom:12px}h1{font-size:25px;margin:0 0 5px}.sub{margin:0;color:#d2dee8}
+.panel{background:white;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 2px 12px #00000008;min-width:0}.panel h2{font-size:19px;margin:0 0 12px}.panel h3{font-size:16px;margin:18px 0 8px}
+textarea{width:100%;min-height:240px;resize:vertical;font:inherit;border:1px solid #c7d2dc;border-radius:10px;padding:12px;color:var(--ink);background:#fff}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.btn{min-height:42px;border:0;border-radius:10px;padding:10px 15px;background:var(--navy);color:#fff;font:inherit;font-weight:700;cursor:pointer}.btn.secondary{background:#e8eef4;color:var(--navy)}.status{font-size:14px;color:var(--muted);margin:10px 0 0}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:12px}.metric{background:#fff;border-radius:13px;padding:14px;min-width:0}.label{font-size:14px;color:var(--muted)}.value{font-size:25px;font-weight:800;overflow-wrap:anywhere;margin:4px 0}.detail{font-size:14px;color:var(--muted)}
+.table-wrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:10px}table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px}th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}th{background:#eef3f7;color:#24384a;font-weight:750;white-space:nowrap}tr:last-child td{border-bottom:0}.empty{padding:12px;color:var(--muted);background:#f7f9fb;border-radius:9px}.chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.chart-box{border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0}.chart-box h3{margin:0 0 8px}.chart{width:100%;height:290px;display:block}.note{font-size:14px;color:var(--muted)}.tag{display:inline-block;background:#edf3f8;border-radius:6px;padding:3px 7px;font-size:13px}.report h2{border-bottom:1px solid var(--line);padding-bottom:8px}.report p{margin:8px 0}.report ul{padding-left:22px}.report strong{font-weight:750}
+@media(max-width:760px){.wrap{padding:8px}header{padding:16px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.chart-grid{grid-template-columns:1fr}.value{font-size:23px}.panel{padding:12px}h1{font-size:22px}.chart{height:250px}}
+</style>
+</head>
+<body><main class="wrap">
+<header><h1>Análise operacional | Praticagem ES</h1><p class="sub">Análise 2 — cole o resumo de produção para extrair tabelas, indicadores, gráficos e comparativos.</p></header>
+<section class="panel">
+<h2>1. Ler dados do relatório</h2>
+<p>Cole abaixo o texto completo recebido no Telegram. A análise é feita nesta página, sem enviar o conteúdo para um servidor.</p>
+<textarea id="source" aria-label="Texto do resumo de produção" placeholder="Cole aqui o resumo de produção do Telegram…"></textarea>
+<div class="actions"><button class="btn" id="analyze">Ler e analisar dados</button><button class="btn secondary" id="example">Carregar exemplo da conversa</button><button class="btn secondary" id="clear">Limpar</button><button class="btn secondary" id="export">Baixar dados JSON</button></div>
+<p id="status" class="status" aria-live="polite">Aguardando texto para análise.</p>
+</section>
+<div id="output" hidden>
+<section id="summary" class="metrics"></section>
+<section class="panel"><h2>2. Resumo geral da extração</h2><div id="summaryTable"></div></section>
+<section class="panel"><h2>3. Navios, carga e saldo</h2><div id="shipsTable"></div></section>
+<section class="panel"><h2>4. Produção por navio e turno</h2><div id="productionTable"></div><p class="note">“Sem produção” é preservado como ocorrência distinta de um valor numérico zero. Os dados são exibidos conforme o texto de origem.</p></section>
+<section class="panel"><h2>5. Planejamento por porão</h2><div id="planningTable"></div></section>
+<section class="panel"><h2>6. Paralisações operacionais</h2><div id="stoppageTable"></div><p id="stoppageNote" class="note"></p></section>
+<section class="panel"><h2>7. Equipamentos</h2><div id="equipmentTable"></div><p id="equipmentNote" class="note"></p></section>
+<section class="panel"><h2>8. Gráficos e comparativos</h2><div id="charts" class="chart-grid"></div></section>
+<section class="panel"><h2>9. Indicadores que podem ser calculados</h2><div id="indicatorsTable"></div></section>
+<section class="panel"><h2>10. Limitações identificadas automaticamente</h2><div id="limitations"></div></section>
+<section class="panel"><h2>11. Dados estruturados (JSON)</h2><p class="note">Os dados extraídos também podem ser baixados pelo botão no início da página.</p><pre id="jsonPreview" style="white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px"></pre></section>
+</div>
+</main>
+<script>
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+let parsed=null;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num=s=>{if(s==null)return null;let t=String(s).trim().replace(/\s/g,'');if(!t)return null;if(/^\d{1,3}(\.\d{3})*(,\d+)?$/.test(t))t=t.replace(/\./g,'').replace(',','.');else if(/^\d+,\d+$/.test(t))t=t.replace(',','.');const n=Number(t);return Number.isFinite(n)?n:null};
+const fmt=n=>n==null?'—':new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(n);
+function table(headers,rows){if(!rows.length)return '<div class="empty">Nenhum registro identificado nesta seção do texto.</div>';return '<div class="table-wrap"><table><thead><tr>'+headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(v=>'<td>'+esc(v==null||v===''?'—':v)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>'}
+function parse(text){
+ const lines=text.replace(/\r/g,'').split('\n');
+ const ships=[],production=[],planning=[],stoppages=[],equipment=[],warnings=[];
+ let currentShip=null,section='',day=null,shipCount=0,explicitStops=0,explicitEquip=0;
+ const shipRe=/🛳️?\s*\*([^*]+)\*\s*•\s*([^•]+)\s*•\s*Saldo:\s*([\d.,]+)\s*•\s*([^\n]*)/i;
+ for(let i=0;i<lines.length;i++){
+  const raw=lines[i],line=raw.trim();if(!line)continue;
+  const sm=line.match(shipRe);
+  if(sm){currentShip={navio:sm[1].replace(/\s+/g,' ').trim(),identificacao:'',tipoCarga:sm[2].trim(),saldoTexto:sm[3].trim(),saldo:num(sm[3]),percentual:(sm[4]||'').trim()||'Não informado',producao:[],planejamento:[],paralisacoes:[],equipamentos:[]};ships.push(currentShip);shipCount++;section='';day=null;continue;}
+  if(/^Dia\s+\d+/i.test(line)){day=(line.match(/Dia\s+(\d+)/i)||[])[1]||null;section='production';continue}
+  if(/📋\s*Planejamento/i.test(line)){section='planning';continue}
+  if(/Paralisações relevantes/i.test(line)){section='stoppages';continue}
+  if(/🛠️\s*Equipamentos/i.test(line)){section='equipment';continue}
+  if(/^⚠️\s*#/.test(line)){
+   const m=line.match(/^⚠️\s*#(\S+)\s*\|\s*Porão\s+([^|]+)\s*\|\s*(\d{2}:\d{2})-(\d{2}:\d{2})\s*\((\d{2}:\d{2})\)\s*$/);
+   if(m){const reason=(lines[i+1]||'').trim();const obj={navio:currentShip?.navio||'Não identificado',identificadorPorão:m[1],porao:m[2].trim(),inicio:m[3],fim:m[4],duracao:m[5],motivo:reason};stoppages.push(obj);if(currentShip)currentShip.paralisacoes.push(obj);explicitStops++;i++;continue}
+  }
+  if(/^[-•]\s/.test(line)&&section==='equipment'){
+   const s=line.replace(/^[-•]\s*/,'').replace(/^\.\.\.\s*\+\d+.*$/,'');
+   if(/\|/.test(s)){const p=s.split('|').map(x=>x.trim());if(p.length>=5){const o={navio:currentShip?.navio||'Não identificado',inicioFim:p[0],equipamento:p[1],capacidade:p[2],identificacao:p[3],origem:p[4]};equipment.push(o);if(currentShip)currentShip.equipamentos.push(o);explicitEquip++;}}
+   continue;
+  }
+  if(section==='production'&&currentShip&&/^\d{2}h\s*-/.test(line)){
+   const m=line.match(/^(\d{2})h\s*-\s*#?([^|]*)\|\s*(.*?)\s*$/);
+   if(m){const rest=m[3].split('|').map(x=>x.trim());let quantity=null,amount=null,status='Produção registrada';
+    if(/sem produção/i.test(rest.join(' ')))status='Sem produção';
+    else if(rest.length>=2){quantity=num(rest[0]);amount=num(rest.slice(1).join(' '));}
+    const o={navio:currentShip.navio,dia:day?('Dia '+day):'Dia não identificado',turno:m[1]+'h',porao:(m[2]||'').trim()||'Não informado',quantidade:quantity,producao:amount,status,linhaOriginal:line};
+    production.push(o);currentShip.producao.push(o);
+   }continue;
+  }
+  if(section==='planning'&&currentShip&&/^Porão\s+/i.test(line)){
+   const m=line.match(/^Porão\s+([^|]+)\|\s*([^|]+)\|\s*([^|]+)\|\s*Peso:\s*([\d.,]+)\s*\|\s*Conf\.?:\s*([\d.,]+)\s*\|\s*Saldo:\s*([\d.,]+)/i);
+   if(m){const o={navio:currentShip.navio,porao:m[1].trim(),local:m[2].trim(),produto:m[3].trim(),peso:num(m[4]),confirmado:num(m[5]),saldo:num(m[6])};planning.push(o);currentShip.planejamento.push(o)}continue;
+  }
+  if(/\.\.\.\s*\+\s*\d+\s+registros/i.test(line))warnings.push('O texto indica registros adicionais de paralisações que não foram incluídos integralmente.');
+  if(/\.\.\.\s*\+\s*\d+\s+equipamentos/i.test(line))warnings.push('O texto indica equipamentos adicionais que não foram incluídos integralmente.');
+ }
+ // Correct ship names that wrap across lines in common Telegram formatting.
+ // Associate each section with the latest ship header; records not represented in text are not inferred.
+ const reportDate=(text.match(/(?:Resumo de Produção\s*\n)?(\d{2}\/\d{2}\/\d{4})\s+(\d{2}:\d{2})/)||[]);
+ const msgDate=(text.match(/\[(\d{1,2}) de ([^\]]+) às ([^\]]+)\]/i)||[]);
+ const noHoldShips=(text.match(/sem dados de porão/gi)||[]).length;
+ const noProduction=production.filter(x=>x.status==='Sem produção').length;
+ const totalsByShip={};production.forEach(p=>{if(p.producao!=null)totalsByShip[p.navio]=(totalsByShip[p.navio]||0)+p.producao});
+ const totalPlanned=planning.reduce((a,p)=>a+(p.peso||0),0),totalConfirmed=planning.reduce((a,p)=>a+(p.confirmado||0),0),totalBalance=planning.reduce((a,p)=>a+(p.saldo||0),0);
+ const incomplete=warnings.slice();
+ if(!production.length)incomplete.push('Nenhum registro de produção por turno foi reconhecido. Confira o formato do texto.');
+ if(!planning.length)incomplete.push('Nenhum registro de planejamento foi reconhecido.');
+ return {dataRelatorio:reportDate[1]||null,horaRelatorio:reportDate[2]||null,navios:ships,producao:production,planejamento:planning,paralisacoes:stoppages,equipamentos:equipment,indicadores:{totalNavios:ships.length,naviosComProducao:[...new Set(production.map(p=>p.navio))].length,naviosComPlanejamento:[...new Set(planning.map(p=>p.navio))].length,registrosProducao:production.length,ocorrenciasSemProducao:noProduction,registrosPlanejamento:planning.length,registrosParalisacaoVisiveis:stoppages.length,registrosEquipamentoVisiveis:equipment.length,pesoPlanejado:totalPlanned,pesoConfirmado:totalConfirmed,saldoPlanejado:totalBalance,producaoPorNavio:totalsByShip},limitacoes:[...new Set(incomplete)],textoOriginal:text};
+}
+function drawBars(canvas,labels,values,title){
+ const ctx=canvas.getContext('2d'),w=canvas.clientWidth||560,h=canvas.clientHeight||280,dpr=window.devicePixelRatio||1;canvas.width=w*dpr;canvas.height=h*dpr;ctx.scale(dpr,dpr);ctx.clearRect(0,0,w,h);
+ const pad={l:52,r:14,t:22,b:62},cw=w-pad.l-pad.r,ch=h-pad.t-pad.b;ctx.font='12px -apple-system,Arial';ctx.fillStyle='#657585';ctx.strokeStyle='#dce3e9';
+ const max=Math.max(1,...values.filter(Number.isFinite));for(let j=0;j<=4;j++){const y=pad.t+ch*j/4;ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(w-pad.r,y);ctx.stroke();ctx.fillText(fmt(max*(4-j)/4),3,y+4)}
+ const step=cw/Math.max(1,values.length),bw=Math.min(42,step*.62);values.forEach((v,i)=>{const barH=Math.max(0,(v||0)/max*ch),x=pad.l+i*step+(step-bw)/2,y=pad.t+ch-barH;ctx.fillStyle='#2563eb';ctx.fillRect(x,y,bw,barH);ctx.fillStyle='#24384a';ctx.textAlign='center';ctx.save();ctx.translate(x+bw/2,h-pad.b+12);ctx.rotate(-.38);const label=labels[i].length>20?labels[i].slice(0,19)+'…':labels[i];ctx.fillText(label,0,0);ctx.restore();if(v){ctx.textAlign='center';ctx.fillText(fmt(v),x+bw/2,Math.max(14,y-5))}});ctx.textAlign='left';
+}
+function chartCard(title,labels,values,unit){const id='chart'+Math.random().toString(36).slice(2);return '<div class="chart-box"><h3>'+esc(title)+'</h3><canvas class="chart" id="'+id+'" aria-label="'+esc(title)+'"></canvas><p class="note">'+esc(unit||'Valores numéricos extraídos do texto original.')+'</p></div>'}
+function render(d){
+ $('output').hidden=false;
+ const cards=[['Navios identificados',d.indicadores.totalNavios,'no texto'],['Registros de produção',d.indicadores.registrosProducao,d.indicadores.ocorrenciasSemProducao+' ocorrências sem produção'],['Paralisações visíveis',d.indicadores.registrosParalisacaoVisiveis,'sem inferir registros omitidos'],['Equipamentos visíveis',d.indicadores.registrosEquipamentoVisiveis,'sem inferir registros omitidos']];
+ $('summary').innerHTML=cards.map(c=>'<div class="metric"><div class="label">'+esc(c[0])+'</div><div class="value">'+esc(fmt(c[1]))+'</div><div class="detail">'+esc(c[2])+'</div></div>').join('');
+ const summaryRows=[['Data do relatório',d.dataRelatorio||'Não identificada'],['Horário do relatório',d.horaRelatorio||'Não identificado'],['Navios identificados',d.indicadores.totalNavios],['Navios com dados de produção por turno',d.indicadores.naviosComProducao],['Navios com planejamento',d.indicadores.naviosComPlanejamento],['Registros de produção por turno',d.indicadores.registrosProducao],['Ocorrências explícitas “Sem produção”',d.indicadores.ocorrenciasSemProducao],['Registros de planejamento',d.indicadores.registrosPlanejamento],['Paralisações visíveis',d.indicadores.registrosParalisacaoVisiveis],['Equipamentos visíveis',d.indicadores.registrosEquipamentoVisiveis]];
+ $('summaryTable').innerHTML=table(['Informação','Dados identificados'],summaryRows);
+ $('shipsTable').innerHTML=table(['Navio','Identificação / viagem','Tipo de carga','Saldo','Percentual'],d.navios.map(s=>[s.navio,s.identificacao||'—',s.tipoCarga,s.saldoTexto,s.percentual]));
+ $('productionTable').innerHTML=table(['Navio','Dia','Turno','Porão','Quantidade','Produção','Situação'],d.producao.map(p=>[p.navio,p.dia,p.turno,p.porao,p.quantidade==null?'—':fmt(p.quantidade),p.producao==null?'—':fmt(p.producao),p.status]));
+ $('planningTable').innerHTML=table(['Navio','Porão','Terminal / local','Produto','Peso','Confirmado','Saldo planejado'],d.planejamento.map(p=>[p.navio,p.porao,p.local,p.produto,fmt(p.peso),fmt(p.confirmado),fmt(p.saldo)]));
+ $('stoppageTable').innerHTML=table(['Navio','Porão','Início','Fim','Duração','Motivo'],d.paralisacoes.map(p=>[p.navio,'#'+p.identificadorPorão+' / '+p.porao,p.inicio,p.fim,p.duracao,p.motivo]));
+ $('stoppageNote').textContent=d.paralisacoes.length?'Foram extraídos '+d.paralisacoes.length+' registros visíveis. Se o texto contém “+ N registros”, a mensagem original omite parte dos dados.':'Nenhum registro de paralisação foi reconhecido neste texto.';
+ $('equipmentTable').innerHTML=table(['Navio','Início–fim','Equipamento','Capacidade','Identificação','Responsável / origem'],d.equipamentos.map(e=>[e.navio,e.inicioFim,e.equipamento,e.capacidade,e.identificacao,e.origem]));
+ $('equipmentNote').textContent=d.equipamentos.length?'Foram extraídos '+d.equipamentos.length+' equipamentos visíveis. Intervalos que atravessam a meia-noite precisam ser interpretados com cautela.':'Nenhum equipamento foi reconhecido neste texto.';
+ const charts=[];
+ const byShip={};d.producao.forEach(p=>{if(p.producao!=null)byShip[p.navio]=(byShip[p.navio]||0)+p.producao});
+ const shipEntries=Object.entries(byShip).sort((a,b)=>b[1]-a[1]);
+ if(shipEntries.length)charts.push({title:'Produção acumulada por navio',labels:shipEntries.map(x=>x[0]),values:shipEntries.map(x=>x[1]),unit:'Soma dos valores numéricos de produção identificados; confirme se todos usam a mesma unidade.'});
+ const byTurn={};d.producao.forEach(p=>{if(p.producao!=null)byTurn[p.turno]=(byTurn[p.turno]||0)+p.producao});
+ const turnEntries=Object.entries(byTurn).sort((a,b)=>Number(a[0].slice(0,2))-Number(b[0].slice(0,2)));
+ if(turnEntries.length)charts.push({title:'Comparativo de produção por turno',labels:turnEntries.map(x=>x[0]),values:turnEntries.map(x=>x[1]),unit:'Soma dos valores reconhecidos por horário de turno.'});
+ const byDay={};d.producao.forEach(p=>{if(p.producao!=null)byDay[p.dia]=(byDay[p.dia]||0)+p.producao});
+ const dayEntries=Object.entries(byDay);
+ if(dayEntries.length)charts.push({title:'Produção por dia informado',labels:dayEntries.map(x=>x[0]),values:dayEntries.map(x=>x[1]),unit:'Os dias vêm dos cabeçalhos “Dia N” do relatório.'});
+ const byHold={};d.planejamento.forEach(p=>{const k=p.navio+' / porão '+p.porao;byHold[k]=(byHold[k]||0)+(p.confirmado||0)});
+ const holdEntries=Object.entries(byHold).sort((a,b)=>b[1]-a[1]).slice(0,12);
+ if(holdEntries.length)charts.push({title:'Peso confirmado por porão',labels:holdEntries.map(x=>x[0]),values:holdEntries.map(x=>x[1]),unit:'Comparação dos valores de confirmado informados no planejamento.'});
+ $('charts').innerHTML=charts.length?charts.map(c=>chartCard(c.title,c.labels,c.values,c.unit)).join(''):'<div class="empty">Não há valores numéricos suficientes para montar gráficos.</div>';
+ charts.forEach((c,i)=>{const canvas=$('charts').querySelectorAll('canvas')[i];if(canvas)drawBars(canvas,c.labels,c.values,c.title)});
+ const indRows=[['Produção por navio','Calculável', 'Soma dos registros numéricos reconhecidos por navio.'],['Produção por turno','Calculável','Soma por horário do turno; comparação depende de unidades consistentes.'],['Produção por porão','Parcial','Disponível quando o texto identifica um porão em cada linha.'],['Percentual embarcado','Parcial','Exige peso total e produção confirmada compatíveis.'],['Saldo restante','Disponível em alguns registros','O saldo do navio e o saldo do planejamento são campos distintos.'],['Tempo de paralisação','Parcial','Duração pode ser somada, mas sobreposições precisam ser descontadas.'],['Causas de parada mais frequentes','Calculável nos registros visíveis','Agrupamento por descrição do motivo; descrições parecidas podem exigir padronização.'],['Horas de utilização de equipamentos','Parcial','Intervalos que cruzam meia-noite precisam de ajuste.'],['Eficiência operacional','Insuficiente isoladamente','Requer critério de produtividade e tempo efetivo de operação.']];
+ $('indicatorsTable').innerHTML=table(['Indicador','Situação','Observação'],indRows);
+ const limits=[...d.limitacoes];if(d.navios.some(s=>s.percentual==='Não informado'))limits.push('Há navios sem percentual informado; nenhum percentual foi calculado ou inventado.');
+ if(d.producao.some(p=>p.status==='Sem produção'))limits.push('“Sem produção” foi mantido como status textual, separado de valor zero.');
+ if(d.producao.some(p=>p.porao==='Não informado'))limits.push('Há registros de produção sem identificação de porão.');
+ if(d.paralisacoes.some(p=>p.motivo===''))limits.push('Há paralisação sem motivo capturado na linha seguinte.');
+ if(!limits.length)limits.push('Nenhuma limitação automática adicional identificada; ainda assim, confira o texto de origem.');
+ $('limitations').innerHTML='<ul>'+[...new Set(limits)].map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+ $('jsonPreview').textContent=JSON.stringify(d,null,2);
+}
+function run(){const text=$('source').value.trim();if(!text){$('status').textContent='Cole o texto do relatório antes de iniciar a análise.';return}try{parsed=parse(text);render(parsed);$('status').textContent='Análise concluída. '+parsed.indicadores.totalNavios+' navio(s), '+parsed.indicadores.registrosProducao+' registro(s) de produção e '+parsed.indicadores.registrosPlanejamento+' planejamento(s) reconhecidos.';window.scrollTo({top:$('output').offsetTop-10,behavior:'smooth'})}catch(e){console.error(e);$('status').textContent='Não foi possível analisar o texto. Verifique o conteúdo e tente novamente.'}}
+$('analyze').addEventListener('click',run);
+$('clear').addEventListener('click',()=>{$('source').value='';$('output').hidden=true;$('status').textContent='Texto limpo. Aguardando novo relatório.';parsed=null});
+$('example').addEventListener('click',()=>{$('source').value='gptogmo_telegram, [28 de out de 2026 às 07:15]\n📦 *Resumo de Produção*\n28/10/2026 06:59\n\n🛳️ *GREEN ITAPOA\nVOY 08 (TVV 11732)* • Cont • Saldo: 11.042.860 • 21,9%\n\nDia 28\n07h - #13 | Sem produção\n07h - # | Sem produção\n\nDia 27\n01h - #11 | 41 | 952,207\n01h - #31 | 31 | 483,116\n19h - #7 | 39 | 915,305\n19h - #27 | 44 | 763,090\n13h - #27 | Sem produção\n\n📋 Planejamento:\nPorão 1 | SFS | BQ | Peso: 5.300.000 | Conf.: 0 | Saldo: 5.300.000\n\n⚠️ Paralisações relevantes:\n- ⚠️ #2 | Porão 2 | 01:15-01:35 (00:20)\n   AG. TERNO DE ESTIVA VESTIR CINTO DE SEGURANÇA\n\n🛠️ Equipamentos:\n- 01:00-06:18 | GUINDASTE DE BORDO | (36t) | 1 | Navio';$('status').textContent='Exemplo carregado. Clique em “Ler e analisar dados” para testar.'});
+$('export').addEventListener('click',()=>{if(!parsed){$('status').textContent='Primeiro leia e analise um relatório.';return}const blob=new Blob([JSON.stringify(parsed,null,2)],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='analise-praticagem.json';a.click();URL.revokeObjectURL(url)});
+window.addEventListener('resize',()=>{if(parsed&&!$('output').hidden)run()});
+})();
+</script>
+</body></html>
