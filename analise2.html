@@ -67,8 +67,9 @@ function parse(text){
   if(/📋\s*Planejamento/i.test(line)){section='planning';continue}
   if(/Paralisações relevantes/i.test(line)){section='stoppages';continue}
   if(/🛠️\s*Equipamentos/i.test(line)){section='equipment';continue}
-  if(/^⚠️\s*#/.test(line)){
-   const m=line.match(/^⚠️\s*#(\S+)\s*\|\s*Porão\s+([^|]+)\s*\|\s*(\d{2}:\d{2})-(\d{2}:\d{2})\s*\((\d{2}:\d{2})\)\s*$/);
+  if(/^(?:[-•]\s*)?⚠️\s*#/.test(line)){
+   const normalizedStop=line.replace(/^[-•]\s*/, '');
+   const m=normalizedStop.match(/^⚠️\s*#(\S+)\s*\|\s*Porão\s+([^|]+)\s*\|\s*(\d{2}:\d{2})-(\d{2}:\d{2})\s*\((\d{2}:\d{2})\)\s*$/);
    if(m){const reason=(lines[i+1]||'').trim();const obj={navio:currentShip?.navio||'Não identificado',identificadorPorão:m[1],porao:m[2].trim(),inicio:m[3],fim:m[4],duracao:m[5],motivo:reason};stoppages.push(obj);if(currentShip)currentShip.paralisacoes.push(obj);explicitStops++;i++;continue}
   }
   if(/^[-•]\s/.test(line)&&section==='equipment'){
