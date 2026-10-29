@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-29T12:44:51.290662-03:00",
+  "atualizado_em": "2026-10-29T16:14:04.302815-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -57,64 +57,37 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GULLWING",
-      "data": "29/10/2026",
-      "hora": "13:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "CORAL ISLAND",
-      "data": "29/10/2026",
-      "hora": "14:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "BRIGHTON",
       "data": "29/10/2026",
       "hora": "15:57",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "SAGA NAVIGATOR",
       "data": "29/10/2026",
-      "hora": "17:00",
+      "hora": "19:50",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "MAERSK KATALIN",
-      "data": "29/10/2026",
-      "hora": "17:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAPURA JADE",
-      "data": "29/10/2026",
-      "hora": "17:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
       "situacao": "MARCADA"
     },
     {
       "navio": "NEMEA",
       "data": "29/10/2026",
-      "hora": "18:00",
+      "hora": "20:00",
       "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ORCUN C",
+      "data": "29/10/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
@@ -122,20 +95,38 @@
     {
       "navio": "POPLAR ARROW",
       "data": "29/10/2026",
-      "hora": "18:00",
+      "hora": "22:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ORCUN C",
+      "navio": "MAERSK KATALIN",
       "data": "29/10/2026",
-      "hora": "19:00",
+      "hora": "23:38",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SAPURA JADE",
+      "data": "29/10/2026",
+      "hora": "23:38",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "30/10/2026",
+      "hora": "00:38",
       "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
