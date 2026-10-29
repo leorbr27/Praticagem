@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-29T17:40:48.864465-03:00",
+  "atualizado_em": "2026-10-29T20:17:19.231409-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -18,6 +18,24 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN ITAPOA",
+      "data": "01/11/2026",
+      "hora": "07:08",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN QINGDAO",
+      "data": "01/11/2026",
+      "hora": "08:08",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
@@ -104,11 +122,11 @@
     {
       "navio": "LOG-IN DISCOVERY",
       "data": "30/10/2026",
-      "hora": "16:42",
+      "hora": "05:14",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "BABITONGA BAY",
