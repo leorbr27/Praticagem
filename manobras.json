@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-29T03:47:35.829999-03:00",
+  "atualizado_em": "2026-10-29T05:51:16.219531-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -75,24 +75,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NEMEA",
-      "data": "29/10/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ORCUN C",
-      "data": "29/10/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "MAERSK KATALIN",
       "data": "29/10/2026",
       "hora": "17:00",
@@ -109,6 +91,24 @@
       "porto": "VIX",
       "berco": "VIX906",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "NEMEA",
+      "data": "29/10/2026",
+      "hora": "19:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ORCUN C",
+      "data": "29/10/2026",
+      "hora": "20:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA NAVIGATOR",
