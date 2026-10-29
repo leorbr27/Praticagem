@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-29T16:14:04.302815-03:00",
+  "atualizado_em": "2026-10-29T17:40:48.864465-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,7 +12,7 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR NAVARRA",
+      "navio": "ORCUN C",
       "data": "01/11/2026",
       "hora": "03:00",
       "tipo": "ENTRADA",
@@ -21,49 +21,22 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA OSAKANA",
-      "data": "01/11/2026",
-      "hora": "06:30",
+      "navio": "ZHONG YUAN HAI YUN JIN QU",
+      "data": "02/11/2026",
+      "hora": "07:40",
       "tipo": "SAIDA",
       "porto": "RCH",
-      "berco": "RCH102",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
       "navio": "STAR MINERVA",
-      "data": "01/11/2026",
-      "hora": "09:00",
+      "data": "03/11/2026",
+      "hora": "10:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
-      "berco": "RCH103",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN JIN QU",
-      "data": "01/11/2026",
-      "hora": "11:22",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "STAR LYSEFJORD",
-      "data": "01/11/2026",
-      "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BRIGHTON",
-      "data": "29/10/2026",
-      "hora": "15:57",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "INICIADA"
     },
     {
       "navio": "SAGA NAVIGATOR",
@@ -75,31 +48,13 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "NEMEA",
-      "data": "29/10/2026",
-      "hora": "20:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ORCUN C",
-      "data": "29/10/2026",
-      "hora": "21:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "POPLAR ARROW",
       "data": "29/10/2026",
       "hora": "22:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "MAERSK KATALIN",
@@ -129,6 +84,24 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "NEMEA",
+      "data": "30/10/2026",
+      "hora": "02:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR NAVARRA",
+      "data": "30/10/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "LOG-IN DISCOVERY",
       "data": "30/10/2026",
       "hora": "16:42",
@@ -144,6 +117,15 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA OSAKANA",
+      "data": "31/10/2026",
+      "hora": "08:30",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
