@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-28T23:29:52.721381-03:00",
+  "atualizado_em": "2026-10-29T03:47:35.829999-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -39,33 +39,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "MAERSK KATALIN",
-      "data": "28/10/2026",
-      "hora": "22:47",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "LARGO ENDEAVOR",
-      "data": "29/10/2026",
-      "hora": "04:17",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GULLWING",
-      "data": "29/10/2026",
-      "hora": "05:17",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "CORAL ISLAND",
       "data": "29/10/2026",
       "hora": "11:08",
@@ -75,12 +48,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "LARGO ENDEAVOR",
+      "data": "29/10/2026",
+      "hora": "11:08",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "BRIGHTON",
       "data": "29/10/2026",
       "hora": "12:08",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GULLWING",
+      "data": "29/10/2026",
+      "hora": "12:08",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -102,13 +93,22 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "MAERSK KATALIN",
+      "data": "29/10/2026",
+      "hora": "17:00",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX905 VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAPURA JADE",
       "data": "29/10/2026",
-      "hora": "15:00",
+      "hora": "17:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAGA NAVIGATOR",
