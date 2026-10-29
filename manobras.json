@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-29T05:51:16.219531-03:00",
+  "atualizado_em": "2026-10-29T10:45:06.994758-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -39,39 +39,48 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "CORAL ISLAND",
-      "data": "29/10/2026",
-      "hora": "11:08",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "LARGO ENDEAVOR",
       "data": "29/10/2026",
       "hora": "11:08",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "GULLWING",
+      "data": "29/10/2026",
+      "hora": "13:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "CORAL ISLAND",
+      "data": "29/10/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
       "navio": "BRIGHTON",
       "data": "29/10/2026",
-      "hora": "12:08",
+      "hora": "15:57",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GULLWING",
+      "navio": "SAGA NAVIGATOR",
       "data": "29/10/2026",
-      "hora": "12:08",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
+      "hora": "17:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -95,37 +104,28 @@
     {
       "navio": "NEMEA",
       "data": "29/10/2026",
-      "hora": "19:00",
+      "hora": "18:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ORCUN C",
-      "data": "29/10/2026",
-      "hora": "20:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA NAVIGATOR",
-      "data": "29/10/2026",
-      "hora": "21:02",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
       "navio": "POPLAR ARROW",
       "data": "29/10/2026",
-      "hora": "22:02",
+      "hora": "18:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ORCUN C",
+      "data": "29/10/2026",
+      "hora": "19:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -140,7 +140,7 @@
     {
       "navio": "BABITONGA BAY",
       "data": "31/10/2026",
-      "hora": "13:00",
+      "hora": "11:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -149,7 +149,7 @@
     {
       "navio": "CENTURY QUEEN",
       "data": "31/10/2026",
-      "hora": "14:00",
+      "hora": "12:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
