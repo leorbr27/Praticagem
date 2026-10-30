@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-30T15:39:03.655708-03:00",
+  "atualizado_em": "2026-10-30T16:59:00.706781-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -48,21 +48,39 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "POPLAR ARROW",
-      "data": "01/11/2026",
-      "hora": "17:09",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "ZHONG YUAN HAI YUN JIN QU",
       "data": "01/11/2026",
       "hora": "20:31",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "F45-F UNIAO",
+      "data": "02/11/2026",
+      "hora": "10:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "POPLAR ARROW",
+      "data": "02/11/2026",
+      "hora": "14:48",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR MINERVA",
+      "data": "02/11/2026",
+      "hora": "22:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
@@ -84,12 +102,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR MINERVA",
+      "navio": "GEM STAR",
       "data": "03/11/2026",
       "hora": "10:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
-      "berco": "RCH102",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BRIGHTON",
+      "data": "31/10/2026",
+      "hora": "06:29",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
@@ -99,6 +126,15 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI VITORIA",
+      "data": "31/10/2026",
+      "hora": "13:10",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
       "situacao": "PREVISTA"
     },
     {
@@ -117,6 +153,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "F45-F UNIAO",
+      "data": "31/10/2026",
+      "hora": "19:30",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX102",
       "situacao": "PREVISTA"
     }
   ]
