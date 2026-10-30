@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-10-29T21:26:44.677898-03:00",
+  "atualizado_em": "2026-10-29T23:38:32.542682-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "HANZE GENDT",
       "data": "01/11/2026",
-      "hora": "02:00",
+      "hora": "04:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -14,7 +14,7 @@
     {
       "navio": "ORCUN C",
       "data": "01/11/2026",
-      "hora": "03:00",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -39,6 +39,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "POPLAR ARROW",
+      "data": "01/11/2026",
+      "hora": "17:09",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "ZHONG YUAN HAI YUN JIN QU",
       "data": "02/11/2026",
       "hora": "07:40",
@@ -55,24 +64,6 @@
       "porto": "RCH",
       "berco": "RCH102",
       "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA NAVIGATOR",
-      "data": "29/10/2026",
-      "hora": "19:50",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "POPLAR ARROW",
-      "data": "29/10/2026",
-      "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
     },
     {
       "navio": "MAERSK KATALIN",
@@ -129,15 +120,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "BABITONGA BAY",
-      "data": "31/10/2026",
-      "hora": "08:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAGA OSAKANA",
       "data": "31/10/2026",
       "hora": "08:30",
@@ -147,9 +129,18 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "BABITONGA BAY",
+      "data": "31/10/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "CENTURY QUEEN",
       "data": "31/10/2026",
-      "hora": "09:00",
+      "hora": "15:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
