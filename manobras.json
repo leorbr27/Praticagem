@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-30T16:59:00.706781-03:00",
+  "atualizado_em": "2026-10-30T19:39:27.531735-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -120,6 +120,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PITT ISLAND",
+      "data": "31/10/2026",
+      "hora": "07:29",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA OSAKANA",
       "data": "31/10/2026",
       "hora": "08:30",
@@ -162,6 +171,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI RECIFE",
+      "data": "31/10/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
       "situacao": "PREVISTA"
     }
   ]
