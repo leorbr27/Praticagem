@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-30T10:13:07.213608-03:00",
+  "atualizado_em": "2026-10-30T12:28:47.306263-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -54,6 +54,24 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR NAVARRA",
+      "data": "03/11/2026",
+      "hora": "03:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "INDEPENDENT",
+      "data": "03/11/2026",
+      "hora": "04:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
