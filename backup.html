@@ -3,21 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Manobras Previstas | Praticagem ES</title>
+<meta name="theme-color" content="#0b1f33">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Praticagem">
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="praticagem-build" content="2026-10-01-1225">
+<title>Monitoramento de Navios | Praticagem ES</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#f3f6f9;color:#17212b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
 .wrap{max-width:1200px;margin:auto;padding:12px}
-header{background:#0b1f33;color:#fff;border-radius:16px;padding:18px;margin-bottom:12px}
+header{display:flow-root;background:#0b1f33;color:#fff;border-radius:16px;padding:18px;margin-bottom:12px}
 h1{margin:0 0 4px;font-size:22px}.sub{margin:0;color:#cbd7e2;font-size:13px}
+.header-actions{float:right;display:flex;gap:8px}.analysis-link{display:inline-flex;align-items:center;justify-content:center;min-height:38px;margin:0;padding:8px 14px;border-radius:10px;background:#fff;color:#0b1f33;text-decoration:none;font-size:14px;font-weight:700}
 .filters{background:#fff;border-radius:14px;padding:10px;margin-bottom:12px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr auto;gap:8px;box-shadow:0 2px 12px #0000000a}
 input,select,button{font:inherit;min-height:42px;border-radius:10px;border:1px solid #ccd5dd;padding:9px 11px}
+input[type="checkbox"]{min-height:16px;width:16px;height:16px;padding:0;border-radius:3px;vertical-align:middle;accent-color:#0b1f33;cursor:pointer}
 button{background:#0b1f33;color:#fff;border:0;font-weight:700}
 .meta{font-size:12px;color:#687684;margin:9px 2px}
 .table-wrap{background:#fff;border-radius:14px;overflow:auto;box-shadow:0 2px 12px #0000000a}
-table{width:100%;border-collapse:collapse;min-width:720px}
-th,td{text-align:left;padding:11px 10px;border-bottom:1px solid #edf0f2;white-space:nowrap;font-size:14px}
+table{width:642px;border-collapse:collapse;min-width:642px;table-layout:fixed}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid #edf0f2;white-space:nowrap;font-size:13px}
 th{background:#eef3f7;color:#344454;font-size:11px;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0}
+th:nth-child(1),td:nth-child(1){width:48px;padding-left:4px;padding-right:4px;text-align:center}
+th:nth-child(2),td:nth-child(2){width:140px}
+th:nth-child(3),td:nth-child(3){width:78px}
+th:nth-child(4),td:nth-child(4){width:58px}
+th:nth-child(5),td:nth-child(5){width:78px}
+th:nth-child(6),td:nth-child(6){width:80px}
+th:nth-child(7),td:nth-child(7){width:70px}
+th:nth-child(8),td:nth-child(8){width:90px}
 tr.status-marcada td{background:#dcfce7}
 tr.status-iniciada td{background:#fef3c7}
 tr.status-impedida td{background:#fee2e2}
@@ -27,11 +42,12 @@ tr.status-impedida:hover td{background:#fecaca}
 .empty{text-align:center;padding:32px;color:#687684}
 footer{text-align:center;color:#74818c;font-size:11px;padding:12px 4px}
 @media(max-width:720px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.filters button{width:100%}}
+@media(max-width:520px){header .header-actions{float:none;display:flex;flex-direction:column;width:100%;margin-top:12px}.header-actions .analysis-link{width:100%}}
 </style>
 </head>
 <body>
 <main class="wrap">
-<header><h1>🚢 Manobras Previstas</h1><p class="sub">Praticagem Espírito Santo · berços monitorados</p></header>
+<header><h1>🚢 Monitoramento de Navios</h1><p class="sub">Marque os navios e ative o push para receber alertas de mudança de situação. No iPhone, adicione esta página à Tela de Início.</p><div class="header-actions"><button id="ativarNotificacoes" type="button">Ativar push no iPhone</button></div></header>
 <section class="filters">
 <input id="busca" type="search" placeholder="🔎 Navio ou berço" autocomplete="off">
 <select id="tipo"><option value="">Todos os tipos</option><option value="ENTRADA">Entrada</option><option value="SAIDA">Saída</option><option value="MANOBRA">Manobra</option></select>
@@ -41,14 +57,81 @@ footer{text-align:center;color:#74818c;font-size:11px;padding:12px 4px}
 </section>
 <div class="meta" id="meta">Carregando...</div>
 <section class="table-wrap"><table>
-<thead><tr><th>Nome do navio</th><th>Data</th><th>Hora</th><th>Tipo</th><th>Porto</th><th>Berço</th><th>Situação</th></tr></thead>
-<tbody id="tabela"><tr><td colspan="7" class="empty">Carregando...</td></tr></tbody>
+<thead><tr><th>Monitorar</th><th>Nome do navio</th><th>Data</th><th>Hora</th><th>Tipo</th><th>Porto</th><th>Berço</th><th>Situação</th></tr></thead>
+<tbody id="tabela"><tr><td colspan="8" class="empty">Carregando...</td></tr></tbody>
 </table></section>
 <footer id="rodape">Fonte: Praticagem Espírito Santo · Última atualização: —</footer>
+<div id="ultimoCommitGitHub" style="text-align:center;color:#74818c;font-size:11px;padding:4px 4px 12px">Último commit do GitHub: consultando…</div>
+<script>
+(async function mostrarUltimoCommitGitHub(){
+ const elemento=document.getElementById("ultimoCommitGitHub");
+ try{
+  const resposta=await fetch("https://api.github.com/repos/leorbr27/Praticagem/commits/main",{cache:"no-store",headers:{Accept:"application/vnd.github+json"}});
+  if(!resposta.ok)throw new Error("HTTP "+resposta.status);
+  const commit=await resposta.json();
+  const data=commit.commit&&commit.commit.author&&commit.commit.author.date;
+  if(!data)throw new Error("Data do commit indisponível");
+  elemento.textContent="Último commit do GitHub: "+new Date(data).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false});
+ }catch(erro){
+  elemento.textContent="Último commit do GitHub: não foi possível consultar agora";
+  console.error("Falha ao consultar último commit do GitHub:",erro);
+ }
+})();
+</script>
 </main>
 <script>
 const $=id=>document.getElementById(id);
+const PUSH_API="https://br-bold-cloud-b4kwm09r-shipmonitor.compute.c-6.us-east-2.aws.neon.tech";
+let currentPushSubscription=null;
+async function syncPushSubscription(){
+ if(!currentPushSubscription)return;
+ await pushFetch("/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({subscription:currentPushSubscription.toJSON(),monitoredShips:[...monitoredShips]})});
+}
+function base64UrlToBytes(value){
+ if(typeof value!=="string"||!value.trim())throw new Error("A chave pública VAPID não foi recebida do serviço.");
+ const normalized=value.trim().replace(/-/g,"+").replace(/_/g,"/");
+ const padding="=".repeat((4-normalized.length%4)%4);
+ let raw;
+ try{raw=atob(normalized+padding);}catch(cause){throw new Error("A chave pública VAPID não está em Base64 URL-safe válido: "+(cause?.message||cause));}
+ const bytes=Uint8Array.from(raw,c=>c.charCodeAt(0));
+ if(bytes.length!==65)throw new Error("A chave pública VAPID tem tamanho inválido ("+bytes.length+" bytes; esperado 65).");
+ return bytes;
+}
+async function pushFetch(path,options={}){
+ const url=PUSH_API+path;
+ let response;
+ try{response=await fetch(url,{cache:"no-store",...options});}
+ catch(cause){
+  const detail=cause?.message||String(cause);
+  console.error("[Push] Falha de rede/CORS ao acessar",url,{name:cause?.name,message:detail,online:navigator.onLine});
+  throw new Error("Falha de comunicação com o serviço de notificações ("+path+"). "+detail+". Verifique a conexão e o acesso CORS ao serviço Neon.");
+ }
+ const text=await response.text();
+ let data={};
+ try{data=text?JSON.parse(text):{};}catch{data={detail:text.slice(0,300)};}
+ if(!response.ok){
+  const detail=data.detail||data.error||data.message||("HTTP "+response.status);
+  console.error("[Push] Backend respondeu com erro", {url,status:response.status,body:data});
+  throw new Error("Serviço de notificações ("+path+"): HTTP "+response.status+" — "+detail);
+ }
+ return data;
+}
 let rows=[];
+const monitoredShips = new Set(JSON.parse(localStorage.getItem("praticagem_navios_monitorados_v1") || "[]"));
+let previousSituations = null;
+function saveMonitors(){ localStorage.setItem("praticagem_navios_monitorados_v1", JSON.stringify([...monitoredShips])); }
+function shipKey(r){ return [r.navio,r.data,r.hora,r.tipo,r.porto,r.berco].map(v=>norm(v)).join("|"); }
+function situationMap(list){ const map={}; list.forEach(r=>{map[shipKey(r)]=r.situacao;}); return map; }
+function notifyChanges(oldMap, newMap){
+ if(!oldMap || !("Notification" in window) || Notification.permission!=="granted") return;
+ rows.forEach(r=>{
+  if(!monitoredShips.has(norm(r.navio))) return;
+  const key=shipKey(r), before=oldMap[key], after=newMap[key];
+  if(before !== undefined && norm(before)!==norm(after)){
+   new Notification("Situação do navio alterada", {body: r.navio + " · " + (r.berco||"Berço não informado") + "\n" + before + " → " + after});
+  }
+ });
+}
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toUpperCase();
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
 function statusClass(s){const v=norm(s);if(v==="MARCADA")return "status-marcada";if(v==="INICIADA")return "status-iniciada";if(v.includes("BARRA")&&v.includes("IMPEDIDA")||v==="IMPEDIDA")return "status-impedida";return "";}
@@ -64,42 +147,135 @@ function render(){
   const texto=norm(r.navio+" "+r.berco).toLowerCase();
   return (!q||texto.includes(q))&&(!t||norm(r.tipo)===t)&&(!s||norm(r.situacao)===s)&&(!p||norm(r.porto)===p);
  });
- $("tabela").innerHTML=data.length?data.map(r=>'<tr class="'+statusClass(r.situacao)+'"><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="7" class="empty">Nenhuma manobra encontrada.</td></tr>';
+ $("tabela").innerHTML=data.length?data.map(r=>'<tr class="'+statusClass(r.situacao)+'"><td><input class="monitor-navio" type="checkbox" data-navio="'+esc(norm(r.navio))+'" aria-label="Monitorar '+esc(r.navio)+'" '+(monitoredShips.has(norm(r.navio))?'checked':'')+'></td><td><strong>'+esc(r.navio)+'</strong></td><td>'+esc(r.data)+'</td><td>'+esc(r.hora)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.porto)+'</td><td>'+esc(r.berco)+'</td><td><strong>'+esc(r.situacao)+'</strong></td></tr>').join(""):'<tr><td colspan="8" class="empty">Nenhuma manobra encontrada.</td></tr>';
  $("meta").innerHTML=data.length+" de "+rows.length+" manobra(s) monitorada(s)<br>Última atualização: "+(window.ultimaAtualizacao||"—");
+}
+const BERCOS_MONITORADOS=new Set(["VIX101","VIX102","VIX103","VIX201","VIX202","VIX203","VIX204","VIX206","VIX207","VIX904","VIX905","VIX906","PRMPS1","PRMPS2","PRMPS3","RCH101","RCH102","RCH103","RCH501","RCH502","RCH503","RCH504"]);
+async function consultarFonte(){
+ $("meta").textContent="Consultando diretamente o site da Praticagem...";
+ try{
+  const res=await fetch("https://www.praticagem.org.br/asp/previstas.asp",{cache:"no-store"});
+  if(!res.ok)throw new Error("O site respondeu HTTP "+res.status+".");
+  const html=await res.text();
+  const dataPattern=/^\d{2}\/\d{2}\/\d{4}$/;
+  const timePattern=/^\d{2}:\d{2}$/;
+  const encontrados=[];
+  const decode=document.createElement("textarea");
+  const decodeHtml=s=>{decode.innerHTML=s;return decode.value;};
+  const stripTags=s=>decodeHtml(s.replace(/<[^>]+>/g," "));
+  const linhas=html.match(/<tr\b[^>]*>[\s\S]*?<\/tr\s*>/gi)||[];
+  linhas.forEach(linha=>{
+   const cells=(linha.match(/<t[dh]\b[^>]*>[\s\S]*?<\/t[dh]\s*>/gi)||[]).map(cell=>stripTags(cell).replace(/\s+/g," ").trim());
+   const dateIndex=cells.findIndex(v=>dataPattern.test(v));
+   if(dateIndex<0||dateIndex+4>=cells.length||!timePattern.test(cells[dateIndex+1]||""))return;
+   const item={navio:cells[0],data:cells[dateIndex],hora:cells[dateIndex+1],tipo:cells[dateIndex+2],porto:cells[dateIndex+3],berco:cells[dateIndex+4],situacao:cells[cells.length-1]};
+   const tokens=(item.berco.toUpperCase().match(/[A-Z0-9]+/g)||[]);
+   if(item.navio&&item.berco&&item.situacao&&tokens.some(token=>BERCOS_MONITORADOS.has(token)))encontrados.push(item);
+  });
+  if(!encontrados.length)throw new Error("Nenhuma manobra monitorada foi encontrada na resposta do site.");
+  rows=encontrados;
+  preencherPortos();
+  window.ultimaAtualizacao=new Date().toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})+" (consulta direta)";
+  render();
+  $("rodape").textContent="Fonte: Praticagem Espírito Santo · Dados consultados diretamente no site";
+ }catch(e){
+  render();
+  $("meta").textContent="Não foi possível consultar diretamente a fonte. O navegador pode bloquear a requisição por CORS; os dados exibidos anteriormente foram mantidos.";
+  $("rodape").textContent="Fonte: Praticagem Espírito Santo · Consulta direta indisponível";
+  console.error("Falha na consulta direta à Praticagem:",e);
+ }
 }
 async function carregar(){
  $("meta").textContent="Atualizando...";
  try{
-  const res=await fetch("manobras.json?t="+Date.now(),{cache:"no-store"});
+  const res=await fetch("https://raw.githubusercontent.com/leorbr27/Praticagem/main/manobras.json?t="+Date.now(),{cache:"no-store"});
   if(!res.ok)throw new Error();
-  const json=await res.json(); rows=Array.isArray(json.manobras)?json.manobras:[];
+  const json=await res.json(); const novasRows=Array.isArray(json.manobras)?json.manobras:[];
+  const novoMapa=situationMap(novasRows); notifyChanges(previousSituations, novoMapa); previousSituations=novoMapa; rows=novasRows;
   preencherPortos(); render();
   const d=json.atualizado_em?new Date(json.atualizado_em):null;
   window.ultimaAtualizacao=(d&&!isNaN(d) ? d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}) : "—");
   render();
   $("rodape").textContent="Fonte: Praticagem Espírito Santo";
+  if(d&&!isNaN(d)&&Date.now()-d.getTime()>300000)await consultarFonte();
  }catch(e){
   rows=[];render();$("meta").textContent="Erro ao atualizar";$("rodape").textContent="Fonte: Praticagem Espírito Santo · Não foi possível atualizar";
  }
 }
 ["busca","tipo","situacao","porto"].forEach(id=>$(id).addEventListener("input",render));
+$("tabela").addEventListener("change", e=>{
+ if(!e.target.matches(".monitor-navio")) return;
+ const ship=e.target.dataset.navio;
+ if(e.target.checked) monitoredShips.add(ship); else monitoredShips.delete(ship);
+ saveMonitors();
+ if(currentPushSubscription)syncPushSubscription().catch(e=>console.error("Falha ao sincronizar monitoramento push:",e));
+});
+$("ativarNotificacoes").addEventListener("click", async ()=>{
+ const button=$("ativarNotificacoes");
+ if(!("Notification" in window)||!("serviceWorker" in navigator)||!("PushManager" in window)){alert("Este navegador não oferece suporte a Web Push. No iPhone, adicione esta página à Tela de Início e abra pelo ícone instalado.");return;}
+ if(monitoredShips.size===0){alert("Marque pelo menos um navio na coluna Monitorar antes de ativar as notificações.");return;}
+ button.disabled=true;button.textContent="Ativando...";
+ try{
+  console.info("[Push] Início da ativação", {origin:location.origin,path:location.pathname,standalone:window.navigator.standalone===true||matchMedia("(display-mode: standalone)").matches});
+  const permission=await Notification.requestPermission();
+  if(permission!=="granted")throw new Error("Permissão de notificações não concedida (status: "+permission+").");
+  const swUrl=new URL("/Praticagem/service-worker.js",location.origin).href;
+  const swScope=new URL("/Praticagem/",location.origin).href;
+  let registration;
+  try{
+   registration=await navigator.serviceWorker.register(swUrl,{scope:swScope,updateViaCache:"none"});
+   await navigator.serviceWorker.ready;
+   if(!registration.scope.startsWith(swScope))throw new Error("Escopo inesperado do Service Worker: "+registration.scope);
+   console.info("[Push] Service Worker registrado", {script:swUrl,scope:registration.scope,state:registration.active?.state||"aguardando"});
+  }catch(cause){
+   console.error("[Push] Falha ao registrar/aguardar service-worker.js", {script:swUrl,scope:swScope,name:cause?.name,message:cause?.message});
+   throw new Error("Falha no Service Worker em "+swUrl+" (escopo "+swScope+"): "+(cause?.message||String(cause)));
+  }
+  let subscription=await registration.pushManager.getSubscription();
+  if(!subscription){
+   const keyData=await pushFetch("/vapid-public-key");
+   if(!keyData.publicKey)throw new Error("O backend respondeu sem a chave pública VAPID.");
+   const applicationServerKey=base64UrlToBytes(keyData.publicKey);
+   console.info("[Push] Chave VAPID recebida e validada", {bytes:applicationServerKey.length});
+   try{
+    subscription=await registration.pushManager.subscribe({userVisibleOnly:true,applicationServerKey});
+   }catch(cause){
+    console.error("[Push] pushManager.subscribe falhou", {name:cause?.name,message:cause?.message,permission:Notification.permission,scope:registration.scope});
+    throw new Error("O iPhone não conseguiu criar a inscrição push: "+(cause?.message||String(cause))+". Confirme que o app foi aberto pela Tela de Início e que o iOS/Safari suporta Web Push.");
+   }
+  }
+  const data=await pushFetch("/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({subscription:subscription.toJSON(),monitoredShips:[...monitoredShips]})});
+  console.info("[Push] Inscrição salva no backend", {monitoredShips:data.monitoredShips,endpointHost:new URL(subscription.endpoint).host});
+  currentPushSubscription=subscription;
+  button.textContent="Push ativado neste iPhone";
+  alert("Notificações push ativadas para "+monitoredShips.size+" navio(s). O serviço verificará as situações a cada 5 minutos.");
+ }catch(error){
+  console.error("Falha ao ativar notificações push:",error);
+  alert(error.message||"Não foi possível ativar as notificações push.");
+  button.textContent="Tentar ativar push novamente";
+ }finally{button.disabled=false;}
+});
 $("atualizar").addEventListener("click",async()=>{
  const botao=$("atualizar");
  botao.disabled=true;
- botao.textContent="Consultando...";
+ botao.textContent="Atualizando...";
  try{
-  const res=await fetch("https://www.praticagem.org.br/asp/previstas.asp?atualizar="+Date.now(),{cache:"no-store",mode:"cors"});
-  if(!res.ok)throw new Error("Fonte indisponível");
-  const texto=await res.text();
-  if(!texto.trim())throw new Error("Resposta vazia");
-  window.location.reload();
- }catch(e){
-  alert("Não foi possível consultar diretamente a Praticagem pelo navegador. O monitor automático continuará funcionando a cada 5 minutos.");
+  await consultarFonte();
+ }finally{
   botao.disabled=false;
   botao.textContent="Atualizar";
  }
 });
-carregar();setInterval(carregar,300000);
+async function restaurarInscricaoPush(){
+ try{
+  if(!("serviceWorker" in navigator))return;
+  const registration=await navigator.serviceWorker.getRegistration(new URL("/Praticagem/",location.origin).href);
+  if(!registration)return;
+  currentPushSubscription=await registration.pushManager.getSubscription();
+  if(currentPushSubscription)await syncPushSubscription();
+ }catch(error){console.error("Não foi possível restaurar a inscrição push:",error);}
+}
+carregar();setInterval(carregar,300000);restaurarInscricaoPush();
 </script>
 </body>
 </html>
