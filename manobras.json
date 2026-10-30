@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-29T23:38:32.542682-03:00",
+  "atualizado_em": "2026-10-30T03:18:49.090596-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -67,48 +67,30 @@
     },
     {
       "navio": "MAERSK KATALIN",
-      "data": "29/10/2026",
-      "hora": "23:38",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAPURA JADE",
-      "data": "29/10/2026",
-      "hora": "23:38",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MAERSK KATALIN",
       "data": "30/10/2026",
       "hora": "00:38",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "NEMEA",
       "data": "30/10/2026",
-      "hora": "02:00",
+      "hora": "03:30",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR NAVARRA",
       "data": "30/10/2026",
-      "hora": "03:00",
+      "hora": "04:30",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
