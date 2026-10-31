@@ -1,7 +1,16 @@
 {
-  "atualizado_em": "2026-10-31T15:17:27.158821-03:00",
+  "atualizado_em": "2026-10-31T15:49:13.924294-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
+    {
+      "navio": "BRIGHTON",
+      "data": "01/11/2026",
+      "hora": "02:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
     {
       "navio": "LOG-IN PANTANAL",
       "data": "01/11/2026",
@@ -138,22 +147,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SKANDI VITORIA",
-      "data": "31/10/2026",
-      "hora": "14:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "INICIADA"
-    },
-    {
       "navio": "BABITONGA BAY",
       "data": "31/10/2026",
       "hora": "15:40",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "CENTURY QUEEN",
@@ -165,18 +165,9 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "BRIGHTON",
-      "data": "31/10/2026",
-      "hora": "18:53",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "MAERSK KATALIN",
       "data": "31/10/2026",
-      "hora": "19:30",
+      "hora": "18:30",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
