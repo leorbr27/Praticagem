@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-31T10:54:48.896623-03:00",
+  "atualizado_em": "2026-10-31T11:49:04.499218-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -21,12 +21,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN ITAPOA",
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
       "data": "01/11/2026",
       "hora": "08:08",
-      "tipo": "SAIDA",
+      "tipo": "MANOBRA",
       "porto": "VIX",
-      "berco": "VIX203",
+      "berco": "VIX206 VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN ITAPOA",
+      "data": "01/11/2026",
+      "hora": "09:08",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX203 VIX206",
       "situacao": "PREVISTA"
     },
     {
