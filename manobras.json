@@ -1,14 +1,14 @@
 {
-  "atualizado_em": "2026-10-31T05:48:52.054696-03:00",
+  "atualizado_em": "2026-10-31T10:54:48.896623-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "GREEN ITAPOA",
+      "navio": "LOG-IN PANTANAL",
       "data": "01/11/2026",
-      "hora": "07:08",
-      "tipo": "SAIDA",
+      "hora": "07:00",
+      "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX203",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
@@ -21,21 +21,30 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "PITT ISLAND",
+      "navio": "GREEN ITAPOA",
       "data": "01/11/2026",
       "hora": "08:08",
-      "tipo": "ENTRADA",
+      "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX202",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN QINGDAO",
+      "navio": "ZHONG YUAN HAI YUN JIN QU",
       "data": "01/11/2026",
-      "hora": "08:08",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PITT ISLAND",
+      "data": "01/11/2026",
+      "hora": "10:08",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX203",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
@@ -57,12 +66,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN JIN QU",
+      "navio": "GREEN QINGDAO",
       "data": "01/11/2026",
-      "hora": "20:31",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
+      "hora": "15:12",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
@@ -120,36 +129,18 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA OSAKANA",
-      "data": "31/10/2026",
-      "hora": "09:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BRIGHTON",
-      "data": "31/10/2026",
-      "hora": "09:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SKANDI VITORIA",
       "data": "31/10/2026",
-      "hora": "13:10",
+      "hora": "14:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "BABITONGA BAY",
       "data": "31/10/2026",
-      "hora": "15:00",
+      "hora": "16:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -158,25 +149,34 @@
     {
       "navio": "CENTURY QUEEN",
       "data": "31/10/2026",
-      "hora": "16:00",
+      "hora": "17:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "BRIGHTON",
+      "data": "31/10/2026",
+      "hora": "18:53",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "F45-F UNIAO",
       "data": "31/10/2026",
-      "hora": "19:30",
+      "hora": "20:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SKANDI RECIFE",
       "data": "31/10/2026",
-      "hora": "21:00",
+      "hora": "23:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX103",
