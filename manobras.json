@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-31T11:49:04.499218-03:00",
+  "atualizado_em": "2026-10-31T15:17:27.158821-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -144,25 +144,25 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "BABITONGA BAY",
       "data": "31/10/2026",
-      "hora": "16:00",
+      "hora": "15:40",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "CENTURY QUEEN",
       "data": "31/10/2026",
-      "hora": "17:00",
+      "hora": "16:40",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "BRIGHTON",
@@ -171,6 +171,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "31/10/2026",
+      "hora": "19:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
       "situacao": "PREVISTA"
     },
     {
