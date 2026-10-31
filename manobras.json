@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-10-30T20:27:21.025203-03:00",
+  "atualizado_em": "2026-10-30T22:50:26.130418-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "HANZE GENDT",
-      "data": "01/11/2026",
-      "hora": "04:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ORCUN C",
-      "data": "01/11/2026",
-      "hora": "05:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "GREEN ITAPOA",
       "data": "01/11/2026",
@@ -45,6 +27,24 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "HANZE GENDT",
+      "data": "01/11/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ORCUN C",
+      "data": "01/11/2026",
+      "hora": "15:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -149,7 +149,7 @@
     {
       "navio": "BABITONGA BAY",
       "data": "31/10/2026",
-      "hora": "14:00",
+      "hora": "15:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -158,7 +158,7 @@
     {
       "navio": "CENTURY QUEEN",
       "data": "31/10/2026",
-      "hora": "15:00",
+      "hora": "16:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
