@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-31T15:49:13.924294-03:00",
+  "atualizado_em": "2026-10-31T18:44:25.152159-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -10,6 +10,15 @@
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI RECIFE",
+      "data": "01/11/2026",
+      "hora": "06:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -39,21 +48,21 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "ZHONG YUAN HAI YUN JIN QU",
+      "data": "01/11/2026",
+      "hora": "09:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN ITAPOA",
       "data": "01/11/2026",
       "hora": "09:08",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX203 VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN JIN QU",
-      "data": "01/11/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -147,49 +156,22 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "BABITONGA BAY",
-      "data": "31/10/2026",
-      "hora": "15:40",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "CENTURY QUEEN",
-      "data": "31/10/2026",
-      "hora": "16:40",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "MAERSK KATALIN",
       "data": "31/10/2026",
       "hora": "18:30",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "F45-F UNIAO",
       "data": "31/10/2026",
-      "hora": "20:30",
+      "hora": "19:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX102",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "SKANDI RECIFE",
-      "data": "31/10/2026",
-      "hora": "23:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "PREVISTA"
     }
   ]
 }
