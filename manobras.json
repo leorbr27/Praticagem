@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-31T18:54:50.673709-03:00",
+  "atualizado_em": "2026-10-31T21:28:11.475822-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -71,7 +71,7 @@
       "hora": "10:08",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX202",
+      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
@@ -154,24 +154,6 @@
       "porto": "RCH",
       "berco": "RCH101",
       "situacao": "PREVISTA"
-    },
-    {
-      "navio": "MAERSK KATALIN",
-      "data": "31/10/2026",
-      "hora": "18:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "F45-F UNIAO",
-      "data": "31/10/2026",
-      "hora": "19:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "MARCADA"
     }
   ]
 }
