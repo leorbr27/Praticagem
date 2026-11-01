@@ -42,12 +42,12 @@ tr.status-impedida:hover td{background:#fecaca}
 .empty{text-align:center;padding:32px;color:#687684}
 footer{text-align:center;color:#74818c;font-size:11px;padding:12px 4px}
 @media(max-width:720px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.filters button{width:100%}}
-@media(max-width:520px){header .header-actions{float:none;display:flex;flex-direction:column;width:100%;margin-top:12px}.header-actions .analysis-link{width:100%}}
+.header-actions #limparMonitoramentos{background:#526170}@media(max-width:520px){header .header-actions{float:none;display:flex;flex-direction:column;width:100%;margin-top:12px}.header-actions .analysis-link,.header-actions button{width:100%}}
 </style>
 </head>
 <body>
 <main class="wrap">
-<header><h1>🚢 Monitoramento de Navios</h1><p class="sub">Marque os navios e ative o push para receber alertas de mudança de situação. No iPhone, adicione esta página à Tela de Início.</p><div class="header-actions"><button id="ativarNotificacoes" type="button">Ativar push no iPhone</button></div></header>
+<header><h1>🚢 Monitoramento de Navios</h1><p class="sub">Marque os navios e ative o push para receber alertas de mudança de situação. No iPhone, adicione esta página à Tela de Início.</p><div class="header-actions"><button id="ativarNotificacoes" type="button">Ativar push no iPhone</button><button id="limparMonitoramentos" type="button">Limpar monitoramentos</button></div></header>
 <section class="filters">
 <input id="busca" type="search" placeholder="🔎 Navio ou berço" autocomplete="off">
 <select id="tipo"><option value="">Todos os tipos</option><option value="ENTRADA">Entrada</option><option value="SAIDA">Saída</option><option value="MANOBRA">Manobra</option></select>
@@ -203,6 +203,19 @@ async function carregar(){
  }
 }
 ["busca","tipo","situacao","porto"].forEach(id=>$(id).addEventListener("input",render));
+$("limparMonitoramentos").addEventListener("click",async()=>{
+ if(monitoredShips.size===0){alert("Não há navios selecionados para limpar.");return;}
+ if(!confirm("Deseja remover TODOS os navios do monitoramento deste dispositivo? Isso também atualizará a inscrição push deste dispositivo. Outros dispositivos não serão alterados."))return;
+ monitoredShips.clear();
+ saveMonitors();
+ render();
+ if(currentPushSubscription){
+  try{await syncPushSubscription();alert("Todos os monitoramentos deste dispositivo foram removidos e sincronizados.");}
+  catch(error){console.error("Falha ao sincronizar a limpeza dos monitoramentos:",error);alert("A seleção local foi limpa, mas não foi possível sincronizar com o serviço push. A página tentará sincronizar novamente ao restaurar a inscrição.");}
+ }else{
+  alert("Todos os monitoramentos locais foram removidos. Se houver uma inscrição push neste dispositivo, a lista vazia será sincronizada quando ela for restaurada.");
+ }
+});
 $("tabela").addEventListener("change", e=>{
  if(!e.target.matches(".monitor-navio")) return;
  const ship=e.target.dataset.navio;
