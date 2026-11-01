@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-10-31T21:30:27.855180-03:00",
+  "atualizado_em": "2026-11-01T03:38:42.696675-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "BRIGHTON",
-      "data": "01/11/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "SKANDI RECIFE",
       "data": "01/11/2026",
@@ -27,7 +18,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "NOVA",
@@ -36,7 +27,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
@@ -44,7 +35,7 @@
       "hora": "08:08",
       "tipo": "MANOBRA",
       "porto": "VIX",
-      "berco": "VIX206 VIX201",
+      "berco": "VIX206 VIX202",
       "situacao": "PREVISTA"
     },
     {
@@ -72,7 +63,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX201",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "HANZE GENDT",
