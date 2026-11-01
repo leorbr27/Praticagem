@@ -1,29 +1,11 @@
 {
-  "atualizado_em": "2026-11-01T15:39:40.575773-03:00",
+  "atualizado_em": "2026-11-01T19:19:08.572133-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "GREEN QINGDAO",
-      "data": "01/11/2026",
-      "hora": "15:12",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN JIN QU",
-      "data": "01/11/2026",
-      "hora": "18:20",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "HANZE GENDT",
       "data": "02/11/2026",
-      "hora": "03:00",
+      "hora": "07:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -32,7 +14,7 @@
     {
       "navio": "ORCUN C",
       "data": "02/11/2026",
-      "hora": "04:00",
+      "hora": "08:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -66,21 +48,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR NAVARRA",
+      "navio": "GULLWING",
       "data": "02/11/2026",
-      "hora": "18:00",
+      "hora": "21:06",
       "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "INDEPENDENT",
-      "data": "02/11/2026",
-      "hora": "19:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -90,6 +63,24 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR NAVARRA",
+      "data": "03/11/2026",
+      "hora": "03:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "INDEPENDENT",
+      "data": "03/11/2026",
+      "hora": "04:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
