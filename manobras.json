@@ -1,29 +1,20 @@
 {
-  "atualizado_em": "2026-11-02T05:23:23.361835-03:00",
+  "atualizado_em": "2026-11-02T15:15:26.962182-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "POPLAR ARROW",
+      "navio": "LOG-IN PANTANAL",
       "data": "02/11/2026",
-      "hora": "06:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "F45-F UNIAO",
-      "data": "02/11/2026",
-      "hora": "11:30",
+      "hora": "16:53",
       "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX102",
+      "berco": "VIX204",
       "situacao": "MARCADA"
     },
     {
       "navio": "HANZE GENDT",
       "data": "02/11/2026",
-      "hora": "12:00",
+      "hora": "19:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -32,19 +23,10 @@
     {
       "navio": "ORCUN C",
       "data": "02/11/2026",
-      "hora": "13:00",
+      "hora": "20:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "02/11/2026",
-      "hora": "16:23",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
@@ -58,8 +40,8 @@
     },
     {
       "navio": "STAR NAVARRA",
-      "data": "02/11/2026",
-      "hora": "22:00",
+      "data": "03/11/2026",
+      "hora": "02:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -67,8 +49,8 @@
     },
     {
       "navio": "INDEPENDENT",
-      "data": "02/11/2026",
-      "hora": "23:00",
+      "data": "03/11/2026",
+      "hora": "03:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -84,9 +66,36 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GEM STAR",
+      "navio": "LOG-IN DISCOVERY",
+      "data": "03/11/2026",
+      "hora": "09:49",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "DAHLIA",
       "data": "03/11/2026",
       "hora": "10:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "F45-F UNIAO",
+      "data": "03/11/2026",
+      "hora": "11:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "GEM STAR",
+      "data": "03/11/2026",
+      "hora": "16:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
