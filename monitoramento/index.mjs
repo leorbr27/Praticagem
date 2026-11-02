@@ -88,6 +88,15 @@ export default {
         );
         return json({ ok: true, monitoredShips: ships.length });
       }
+      if (request.method === "POST" && url.pathname.endsWith("/clear-other-subscriptions")) {
+        const body = await request.json();
+        if (!body.endpoint || typeof body.endpoint !== "string") return json({ error: "Missing current device endpoint" }, 400);
+        const removed = await pool.query(
+          "DELETE FROM push_subscriptions WHERE endpoint <> $1 RETURNING id",
+          [body.endpoint]
+        );
+        return json({ ok: true, removed: removed.rowCount ?? removed.rows.length, keptCurrentDevice: true });
+      }
       if (request.method === "POST" && url.pathname.endsWith("/unsubscribe")) {
         const body = await request.json();
         if (!body.endpoint) return json({ error: "Missing endpoint" }, 400);
