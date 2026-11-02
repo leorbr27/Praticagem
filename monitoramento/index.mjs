@@ -19,6 +19,12 @@ function configurePush() {
 }
 
 async function checkShips() {
+  const activeResult = await pool.query(
+    "SELECT COUNT(*)::int AS total FROM push_subscriptions WHERE cardinality(monitored_ships) > 0"
+  );
+  if (activeResult.rows[0]?.total === 0) {
+    return { ok: true, skipped: true, reason: "no_monitored_ships", checkedAt: new Date().toISOString() };
+  }
   if (!configurePush()) throw new Error("VAPID keys not configured");
   const response = await fetch("https://raw.githubusercontent.com/leorbr27/Praticagem/main/manobras.json?ts=" + Date.now(), { cache: "no-store" });
   if (!response.ok) throw new Error("Could not read manobras.json: HTTP " + response.status);
