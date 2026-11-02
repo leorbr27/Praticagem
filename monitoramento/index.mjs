@@ -52,7 +52,7 @@ async function checkShips() {
           title: "Praticagem: situação alterada",
           body: row.navio + " · " + (row.berco || "Berço não informado") + "\n" + previous.situation + " → " + situation,
           tag: "praticagem-" + key,
-          url: "https://leorbr27.github.io/Praticagem/index2.html"
+          url: "https://leorbr27.github.io/Praticagem/index.html"
         }));
         await pool.query("UPDATE push_subscriptions SET last_success_at=NOW(),last_error=NULL WHERE id=$1", [subscriber.id]);
         changes++;
