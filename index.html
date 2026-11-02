@@ -60,7 +60,7 @@ footer{text-align:center;color:#74818c;font-size:11px;padding:12px 4px}
 <thead><tr><th>Monitorar</th><th>Nome do navio</th><th>Data</th><th>Hora</th><th>Tipo</th><th>Porto</th><th>Berço</th><th>Situação</th></tr></thead>
 <tbody id="tabela"><tr><td colspan="8" class="empty">Carregando...</td></tr></tbody>
 </table></section>
-<footer id="rodape">Fonte: Praticagem Espírito Santo · Última atualização: —</footer>
+<section id="historicoOperacional" style="margin-top:14px;background:#fff;border-radius:14px;padding:14px;box-shadow:0 2px 12px #0000000a"><h2 style="margin:0 0 5px;font-size:18px;color:#0b1f33">📊 Histórico operacional</h2><p style="margin:0 0 12px;color:#687684;font-size:12px">Registros coletados neste dispositivo enquanto a página estiver aberta. Retenção local dos últimos 30 dias.</p><div id="historicoResumo" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px"></div><div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><strong style="font-size:13px">Berços com mais manobras</strong><div id="historicoBercos" style="font-size:13px;color:#344454;margin-top:6px">Aguardando dados…</div></div><div><strong style="font-size:13px">Paralisações observadas</strong><div id="historicoParalisacoes" style="font-size:13px;color:#344454;margin-top:6px">Aguardando dados…</div></div></div><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;flex-wrap:wrap"><small id="historicoAtualizado" style="color:#74818c">Nenhum histórico local ainda.</small><button id="limparHistorico" type="button" style="background:#526170;min-height:34px;padding:6px 10px;font-size:12px">Limpar histórico local</button></div></section><style>.status-pill{display:inline-block;border-radius:999px;padding:4px 7px;font-size:11px;font-weight:800;background:#e8edf2;color:#344454}.status-pill.status-marcada{background:#dcfce7;color:#166534}.status-pill.status-iniciada{background:#fef3c7;color:#92400e}.status-pill.status-impedida{background:#fee2e2;color:#991b1b}.historico-card{background:#f3f6f9;border-radius:10px;padding:10px;min-width:0}.historico-card b{display:block;font-size:20px;color:#0b1f33}.historico-card span{font-size:11px;color:#687684}@media(max-width:520px){#historicoOperacional>div:nth-of-type(2){grid-template-columns:1fr!important}}</style><footer id="rodape">Fonte: Praticagem Espírito Santo · Última atualização: —</footer>
 <div id="ultimoCommitGitHub" style="text-align:center;color:#74818c;font-size:11px;padding:4px 4px 12px">Último commit do GitHub: consultando…</div>
 <script>
 (async function mostrarUltimoCommitGitHub(){
@@ -191,7 +191,7 @@ async function carregar(){
   const res=await fetch("https://raw.githubusercontent.com/leorbr27/Praticagem/main/manobras.json?t="+Date.now(),{cache:"no-store"});
   if(!res.ok)throw new Error();
   const json=await res.json(); const novasRows=Array.isArray(json.manobras)?json.manobras:[];
-  const novoMapa=situationMap(novasRows); notifyChanges(previousSituations, novoMapa); previousSituations=novoMapa; rows=novasRows;
+  const novoMapa=situationMap(novasRows); notifyChanges(previousSituations, novoMapa); previousSituations=novoMapa; rows=novasRows; registrarHistorico(novasRows); renderHistorico();
   preencherPortos(); render();
   const d=json.atualizado_em?new Date(json.atualizado_em):null;
   window.ultimaAtualizacao=(d&&!isNaN(d) ? d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}) : "—");
@@ -311,5 +311,11 @@ async function restaurarInscricaoPush(){
 }
 carregar();setInterval(carregar,300000);restaurarInscricaoPush();
 </script>
-</body>
+<script>
+const HISTORICO_KEY="praticagem_historico_operacional_v1";
+function lerHistorico(){try{const v=JSON.parse(localStorage.getItem(HISTORICO_KEY)||"[]");return Array.isArray(v)?v:[]}catch{return [];}}
+function registrarHistorico(lista){const agora=new Date(),limite=agora.getTime()-30*86400000,h=lerHistorico().filter(x=>x.ts>=limite),assinatura=agora.toISOString().slice(0,16);if(h.length&&new Date(h[h.length-1].ts).toISOString().slice(0,16)===assinatura)return;h.push({ts:agora.getTime(),at:agora.toLocaleString("pt-BR"),manobras:lista.length,bercos:[...new Set(lista.map(x=>String(x.berco||"").trim()).filter(Boolean))],impedidas:lista.filter(x=>norm(x.situacao).includes("IMPEDIDA")).length});localStorage.setItem(HISTORICO_KEY,JSON.stringify(h.slice(-2000)));}
+function renderHistorico(){const h=lerHistorico(),r=$("historicoResumo");if(!r)return;const pico=h.reduce((m,x)=>Math.max(m,x.manobras||0),0),imp=h.reduce((s,x)=>s+(x.impedidas||0),0);r.innerHTML='<div class="historico-card"><b>'+h.length+'</b><span>coletas registradas</span></div><div class="historico-card"><b>'+pico+'</b><span>manobras no maior registro</span></div><div class="historico-card"><b>'+imp+'</b><span>observações de barra impedida</span></div>';const freq={};h.forEach(x=>(x.bercos||[]).forEach(b=>freq[b]=(freq[b]||0)+1));const top=Object.entries(freq).sort((a,b)=>b[1]-a[1]).slice(0,5);$("historicoBercos").innerHTML=top.length?top.map(([b,n])=>esc(b)+" — "+n+" coletas").join("<br>"):"Sem dados suficientes.";$("historicoParalisacoes").textContent=imp?imp+" observações de barra impedida nas coletas armazenadas.":"Nenhuma barra impedida registrada até agora.";$("historicoAtualizado").textContent=h.length?"Última coleta: "+h[h.length-1].at:"Nenhum histórico local ainda.";}
+$("limparHistorico")?.addEventListener("click",()=>{if(confirm("Apagar o histórico operacional armazenado somente neste dispositivo?")){localStorage.removeItem(HISTORICO_KEY);renderHistorico();}});renderHistorico();
+</script></body>
 </html>
