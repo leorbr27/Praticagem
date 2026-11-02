@@ -1,24 +1,15 @@
 {
-  "atualizado_em": "2026-11-01T22:44:24.398804-03:00",
+  "atualizado_em": "2026-11-02T05:11:04.894233-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "HANZE GENDT",
+      "navio": "POPLAR ARROW",
       "data": "02/11/2026",
-      "hora": "07:00",
+      "hora": "06:30",
       "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ORCUN C",
-      "data": "02/11/2026",
-      "hora": "08:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "MARCADA"
     },
     {
       "navio": "F45-F UNIAO",
@@ -30,12 +21,21 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "POPLAR ARROW",
+      "navio": "HANZE GENDT",
       "data": "02/11/2026",
-      "hora": "14:48",
+      "hora": "12:00",
       "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ORCUN C",
+      "data": "02/11/2026",
+      "hora": "13:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -57,18 +57,9 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "STAR MINERVA",
+      "navio": "STAR NAVARRA",
       "data": "02/11/2026",
       "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "STAR NAVARRA",
-      "data": "03/11/2026",
-      "hora": "03:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -76,11 +67,20 @@
     },
     {
       "navio": "INDEPENDENT",
-      "data": "03/11/2026",
-      "hora": "04:00",
+      "data": "02/11/2026",
+      "hora": "23:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR MINERVA",
+      "data": "03/11/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
@@ -99,6 +99,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN QINGDAO",
+      "data": "04/11/2026",
+      "hora": "11:29",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
