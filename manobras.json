@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-11-03T05:01:51.505686-03:00",
+  "atualizado_em": "2026-11-03T12:25:43.696848-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GULLWING",
-      "data": "03/11/2026",
-      "hora": "03:57",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "LOG-IN DISCOVERY",
-      "data": "03/11/2026",
-      "hora": "09:49",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "DAHLIA",
-      "data": "03/11/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "F45-F UNIAO",
       "data": "03/11/2026",
@@ -36,12 +9,21 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
+      "situacao": "INICIADA"
+    },
+    {
+      "navio": "DAHLIA",
+      "data": "03/11/2026",
+      "hora": "13:30",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "MARCADA"
     },
     {
       "navio": "GEM STAR",
       "data": "03/11/2026",
-      "hora": "16:00",
+      "hora": "16:40",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -66,13 +48,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "navio": "SAPURA ONIX",
       "data": "04/11/2026",
-      "hora": "05:59",
-      "tipo": "SAIDA",
+      "hora": "04:00",
+      "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
+      "berco": "VIX906",
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN QINGDAO",
@@ -99,6 +81,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "05/11/2026",
+      "hora": "06:47",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     }
   ]
