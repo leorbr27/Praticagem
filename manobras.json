@@ -1,33 +1,15 @@
 {
-  "atualizado_em": "2026-11-02T22:18:47.456125-03:00",
+  "atualizado_em": "2026-11-03T04:31:59.562365-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "ORCUN C",
-      "data": "02/11/2026",
-      "hora": "21:55",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "STAR NAVARRA",
-      "data": "03/11/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "INDEPENDENT",
       "data": "03/11/2026",
-      "hora": "03:00",
+      "hora": "03:30",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "STAR MINERVA",
@@ -45,7 +27,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -59,11 +41,11 @@
     {
       "navio": "DAHLIA",
       "data": "03/11/2026",
-      "hora": "10:01",
+      "hora": "10:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "F45-F UNIAO",
