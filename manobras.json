@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-11-03T04:31:59.562365-03:00",
+  "atualizado_em": "2026-11-03T05:01:51.505686-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "INDEPENDENT",
-      "data": "03/11/2026",
-      "hora": "03:30",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "STAR MINERVA",
-      "data": "03/11/2026",
-      "hora": "03:30",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "GULLWING",
       "data": "03/11/2026",
@@ -27,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
