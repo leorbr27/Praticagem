@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-03T18:45:45.984985-03:00",
+  "atualizado_em": "2026-11-03T22:17:24.509263-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GEM STAR",
-      "data": "03/11/2026",
-      "hora": "20:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "SEVEN OCEANS",
       "data": "04/11/2026",
