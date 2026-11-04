@@ -1,32 +1,32 @@
 {
-  "atualizado_em": "2026-11-04T05:06:37.724412-03:00",
+  "atualizado_em": "2026-11-04T12:41:43.751250-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
+      "navio": "CENTURY QUEEN",
+      "data": "04/11/2026",
+      "hora": "13:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "NAVA ULYSSES",
+      "data": "04/11/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "SEVEN OCEANS",
       "data": "04/11/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN QINGDAO",
-      "data": "04/11/2026",
-      "hora": "10:29",
+      "hora": "16:00",
       "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN PORTOCEL",
-      "data": "04/11/2026",
-      "hora": "11:29",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
+      "berco": "VIX102",
       "situacao": "PREVISTA"
     },
     {
@@ -41,46 +41,37 @@
     {
       "navio": "PITT ISLAND",
       "data": "04/11/2026",
-      "hora": "18:30",
+      "hora": "21:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "DAHLIA",
-      "data": "04/11/2026",
-      "hora": "19:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
       "navio": "GRAND VEGA",
       "data": "04/11/2026",
-      "hora": "20:00",
+      "hora": "22:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "CENTURY QUEEN",
+      "navio": "GREEN QINGDAO",
       "data": "05/11/2026",
-      "hora": "02:00",
+      "hora": "06:47",
       "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NAVA ULYSSES",
+      "navio": "DAHLIA",
       "data": "05/11/2026",
-      "hora": "03:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -93,21 +84,21 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GREEN PORTOCEL",
+      "data": "05/11/2026",
+      "hora": "11:01",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "ORCUN C",
       "data": "05/11/2026",
       "hora": "15:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LOG-IN DISCOVERY",
-      "data": "06/11/2026",
-      "hora": "00:04",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
@@ -126,6 +117,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "06/11/2026",
+      "hora": "07:25",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
