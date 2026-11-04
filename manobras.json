@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-04T12:41:43.751250-03:00",
+  "atualizado_em": "2026-11-04T13:15:42.236776-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "NAVA ULYSSES",
@@ -23,11 +23,11 @@
     {
       "navio": "SEVEN OCEANS",
       "data": "04/11/2026",
-      "hora": "16:00",
+      "hora": "15:06",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
