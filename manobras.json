@@ -1,42 +1,33 @@
 {
-  "atualizado_em": "2026-11-04T23:13:16.211420-03:00",
+  "atualizado_em": "2026-11-05T05:28:46.147126-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "STAR MINERVA",
-      "data": "05/11/2026",
-      "hora": "01:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "PITT ISLAND",
       "data": "05/11/2026",
-      "hora": "06:47",
+      "hora": "07:47",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN ITAPOA",
-      "data": "05/11/2026",
-      "hora": "06:47",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GRAND VEGA",
       "data": "05/11/2026",
-      "hora": "07:47",
+      "hora": "08:47",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX201",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "GREEN ITAPOA",
+      "data": "05/11/2026",
+      "hora": "09:47",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "MARCADA"
     },
     {
       "navio": "DAHLIA",
