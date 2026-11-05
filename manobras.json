@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-05T13:38:53.752661-03:00",
+  "atualizado_em": "2026-11-05T14:37:44.144575-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -18,16 +18,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GEM STAR",
-      "data": "05/11/2026",
-      "hora": "21:16",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
@@ -48,12 +39,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PACIFICA",
+      "data": "06/11/2026",
+      "hora": "01:04",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "WEST TREASURE",
       "data": "06/11/2026",
       "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GEM STAR",
+      "data": "06/11/2026",
+      "hora": "04:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
