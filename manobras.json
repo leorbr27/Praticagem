@@ -1,32 +1,23 @@
 {
-  "atualizado_em": "2026-11-04T18:58:03.275133-03:00",
+  "atualizado_em": "2026-11-04T22:38:56.714987-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "PITT ISLAND",
-      "data": "04/11/2026",
-      "hora": "21:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GRAND VEGA",
-      "data": "04/11/2026",
-      "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "STAR MINERVA",
       "data": "05/11/2026",
-      "hora": "02:40",
+      "hora": "01:30",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "PITT ISLAND",
+      "data": "05/11/2026",
+      "hora": "06:47",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
@@ -39,21 +30,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "DAHLIA",
+      "navio": "GRAND VEGA",
       "data": "05/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
+      "hora": "07:47",
+      "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX207",
+      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN QINGDAO",
+      "navio": "DAHLIA",
       "data": "05/11/2026",
-      "hora": "07:30",
+      "hora": "10:00",
       "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX203",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -63,6 +54,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN QINGDAO",
+      "data": "05/11/2026",
+      "hora": "11:01",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX203 VIX206",
       "situacao": "PREVISTA"
     },
     {
@@ -81,6 +81,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEVEN CRUZEIRO",
+      "data": "05/11/2026",
+      "hora": "18:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX102",
       "situacao": "PREVISTA"
     },
     {
