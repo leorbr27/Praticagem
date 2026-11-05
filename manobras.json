@@ -1,87 +1,15 @@
 {
-  "atualizado_em": "2026-11-05T06:35:39.987703-03:00",
+  "atualizado_em": "2026-11-05T13:38:53.752661-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "PITT ISLAND",
-      "data": "05/11/2026",
-      "hora": "07:47",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN ITAPOA",
-      "data": "05/11/2026",
-      "hora": "07:47",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GRAND VEGA",
-      "data": "05/11/2026",
-      "hora": "08:47",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "DAHLIA",
-      "data": "05/11/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN PORTOCEL",
-      "data": "05/11/2026",
-      "hora": "11:01",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN QINGDAO",
-      "data": "05/11/2026",
-      "hora": "11:01",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX203 VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ORCUN C",
-      "data": "05/11/2026",
-      "hora": "15:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "WEST TREASURE",
+      "navio": "SEVEN CRUZEIRO",
       "data": "05/11/2026",
       "hora": "16:00",
       "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEVEN CRUZEIRO",
-      "data": "05/11/2026",
-      "hora": "18:00",
-      "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "VORIAS",
@@ -103,29 +31,38 @@
     },
     {
       "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
-      "data": "05/11/2026",
-      "hora": "23:04",
+      "data": "06/11/2026",
+      "hora": "00:04",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "INDEPENDENT",
+      "navio": "ORCUN C",
       "data": "06/11/2026",
-      "hora": "02:00",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
-      "berco": "PRMPS2",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SELO",
+      "navio": "WEST TREASURE",
       "data": "06/11/2026",
-      "hora": "03:00",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
-      "berco": "PRMPS2",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GRAND VEGA",
+      "data": "06/11/2026",
+      "hora": "07:25",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
@@ -136,6 +73,24 @@
       "porto": "VIX",
       "berco": "VIX204",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "VORIAS",
+      "data": "06/11/2026",
+      "hora": "13:00",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX905 VIX905",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SAPURA DIAMANTE",
+      "data": "06/11/2026",
+      "hora": "13:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAGA IKEBANA",
@@ -156,12 +111,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "NAVA ULYSSES",
+      "data": "08/11/2026",
+      "hora": "13:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "INDEPENDENT",
+      "data": "08/11/2026",
+      "hora": "15:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN PECEM",
       "data": "08/11/2026",
       "hora": "15:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SELO",
+      "data": "08/11/2026",
+      "hora": "16:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
