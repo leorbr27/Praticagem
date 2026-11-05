@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-05T14:37:44.144575-03:00",
+  "atualizado_em": "2026-11-05T19:15:15.262469-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SEVEN CRUZEIRO",
-      "data": "05/11/2026",
-      "hora": "16:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "VORIAS",
       "data": "05/11/2026",
@@ -30,15 +21,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ORCUN C",
-      "data": "06/11/2026",
-      "hora": "01:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "PACIFICA",
       "data": "06/11/2026",
       "hora": "01:04",
@@ -48,9 +30,18 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "WEST TREASURE",
+      "navio": "ORCUN C",
       "data": "06/11/2026",
       "hora": "02:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SELO",
+      "data": "06/11/2026",
+      "hora": "03:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -59,7 +50,7 @@
     {
       "navio": "GEM STAR",
       "data": "06/11/2026",
-      "hora": "04:00",
+      "hora": "03:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -84,22 +75,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "VORIAS",
+      "navio": "ONEGO NEVA",
       "data": "06/11/2026",
-      "hora": "13:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAPURA DIAMANTE",
-      "data": "06/11/2026",
-      "hora": "13:00",
+      "hora": "08:40",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA IKEBANA",
@@ -111,12 +93,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "VORIAS",
+      "data": "07/11/2026",
+      "hora": "07:59",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX905 VIX905",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SAPURA DIAMANTE",
+      "data": "07/11/2026",
+      "hora": "07:59",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "LOG-IN PANTANAL",
       "data": "08/11/2026",
       "hora": "01:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN PECEM",
+      "data": "08/11/2026",
+      "hora": "05:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
@@ -129,6 +138,24 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GREEN PORTOCEL",
+      "data": "08/11/2026",
+      "hora": "13:23",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX203 VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN QINGDAO",
+      "data": "08/11/2026",
+      "hora": "13:23",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "INDEPENDENT",
       "data": "08/11/2026",
       "hora": "15:00",
@@ -138,21 +165,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN PECEM",
-      "data": "08/11/2026",
-      "hora": "15:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
+      "navio": "SKANDI RECIFE",
+      "data": "09/11/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX103",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SELO",
-      "data": "08/11/2026",
-      "hora": "16:00",
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "09/11/2026",
+      "hora": "11:00",
       "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
