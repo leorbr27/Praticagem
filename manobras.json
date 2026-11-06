@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-11-06T00:03:17.930581-03:00",
+  "atualizado_em": "2026-11-06T06:36:00.091334-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GEM STAR",
-      "data": "06/11/2026",
-      "hora": "01:10",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "ORCUN C",
-      "data": "06/11/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEVEN CRUZEIRO",
-      "data": "06/11/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SELO",
-      "data": "06/11/2026",
-      "hora": "03:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "GRAND VEGA",
       "data": "06/11/2026",
@@ -46,15 +10,6 @@
       "porto": "VIX",
       "berco": "VIX201",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "LOG-IN DISCOVERY",
-      "data": "06/11/2026",
-      "hora": "07:25",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
@@ -77,10 +32,37 @@
     {
       "navio": "PACIFICA",
       "data": "06/11/2026",
-      "hora": "09:00",
+      "hora": "09:40",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "ORCUN C",
+      "data": "06/11/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SELO",
+      "data": "06/11/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "06/11/2026",
+      "hora": "12:27",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
