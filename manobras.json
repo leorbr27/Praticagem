@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-05T23:26:45.869901-03:00",
+  "atualizado_em": "2026-11-06T00:03:17.930581-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -48,15 +48,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
-      "data": "06/11/2026",
-      "hora": "07:25",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "LOG-IN DISCOVERY",
       "data": "06/11/2026",
       "hora": "07:25",
@@ -64,6 +55,15 @@
       "porto": "VIX",
       "berco": "VIX204",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "06/11/2026",
+      "hora": "07:40",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "MARCADA"
     },
     {
       "navio": "ONEGO NEVA",
