@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-06T13:54:40.380252-03:00",
+  "atualizado_em": "2026-11-06T14:42:20.968189-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -22,8 +22,8 @@
     },
     {
       "navio": "INDEPENDENT",
-      "data": "06/11/2026",
-      "hora": "23:00",
+      "data": "07/11/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -32,7 +32,7 @@
     {
       "navio": "WEST TREASURE",
       "data": "07/11/2026",
-      "hora": "00:00",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -102,15 +102,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NAVA ULYSSES",
-      "data": "08/11/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN PORTOCEL",
       "data": "08/11/2026",
       "hora": "13:23",
@@ -144,6 +135,15 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NAVA ULYSSES",
+      "data": "10/11/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
