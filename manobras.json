@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-06T18:47:58.462906-03:00",
+  "atualizado_em": "2026-11-06T19:24:58.239153-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SELO",
-      "data": "06/11/2026",
-      "hora": "17:45",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "SAGA IKEBANA",
       "data": "07/11/2026",
