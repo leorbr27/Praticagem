@@ -1,47 +1,11 @@
 {
-  "atualizado_em": "2026-11-06T07:45:05.358747-03:00",
+  "atualizado_em": "2026-11-06T13:54:40.380252-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "GRAND VEGA",
-      "data": "06/11/2026",
-      "hora": "07:25",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
-      "data": "06/11/2026",
-      "hora": "07:40",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "ONEGO NEVA",
-      "data": "06/11/2026",
-      "hora": "08:40",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PACIFICA",
-      "data": "06/11/2026",
-      "hora": "09:40",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "ORCUN C",
       "data": "06/11/2026",
-      "hora": "10:00",
+      "hora": "17:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -50,19 +14,28 @@
     {
       "navio": "SELO",
       "data": "06/11/2026",
-      "hora": "11:00",
+      "hora": "18:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "LOG-IN DISCOVERY",
+      "navio": "INDEPENDENT",
       "data": "06/11/2026",
-      "hora": "12:27",
+      "hora": "23:00",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WEST TREASURE",
+      "data": "07/11/2026",
+      "hora": "00:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -111,6 +84,24 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PACIFICA",
+      "data": "08/11/2026",
+      "hora": "11:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ONEGO NEVA",
+      "data": "08/11/2026",
+      "hora": "11:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "NAVA ULYSSES",
       "data": "08/11/2026",
       "hora": "13:00",
@@ -135,15 +126,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "INDEPENDENT",
-      "data": "08/11/2026",
-      "hora": "15:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
