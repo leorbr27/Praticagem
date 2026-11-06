@@ -1,29 +1,29 @@
 {
-  "atualizado_em": "2026-11-06T14:42:20.968189-03:00",
+  "atualizado_em": "2026-11-06T18:47:58.462906-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "ORCUN C",
-      "data": "06/11/2026",
-      "hora": "17:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SELO",
       "data": "06/11/2026",
-      "hora": "18:00",
+      "hora": "17:45",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "INICIADA"
+    },
+    {
+      "navio": "SAGA IKEBANA",
+      "data": "07/11/2026",
+      "hora": "03:15",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
       "navio": "INDEPENDENT",
       "data": "07/11/2026",
-      "hora": "01:00",
+      "hora": "04:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -32,19 +32,10 @@
     {
       "navio": "WEST TREASURE",
       "data": "07/11/2026",
-      "hora": "02:00",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA IKEBANA",
-      "data": "07/11/2026",
-      "hora": "04:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -66,6 +57,24 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "GREEN QINGDAO",
+      "data": "07/11/2026",
+      "hora": "08:59",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "CLARITY",
+      "data": "07/11/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH501",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "LOG-IN PANTANAL",
       "data": "08/11/2026",
       "hora": "01:00",
@@ -81,6 +90,15 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MANTA BEYOGLU",
+      "data": "08/11/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH502",
       "situacao": "PREVISTA"
     },
     {
@@ -111,30 +129,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN QINGDAO",
-      "data": "08/11/2026",
-      "hora": "13:23",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SKANDI RECIFE",
       "data": "09/11/2026",
       "hora": "07:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
-      "data": "09/11/2026",
-      "hora": "11:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
@@ -147,9 +147,9 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN ITAPOA",
-      "data": "10/11/2026",
-      "hora": "08:30",
+      "navio": "SAGA HORIZON",
+      "data": "12/11/2026",
+      "hora": "16:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
