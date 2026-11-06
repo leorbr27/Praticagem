@@ -1,33 +1,15 @@
 {
-  "atualizado_em": "2026-11-05T19:52:14.111834-03:00",
+  "atualizado_em": "2026-11-05T23:26:45.869901-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "VORIAS",
-      "data": "05/11/2026",
-      "hora": "21:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "navio": "GEM STAR",
       "data": "06/11/2026",
-      "hora": "00:04",
+      "hora": "01:10",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PACIFICA",
-      "data": "06/11/2026",
-      "hora": "01:04",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "MARCADA"
     },
     {
       "navio": "ORCUN C",
@@ -39,6 +21,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SEVEN CRUZEIRO",
+      "data": "06/11/2026",
+      "hora": "02:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "SELO",
       "data": "06/11/2026",
       "hora": "03:00",
@@ -48,21 +39,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GEM STAR",
-      "data": "06/11/2026",
-      "hora": "03:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GRAND VEGA",
       "data": "06/11/2026",
       "hora": "07:25",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "06/11/2026",
+      "hora": "07:25",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
@@ -81,6 +72,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "PACIFICA",
+      "data": "06/11/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
