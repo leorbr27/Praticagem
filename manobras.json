@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-11-07T10:59:35.850515-03:00",
+  "atualizado_em": "2026-11-07T12:19:34.862478-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "GREEN PECEM",
       "data": "08/11/2026",
-      "hora": "05:00",
+      "hora": "04:26",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
