@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-11-07T16:29:51.317458-03:00",
+  "atualizado_em": "2026-11-07T19:11:01.139648-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "GREEN PECEM",
       "data": "08/11/2026",
-      "hora": "04:26",
+      "hora": "04:30",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
@@ -57,21 +57,39 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SKANDI RECIFE",
-      "data": "08/11/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN PORTOCEL",
       "data": "08/11/2026",
       "hora": "13:23",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX203 VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI RECIFE",
+      "data": "08/11/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "INTEGRADOR",
+      "data": "08/11/2026",
+      "hora": "18:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "VORIAS",
+      "data": "08/11/2026",
+      "hora": "20:45",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
       "situacao": "PREVISTA"
     },
     {
