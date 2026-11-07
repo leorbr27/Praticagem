@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-07T19:11:01.139648-03:00",
+  "atualizado_em": "2026-11-07T19:56:45.898966-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -75,6 +75,15 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "GREEN PECEM",
+      "data": "08/11/2026",
+      "hora": "16:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "INTEGRADOR",
       "data": "08/11/2026",
       "hora": "18:00",
@@ -90,6 +99,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "10/11/2026",
+      "hora": "07:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
