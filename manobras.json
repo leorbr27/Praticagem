@@ -1,33 +1,15 @@
 {
-  "atualizado_em": "2026-11-06T23:12:31.992253-03:00",
+  "atualizado_em": "2026-11-07T04:13:28.075313-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "SAGA IKEBANA",
-      "data": "07/11/2026",
-      "hora": "02:30",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "INDEPENDENT",
-      "data": "07/11/2026",
-      "hora": "04:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "WEST TREASURE",
       "data": "07/11/2026",
-      "hora": "05:00",
+      "hora": "04:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "VORIAS",
@@ -66,15 +48,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "LOG-IN PANTANAL",
-      "data": "08/11/2026",
-      "hora": "01:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN PECEM",
       "data": "08/11/2026",
       "hora": "05:00",
@@ -90,6 +63,15 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH502",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "08/11/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
@@ -135,6 +117,24 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA IKEBANA",
+      "data": "10/11/2026",
+      "hora": "10:20",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SALIGNA",
+      "data": "10/11/2026",
+      "hora": "11:20",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
