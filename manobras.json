@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-07T04:13:28.075313-03:00",
+  "atualizado_em": "2026-11-07T05:51:57.894023-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "WEST TREASURE",
-      "data": "07/11/2026",
-      "hora": "04:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "VORIAS",
       "data": "07/11/2026",
