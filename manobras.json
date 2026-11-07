@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-11-07T05:51:57.894023-03:00",
+  "atualizado_em": "2026-11-07T10:59:35.850515-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "VORIAS",
-      "data": "07/11/2026",
-      "hora": "07:59",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX905 VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAPURA DIAMANTE",
-      "data": "07/11/2026",
-      "hora": "07:59",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "CLARITY",
-      "data": "07/11/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH501",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN QINGDAO",
-      "data": "07/11/2026",
-      "hora": "09:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "GREEN PECEM",
       "data": "08/11/2026",
@@ -66,6 +30,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "CLARITY",
+      "data": "08/11/2026",
+      "hora": "11:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH501",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "PACIFICA",
       "data": "08/11/2026",
       "hora": "11:00",
@@ -84,21 +57,21 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SKANDI RECIFE",
+      "data": "08/11/2026",
+      "hora": "12:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN PORTOCEL",
       "data": "08/11/2026",
       "hora": "13:23",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX203 VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SKANDI RECIFE",
-      "data": "09/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
       "situacao": "PREVISTA"
     },
     {
