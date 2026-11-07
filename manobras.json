@@ -1,15 +1,15 @@
 {
-  "atualizado_em": "2026-11-06T19:24:58.239153-03:00",
+  "atualizado_em": "2026-11-06T22:16:49.315385-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "SAGA IKEBANA",
       "data": "07/11/2026",
-      "hora": "03:15",
+      "hora": "02:30",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "INDEPENDENT",
@@ -63,7 +63,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH501",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
