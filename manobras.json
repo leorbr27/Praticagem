@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-06T22:16:49.315385-03:00",
+  "atualizado_em": "2026-11-06T23:12:31.992253-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -48,21 +48,21 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "GREEN QINGDAO",
-      "data": "07/11/2026",
-      "hora": "08:59",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "CLARITY",
       "data": "07/11/2026",
       "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH501",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "GREEN QINGDAO",
+      "data": "07/11/2026",
+      "hora": "09:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "MARCADA"
     },
     {
