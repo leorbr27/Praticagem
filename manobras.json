@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-11-08T12:58:24.530798-03:00",
+  "atualizado_em": "2026-11-08T15:55:31.251120-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "MANTA BEYOGLU",
-      "data": "08/11/2026",
-      "hora": "12:30",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH502",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "CLARITY",
-      "data": "08/11/2026",
-      "hora": "13:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH501",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SKANDI RECIFE",
-      "data": "08/11/2026",
-      "hora": "14:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "INTEGRADOR",
       "data": "08/11/2026",
@@ -37,6 +10,15 @@
       "porto": "VIX",
       "berco": "VIX103",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN PECEM",
+      "data": "08/11/2026",
+      "hora": "19:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -59,11 +41,11 @@
     {
       "navio": "VORIAS",
       "data": "08/11/2026",
-      "hora": "20:45",
+      "hora": "20:31",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "PACIFICA",
@@ -72,15 +54,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN PECEM",
-      "data": "09/11/2026",
-      "hora": "05:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
