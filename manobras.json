@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-08T04:31:14.046526-03:00",
+  "atualizado_em": "2026-11-08T06:09:27.965015-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,16 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MANTA BEYOGLU",
-      "data": "08/11/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH502",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "CLARITY",
@@ -27,6 +18,15 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH501",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MANTA BEYOGLU",
+      "data": "08/11/2026",
+      "hora": "12:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH502",
       "situacao": "PREVISTA"
     },
     {
