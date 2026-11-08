@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-08T15:55:31.251120-03:00",
+  "atualizado_em": "2026-11-08T17:23:42.562484-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "INTEGRADOR",
-      "data": "08/11/2026",
-      "hora": "18:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "GREEN PECEM",
       "data": "08/11/2026",
@@ -19,24 +10,6 @@
       "porto": "RCH",
       "berco": "RCH102",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "08/11/2026",
-      "hora": "19:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ONEGO NEVA",
-      "data": "08/11/2026",
-      "hora": "20:31",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "VORIAS",
@@ -48,6 +21,24 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "ONEGO NEVA",
+      "data": "08/11/2026",
+      "hora": "22:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "08/11/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "PACIFICA",
       "data": "09/11/2026",
       "hora": "01:59",
@@ -55,6 +46,15 @@
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "INTEGRADOR",
+      "data": "09/11/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "MARCADA"
     },
     {
       "navio": "ISLAND ENFORCER",
