@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-07T23:14:34.697887-03:00",
+  "atualizado_em": "2026-11-08T04:31:14.046526-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -111,15 +111,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NAVA ULYSSES",
-      "data": "10/11/2026",
-      "hora": "08:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAGA IKEBANA",
       "data": "10/11/2026",
       "hora": "10:20",
@@ -129,12 +120,66 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SELO",
+      "data": "10/11/2026",
+      "hora": "11:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SALIGNA",
       "data": "10/11/2026",
       "hora": "11:20",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SILHOUETTE ISLAND",
+      "data": "10/11/2026",
+      "hora": "12:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NAVA ULYSSES",
+      "data": "11/11/2026",
+      "hora": "02:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ASL ERA",
+      "data": "11/11/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WEST TREASURE",
+      "data": "12/11/2026",
+      "hora": "14:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "12/11/2026",
+      "hora": "15:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
