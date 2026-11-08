@@ -1,15 +1,15 @@
 {
-  "atualizado_em": "2026-11-07T19:56:45.898966-03:00",
+  "atualizado_em": "2026-11-07T22:23:41.627630-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "GREEN PECEM",
       "data": "08/11/2026",
-      "hora": "04:30",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "MANTA BEYOGLU",
@@ -21,39 +21,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "LOG-IN PANTANAL",
-      "data": "08/11/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "CLARITY",
       "data": "08/11/2026",
       "hora": "11:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH501",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PACIFICA",
-      "data": "08/11/2026",
-      "hora": "11:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ONEGO NEVA",
-      "data": "08/11/2026",
-      "hora": "11:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -93,12 +66,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "LOG-IN PANTANAL",
+      "data": "08/11/2026",
+      "hora": "19:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ONEGO NEVA",
+      "data": "08/11/2026",
+      "hora": "20:31",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "VORIAS",
       "data": "08/11/2026",
       "hora": "20:45",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PACIFICA",
+      "data": "09/11/2026",
+      "hora": "01:59",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
