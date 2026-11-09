@@ -1,23 +1,23 @@
 {
-  "atualizado_em": "2026-11-09T05:45:02.945238-03:00",
+  "atualizado_em": "2026-11-09T10:17:01.282232-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "SAPURA DIAMANTE",
-      "data": "09/11/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PACIFICA",
+      "navio": "MANTA BEYOGLU",
       "data": "09/11/2026",
       "hora": "13:30",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
+      "porto": "RCH",
+      "berco": "RCH502",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SELO",
+      "data": "09/11/2026",
+      "hora": "21:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -30,12 +30,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PACIFICA",
+      "data": "09/11/2026",
+      "hora": "21:04",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "LOG-IN PANTANAL",
       "data": "09/11/2026",
       "hora": "21:04",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SILHOUETTE ISLAND",
+      "data": "09/11/2026",
+      "hora": "22:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -57,6 +75,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GREEN RIO DE JANEIRO",
+      "data": "10/11/2026",
+      "hora": "09:25",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN PORTOCEL",
       "data": "10/11/2026",
       "hora": "09:25",
@@ -75,15 +102,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SELO",
-      "data": "10/11/2026",
-      "hora": "11:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SALIGNA",
       "data": "10/11/2026",
       "hora": "11:20",
@@ -93,12 +111,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SILHOUETTE ISLAND",
+      "navio": "SAPURA DIAMANTE",
       "data": "10/11/2026",
-      "hora": "12:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
+      "hora": "21:40",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
       "situacao": "PREVISTA"
     },
     {
