@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-11-08T22:54:49.286996-03:00",
+  "atualizado_em": "2026-11-09T01:30:30.319765-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "ONEGO NEVA",
-      "data": "08/11/2026",
-      "hora": "22:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "08/11/2026",
-      "hora": "23:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PACIFICA",
-      "data": "09/11/2026",
-      "hora": "01:59",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "INTEGRADOR",
       "data": "09/11/2026",
@@ -37,6 +10,33 @@
       "porto": "VIX",
       "berco": "VIX103",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "SAPURA DIAMANTE",
+      "data": "09/11/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PACIFICA",
+      "data": "09/11/2026",
+      "hora": "13:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "INTEGRADOR",
+      "data": "09/11/2026",
+      "hora": "21:04",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "LOG-IN PANTANAL",
