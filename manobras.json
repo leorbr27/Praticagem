@@ -1,20 +1,20 @@
 {
-  "atualizado_em": "2026-11-09T16:11:05.680103-03:00",
+  "atualizado_em": "2026-11-09T20:02:04.938215-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "INTEGRADOR",
       "data": "09/11/2026",
-      "hora": "21:04",
+      "hora": "21:20",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SELO",
-      "data": "09/11/2026",
-      "hora": "22:00",
+      "data": "10/11/2026",
+      "hora": "02:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -22,20 +22,11 @@
     },
     {
       "navio": "SILHOUETTE ISLAND",
-      "data": "09/11/2026",
-      "hora": "23:00",
+      "data": "10/11/2026",
+      "hora": "03:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PACIFICA",
-      "data": "10/11/2026",
-      "hora": "02:34",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
@@ -46,24 +37,6 @@
       "porto": "VIX",
       "berco": "VIX101",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
-      "data": "10/11/2026",
-      "hora": "07:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN RIO DE JANEIRO",
-      "data": "10/11/2026",
-      "hora": "09:25",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "GREEN PORTOCEL",
@@ -84,21 +57,66 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "PACIFICA",
+      "data": "10/11/2026",
+      "hora": "09:45",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NAVA ULYSSES",
+      "data": "10/11/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ASL ERA",
+      "data": "10/11/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MERMAID ACE",
+      "data": "10/11/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "FEDERAL RUHR",
+      "data": "10/11/2026",
+      "hora": "11:25",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA IKEBANA",
       "data": "10/11/2026",
-      "hora": "10:20",
+      "hora": "12:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SALIGNA",
+      "navio": "GREEN RIO DE JANEIRO",
       "data": "10/11/2026",
-      "hora": "11:20",
+      "hora": "13:23",
       "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
@@ -111,45 +129,18 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "FEDERAL RUHR",
+      "navio": "JACAMAR ARROW",
       "data": "10/11/2026",
-      "hora": "13:53",
+      "hora": "22:00",
       "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAPURA DIAMANTE",
-      "data": "10/11/2026",
-      "hora": "21:40",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NAVA ULYSSES",
-      "data": "11/11/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ASL ERA",
-      "data": "11/11/2026",
-      "hora": "03:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
       "navio": "WEST TREASURE",
       "data": "11/11/2026",
-      "hora": "20:00",
+      "hora": "02:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -158,19 +149,64 @@
     {
       "navio": "JAMAICA BAY",
       "data": "11/11/2026",
-      "hora": "21:00",
+      "hora": "03:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA HORIZON",
-      "data": "12/11/2026",
-      "hora": "16:00",
+      "navio": "GREEN ITAPOA",
+      "data": "11/11/2026",
+      "hora": "15:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "11/11/2026",
+      "hora": "17:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA HORIZON",
+      "data": "12/11/2026",
+      "hora": "12:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAPURA DIAMANTE",
+      "data": "13/11/2026",
+      "hora": "11:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SALIGNA",
+      "data": "13/11/2026",
+      "hora": "18:20",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "EKATERINA",
+      "data": "13/11/2026",
+      "hora": "18:30",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     }
   ]
