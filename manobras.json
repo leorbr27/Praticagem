@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-08T20:52:57.866875-03:00",
+  "atualizado_em": "2026-11-08T22:54:49.286996-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "VORIAS",
-      "data": "08/11/2026",
-      "hora": "20:31",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "ONEGO NEVA",
       "data": "08/11/2026",
@@ -18,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -46,6 +37,15 @@
       "porto": "VIX",
       "berco": "VIX103",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "09/11/2026",
+      "hora": "21:04",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "ISLAND ENFORCER",
