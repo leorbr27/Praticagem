@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-09T20:02:04.938215-03:00",
+  "atualizado_em": "2026-11-09T23:01:50.013950-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "INTEGRADOR",
-      "data": "09/11/2026",
-      "hora": "21:20",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "SELO",
       "data": "10/11/2026",
