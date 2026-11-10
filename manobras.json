@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-11-10T06:31:49.732080-03:00",
+  "atualizado_em": "2026-11-10T09:57:59.440065-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "ISLAND ENFORCER",
-      "data": "10/11/2026",
-      "hora": "05:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX101",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "GREEN PORTOCEL",
-      "data": "10/11/2026",
-      "hora": "09:25",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX203 VIX206",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "LOG-IN PANTANAL",
       "data": "10/11/2026",
@@ -30,40 +12,22 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "GREEN PORTOCEL",
+      "data": "10/11/2026",
+      "hora": "10:30",
+      "tipo": "MANOBRA",
+      "porto": "VIX",
+      "berco": "VIX203 VIX206",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "PACIFICA",
-      "data": "10/11/2026",
-      "hora": "09:45",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "FEDERAL RUHR",
-      "data": "10/11/2026",
-      "hora": "11:25",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "MERMAID ACE",
-      "data": "10/11/2026",
-      "hora": "11:25",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA IKEBANA",
       "data": "10/11/2026",
       "hora": "12:00",
       "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "MARCADA"
     },
     {
       "navio": "NAVA ULYSSES",
@@ -75,13 +39,22 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN RIO DE JANEIRO",
+      "navio": "MERMAID ACE",
       "data": "10/11/2026",
-      "hora": "13:23",
+      "hora": "13:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "FEDERAL RUHR",
+      "data": "10/11/2026",
+      "hora": "13:15",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -99,6 +72,24 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN RIO DE JANEIRO",
+      "data": "10/11/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SAGA IKEBANA",
+      "data": "10/11/2026",
+      "hora": "17:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
