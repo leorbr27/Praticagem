@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-11-10T01:35:30.833698-03:00",
+  "atualizado_em": "2026-11-10T06:31:49.732080-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SELO",
-      "data": "10/11/2026",
-      "hora": "04:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SILHOUETTE ISLAND",
-      "data": "10/11/2026",
-      "hora": "05:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "ISLAND ENFORCER",
       "data": "10/11/2026",
@@ -27,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX101",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "GREEN PORTOCEL",
@@ -54,24 +36,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NAVA ULYSSES",
-      "data": "10/11/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ASL ERA",
-      "data": "10/11/2026",
-      "hora": "11:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -102,6 +66,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "NAVA ULYSSES",
+      "data": "10/11/2026",
+      "hora": "13:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN RIO DE JANEIRO",
       "data": "10/11/2026",
       "hora": "13:23",
@@ -118,6 +91,15 @@
       "porto": "VIX",
       "berco": "VIX204",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "ASL ERA",
+      "data": "10/11/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "JACAMAR ARROW",
