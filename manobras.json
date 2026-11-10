@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-11-10T09:57:59.440065-03:00",
+  "atualizado_em": "2026-11-10T14:13:46.662644-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "10/11/2026",
-      "hora": "09:25",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN PORTOCEL",
-      "data": "10/11/2026",
-      "hora": "10:30",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX203 VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PACIFICA",
-      "data": "10/11/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "NAVA ULYSSES",
-      "data": "10/11/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "MERMAID ACE",
       "data": "10/11/2026",
@@ -45,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "FEDERAL RUHR",
@@ -54,7 +18,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -66,15 +30,6 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "ASL ERA",
-      "data": "10/11/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN RIO DE JANEIRO",
       "data": "10/11/2026",
       "hora": "14:00",
@@ -84,12 +39,30 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "NAVA ULYSSES",
+      "data": "10/11/2026",
+      "hora": "19:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA IKEBANA",
       "data": "10/11/2026",
-      "hora": "17:00",
+      "hora": "19:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "ASL ERA",
+      "data": "10/11/2026",
+      "hora": "20:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
