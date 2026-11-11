@@ -1,20 +1,11 @@
 {
-  "atualizado_em": "2026-11-11T05:53:13.597933-03:00",
+  "atualizado_em": "2026-11-11T12:26:16.526047-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "ISLAND ENFORCER",
-      "data": "11/11/2026",
-      "hora": "07:00",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX101 VIX101",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "NAVA ULYSSES",
       "data": "11/11/2026",
-      "hora": "11:00",
+      "hora": "18:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -23,7 +14,7 @@
     {
       "navio": "ASL ERA",
       "data": "11/11/2026",
-      "hora": "12:00",
+      "hora": "19:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -41,7 +32,7 @@
     {
       "navio": "WEST TREASURE",
       "data": "12/11/2026",
-      "hora": "03:00",
+      "hora": "02:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -50,7 +41,7 @@
     {
       "navio": "JAMAICA BAY",
       "data": "12/11/2026",
-      "hora": "04:00",
+      "hora": "03:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -63,6 +54,24 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN PORTOCEL",
+      "data": "12/11/2026",
+      "hora": "10:32",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "12/11/2026",
+      "hora": "22:49",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
@@ -99,6 +108,15 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SILHOUETTE ISLAND",
+      "data": "14/11/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     }
   ]
