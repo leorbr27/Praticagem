@@ -57,24 +57,24 @@ async function rssResponse() {
       "Berço: " + (row.berco || "—")
     ].join(" | ");
     const guid = shipKey(row) + "|" + norm(row.situacao);
-    return "    <item>\\n" +
-      "      <title>" + xmlEscape(title) + "</title>\\n" +
-      "      <description>" + xmlEscape(description) + "</description>\\n" +
-      "      <guid isPermaLink=\\"false\\">" + xmlEscape(guid) + "</guid>\\n" +
-      "      <pubDate>" + rssDate(row, updatedAt) + "</pubDate>\\n" +
-      "      <link>https://leorbr27.github.io/Praticagem/index.html</link>\\n" +
+    return "    <item>\n" +
+      "      <title>" + xmlEscape(title) + "</title>\n" +
+      "      <description>" + xmlEscape(description) + "</description>\n" +
+      "      <guid isPermaLink=\"false\">" + xmlEscape(guid) + "</guid>\n" +
+      "      <pubDate>" + rssDate(row, updatedAt) + "</pubDate>\n" +
+      "      <link>https://leorbr27.github.io/Praticagem/index.html</link>\n" +
       "    </item>";
-  }).join("\\n");
+  }).join("\n");
 
-  const xml = '<?xml version="1.0" encoding="UTF-8"?>\\n' +
-    '<rss version="2.0">\\n  <channel>\\n' +
-    '    <title>Praticagem — Navios monitorados</title>\\n' +
-    '    <link>https://leorbr27.github.io/Praticagem/index.html</link>\\n' +
-    '    <description>Eventos exclusivamente dos navios selecionados para monitoramento no Praticagem.</description>\\n' +
-    '    <language>pt-BR</language>\\n' +
-    '    <lastBuildDate>' + new Date(updatedAt).toUTCString() + '</lastBuildDate>\\n' +
-    '    <ttl>5</ttl>\\n' + items + '\\n' +
-    '  </channel>\\n</rss>';
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<rss version="2.0">\n  <channel>\n' +
+    '    <title>Praticagem — Navios monitorados</title>\n' +
+    '    <link>https://leorbr27.github.io/Praticagem/index.html</link>\n' +
+    '    <description>Eventos exclusivamente dos navios selecionados para monitoramento no Praticagem.</description>\n' +
+    '    <language>pt-BR</language>\n' +
+    '    <lastBuildDate>' + new Date(updatedAt).toUTCString() + '</lastBuildDate>\n' +
+    '    <ttl>5</ttl>\n' + items + '\n' +
+    '  </channel>\n</rss>';
 
   return new Response(xml, {
     status: 200,
