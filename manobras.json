@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-10T19:22:00.138241-03:00",
+  "atualizado_em": "2026-11-10T21:47:39.514071-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,25 +9,7 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "NAVA ULYSSES",
-      "data": "10/11/2026",
-      "hora": "22:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ASL ERA",
-      "data": "10/11/2026",
-      "hora": "23:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "JACAMAR ARROW",
@@ -48,30 +30,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "NAVA ULYSSES",
+      "data": "11/11/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "ISLAND ENFORCER",
       "data": "11/11/2026",
-      "hora": "08:00",
-      "tipo": "SAIDA",
+      "hora": "07:00",
+      "tipo": "MANOBRA",
       "porto": "VIX",
-      "berco": "VIX101",
-      "situacao": "PREVISTA"
+      "berco": "VIX101 VIX101",
+      "situacao": "MARCADA"
     },
     {
-      "navio": "WEST TREASURE",
+      "navio": "ASL ERA",
       "data": "11/11/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "JAMAICA BAY",
-      "data": "11/11/2026",
-      "hora": "13:00",
+      "hora": "08:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
-      "berco": "PRMPS2",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -81,6 +63,24 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WEST TREASURE",
+      "data": "12/11/2026",
+      "hora": "03:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "12/11/2026",
+      "hora": "04:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
