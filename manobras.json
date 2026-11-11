@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-11T04:16:22.701072-03:00",
+  "atualizado_em": "2026-11-11T05:53:13.597933-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "NAVA ULYSSES",
-      "data": "11/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "ISLAND ENFORCER",
       "data": "11/11/2026",
@@ -21,9 +12,18 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "NAVA ULYSSES",
+      "data": "11/11/2026",
+      "hora": "11:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "ASL ERA",
       "data": "11/11/2026",
-      "hora": "08:00",
+      "hora": "12:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
