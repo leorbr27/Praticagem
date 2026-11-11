@@ -12,6 +12,80 @@ const json = (data, status = 200, extra = {}) => new Response(JSON.stringify(dat
 const norm = value => String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toUpperCase();
 const shipKey = row => [row.navio,row.data,row.hora,row.tipo,row.porto,row.berco].map(norm).join("|");
 
+const xmlEscape = value => String(value ?? "").replace(/[&<>"']/g, char => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;"
+}[char]));
+
+function rssDate(row, fallback) {
+  const match = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(String(row.data ?? ""));
+  const time = /^(\d{2}):(\d{2})$/.exec(String(row.hora ?? ""));
+  if (match && time) {
+    const [, day, month, year] = match;
+    const [, hour, minute] = time;
+    const date = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day), Number(hour), Number(minute)));
+    if (!Number.isNaN(date.getTime())) return date.toUTCString();
+  }
+  return new Date(fallback || Date.now()).toUTCString();
+}
+
+async function rssResponse() {
+  const subscriptions = await pool.query(
+    "SELECT DISTINCT unnest(monitored_ships) AS ship FROM push_subscriptions WHERE cardinality(monitored_ships) > 0"
+  );
+  const monitored = new Set(subscriptions.rows.map(row => norm(row.ship)).filter(Boolean));
+  let rows = [];
+  let updatedAt = new Date().toISOString();
+
+  if (monitored.size) {
+    const response = await fetch("https://raw.githubusercontent.com/leorbr27/Praticagem/main/manobras.json?ts=" + Date.now(), { cache: "no-store" });
+    if (!response.ok) throw new Error("Could not read manobras.json for RSS: HTTP " + response.status);
+    const payload = await response.json();
+    updatedAt = payload.atualizado_em || updatedAt;
+    rows = (Array.isArray(payload.manobras) ? payload.manobras : [])
+      .filter(row => monitored.has(norm(row.navio)));
+  }
+
+  const items = rows.map(row => {
+    const title = [row.navio, row.situacao, row.data, row.hora].filter(Boolean).join(" — ");
+    const description = [
+      "Navio: " + (row.navio || "Não identificado"),
+      "Situação: " + (row.situacao || "Não identificada"),
+      "Data: " + (row.data || "—"),
+      "Hora: " + (row.hora || "—"),
+      "Tipo: " + (row.tipo || "—"),
+      "Porto: " + (row.porto || "—"),
+      "Berço: " + (row.berco || "—")
+    ].join(" | ");
+    const guid = shipKey(row) + "|" + norm(row.situacao);
+    return "    <item>\\n" +
+      "      <title>" + xmlEscape(title) + "</title>\\n" +
+      "      <description>" + xmlEscape(description) + "</description>\\n" +
+      "      <guid isPermaLink=\\"false\\">" + xmlEscape(guid) + "</guid>\\n" +
+      "      <pubDate>" + rssDate(row, updatedAt) + "</pubDate>\\n" +
+      "      <link>https://leorbr27.github.io/Praticagem/index.html</link>\\n" +
+      "    </item>";
+  }).join("\\n");
+
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\\n' +
+    '<rss version="2.0">\\n  <channel>\\n' +
+    '    <title>Praticagem — Navios monitorados</title>\\n' +
+    '    <link>https://leorbr27.github.io/Praticagem/index.html</link>\\n' +
+    '    <description>Eventos exclusivamente dos navios selecionados para monitoramento no Praticagem.</description>\\n' +
+    '    <language>pt-BR</language>\\n' +
+    '    <lastBuildDate>' + new Date(updatedAt).toUTCString() + '</lastBuildDate>\\n' +
+    '    <ttl>5</ttl>\\n' + items + '\\n' +
+    '  </channel>\\n</rss>';
+
+  return new Response(xml, {
+    status: 200,
+    headers: {
+      "Content-Type": "application/rss+xml; charset=utf-8",
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store, max-age=0"
+    }
+  });
+}
+
 function configurePush() {
   if (!process.env.VAPID_PUBLIC_KEY || !process.env.VAPID_PRIVATE_KEY || !process.env.VAPID_SUBJECT) return false;
   webpush.setVapidDetails(process.env.VAPID_SUBJECT, process.env.VAPID_PUBLIC_KEY, process.env.VAPID_PRIVATE_KEY);
@@ -71,6 +145,9 @@ export default {
   async fetch(request) {
     const url = new URL(request.url);
     const origin = request.headers.get("origin");
+    if (request.method === "GET" && url.pathname.replace(/\/+$/, "").endsWith("/rss")) {
+      try { return await rssResponse(); } catch (error) { console.error("praticagem RSS error", error); return new Response("RSS indisponível", { status: 503, headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" } }); }
+    }
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: { "Access-Control-Allow-Origin": ALLOWED_ORIGIN, "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Access-Control-Allow-Headers": "Content-Type", "Access-Control-Max-Age": "86400" } });
     if (url.pathname.endsWith("/cron")) { if (origin) return json({ error: "Origin not allowed" }, 403); } else if (origin !== ALLOWED_ORIGIN) return json({ error: "Origin not allowed" }, 403);
     try {
