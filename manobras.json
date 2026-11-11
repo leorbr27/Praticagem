@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-11-10T22:59:29.954502-03:00",
+  "atualizado_em": "2026-11-11T04:16:22.701072-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "JACAMAR ARROW",
-      "data": "10/11/2026",
-      "hora": "23:15",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "MERMAID ACE",
-      "data": "11/11/2026",
-      "hora": "00:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "NAVA ULYSSES",
       "data": "11/11/2026",
