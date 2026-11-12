@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-11T20:02:02.191536-03:00",
+  "atualizado_em": "2026-11-12T00:00:24.795278-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN PORTOCEL",
