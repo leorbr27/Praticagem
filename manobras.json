@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-12T07:54:28.544673-03:00",
+  "atualizado_em": "2026-11-12T08:50:21.303790-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -30,12 +30,12 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "SAPURA ONIX",
+      "navio": "AGIA MONI",
       "data": "12/11/2026",
-      "hora": "14:00",
+      "hora": "14:25",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX103",
+      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
@@ -63,6 +63,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAPURA ONIX",
+      "data": "12/11/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
       "situacao": "PREVISTA"
     },
     {
