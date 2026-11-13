@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-13T02:09:33.618563-03:00",
+  "atualizado_em": "2026-11-13T03:50:49.749696-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "AGIA MONI",
-      "data": "13/11/2026",
-      "hora": "00:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "WEST TREASURE",
       "data": "13/11/2026",
@@ -32,11 +23,11 @@
     {
       "navio": "JAMAICA BAY",
       "data": "13/11/2026",
-      "hora": "06:00",
+      "hora": "05:30",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "MICHIGAN HIGHWAY",
@@ -93,12 +84,21 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "14/11/2026",
+      "hora": "17:31",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "EKATERINA",
       "data": "14/11/2026",
       "hora": "18:31",
       "tipo": "ENTRADA",
       "porto": "RCH",
-      "berco": "RCH101",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
