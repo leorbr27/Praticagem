@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-13T10:07:28.646680-03:00",
+  "atualizado_em": "2026-11-13T11:56:22.006925-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "SAPURA DIAMANTE",
