@@ -1,56 +1,29 @@
 {
-  "atualizado_em": "2026-11-13T03:50:49.749696-03:00",
+  "atualizado_em": "2026-11-13T10:07:28.646680-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "WEST TREASURE",
-      "data": "13/11/2026",
-      "hora": "04:30",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SAPURA ONIX",
-      "data": "13/11/2026",
-      "hora": "04:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "JAMAICA BAY",
-      "data": "13/11/2026",
-      "hora": "05:30",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "MICHIGAN HIGHWAY",
       "data": "13/11/2026",
-      "hora": "11:00",
+      "hora": "11:06",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAPURA DIAMANTE",
       "data": "13/11/2026",
-      "hora": "15:00",
+      "hora": "17:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "JACAMAR ARROW",
-      "data": "14/11/2026",
-      "hora": "08:19",
+      "data": "13/11/2026",
+      "hora": "22:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
@@ -58,8 +31,8 @@
     },
     {
       "navio": "SALIGNA",
-      "data": "14/11/2026",
-      "hora": "09:19",
+      "data": "13/11/2026",
+      "hora": "23:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
