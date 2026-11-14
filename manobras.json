@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-13T22:24:39.787453-03:00",
+  "atualizado_em": "2026-11-14T04:31:37.360045-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "JACAMAR ARROW",
-      "data": "14/11/2026",
-      "hora": "08:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "SAPURA ONIX",
       "data": "14/11/2026",
@@ -18,15 +9,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SALIGNA",
-      "data": "14/11/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -39,9 +21,27 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "JACAMAR ARROW",
+      "data": "14/11/2026",
+      "hora": "12:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SALIGNA",
+      "data": "14/11/2026",
+      "hora": "13:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA HORIZON",
       "data": "14/11/2026",
-      "hora": "12:23",
+      "hora": "14:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -50,7 +50,7 @@
     {
       "navio": "GREEN ITAPOA",
       "data": "14/11/2026",
-      "hora": "13:23",
+      "hora": "15:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -68,17 +68,8 @@
     {
       "navio": "ASL ERA",
       "data": "15/11/2026",
-      "hora": "01:00",
+      "hora": "05:00",
       "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "CANELO ARROW",
-      "data": "15/11/2026",
-      "hora": "02:00",
-      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
@@ -102,21 +93,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SILHOUETTE ISLAND",
+      "navio": "CANELO ARROW",
       "data": "15/11/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "CAPTAIN JOHN",
-      "data": "15/11/2026",
-      "hora": "14:00",
+      "hora": "06:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
-      "berco": "PRMPS3",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -135,6 +117,24 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SILHOUETTE ISLAND",
+      "data": "15/11/2026",
+      "hora": "17:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "CAPTAIN JOHN",
+      "data": "15/11/2026",
+      "hora": "18:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
