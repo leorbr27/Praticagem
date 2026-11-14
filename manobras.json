@@ -1,38 +1,20 @@
 {
-  "atualizado_em": "2026-11-14T16:24:50.984214-03:00",
+  "atualizado_em": "2026-11-14T20:09:04.924070-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "JACAMAR ARROW",
-      "data": "14/11/2026",
-      "hora": "15:30",
+      "navio": "GREEN RIO DE JANEIRO",
+      "data": "15/11/2026",
+      "hora": "00:06",
       "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SALIGNA",
-      "data": "14/11/2026",
-      "hora": "16:30",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PEACE BAND",
-      "data": "14/11/2026",
-      "hora": "16:36",
-      "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA HORIZON",
-      "data": "14/11/2026",
-      "hora": "23:00",
+      "data": "15/11/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -75,6 +57,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "LOG-IN PANTANAL",
+      "data": "15/11/2026",
+      "hora": "16:01",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "EKATERINA",
       "data": "15/11/2026",
       "hora": "16:39",
@@ -90,6 +81,15 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "FEDERAL RUHR",
+      "data": "15/11/2026",
+      "hora": "17:29",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
