@@ -1,30 +1,21 @@
 {
-  "atualizado_em": "2026-11-14T11:30:05.275869-03:00",
+  "atualizado_em": "2026-11-14T16:23:25.480872-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SAPURA ONIX",
-      "data": "14/11/2026",
-      "hora": "11:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "YU AN",
-      "data": "14/11/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "JACAMAR ARROW",
       "data": "14/11/2026",
       "hora": "15:30",
       "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SALIGNA",
+      "data": "14/11/2026",
+      "hora": "16:30",
+      "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
       "situacao": "MARCADA"
@@ -39,18 +30,9 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "SALIGNA",
-      "data": "14/11/2026",
-      "hora": "17:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAGA HORIZON",
       "data": "14/11/2026",
-      "hora": "18:00",
+      "hora": "23:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -72,15 +54,6 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN RIO DE JANEIRO",
-      "data": "15/11/2026",
-      "hora": "05:51",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
