@@ -1,20 +1,11 @@
 {
-  "atualizado_em": "2026-11-14T20:15:09.168681-03:00",
+  "atualizado_em": "2026-11-14T23:35:47.879182-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "GREEN RIO DE JANEIRO",
-      "data": "15/11/2026",
-      "hora": "00:06",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAGA HORIZON",
       "data": "15/11/2026",
-      "hora": "01:00",
+      "hora": "04:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -23,7 +14,7 @@
     {
       "navio": "GREEN ITAPOA",
       "data": "15/11/2026",
-      "hora": "04:24",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -32,7 +23,7 @@
     {
       "navio": "ASL ERA",
       "data": "15/11/2026",
-      "hora": "05:00",
+      "hora": "06:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -84,21 +75,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "FEDERAL RUHR",
-      "data": "15/11/2026",
-      "hora": "17:29",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "CAPTAIN JOHN",
       "data": "15/11/2026",
       "hora": "18:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "FEDERAL RUHR",
+      "data": "16/11/2026",
+      "hora": "06:59",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
@@ -117,6 +108,15 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN RIO DE JANEIRO",
+      "data": "17/11/2026",
+      "hora": "08:40",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "PREVISTA"
     }
   ]
