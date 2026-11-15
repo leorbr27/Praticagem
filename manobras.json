@@ -1,38 +1,38 @@
 {
-  "atualizado_em": "2026-11-14T23:48:40.538523-03:00",
+  "atualizado_em": "2026-11-15T06:50:20.703316-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "SAGA HORIZON",
       "data": "15/11/2026",
-      "hora": "04:00",
+      "hora": "07:30",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN ITAPOA",
-      "data": "15/11/2026",
-      "hora": "05:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "ASL ERA",
       "data": "15/11/2026",
-      "hora": "06:00",
+      "hora": "09:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GREEN ITAPOA",
+      "data": "15/11/2026",
+      "hora": "09:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "CANELO ARROW",
       "data": "15/11/2026",
-      "hora": "06:00",
+      "hora": "10:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -45,15 +45,6 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "15/11/2026",
-      "hora": "16:01",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
@@ -81,6 +72,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "15/11/2026",
+      "hora": "22:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
