@@ -1,61 +1,7 @@
 {
-  "atualizado_em": "2026-11-15T06:58:46.056450-03:00",
+  "atualizado_em": "2026-11-15T13:38:17.295199-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SAGA HORIZON",
-      "data": "15/11/2026",
-      "hora": "07:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "ASL ERA",
-      "data": "15/11/2026",
-      "hora": "09:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN ITAPOA",
-      "data": "15/11/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "CANELO ARROW",
-      "data": "15/11/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
-      "data": "15/11/2026",
-      "hora": "15:39",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "EKATERINA",
-      "data": "15/11/2026",
-      "hora": "16:39",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "SILHOUETTE ISLAND",
       "data": "15/11/2026",
@@ -64,6 +10,15 @@
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "MAERSK KATALIN",
+      "data": "15/11/2026",
+      "hora": "17:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "MARCADA"
     },
     {
       "navio": "CAPTAIN JOHN",
@@ -77,10 +32,28 @@
     {
       "navio": "LOG-IN PANTANAL",
       "data": "15/11/2026",
-      "hora": "22:00",
+      "hora": "19:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
+      "data": "15/11/2026",
+      "hora": "22:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "EKATERINA",
+      "data": "15/11/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
@@ -95,7 +68,7 @@
     {
       "navio": "NIKOS",
       "data": "16/11/2026",
-      "hora": "06:59",
+      "hora": "07:59",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
