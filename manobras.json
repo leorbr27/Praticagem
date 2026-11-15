@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-15T13:57:42.540390-03:00",
+  "atualizado_em": "2026-11-15T18:13:46.554873-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SILHOUETTE ISLAND",
-      "data": "15/11/2026",
-      "hora": "17:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "MAERSK KATALIN",
       "data": "15/11/2026",
@@ -18,16 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "CAPTAIN JOHN",
-      "data": "15/11/2026",
-      "hora": "18:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -35,22 +17,40 @@
       "hora": "19:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX204",
+      "berco": "VIX203",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "SILHOUETTE ISLAND",
+      "data": "15/11/2026",
+      "hora": "21:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
       "data": "15/11/2026",
-      "hora": "22:00",
+      "hora": "21:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "CAPTAIN JOHN",
+      "data": "15/11/2026",
+      "hora": "22:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
       "navio": "EKATERINA",
-      "data": "15/11/2026",
-      "hora": "23:00",
+      "data": "16/11/2026",
+      "hora": "03:02",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
