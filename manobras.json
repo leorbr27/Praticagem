@@ -1,34 +1,7 @@
 {
-  "atualizado_em": "2026-11-15T22:24:24.753760-03:00",
+  "atualizado_em": "2026-11-16T04:42:34.683289-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SILHOUETTE ISLAND",
-      "data": "16/11/2026",
-      "hora": "01:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "CAPTAIN JOHN",
-      "data": "16/11/2026",
-      "hora": "02:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "EKATERINA",
-      "data": "16/11/2026",
-      "hora": "03:13",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "FEDERAL RUHR",
       "data": "17/11/2026",
