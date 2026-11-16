@@ -1,15 +1,33 @@
 {
-  "atualizado_em": "2026-11-16T05:20:43.956022-03:00",
+  "atualizado_em": "2026-11-16T14:26:51.414135-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "SALIGNA",
+      "navio": "GREEN ITAPOA",
       "data": "16/11/2026",
-      "hora": "09:00",
+      "hora": "22:00",
       "tipo": "SAIDA",
       "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN OSAKA",
+      "data": "17/11/2026",
+      "hora": "04:54",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN RIO DE JANEIRO",
+      "data": "17/11/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "FEDERAL RUHR",
@@ -18,15 +36,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN RIO DE JANEIRO",
-      "data": "17/11/2026",
-      "hora": "08:40",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
