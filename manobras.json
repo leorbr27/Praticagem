@@ -1,47 +1,20 @@
 {
-  "atualizado_em": "2026-11-15T18:38:50.559728-03:00",
+  "atualizado_em": "2026-11-15T22:00:17.812930-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "MAERSK KATALIN",
-      "data": "15/11/2026",
-      "hora": "17:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "15/11/2026",
-      "hora": "19:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "SILHOUETTE ISLAND",
-      "data": "15/11/2026",
-      "hora": "21:00",
+      "data": "16/11/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "ZHONG YUAN HAI YUN CHUANG XIN",
-      "data": "15/11/2026",
-      "hora": "21:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "CAPTAIN JOHN",
-      "data": "15/11/2026",
-      "hora": "22:00",
+      "data": "16/11/2026",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -50,37 +23,19 @@
     {
       "navio": "EKATERINA",
       "data": "16/11/2026",
-      "hora": "03:02",
+      "hora": "03:13",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "FEDERAL RUHR",
-      "data": "16/11/2026",
-      "hora": "06:59",
+      "data": "17/11/2026",
+      "hora": "08:40",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "NIKOS",
-      "data": "16/11/2026",
-      "hora": "07:59",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "JAMAICA BAY",
-      "data": "16/11/2026",
-      "hora": "15:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -90,6 +45,33 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NIKOS",
+      "data": "17/11/2026",
+      "hora": "09:40",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "18/11/2026",
+      "hora": "22:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "CANELO ARROW",
+      "data": "19/11/2026",
+      "hora": "17:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     }
   ]
