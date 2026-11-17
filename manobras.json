@@ -1,33 +1,15 @@
 {
-  "atualizado_em": "2026-11-17T07:41:47.307147-03:00",
+  "atualizado_em": "2026-11-17T14:51:37.749527-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "LOG-IN DISCOVERY",
-      "data": "17/11/2026",
-      "hora": "07:40",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "FEDERAL RUHR",
-      "data": "17/11/2026",
-      "hora": "08:40",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "SEAGEMS RUBI",
       "data": "17/11/2026",
-      "hora": "13:00",
+      "hora": "14:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX103",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "NIKOS",
@@ -36,7 +18,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "GREEN SEPETIBA",
@@ -46,33 +28,6 @@
       "porto": "VIX",
       "berco": "VIX203",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN RIO DE JANEIRO",
-      "data": "17/11/2026",
-      "hora": "16:29",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PEACE BAND",
-      "data": "17/11/2026",
-      "hora": "18:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "JAMAICA BAY",
-      "data": "17/11/2026",
-      "hora": "19:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "MAERSK KATALIN",
@@ -102,12 +57,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "BOSPORUS HIGHWAY",
+      "navio": "GREEN OSAKA",
       "data": "17/11/2026",
-      "hora": "22:04",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -120,6 +75,24 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PEACE BAND",
+      "data": "18/11/2026",
+      "hora": "03:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BOSPORUS HIGHWAY",
+      "data": "18/11/2026",
+      "hora": "04:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SEVEN CRUZEIRO",
       "data": "18/11/2026",
       "hora": "05:00",
@@ -129,9 +102,36 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "GREEN RIO DE JANEIRO",
+      "data": "18/11/2026",
+      "hora": "06:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN GUANGZHOU",
+      "data": "18/11/2026",
+      "hora": "08:51",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "JAMAICA BAY",
+      "data": "18/11/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "CANELO ARROW",
-      "data": "19/11/2026",
-      "hora": "07:00",
+      "data": "18/11/2026",
+      "hora": "16:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
