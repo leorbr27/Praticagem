@@ -1,33 +1,15 @@
 {
-  "atualizado_em": "2026-11-16T23:07:49.927824-03:00",
+  "atualizado_em": "2026-11-17T05:38:27.498508-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "GREEN ITAPOA",
-      "data": "17/11/2026",
-      "hora": "04:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LOG-IN PANTANAL",
-      "data": "17/11/2026",
-      "hora": "04:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "GREEN OSAKA",
       "data": "17/11/2026",
-      "hora": "05:00",
+      "hora": "04:54",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -45,7 +27,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SEAGEMS RUBI",
