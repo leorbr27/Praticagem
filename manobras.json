@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-11-16T15:43:49.738813-03:00",
+  "atualizado_em": "2026-11-16T21:55:30.225898-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
       "navio": "GREEN ITAPOA",
-      "data": "16/11/2026",
-      "hora": "22:00",
+      "data": "17/11/2026",
+      "hora": "04:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -14,28 +14,19 @@
     {
       "navio": "LOG-IN PANTANAL",
       "data": "17/11/2026",
-      "hora": "02:19",
+      "hora": "04:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN OSAKA",
       "data": "17/11/2026",
-      "hora": "04:54",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN RIO DE JANEIRO",
-      "data": "17/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
@@ -45,7 +36,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "FEDERAL RUHR",
@@ -57,30 +48,147 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SEAGEMS RUBI",
+      "data": "17/11/2026",
+      "hora": "13:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "NIKOS",
       "data": "17/11/2026",
-      "hora": "09:40",
+      "hora": "14:29",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GREEN SEPETIBA",
+      "data": "17/11/2026",
+      "hora": "15:29",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA FUTURE",
+      "data": "17/11/2026",
+      "hora": "15:49",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN RIO DE JANEIRO",
+      "data": "17/11/2026",
+      "hora": "16:29",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PEACE BAND",
+      "data": "17/11/2026",
+      "hora": "18:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "JAMAICA BAY",
-      "data": "18/11/2026",
-      "hora": "22:00",
+      "data": "17/11/2026",
+      "hora": "19:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "MAERSK KATALIN",
+      "data": "17/11/2026",
+      "hora": "20:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "AGIA MONI",
+      "data": "17/11/2026",
+      "hora": "21:04",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BOSPORUS HIGHWAY",
+      "data": "17/11/2026",
+      "hora": "22:04",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA FLORA",
+      "data": "17/11/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEVEN CRUZEIRO",
+      "data": "18/11/2026",
+      "hora": "06:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "CANELO ARROW",
       "data": "19/11/2026",
-      "hora": "17:00",
+      "hora": "07:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "EKATERINA",
+      "data": "19/11/2026",
+      "hora": "21:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR DALMATIA",
+      "data": "20/11/2026",
+      "hora": "02:30",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "CAPTAIN JOHN",
+      "data": "20/11/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     }
   ]
