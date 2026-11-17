@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-17T14:51:37.749527-03:00",
+  "atualizado_em": "2026-11-17T16:25:46.944356-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SEAGEMS RUBI",
-      "data": "17/11/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "NIKOS",
       "data": "17/11/2026",
@@ -27,6 +18,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "INICIADA"
+    },
+    {
+      "navio": "SAGA FUTURE",
+      "data": "17/11/2026",
+      "hora": "19:30",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "MARCADA"
     },
     {
@@ -36,24 +36,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA FUTURE",
-      "data": "17/11/2026",
-      "hora": "20:10",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "AGIA MONI",
-      "data": "17/11/2026",
-      "hora": "21:04",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
@@ -108,6 +90,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "AGIA MONI",
+      "data": "18/11/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
       "situacao": "PREVISTA"
     },
     {
