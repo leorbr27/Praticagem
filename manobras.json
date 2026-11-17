@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-16T21:55:30.225898-03:00",
+  "atualizado_em": "2026-11-16T23:07:49.927824-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -75,15 +75,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA FUTURE",
-      "data": "17/11/2026",
-      "hora": "15:49",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN RIO DE JANEIRO",
       "data": "17/11/2026",
       "hora": "16:29",
@@ -117,6 +108,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA FUTURE",
+      "data": "17/11/2026",
+      "hora": "20:10",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
