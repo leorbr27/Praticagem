@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-17T05:38:27.498508-03:00",
+  "atualizado_em": "2026-11-17T07:41:47.307147-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GREEN OSAKA",
-      "data": "17/11/2026",
-      "hora": "04:54",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "LOG-IN DISCOVERY",
       "data": "17/11/2026",
@@ -45,7 +36,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN SEPETIBA",
@@ -54,7 +45,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN RIO DE JANEIRO",
@@ -131,11 +122,11 @@
     {
       "navio": "SEVEN CRUZEIRO",
       "data": "18/11/2026",
-      "hora": "06:00",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX906",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "CANELO ARROW",
