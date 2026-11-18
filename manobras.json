@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-11-17T16:25:46.944356-03:00",
+  "atualizado_em": "2026-11-17T21:01:26.554299-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "NIKOS",
-      "data": "17/11/2026",
-      "hora": "14:29",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "GREEN SEPETIBA",
-      "data": "17/11/2026",
-      "hora": "15:29",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "SAGA FUTURE",
       "data": "17/11/2026",
@@ -27,12 +9,12 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "MAERSK KATALIN",
       "data": "17/11/2026",
-      "hora": "20:00",
+      "hora": "23:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
@@ -40,17 +22,26 @@
     },
     {
       "navio": "GREEN OSAKA",
-      "data": "17/11/2026",
-      "hora": "23:00",
+      "data": "18/11/2026",
+      "hora": "02:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
+      "navio": "AGIA MONI",
+      "data": "18/11/2026",
+      "hora": "03:49",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA FLORA",
-      "data": "17/11/2026",
-      "hora": "23:00",
+      "data": "18/11/2026",
+      "hora": "04:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
@@ -59,19 +50,19 @@
     {
       "navio": "PEACE BAND",
       "data": "18/11/2026",
-      "hora": "03:00",
+      "hora": "04:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "BOSPORUS HIGHWAY",
+      "navio": "JAMAICA BAY",
       "data": "18/11/2026",
-      "hora": "04:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
+      "hora": "05:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -84,39 +75,30 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "GREEN RIO DE JANEIRO",
+      "navio": "BOSPORUS HIGHWAY",
       "data": "18/11/2026",
-      "hora": "06:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "AGIA MONI",
-      "data": "18/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN GUANGZHOU",
-      "data": "18/11/2026",
-      "hora": "08:51",
+      "hora": "05:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX206",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "JAMAICA BAY",
+      "navio": "LIBERTY BAY",
       "data": "18/11/2026",
-      "hora": "10:00",
-      "tipo": "SAIDA",
+      "hora": "06:00",
+      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN RIO DE JANEIRO",
+      "data": "18/11/2026",
+      "hora": "08:51",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
@@ -126,6 +108,33 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN GUANGZHOU",
+      "data": "18/11/2026",
+      "hora": "16:40",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "AFRICAN MACAW",
+      "data": "18/11/2026",
+      "hora": "18:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA PELICANA",
+      "data": "19/11/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
