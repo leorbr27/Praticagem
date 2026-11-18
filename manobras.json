@@ -1,30 +1,12 @@
 {
-  "atualizado_em": "2026-11-18T12:58:29.195152-03:00",
+  "atualizado_em": "2026-11-18T15:12:43.774845-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "BOSPORUS HIGHWAY",
-      "data": "18/11/2026",
-      "hora": "11:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "INICIADA"
-    },
-    {
       "navio": "JAMAICA BAY",
       "data": "18/11/2026",
-      "hora": "16:30",
+      "hora": "20:00",
       "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LIBERTY BAY",
-      "data": "18/11/2026",
-      "hora": "17:30",
-      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
@@ -36,6 +18,24 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LIBERTY BAY",
+      "data": "18/11/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BOSPORUS HIGHWAY",
+      "data": "18/11/2026",
+      "hora": "21:00",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
