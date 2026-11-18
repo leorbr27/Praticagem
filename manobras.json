@@ -1,33 +1,24 @@
 {
-  "atualizado_em": "2026-11-17T21:01:26.554299-03:00",
+  "atualizado_em": "2026-11-17T22:48:39.054760-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "SAGA FUTURE",
-      "data": "17/11/2026",
-      "hora": "19:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "INICIADA"
-    },
-    {
       "navio": "MAERSK KATALIN",
       "data": "17/11/2026",
-      "hora": "23:00",
+      "hora": "23:10",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
-      "navio": "GREEN OSAKA",
+      "navio": "SAGA FLORA",
       "data": "18/11/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
       "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
+      "berco": "RCH103",
+      "situacao": "MARCADA"
     },
     {
       "navio": "AGIA MONI",
@@ -36,15 +27,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA FLORA",
-      "data": "18/11/2026",
-      "hora": "04:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -57,12 +39,12 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "JAMAICA BAY",
+      "navio": "GREEN OSAKA",
       "data": "18/11/2026",
-      "hora": "05:00",
+      "hora": "04:23",
       "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -84,15 +66,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "LIBERTY BAY",
-      "data": "18/11/2026",
-      "hora": "06:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN RIO DE JANEIRO",
       "data": "18/11/2026",
       "hora": "08:51",
@@ -102,12 +75,21 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "CANELO ARROW",
+      "navio": "JAMAICA BAY",
       "data": "18/11/2026",
-      "hora": "16:00",
+      "hora": "11:00",
       "tipo": "SAIDA",
       "porto": "PRM",
-      "berco": "PRMPS1",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LIBERTY BAY",
+      "data": "18/11/2026",
+      "hora": "12:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
@@ -129,6 +111,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "CANELO ARROW",
+      "data": "18/11/2026",
+      "hora": "20:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SAGA PELICANA",
       "data": "19/11/2026",
       "hora": "03:00",
@@ -147,21 +138,21 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "CAPTAIN JOHN",
+      "data": "20/11/2026",
+      "hora": "00:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "STAR DALMATIA",
       "data": "20/11/2026",
       "hora": "02:30",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "CAPTAIN JOHN",
-      "data": "20/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     }
   ]
