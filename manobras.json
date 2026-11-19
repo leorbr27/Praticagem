@@ -1,43 +1,7 @@
 {
-  "atualizado_em": "2026-11-19T04:49:17.868481-03:00",
+  "atualizado_em": "2026-11-19T09:14:50.489894-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "AFRICAN MACAW",
-      "data": "19/11/2026",
-      "hora": "02:57",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "BOSPORUS HIGHWAY",
-      "data": "19/11/2026",
-      "hora": "04:57",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "COSCO SHIPPING XING WANG",
-      "data": "19/11/2026",
-      "hora": "06:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX201",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEAGEMS RUBI",
-      "data": "19/11/2026",
-      "hora": "07:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "LOG-IN DISCOVERY",
       "data": "19/11/2026",
@@ -45,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "PAX MUNDI",
@@ -66,24 +30,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "EKATERINA",
-      "data": "19/11/2026",
-      "hora": "21:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "STAR DALMATIA",
-      "data": "20/11/2026",
-      "hora": "02:30",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "CANELO ARROW",
       "data": "20/11/2026",
       "hora": "03:00",
@@ -99,6 +45,24 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "EKATERINA",
+      "data": "20/11/2026",
+      "hora": "04:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR DALMATIA",
+      "data": "20/11/2026",
+      "hora": "05:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
