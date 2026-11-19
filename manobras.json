@@ -1,24 +1,15 @@
 {
-  "atualizado_em": "2026-11-18T21:28:03.964987-03:00",
+  "atualizado_em": "2026-11-19T00:52:36.330264-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "SAGA PELICANA",
-      "data": "18/11/2026",
-      "hora": "21:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "AFRICAN MACAW",
       "data": "19/11/2026",
-      "hora": "03:00",
+      "hora": "02:57",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX905",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SEAGEMS RUBI",
@@ -36,16 +27,16 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "COSCO SHIPPING XING WANG",
       "data": "19/11/2026",
-      "hora": "05:57",
+      "hora": "06:00",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX201",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
@@ -54,15 +45,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PAX MUNDI",
-      "data": "19/11/2026",
-      "hora": "11:38",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -75,12 +57,30 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PAX MUNDI",
+      "data": "19/11/2026",
+      "hora": "12:38",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "BAHRI GHADAH",
       "data": "19/11/2026",
       "hora": "13:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN GUANGZHOU",
+      "data": "19/11/2026",
+      "hora": "16:31",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
@@ -117,15 +117,6 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN GUANGZHOU",
-      "data": "20/11/2026",
-      "hora": "05:53",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
       "situacao": "PREVISTA"
     },
     {
