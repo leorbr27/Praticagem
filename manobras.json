@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-18T19:49:53.050096-03:00",
+  "atualizado_em": "2026-11-18T21:28:03.964987-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "LIBERTY BAY",
-      "data": "18/11/2026",
-      "hora": "19:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "INICIADA"
-    },
     {
       "navio": "SAGA PELICANA",
       "data": "18/11/2026",
