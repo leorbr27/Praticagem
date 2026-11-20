@@ -1,38 +1,29 @@
 {
-  "atualizado_em": "2026-11-20T14:48:43.437284-03:00",
+  "atualizado_em": "2026-11-20T17:51:51.500015-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "STAR DALMATIA",
-      "data": "20/11/2026",
-      "hora": "15:30",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "GREEN SEPETIBA",
       "data": "20/11/2026",
-      "hora": "18:00",
+      "hora": "19:30",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX203 VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN GUANGZHOU",
       "data": "20/11/2026",
-      "hora": "18:00",
+      "hora": "19:30",
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX206 VIX203",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "CANELO ARROW",
       "data": "20/11/2026",
-      "hora": "19:00",
+      "hora": "21:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -41,7 +32,7 @@
     {
       "navio": "BAHRI GHADAH",
       "data": "20/11/2026",
-      "hora": "21:00",
+      "hora": "22:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -50,7 +41,7 @@
     {
       "navio": "CAPTAIN JOHN",
       "data": "20/11/2026",
-      "hora": "22:00",
+      "hora": "23:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -58,8 +49,8 @@
     },
     {
       "navio": "BABITONGA BAY",
-      "data": "20/11/2026",
-      "hora": "23:00",
+      "data": "21/11/2026",
+      "hora": "00:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -135,6 +126,15 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN JACARANDA",
+      "data": "21/11/2026",
+      "hora": "11:55",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
       "situacao": "PREVISTA"
     },
     {
