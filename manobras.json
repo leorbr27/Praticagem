@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-20T17:51:51.500015-03:00",
+  "atualizado_em": "2026-11-20T20:23:42.940741-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -22,8 +22,8 @@
     },
     {
       "navio": "CANELO ARROW",
-      "data": "20/11/2026",
-      "hora": "21:00",
+      "data": "21/11/2026",
+      "hora": "00:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -31,8 +31,8 @@
     },
     {
       "navio": "BAHRI GHADAH",
-      "data": "20/11/2026",
-      "hora": "22:00",
+      "data": "21/11/2026",
+      "hora": "01:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -40,18 +40,9 @@
     },
     {
       "navio": "CAPTAIN JOHN",
-      "data": "20/11/2026",
-      "hora": "23:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BABITONGA BAY",
       "data": "21/11/2026",
-      "hora": "00:00",
-      "tipo": "ENTRADA",
+      "hora": "02:00",
+      "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
@@ -63,6 +54,15 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "21/11/2026",
+      "hora": "03:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
