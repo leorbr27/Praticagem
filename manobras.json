@@ -1,51 +1,15 @@
 {
-  "atualizado_em": "2026-11-20T09:51:14.983491-03:00",
+  "atualizado_em": "2026-11-20T14:48:43.437284-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "BAR",
-      "data": "20/11/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "LOG-IN JACARANDA",
-      "data": "20/11/2026",
-      "hora": "10:16",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "CANELO ARROW",
-      "data": "20/11/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BAHRI GHADAH",
-      "data": "20/11/2026",
-      "hora": "14:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "STAR DALMATIA",
       "data": "20/11/2026",
-      "hora": "16:00",
+      "hora": "15:30",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN SEPETIBA",
@@ -63,6 +27,24 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX206 VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "CANELO ARROW",
+      "data": "20/11/2026",
+      "hora": "19:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BAHRI GHADAH",
+      "data": "20/11/2026",
+      "hora": "21:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -86,7 +68,7 @@
     {
       "navio": "SAGA PELICANA",
       "data": "21/11/2026",
-      "hora": "02:25",
+      "hora": "02:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
@@ -140,10 +122,19 @@
     {
       "navio": "GREEN AANEKOSKI",
       "data": "21/11/2026",
-      "hora": "08:40",
+      "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA FLORA",
+      "data": "21/11/2026",
+      "hora": "11:10",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -156,21 +147,21 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "SAGA FLORA",
-      "data": "22/11/2026",
-      "hora": "16:12",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "BBC GANGES",
       "data": "23/11/2026",
       "hora": "07:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BAR",
+      "data": "23/11/2026",
+      "hora": "08:10",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX101",
       "situacao": "PREVISTA"
     }
   ]
