@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-11-20T01:07:43.007683-03:00",
+  "atualizado_em": "2026-11-20T06:15:02.610144-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "EKATERINA",
-      "data": "20/11/2026",
-      "hora": "02:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "STAR DALMATIA",
-      "data": "20/11/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
     {
       "navio": "BAR",
       "data": "20/11/2026",
@@ -27,7 +9,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX101",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN JACARANDA",
@@ -36,12 +18,12 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "CANELO ARROW",
       "data": "20/11/2026",
-      "hora": "12:00",
+      "hora": "13:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -50,7 +32,7 @@
     {
       "navio": "BAHRI GHADAH",
       "data": "20/11/2026",
-      "hora": "13:00",
+      "hora": "14:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -75,30 +57,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "STAR DALMATIA",
+      "data": "20/11/2026",
+      "hora": "16:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "CAPTAIN JOHN",
       "data": "20/11/2026",
-      "hora": "21:00",
+      "hora": "22:00",
       "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "20/11/2026",
+      "hora": "23:00",
+      "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
       "navio": "SAGA PELICANA",
-      "data": "20/11/2026",
-      "hora": "21:00",
+      "data": "21/11/2026",
+      "hora": "02:25",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BABITONGA BAY",
-      "data": "20/11/2026",
-      "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -111,6 +102,15 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "LIBERTY BAY",
+      "data": "21/11/2026",
+      "hora": "06:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN GUANGZHOU",
       "data": "21/11/2026",
       "hora": "06:20",
@@ -120,30 +120,21 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "PORT KYUSHU",
+      "data": "21/11/2026",
+      "hora": "07:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "GREEN AANEKOSKI",
       "data": "21/11/2026",
       "hora": "08:40",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "LIBERTY BAY",
-      "data": "21/11/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PORT KYUSHU",
-      "data": "21/11/2026",
-      "hora": "13:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
