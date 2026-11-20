@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-19T20:21:40.046343-03:00",
+  "atualizado_em": "2026-11-19T22:52:33.074579-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -9,30 +9,21 @@
       "tipo": "MANOBRA",
       "porto": "VIX",
       "berco": "VIX905 VIX905",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SEVEN CRUZEIRO",
-      "data": "19/11/2026",
-      "hora": "21:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "EKATERINA",
       "data": "20/11/2026",
-      "hora": "04:00",
+      "hora": "02:30",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR DALMATIA",
       "data": "20/11/2026",
-      "hora": "05:00",
+      "hora": "03:30",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
@@ -129,21 +120,21 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "GREEN AANEKOSKI",
-      "data": "21/11/2026",
-      "hora": "05:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "GREEN GUANGZHOU",
       "data": "21/11/2026",
       "hora": "06:20",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN AANEKOSKI",
+      "data": "21/11/2026",
+      "hora": "08:40",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
@@ -176,7 +167,7 @@
     {
       "navio": "SAGA FLORA",
       "data": "22/11/2026",
-      "hora": "14:12",
+      "hora": "16:12",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
@@ -185,16 +176,7 @@
     {
       "navio": "BBC GANGES",
       "data": "23/11/2026",
-      "hora": "06:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BUNA ARROW",
-      "data": "23/11/2026",
-      "hora": "10:00",
+      "hora": "07:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
