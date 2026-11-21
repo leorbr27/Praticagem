@@ -1,21 +1,12 @@
 {
-  "atualizado_em": "2026-11-21T13:51:23.792493-03:00",
+  "atualizado_em": "2026-11-21T16:36:23.508509-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "PORT KYUSHU",
-      "data": "21/11/2026",
-      "hora": "12:30",
+      "navio": "ALLIANCE DIVA",
+      "data": "17/12/2026",
+      "hora": "08:16",
       "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "NIKOS",
-      "data": "21/11/2026",
-      "hora": "18:55",
-      "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
@@ -23,7 +14,7 @@
     {
       "navio": "SAPURA JADE",
       "data": "21/11/2026",
-      "hora": "19:00",
+      "hora": "20:00",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX103",
@@ -36,6 +27,33 @@
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "NIKOS",
+      "data": "22/11/2026",
+      "hora": "00:10",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "data": "22/11/2026",
+      "hora": "07:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SOTKA",
+      "data": "22/11/2026",
+      "hora": "07:27",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
