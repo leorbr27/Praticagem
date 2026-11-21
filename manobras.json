@@ -1,42 +1,15 @@
 {
-  "atualizado_em": "2026-11-21T09:27:27.944201-03:00",
+  "atualizado_em": "2026-11-21T13:51:23.792493-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "GREEN AANEKOSKI",
-      "data": "21/11/2026",
-      "hora": "08:40",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "LOG-IN JACARANDA",
-      "data": "21/11/2026",
-      "hora": "10:30",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "LIBERTY BAY",
-      "data": "21/11/2026",
-      "hora": "11:30",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "PORT KYUSHU",
       "data": "21/11/2026",
-      "hora": "13:00",
+      "hora": "12:30",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "NIKOS",
@@ -45,15 +18,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA FLORA",
-      "data": "21/11/2026",
-      "hora": "19:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -66,12 +30,30 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "BBC GANGES",
-      "data": "23/11/2026",
-      "hora": "07:00",
+      "navio": "SAGA FLORA",
+      "data": "21/11/2026",
+      "hora": "22:50",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA SKY",
+      "data": "22/11/2026",
+      "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR DALMATIA",
+      "data": "22/11/2026",
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
