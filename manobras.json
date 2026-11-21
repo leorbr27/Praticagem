@@ -1,25 +1,7 @@
 {
-  "atualizado_em": "2026-11-20T20:23:42.940741-03:00",
+  "atualizado_em": "2026-11-20T22:54:47.252848-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "GREEN SEPETIBA",
-      "data": "20/11/2026",
-      "hora": "19:30",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX203 VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN GUANGZHOU",
-      "data": "20/11/2026",
-      "hora": "19:30",
-      "tipo": "MANOBRA",
-      "porto": "VIX",
-      "berco": "VIX206 VIX203",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "CANELO ARROW",
       "data": "21/11/2026",
@@ -27,7 +9,7 @@
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "BAHRI GHADAH",
@@ -36,7 +18,16 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SAGA PELICANA",
+      "data": "21/11/2026",
+      "hora": "01:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "MARCADA"
     },
     {
       "navio": "CAPTAIN JOHN",
@@ -48,15 +39,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA PELICANA",
-      "data": "21/11/2026",
-      "hora": "02:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "BABITONGA BAY",
       "data": "21/11/2026",
       "hora": "03:00",
@@ -64,15 +46,6 @@
       "porto": "PRM",
       "berco": "PRMPS3",
       "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAPURA JADE",
-      "data": "21/11/2026",
-      "hora": "04:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "MARCADA"
     },
     {
       "navio": "LIBERTY BAY",
@@ -93,15 +66,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NIKOS",
-      "data": "21/11/2026",
-      "hora": "06:44",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "PORT KYUSHU",
       "data": "21/11/2026",
       "hora": "07:00",
@@ -109,6 +73,15 @@
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAPURA JADE",
+      "data": "21/11/2026",
+      "hora": "07:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "MARCADA"
     },
     {
       "navio": "GREEN AANEKOSKI",
@@ -135,6 +108,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NIKOS",
+      "data": "21/11/2026",
+      "hora": "18:55",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
