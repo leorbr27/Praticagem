@@ -1,16 +1,7 @@
 {
-  "atualizado_em": "2026-11-21T06:18:45.998131-03:00",
+  "atualizado_em": "2026-11-21T09:27:27.944201-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
-    {
-      "navio": "SAPURA JADE",
-      "data": "21/11/2026",
-      "hora": "06:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "MARCADA"
-    },
     {
       "navio": "GREEN AANEKOSKI",
       "data": "21/11/2026",
@@ -18,25 +9,25 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "LOG-IN JACARANDA",
       "data": "21/11/2026",
-      "hora": "11:55",
+      "hora": "10:30",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LIBERTY BAY",
       "data": "21/11/2026",
-      "hora": "12:00",
+      "hora": "11:30",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "PORT KYUSHU",
