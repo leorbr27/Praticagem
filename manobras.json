@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-21T18:57:41.934797-03:00",
+  "atualizado_em": "2026-11-21T20:54:12.034167-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -30,13 +30,13 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "NIKOS",
+      "navio": "POLARIS LEADER",
       "data": "22/11/2026",
-      "hora": "00:10",
-      "tipo": "SAIDA",
+      "hora": "03:30",
+      "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
+      "berco": "VIX102",
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -48,21 +48,30 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SOTKA",
-      "data": "22/11/2026",
-      "hora": "07:27",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAGA SKY",
       "data": "22/11/2026",
       "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "NIKOS",
+      "data": "22/11/2026",
+      "hora": "11:32",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SOTKA",
+      "data": "22/11/2026",
+      "hora": "12:32",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
