@@ -1,74 +1,11 @@
 {
-  "atualizado_em": "2026-11-21T01:03:59.112512-03:00",
+  "atualizado_em": "2026-11-21T06:18:45.998131-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
-      "navio": "BAHRI GHADAH",
-      "data": "21/11/2026",
-      "hora": "01:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "SAGA PELICANA",
-      "data": "21/11/2026",
-      "hora": "01:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "CAPTAIN JOHN",
-      "data": "21/11/2026",
-      "hora": "02:15",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BABITONGA BAY",
-      "data": "21/11/2026",
-      "hora": "03:15",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "LIBERTY BAY",
-      "data": "21/11/2026",
-      "hora": "06:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN GUANGZHOU",
-      "data": "21/11/2026",
-      "hora": "06:20",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PORT KYUSHU",
-      "data": "21/11/2026",
-      "hora": "07:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SAPURA JADE",
       "data": "21/11/2026",
-      "hora": "07:00",
+      "hora": "06:30",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX103",
@@ -77,20 +14,11 @@
     {
       "navio": "GREEN AANEKOSKI",
       "data": "21/11/2026",
-      "hora": "09:00",
+      "hora": "08:40",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA FLORA",
-      "data": "21/11/2026",
-      "hora": "11:10",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN JACARANDA",
@@ -102,12 +30,39 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "LIBERTY BAY",
+      "data": "21/11/2026",
+      "hora": "12:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PORT KYUSHU",
+      "data": "21/11/2026",
+      "hora": "13:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "NIKOS",
       "data": "21/11/2026",
       "hora": "18:55",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA FLORA",
+      "data": "21/11/2026",
+      "hora": "19:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
