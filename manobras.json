@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-22T00:33:18.249826-03:00",
+  "atualizado_em": "2026-11-22T06:41:14.804374-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,24 +12,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "POLARIS LEADER",
-      "data": "22/11/2026",
-      "hora": "03:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX102",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BAHRI GHADAH",
-      "data": "22/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "LOG-IN PANTANAL",
       "data": "22/11/2026",
       "hora": "07:00",
@@ -37,24 +19,6 @@
       "porto": "VIX",
       "berco": "VIX204",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "PEARL ISLAND",
-      "data": "22/11/2026",
-      "hora": "08:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SAGA SKY",
-      "data": "22/11/2026",
-      "hora": "09:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "NIKOS",
@@ -72,6 +36,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA SKY",
+      "data": "22/11/2026",
+      "hora": "15:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -93,9 +66,45 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "BABITONGA BAY",
+      "navio": "GREEN SEPETIBA",
+      "data": "23/11/2026",
+      "hora": "08:10",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX206",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PORT KYUSHU",
+      "data": "23/11/2026",
+      "hora": "23:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PEARL ISLAND",
       "data": "24/11/2026",
       "hora": "00:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BAHRI GHADAH",
+      "data": "24/11/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "24/11/2026",
+      "hora": "09:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -104,19 +113,10 @@
     {
       "navio": "SEAHEAVEN",
       "data": "24/11/2026",
-      "hora": "01:00",
+      "hora": "10:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "PORT KYUSHU",
-      "data": "24/11/2026",
-      "hora": "12:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     }
   ]
