@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-21T20:54:12.034167-03:00",
+  "atualizado_em": "2026-11-21T23:03:37.598667-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,22 +12,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAPURA JADE",
-      "data": "21/11/2026",
-      "hora": "20:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "SAGA FLORA",
       "data": "21/11/2026",
       "hora": "22:50",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "MARCADA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "POLARIS LEADER",
@@ -45,7 +36,7 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX204",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "SAGA SKY",
