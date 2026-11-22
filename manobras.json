@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-22T08:53:39.468617-03:00",
+  "atualizado_em": "2026-11-22T14:25:27.436585-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,22 +12,13 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "NIKOS",
-      "data": "22/11/2026",
-      "hora": "11:32",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "SOTKA",
       "data": "22/11/2026",
-      "hora": "12:32",
+      "hora": "13:32",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
+      "situacao": "INICIADA"
     },
     {
       "navio": "SAGA SKY",
@@ -36,7 +27,7 @@
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR DALMATIA",
@@ -54,6 +45,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN GUANGZHOU",
+      "data": "23/11/2026",
+      "hora": "08:10",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
