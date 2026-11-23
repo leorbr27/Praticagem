@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-22T20:49:42.840510-03:00",
+  "atualizado_em": "2026-11-23T00:10:40.243229-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -14,7 +14,7 @@
     {
       "navio": "STAR DALMATIA",
       "data": "23/11/2026",
-      "hora": "05:00",
+      "hora": "08:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
@@ -27,15 +27,6 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN GUANGZHOU",
-      "data": "23/11/2026",
-      "hora": "08:10",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
@@ -55,6 +46,15 @@
       "porto": "VIX",
       "berco": "VIX206",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "GREEN GUANGZHOU",
+      "data": "23/11/2026",
+      "hora": "13:12",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "PAX MUNDI",
