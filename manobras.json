@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T09:49:19.256930-03:00",
+  "atualizado_em": "2026-11-23T11:22:49.418580-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -10,15 +10,6 @@
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BUNA ARROW",
-      "data": "23/11/2026",
-      "hora": "10:10",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "INICIADA"
     },
     {
       "navio": "GRANDE SAN PAOLO",
@@ -129,6 +120,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GREEN AANEKOSKI",
+      "data": "25/11/2026",
+      "hora": "20:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SOTKA",
       "data": "26/11/2026",
       "hora": "12:00",
@@ -144,6 +144,24 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "H38-NHO CRUZEIRO DO SUL",
+      "data": "27/11/2026",
+      "hora": "07:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "H38-NHO CRUZEIRO DO SUL",
+      "data": "30/11/2026",
+      "hora": "14:20",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX102",
       "situacao": "PREVISTA"
     }
   ]
