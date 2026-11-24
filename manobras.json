@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T11:22:49.418580-03:00",
+  "atualizado_em": "2026-11-23T21:26:20.548625-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,75 +12,120 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GRANDE SAN PAOLO",
+      "navio": "LOG-IN PANTANAL",
       "data": "23/11/2026",
-      "hora": "12:12",
-      "tipo": "ENTRADA",
+      "hora": "20:21",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "INICIADA"
+    },
+    {
+      "navio": "GRANDE SAN PAOLO",
+      "data": "24/11/2026",
+      "hora": "01:47",
+      "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BAR",
-      "data": "23/11/2026",
-      "hora": "13:12",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX101",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "PORT KYUSHU",
-      "data": "23/11/2026",
-      "hora": "23:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "PEARL ISLAND",
+      "navio": "SKANDI RECIFE",
       "data": "24/11/2026",
-      "hora": "00:00",
+      "hora": "05:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "BABITONGA BAY",
+      "data": "24/11/2026",
+      "hora": "08:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GRANDE GUINEA",
+      "data": "24/11/2026",
+      "hora": "08:57",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX204",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SEAHEAVEN",
+      "data": "24/11/2026",
+      "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
-      "berco": "PRMPS2",
+      "berco": "PRMPS3",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SAGA SKY",
+      "data": "24/11/2026",
+      "hora": "09:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
       "navio": "GREEN GUANGZHOU",
       "data": "24/11/2026",
-      "hora": "08:57",
+      "hora": "09:57",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "PORT KYUSHU",
+      "data": "24/11/2026",
+      "hora": "10:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BBC GANGES",
+      "data": "24/11/2026",
+      "hora": "10:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "PEARL ISLAND",
+      "data": "24/11/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "24/11/2026",
+      "hora": "12:49",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "MARCADA"
     },
     {
       "navio": "PAX MUNDI",
       "data": "24/11/2026",
-      "hora": "08:57",
+      "hora": "13:49",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BABITONGA BAY",
-      "data": "24/11/2026",
-      "hora": "09:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SEAHEAVEN",
-      "data": "24/11/2026",
-      "hora": "10:00",
-      "tipo": "ENTRADA",
-      "porto": "PRM",
-      "berco": "PRMPS3",
       "situacao": "PREVISTA"
     },
     {
@@ -93,39 +138,48 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "LOG-IN PANTANAL",
+      "navio": "VORIAS",
       "data": "24/11/2026",
       "hora": "21:06",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "AFRICAN MACAW",
-      "data": "25/11/2026",
-      "hora": "09:38",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "VORIAS",
-      "data": "25/11/2026",
-      "hora": "10:38",
       "tipo": "ENTRADA",
       "porto": "VIX",
-      "berco": "VIX905",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "BUNA ARROW",
+      "data": "25/11/2026",
+      "hora": "04:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN GUANGZHOU",
+      "data": "25/11/2026",
+      "hora": "05:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
       "navio": "GREEN AANEKOSKI",
       "data": "25/11/2026",
-      "hora": "20:00",
+      "hora": "09:43",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "AFRICAN MACAW",
+      "data": "25/11/2026",
+      "hora": "10:44",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX905",
       "situacao": "PREVISTA"
     },
     {
@@ -153,6 +207,24 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX102",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN SEPETIBA",
+      "data": "27/11/2026",
+      "hora": "11:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR LOUISIANA",
+      "data": "27/11/2026",
+      "hora": "22:00",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
       "situacao": "PREVISTA"
     },
     {
