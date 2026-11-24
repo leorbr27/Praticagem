@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T07:19:18.802777-03:00",
+  "atualizado_em": "2026-11-24T08:38:15.449494-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -10,15 +10,6 @@
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SKANDI RECIFE",
-      "data": "24/11/2026",
-      "hora": "05:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX103",
-      "situacao": "INICIADA"
     },
     {
       "navio": "GRANDE GUINEA",
