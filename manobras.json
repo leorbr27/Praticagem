@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-25T10:38:40.467778-03:00",
+  "atualizado_em": "2026-11-25T11:45:31.372887-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -118,6 +118,15 @@
       "porto": "VIX",
       "berco": "VIX202",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI ACU",
+      "data": "27/11/2026",
+      "hora": "04:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
     },
     {
       "navio": "LOG-IN DISCOVERY",
