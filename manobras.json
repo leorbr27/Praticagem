@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T18:29:14.209261-03:00",
+  "atualizado_em": "2026-11-25T00:47:35.096713-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,36 +12,18 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SAGA SKY",
-      "data": "24/11/2026",
-      "hora": "21:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GRANDE GUINEA",
-      "data": "24/11/2026",
-      "hora": "21:06",
+      "navio": "PAX MUNDI",
+      "data": "25/11/2026",
+      "hora": "02:38",
       "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX204",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BBC GANGES",
-      "data": "24/11/2026",
-      "hora": "22:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
+      "berco": "VIX207",
       "situacao": "MARCADA"
     },
     {
       "navio": "COSCO SHIPPING ZHUO YUE",
       "data": "25/11/2026",
-      "hora": "01:30",
+      "hora": "03:38",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
@@ -50,25 +32,16 @@
     {
       "navio": "PORT KYUSHU",
       "data": "25/11/2026",
-      "hora": "02:00",
+      "hora": "04:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "PAX MUNDI",
-      "data": "25/11/2026",
-      "hora": "02:38",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "PEARL ISLAND",
       "data": "25/11/2026",
-      "hora": "03:00",
+      "hora": "05:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
@@ -77,7 +50,7 @@
     {
       "navio": "BAHRI GHADAH",
       "data": "25/11/2026",
-      "hora": "05:00",
+      "hora": "06:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -111,6 +84,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "STAR ISFJORD",
+      "data": "25/11/2026",
+      "hora": "14:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "WINDERMERE",
       "data": "25/11/2026",
       "hora": "15:32",
@@ -138,6 +120,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "BBC GANGES",
+      "data": "26/11/2026",
+      "hora": "01:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SOTKA",
       "data": "26/11/2026",
       "hora": "12:00",
@@ -153,6 +144,15 @@
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "LOG-IN DISCOVERY",
+      "data": "27/11/2026",
+      "hora": "04:25",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX203",
       "situacao": "PREVISTA"
     },
     {
