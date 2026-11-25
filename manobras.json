@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-25T19:47:00.585763-03:00",
+  "atualizado_em": "2026-11-25T20:20:29.536083-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -189,6 +189,15 @@
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR ISFJORD",
+      "data": "30/11/2026",
+      "hora": "13:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
