@@ -1,7 +1,16 @@
 {
-  "atualizado_em": "2026-11-26T12:05:25.819678-03:00",
+  "atualizado_em": "2026-11-26T20:09:41.428839-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
+    {
+      "navio": "AAL SINGAPORE",
+      "data": "04/12/2026",
+      "hora": "11:14",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX101",
+      "situacao": "PREVISTA"
+    },
     {
       "navio": "ALLIANCE DIVA",
       "data": "17/12/2026",
@@ -9,51 +18,6 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "AAL SINGAPORE",
-      "data": "26/11/2026",
-      "hora": "10:17",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX101",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "AFRICAN MACAW",
-      "data": "26/11/2026",
-      "hora": "11:17",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "SOTKA",
-      "data": "26/11/2026",
-      "hora": "15:16",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "BBC GANGES",
-      "data": "26/11/2026",
-      "hora": "18:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "GREEN SEPETIBA",
-      "data": "26/11/2026",
-      "hora": "19:00",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
@@ -75,6 +39,15 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "GREEN SEPETIBA",
+      "data": "27/11/2026",
+      "hora": "04:23",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "LOG-IN DISCOVERY",
       "data": "27/11/2026",
       "hora": "04:25",
@@ -90,6 +63,78 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX102",
+      "situacao": "MARCADA"
+    },
+    {
+      "navio": "SOTKA",
+      "data": "27/11/2026",
+      "hora": "11:04",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "V BROS",
+      "data": "27/11/2026",
+      "hora": "12:04",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "COSCO SHIPPING SINCERE",
+      "data": "27/11/2026",
+      "hora": "12:04",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "WINDERMERE",
+      "data": "27/11/2026",
+      "hora": "23:40",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "VORIAS",
+      "data": "27/11/2026",
+      "hora": "23:40",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "DIADEMA",
+      "data": "28/11/2026",
+      "hora": "00:40",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR ISFJORD",
+      "data": "28/11/2026",
+      "hora": "01:00",
+      "tipo": "SAIDA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "REVENGER",
+      "data": "28/11/2026",
+      "hora": "02:00",
+      "tipo": "ENTRADA",
+      "porto": "PRM",
+      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
@@ -102,6 +147,15 @@
       "situacao": "MARCADA"
     },
     {
+      "navio": "GREEN GUANGZHOU",
+      "data": "28/11/2026",
+      "hora": "07:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
       "navio": "SKANDI RECIFE",
       "data": "28/11/2026",
       "hora": "07:00",
@@ -111,36 +165,27 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "GREEN GUANGZHOU",
-      "data": "28/11/2026",
-      "hora": "12:30",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "COSCO SHIPPING ZHUO YUE",
-      "data": "28/11/2026",
-      "hora": "13:30",
-      "tipo": "ENTRADA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "STAR LOUISIANA",
       "data": "28/11/2026",
-      "hora": "15:00",
+      "hora": "09:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "SEAHEAVEN",
+      "navio": "STAR ISFJORD",
       "data": "28/11/2026",
-      "hora": "20:00",
+      "hora": "14:45",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEAHEAVEN",
+      "data": "29/11/2026",
+      "hora": "13:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -148,8 +193,8 @@
     },
     {
       "navio": "INDEPENDENT",
-      "data": "28/11/2026",
-      "hora": "21:00",
+      "data": "29/11/2026",
+      "hora": "14:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS3",
@@ -157,29 +202,20 @@
     },
     {
       "navio": "PEARL ISLAND",
-      "data": "28/11/2026",
-      "hora": "22:00",
+      "data": "30/11/2026",
+      "hora": "01:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS2",
       "situacao": "PREVISTA"
     },
     {
-      "navio": "REVENGER",
-      "data": "28/11/2026",
-      "hora": "23:00",
+      "navio": "CLARABELLE",
+      "data": "30/11/2026",
+      "hora": "02:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS2",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "STAR ISFJORD",
-      "data": "29/11/2026",
-      "hora": "13:00",
-      "tipo": "SAIDA",
-      "porto": "PRM",
-      "berco": "PRMPS1",
       "situacao": "PREVISTA"
     },
     {
