@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-26T02:10:00.485776-03:00",
+  "atualizado_em": "2026-11-26T11:21:51.949470-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,24 +12,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "HORIZON RAY",
-      "data": "26/11/2026",
-      "hora": "03:30",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "BUNA ARROW",
-      "data": "26/11/2026",
-      "hora": "09:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH102",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "AAL SINGAPORE",
       "data": "26/11/2026",
       "hora": "10:17",
@@ -39,13 +21,13 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "BBC GANGES",
+      "navio": "AFRICAN MACAW",
       "data": "26/11/2026",
-      "hora": "12:00",
+      "hora": "11:17",
       "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "MARCADA"
     },
     {
       "navio": "SOTKA",
@@ -57,18 +39,18 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "AFRICAN MACAW",
+      "navio": "BBC GANGES",
       "data": "26/11/2026",
-      "hora": "15:16",
+      "hora": "18:00",
       "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX905",
+      "porto": "RCH",
+      "berco": "RCH103",
       "situacao": "PREVISTA"
     },
     {
       "navio": "GREEN SEPETIBA",
       "data": "26/11/2026",
-      "hora": "16:00",
+      "hora": "19:00",
       "tipo": "ENTRADA",
       "porto": "RCH",
       "berco": "RCH103",
@@ -109,6 +91,15 @@
       "porto": "VIX",
       "berco": "VIX102",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SKANDI ACU",
+      "data": "28/11/2026",
+      "hora": "04:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
     },
     {
       "navio": "SKANDI RECIFE",
@@ -184,7 +175,7 @@
     },
     {
       "navio": "STAR ISFJORD",
-      "data": "30/11/2026",
+      "data": "29/11/2026",
       "hora": "13:00",
       "tipo": "SAIDA",
       "porto": "PRM",
