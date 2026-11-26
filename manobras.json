@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-26T20:09:41.428839-03:00",
+  "atualizado_em": "2026-11-26T20:44:01.283262-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -23,16 +23,16 @@
     {
       "navio": "HORIZON RAY",
       "data": "26/11/2026",
-      "hora": "22:47",
+      "hora": "22:50",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX206",
-      "situacao": "PREVISTA"
+      "situacao": "MARCADA"
     },
     {
       "navio": "ZI JING SONG",
       "data": "26/11/2026",
-      "hora": "23:47",
+      "hora": "23:50",
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX206",
