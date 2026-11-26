@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-25T20:20:29.536083-03:00",
+  "atualizado_em": "2026-11-26T01:31:31.326497-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -12,15 +12,6 @@
       "situacao": "PREVISTA"
     },
     {
-      "navio": "COSCO SHIPPING ZHUO YUE",
-      "data": "25/11/2026",
-      "hora": "21:57",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
-    {
       "navio": "HORIZON RAY",
       "data": "26/11/2026",
       "hora": "03:30",
@@ -30,18 +21,9 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "BBC GANGES",
-      "data": "26/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH103",
-      "situacao": "PREVISTA"
-    },
-    {
       "navio": "BUNA ARROW",
       "data": "26/11/2026",
-      "hora": "08:00",
+      "hora": "09:00",
       "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH102",
@@ -55,6 +37,15 @@
       "porto": "VIX",
       "berco": "VIX101",
       "situacao": "MARCADA"
+    },
+    {
+      "navio": "BBC GANGES",
+      "data": "26/11/2026",
+      "hora": "12:00",
+      "tipo": "SAIDA",
+      "porto": "RCH",
+      "berco": "RCH103",
+      "situacao": "PREVISTA"
     },
     {
       "navio": "SOTKA",
