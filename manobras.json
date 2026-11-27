@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-27T12:18:36.014000-03:00",
+  "atualizado_em": "2026-11-27T20:21:28.459960-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -18,6 +18,15 @@
       "tipo": "ENTRADA",
       "porto": "VIX",
       "berco": "VIX203",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "CHIEF SEATTLE",
+      "data": "03/12/2026",
+      "hora": "12:00",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
       "situacao": "PREVISTA"
     },
     {
@@ -48,72 +57,18 @@
       "situacao": "BARRA IMP."
     },
     {
-      "navio": "LOG-IN DISCOVERY",
+      "navio": "SKANDI RECIFE",
       "data": "27/11/2026",
-      "hora": "11:04",
+      "hora": "23:59",
       "tipo": "SAIDA",
       "porto": "VIX",
-      "berco": "VIX203",
-      "situacao": "INICIADA"
-    },
-    {
-      "navio": "COSCO SHIPPING SINCERE",
-      "data": "27/11/2026",
-      "hora": "12:04",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX203",
+      "berco": "VIX103",
       "situacao": "MARCADA"
-    },
-    {
-      "navio": "ZI JING SONG",
-      "data": "27/11/2026",
-      "hora": "13:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX206",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "SOTKA",
-      "data": "27/11/2026",
-      "hora": "23:40",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "VORIAS",
-      "data": "27/11/2026",
-      "hora": "23:40",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "V BROS",
-      "data": "28/11/2026",
-      "hora": "00:40",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX202",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "DIADEMA",
-      "data": "28/11/2026",
-      "hora": "00:40",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX207",
-      "situacao": "PREVISTA"
     },
     {
       "navio": "STAR ISFJORD",
       "data": "28/11/2026",
-      "hora": "01:00",
+      "hora": "06:00",
       "tipo": "SAIDA",
       "porto": "PRM",
       "berco": "PRMPS1",
@@ -122,37 +77,10 @@
     {
       "navio": "REVENGER",
       "data": "28/11/2026",
-      "hora": "02:00",
+      "hora": "07:00",
       "tipo": "ENTRADA",
       "porto": "PRM",
       "berco": "PRMPS1",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SKANDI ACU",
-      "data": "28/11/2026",
-      "hora": "04:00",
-      "tipo": "ENTRADA",
-      "porto": "VIX",
-      "berco": "VIX906",
-      "situacao": "MARCADA"
-    },
-    {
-      "navio": "GREEN GUANGZHOU",
-      "data": "28/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "RCH",
-      "berco": "RCH101",
-      "situacao": "PREVISTA"
-    },
-    {
-      "navio": "SKANDI RECIFE",
-      "data": "28/11/2026",
-      "hora": "07:00",
-      "tipo": "SAIDA",
-      "porto": "VIX",
-      "berco": "VIX103",
       "situacao": "PREVISTA"
     },
     {
@@ -165,12 +93,48 @@
       "situacao": "PREVISTA"
     },
     {
+      "navio": "SKANDI ACU",
+      "data": "28/11/2026",
+      "hora": "10:40",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX906",
+      "situacao": "MARCADA"
+    },
+    {
       "navio": "WINDERMERE",
       "data": "28/11/2026",
       "hora": "11:59",
       "tipo": "SAIDA",
       "porto": "VIX",
       "berco": "VIX201",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SOTKA",
+      "data": "28/11/2026",
+      "hora": "11:59",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "VORIAS",
+      "data": "28/11/2026",
+      "hora": "12:30",
+      "tipo": "SAIDA",
+      "porto": "VIX",
+      "berco": "VIX207",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "DIADEMA",
+      "data": "28/11/2026",
+      "hora": "13:30",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX207",
       "situacao": "PREVISTA"
     },
     {
@@ -183,12 +147,39 @@
       "situacao": "MARCADA"
     },
     {
-      "navio": "STAR ISFJORD",
+      "navio": "MAERSK KATALIN",
       "data": "28/11/2026",
-      "hora": "14:45",
+      "hora": "14:00",
       "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX905",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "V BROS",
+      "data": "28/11/2026",
+      "hora": "14:30",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX202",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "GREEN GUANGZHOU",
+      "data": "28/11/2026",
+      "hora": "15:37",
+      "tipo": "SAIDA",
       "porto": "RCH",
       "berco": "RCH101",
+      "situacao": "PREVISTA"
+    },
+    {
+      "navio": "STAR ISFJORD",
+      "data": "28/11/2026",
+      "hora": "16:40",
+      "tipo": "ENTRADA",
+      "porto": "RCH",
+      "berco": "RCH102",
       "situacao": "PREVISTA"
     },
     {
