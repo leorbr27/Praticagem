@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-27T11:58:02.265872-03:00",
+  "atualizado_em": "2026-11-27T12:18:36.014000-03:00",
   "fonte": "https://www.praticagem.org.br/manobras-previstas.html",
   "manobras": [
     {
@@ -172,6 +172,15 @@
       "porto": "VIX",
       "berco": "VIX201",
       "situacao": "PREVISTA"
+    },
+    {
+      "navio": "SEVEN SUN",
+      "data": "28/11/2026",
+      "hora": "13:40",
+      "tipo": "ENTRADA",
+      "porto": "VIX",
+      "berco": "VIX103",
+      "situacao": "MARCADA"
     },
     {
       "navio": "STAR ISFJORD",
